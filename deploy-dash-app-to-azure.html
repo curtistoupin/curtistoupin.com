@@ -52,33 +52,78 @@
           <h2 class="mb-3">Deploying a Python Dash App Using the Azure App Service</h2>
           <div class="col-lg-8 ftco-animate" >
             <p>Naturally, once you've coded a web app, the clear next step is to actually put it on the web. This was my thinking as well after I got <a href='mavis.html'>MAVis</a> up and running locally. Personally, I've been trying to get some more experience with Azure as the organization I work at works almost exclusively within the Microsoft ecosystem. Unfortunately, when I looked around to find documentation on deploying an app built on the Dash framework, as MAVis was, I was left wanting. There's no question that there is a lot of great Microsoft documentation around, but most of this documentation aimed at Python developers only focuses on apps that are built on Flask or Django.</p>
-            <p>My next step was to look through blog posts related to the topic. Sadly, these were also few and far between, and most focus more on the Dash app itself rather than the deployment part of it. This is of course no help to us, who have already coded our app and need to get it live.</p>
-            <p>Luckily, I was able to <a href='https://mavis-mtg.azurewebsites.net'>get it up and running</a>. In the end, the path from code to deployment is not all that difficult and requires only a few short steps. In this article, I'm going to walk through the most straightforward path, and hopefully this will be enough to get your app up and running.</p>
+            <p>Luckily, I was able to <a href='https://mavis-mtg.azurewebsites.net'>get it up and running</a>. In the end, the path from code to deployment is not all that difficult and requires only a few short steps. In this article, I'm going to walk through the most straightforward path, and hopefully this will be enough to get your app into the cloud.</p>
             <p>I'm going to assume, for the purposes of this article, that you already have a Dash app that you're happy with, as well as an Azure subscription available to you. If not, there are a vast amount of resources freely available that will help you with both of these items better than I ever could. The first thing to note is that while Azure only officially documents its support for Flask and Django apps, Dash is actually an extension of Flask. In fact, what you might not know is while Dash provides you with an app object, when that app's run_server method is executed, it is secretly spinning up a Flask server. You can check this yourself by looking at the app's .server property.</p>
             <p>
               <div style='display:flex;justify-content:center;'>
-                <a style='margin-left:auto;margin-right:auto;width:45%' href='images/bolt-burn.jpg'><img style='width:100%' src="images/dash-flask.jpg"/></a>
+                <img src="images/dash-flask.JPG"/>
               </div>
             </p>
             <p>This really is the whole secret to getting the Dash app running on Azure. Let's run through the steps to see what to do with this.</p>
             <h4 class="mb-3 mt-5">Step 1: Install the Azure CLI</h4>
-            <p>Everything can also be done through the GUI in <a href='https://portal.azure.com'>the Azure portal</a>. However it is so simple to get your first app deployed with the CLI that I recommend starting here. If you don't already have the Azure CLI installed, you can find instructions on doing so <a href='https://learn.microsoft.com/en-us/cli/azure/install-azure-cli'>here</a>. Once you have it installed, open up your favourite command shell to access it. I'm working on a Windows system, so I'll be working with PowerShell. To check that you've installed the Azure CLI correctly, run the following command. If you're set up properly, this should open up a tab in your web browser you to allow you to sig in to Azure.</p>
-            <pre>
-              <br/><span class='ps-command'>az</span> login
-            </pre>
+            <p>Everything can also be done through the GUI in <a href='https://portal.azure.com'>the Azure portal</a>. However it is so simple to get your first app deployed with the CLI that I recommend starting here. If you don't already have the Azure CLI installed, you can find instructions on doing so <a href='https://learn.microsoft.com/en-us/cli/azure/install-azure-cli'>here</a>. Once you have it installed, open up your favourite command shell to access it. I'm working on a Windows system, so I'll be working with PowerShell.</p>
             <h4 class="mb-3 mt-5">Step 2: Create and activate a virtual environment</h4>
             <p>To keep your app's dependencies separate, we're going to create a virtual environment. First things first, we need to navigate to the place where the app's source code is stored. Next we'll create the virtual environment. Run the two commands below to achieve this.</p>
             <pre>
               <br/><span class='ps-command'>cd</span> path/to/your/app/code<br/><span class='ps-command'>python</span> -m venv venv
             </pre>
+            <p>After that we need to activate our virtual environment. On Windows that looks like this:</p>
+            <pre>
+              <br/><span class='ps-command'>venv/Scripts/activate</span>
+            </pre>
+            <p>and macOS and Linux it looks like this:</p>
+            <pre>
+              <br/><span class='ps-command'>source</span> venv/Scripts/activate
+            </pre>
+            <h4 class="mb-3 mt-5">Step 3: Install all required packages</h4>
+            <p>Next up we need to make sure all the packages our app uses are installed in the virtual environment. At a minimum this will of course include the dash package, but we also need to install a package called gunicorn. Gunicorn, or Green Unicorn, is a pure-Python Web Server Gateway Interface (WSGI) HTTP server. It's going to help us tell Azure how to deploy our app. We can run the following line inside of our virtual environment to install these packages.</p>
+            <pre>
+              <br/><span class='ps-command'>pip</span> install dash gunicorn
+            </pre>
+            <p>Repeat the above for any other packages your app requires. Alternatively, if you have a <code>requirements.txt</code> file, you can run the following to install all packages at once.</p>
+            <pre>
+              <br/><span class='ps-command'>pip</span> install <span class='ps-param'>-r</span> requirements.txt
+            </pre>
+            <h4 class="mb-3 mt-5">Step 3b: Test your app locally</h4>
+            <p>Testing your app locally at this stage will likely prevent some hair-pulling later. Test your app locally by running the following line within your virtual environment, and navigating to the location your app is running. If you haven't changed the settings yourself, that location is most likey <a href='http://127.0.0.1:8050'>http://127.0.0.1:8050</a>, but your mileage may vary.</p>
+            <pre>
+              <br/><span class='ps-command'>python</span> your_app_file_name.py
+            </pre>
+            <p>If your virtual environment is missing a required package, this step should let you know. This is your chance to make any required fixes. Repeat this step until everything is working as expected locally, before we move things into Azure.</p>
+            <h4 class="mb-3 mt-5">Step 4: Deploy to Azure Web App Service</h4>
+            <p>First we need to log in to Azure. Running the following command should open a tab in your web browser to allow you to log into your Azure account.</p>
+            <pre>
+              <br/><span class='ps-command'>az</span> login
+            </pre>
+            <p>At this point we need to stop and make one small change to the app itself. In order to locally deploy a Dash app, we will have needed to expose an app variable somewhere. For the sake of argument, we'll assume this variable is called <code>your_app</code>. As previously mentioned, Azure is looking for a Flask server in order to deploy your app, and the <code>server</code> attribute of your app object contains such a server. In order to deploy to Azure, we need to expose an explicit <code>server</code> variable somewhere, although you can name it whatever you like. That will look something like this:</p>
             <p>
               <div style='display:flex;justify-content:center;'>
-                <a style='margin-left:auto;margin-right:auto;width:45%' href='images/bolt-burn.jpg'><img style='width:100%' src="images/bolt-burn.jpg"/></a>
-                <a style='margin-left:auto;margin-right:auto;width:45%' href='images/bolt-center.jpg'><img style='width:100%' src="images/bolt-center.jpg"/>
+                <img style="width:100%" src="images/server.JPG"/>
               </div>
             </p>
-            <p>I encourage you to explore the data and think about what insights could be drawn from the data in this style. For example, swapping between older formats like Modern and newer formats like Standard, how much of the network is shared between the two? Is this indicative that the power level of newer card designs are too strong? Is this something that should be addressed?</p>
-            <p>What kinds of insights could be drawn by exploring the data your organization keeps about its own supply chain in this way? This might be something you could make use of yourself. In the meantime, thank you for reading and I hope you got something out of MAVis as well as my other projects.</p>
+            <p>With this taken care of, we can move on to deploying the app. This can be done with the following command.</p>
+            <pre>
+              <br/><span class='ps-command'>az</span> webapp up <span class='ps-param'>--sku</span> F1 <span class='ps-param'>--name</span> your-app-name <span class='ps-param'>--location</span> preferred-location
+            </pre>
+            <p>This will deploy the app to an app service, creating a resource group for it, and assigning it the F1 price tier. You can choose a higher price tier such as B1, B2, and so on, depending on your performance needs. The location will be one of the standard options available in Azure, with the spaces removed, for example <code>EastUS</code> or <code>CanadaEast</code>. If this operation is successful, the app will be accessible at the url <code>your-app-name.azurewebsites.net</code>. Note that whatever you choose for your app name has to be unique across all apps on azure, so make sure you choose something unique.</p>
+            <p>The work isn't quite over yet. If you navigate to your app now, you will likely be greeted by this screen.</p>
+            <p>
+              <div style='display:flex;justify-content:center;'>
+                <img style="width:100%" src="images/hello-python-developers.png"/>
+              </div>
+            </p>
+            <p>Don't worry, this is expected behaviour at this stage. This is because Azure doesn't know where to look to find your app. In order to tell Azure where to look, we need to enlist the help of gunicorn. We're going to add a startup command to the app by running the following command:</p>
+            <pre>
+              <br/><span class='ps-command'>az</span> webapp config set <span class='ps-param'>--startup-file</span> "gunicorn your_app_file_name:server"
+            </pre>
+            <p>Of course, you'll want to replace <code>your_app_file_name</code> with the name of the file where your server variable is exposed, and <code>server</code> with whatever you named that variable. If you're so inclined, you can head to the Azure portal, navigate to the App Service that was just created, go to the "Configuration" section on the left nav bar, from there head to "General settings", and check that the "Startup Command" field has been populated with the command that you just provided.</p>
+            <p>
+              <div style='display:flex;justify-content:center;'>
+                <img style="width:100%" src="images/azure-config.png"/>
+              </div>
+            </p>
+            <p>That's all! From here you should be able to access your app from the URL provided in the Overview section. If you want to make doubly sure, you can click the Restart button in the Overview section before heading to your app.</p>
+            <h4 class="mb-3 mt-5">Step 5: Enjoy your brand new app!</h4>
             <div style='display:none' class="tag-widget post-tag-container mb-5 mt-5">
               <div class="tagcloud">
                 <a href="#" class="tag-cloud-link">Python</a>

@@ -9687,6 +9687,9 @@ pre {
   color:white;
   padding-left:20px;
 }
-span.ps-command{
+span.ps-command {
   color:#ffde31;
+}
+span.ps-param {
+  color:#B0B0B0;
 }
