@@ -39,7 +39,7 @@
 	          <li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>About</span></a></li>
 	          <li class="nav-item"><a href="portfolio.html" class="nav-link"><span>Portfolio</span></a></li>
 	          <li class="nav-item"><a href="blog.html" class="nav-link"><span>Blog</span></a></li>
-	          <li class="nav-item"><a href="index.html" class="nav-link"><span>Contact</span></a></li>
+	          <li class="nav-item"><a href="#contact-me" class="nav-link"><span>Contact</span></a></li>
 		        <li class="nav-item"><p><a href="Curtis_Toupin_Resume.pdf" class="btn btn-primary py-3 px-3">Resume</a></p></li>
 	        </ul>
 	      </div>
@@ -50,31 +50,48 @@
     	<div class="container-fluid px-md-0">
     		<div class="row no-gutters justify-content-center pb-5">
           <div class="col-md-12 heading-section text-center ftco-animate">
-	  				<img src="images/underconstruction.png"/>
-	  				<h6> This page is currently under construction. Please check back shortly for updates on my projects! In the meantime, I recommend checking out my <a href="Curtis_Toupin_Resume.pdf">resume!</a></h6>
             <h2 class="mb-4">My Projects</h2>
+            <h6> I'm in the process of adding new projects, so please check back soon for updates! In the meantime, I recommend also checking out my <a href="Curtis_Toupin_Resume.pdf">resume!</a></h6>
           </div>
+
+
+          <h6> Hover over an image to see a description of the project.</h6>
         </div>
     		<div class="row no-gutters">
     			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/blitz.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="https://github.com/curtistoupin/curtistoupin.com/blob/main/blitz.ipynb">Using Random Events to Detect Systemic Issues - The Blitz and the Poisson distribution</a></h3>
-	    					<span>Python | Jupyter Notebooks | Statistics</span>
-	    				</div>
-    				</div>
+            <a href="https://github.com/curtistoupin/curtistoupin.com/blob/main/blitz.ipynb">
+      				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/blitz.jpg);">
+      					<div class="overlay"></div>
+  	    				<div class="text text-center p-4">
+  	    					<h3 style='color:white'>Using Random Events to Detect Systemic Issues - The Blitz and the Poisson distribution</h3>
+  	    					<span>Python | Jupyter Notebooks | Statistics</span>
+  	    				</div>
+      				</div>
+            </a>
   				</div>
+          <div class="col-md-4">
+            <a href="mavis.html">
+              <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/mavis.png);">
+                <div class="overlay"></div>
+                <div class="text text-center p-4">
+                  <h3 style='color:white'>Visualizing Network Graphs with Multiple Layers</h3>
+                  <span>Python | Dash | Azure | Data Visualization | Dashboarding | Web Apps</span>
+                </div>
+              </div>
+            </a>
+          </div>
     			<div class="col-md-4">
-    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-1.jpg);">
-    					<div class="overlay"></div>
-	    				<div class="text text-center p-4">
-	    					<h3><a href="#">Deploying a Python Dash App Using the Azure App Service</a></h3>
-	    					<span>Dashboarding and Web Apps</span>
-	    				</div>
-    				</div>
+            <a href="deploy-dash-app-to-azure.html">
+      				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/azure.png);">
+      					<div class="overlay"></div>
+  	    				<div class="text text-center p-4">
+  	    					<h3 style="color: white">Deploying a Python Dash App Using the Azure App Service</h3>
+  	    					<span>Azure | Cloud Computing | Python | Dash | Web Apps</span>
+  	    				</div>
+      				</div>
+            </a>
   				</div>
-  				<div class="col-md-4">
+  				<!--<div class="col-md-4">
     				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/work-1.jpg);">
     					<div class="overlay"></div>
 	    				<div class="text text-center p-4">
@@ -82,7 +99,7 @@
 	    					<span>Data Visualization and Business Insight</span>
 	    				</div>
     				</div>
-  				</div>
+  				</div> -->
     		</div>
     	</div>
     </section>
@@ -125,7 +142,7 @@
         -->
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
-            	<h2 class="ftco-heading-2">Have a Question?</h2>
+            	<h2 class="ftco-heading-2" id='contact-me'>Have a Question?</h2>
             	<div class="block-23 mb-3">
             		<p>Drop me a line!</p>
 	              <ul>

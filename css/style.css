@@ -20,7 +20,7 @@
   --gray-dark: #343a40;
   --ct-orange: #e95f30;
   --ct-blue: #0b636f;
-  --primary: --ct-orange; /*#007bff;*/
+  --primary: var(--ct-orange); /*#007bff;*/
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -76,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;}
 
 abbr[title],
 abbr[data-original-title] {
@@ -9674,3 +9674,19 @@ textarea.form-control {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+p {
+  color: var(--gray-dark);
+}
+a.tag-cloud-link {
+  color: var(--gray-dark);
+  cursor: default;
+}
+pre {
+  background-color: #012456;
+  color:white;
+  padding-left:20px;
+}
+span.ps-command{
+  color:#ffde31;
+}

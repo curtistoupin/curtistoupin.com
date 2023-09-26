@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Curtis Toupin - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	       <ul class="navbar-nav nav ml-auto">
+	         <li class="nav-item"><a href="index.html" class="nav-link" style="font-weight: bold"><span>Home</span></a></li>
+	       </ul>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="portfolio.html" class="nav-link"><span>Portfolio</span></a></li>
+	          <li class="nav-item"><a href="blog.html" class="nav-link"><span>Blog</span></a></li>
+	          <li class="nav-item"><a href="index.html" class="nav-link"><span>Contact</span></a></li>
+		        <li class="nav-item"><p><a href="Curtis_Toupin_Resume.pdf" class="btn btn-primary py-3 px-3">Resume</a></p></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row">
+          <h2 class="mb-3">Visualizing Network Graphs with Multiple Layers</h2>
+          <div class="col-lg-8 ftco-animate" >
+            <p>This is an app I originally wrote to visualize and explore supply chains in various sectors of a market, and have since adapted for my personal use to visualize trends in various formats of strategy games. In particular, the Metagame Analysis Visualizer, affectionately dubbed MAVis for short, displays data relating to some of the most popular formats in Magic: the Gathering. Nodes in the graph represent cards being played and edges between cards denote that they have been played together in the same deck.
+            </p>
+            <p>All data displayed in MAVis has been scraped from tournament results which are publicly available on <a href='https://www.mtggoldfish.com/metagame/#paper'>MTG Goldfish</a>, however this data structure is very ubiquitous can be adapted quickly to almost any line of business which supply-chain-like data. If you want to see MAVis for yourself, click below to view it, or see the code used to produce it. Please note that to keep costs down, MAVis turns off after 30 minutes of inactivity so please allow about 30 to 60 seconds for the app to start when you open it.</p>
+            <p>
+              <div style='display:flex;justify-content:center;'>
+                <a style='margin-left:auto;margin-right:auto' href="https://mavis-mtg.azurewebsites.net" class="btn btn-primary py-3 px-3">Launch MAVis</a>
+                <a style='margin-left:auto;margin-right:auto' href="https://github.com/curtistoupin/mavis" class="btn btn-primary py-3 px-3">View the code</a>
+              </div>
+            </p>
+            <p>
+              <img src="images/mavis.png" alt="" class="img-fluid">
+            </p>
+            <p>MAVis is coded in Python and runs on the Dash framework. It is deployed on an Azure App Service using the Free tier plan to lower costs. If you'd like to see how to deploy your own Dash app to an Azure App Service, you can follow the steps outlined in <a href="deploy-dash-app-to-azure.html">my article on the subject</a>. </p>
+            <h2 class="mb-3 mt-5">Navigating MAVis</h2>
+            <p>When you launch MAVis, a network will open and begin arranging itself via a physics engine which has been tuned specifically for MAVis. Scrolling on the network will allow you to zoom in and out, while clicking and dragging on the network will allow you to move through it. Hovering over a node will highlight all the edges touching that node, and clicking on it will make those edges remain highlighted until you click elsewhere.</p>
+            <p>Looking over to the settings pane on the left, there is a number of options. First up is the Format Selection dropdown. Choosing an option here will hide all cards and edges which do not belong to the chosen format. If you want to see all cards and edges, simply choose the "All" option. </p>
+            <p>Next is the neighbourhood type selection. Choosing an option here will allow you to select a node in the graph and show only those edges and nodes which are related to your selection in a particular way. For example, if I choose "Direct Neighbours" as my neighbourhood type and click on "Lightning Bolt" in my network, only Lightning Bolt and those cards who are directly linked to it are displayed in the graph.</p>
+            <p>If you're struggling to find Lighting Bolt yourself, in the network, the search bar can help. Start typing in the name of the node you'd like to find, and all nodes that don't match will fade into the background, leaving only your search target.</p>
+            <p>When viewing data at this scale, it can be helpful to be able to identify broad categories at a glance. Choosing an option in the "Color nodes by" dropdown will group the nodes into classes based on your selection, and color each class a different color. Clicking the "Legends" button to the right of it will reveal a popup pane with a color legend for your reference.</p>
+            <p>Similarly, it can be helpful at this scale to use the size of a node to represent various properties of it. Choosing an option from the "Size nodes by" dropdown will resize the nodes to represent the value you've chosen. For example if I select the "Number of Copies" option, cards which have shown up in the top results of tournaments very frequently will be shown larger than those which show up less frequently.</p>
+            <p>Lastly, you may want to keep a copy of the data you're looking at for reference later. Clicking the "Export CSV" button at the bottom of the settings pane will download a CSV file containing information only about those nodes who are shown on screen, so that if you only want to know about cards that are played alongside Lightning Bolt in the Legacy format, that option is available.</p>
+            <h2 class="mb-3 mt-5">Insights from MAVis</h2>
+            <p>The most obvious insight to be drawn from MAVis is card synergies. Since MAVis arranges the network automatically based on the edge configuration and the physics engine, the end result will be that cards which pair well together, and therefore show up in decks together frequently, will stick more closely together than cards that don't. Moreover, cards which are strong and generic enough to be more ubiquitous will tend to be pulled toward the middle of the network as they are played with many different cards. Therefore if we were looking to, say, curate a list of banned cards, we would want to keep an eye on cards that are pulled closer to the middle of the network.</p>
+            <p>This can be seen using our previous Lightning Bolt example. In the image below to the left, we can see that a card like Lava Spike synergizes well with Lightning Bolt, and as a result they are played together often. Lava Spike is traditionally a card which is only good in a very aggressive, burn style strategy. Thus it is also often paired with cards like Goblin Guide and Boros Charm, and we can see that these cards form a small cluster together. In stark contrast to this, however, Lightning Bolt is such a strong card that it is played in multiple strategies, and thus is pulled squarely into the middle of the network, as in the image below and to the left.</p>
+            <p>
+              <div style='display:flex;justify-content:center;'>
+                <a style='margin-left:auto;margin-right:auto;width:45%' href='images/bolt-burn.jpg'><img style='width:100%' src="images/bolt-burn.jpg"/></a>
+                <a style='margin-left:auto;margin-right:auto;width:45%' href='images/bolt-center.jpg'><img style='width:100%' src="images/bolt-center.jpg"/>
+              </div>
+            </p>
+            <p>I encourage you to explore the data and think about what insights could be drawn from the data in this style. For example, swapping between older formats like Modern and newer formats like Standard, how much of the network is shared between the two? Is this indicative that the power level of newer card designs are too strong? Is this something that should be addressed?</p>
+            <p>What kinds of insights could be drawn by exploring the data your organization keeps about its own supply chain in this way? This might be something you could make use of yourself. In the meantime, thank you for reading and I hope you got something out of MAVis as well as my other projects.</p>
+            <div style='display:none' class="tag-widget post-tag-container mb-5 mt-5">
+              <div class="tagcloud">
+                <a href="#" class="tag-cloud-link">Azure</a>
+                <a href="#" class="tag-cloud-link">Cloud Computing</a>
+                <a href="#" class="tag-cloud-link">Python</a>
+                <a href="#" class="tag-cloud-link">Dash</a>
+                <a href="#" class="tag-cloud-link">Web Apps</a>
+              </div>
+            </div>
+            
+            <!-- Author box <div class="about-author d-flex p-4 bg-light">
+              <div class="bio mr-5">
+                <img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid mb-4">
+              </div>
+              <div class="desc">
+                <h3>George Washington</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!</p>
+              </div>
+            </div> -->
+
+          </div> <!-- .col-md-8 -->
+          <div class="col-lg-4 sidebar ftco-animate">
+            <div class="sidebar-box ftco-animate">
+              <h3 class="heading-sidebar">Categories</h3>
+              <div class="tagcloud">
+                <a href="#" class="tag-cloud-link">Azure</a>
+                <a href="#" class="tag-cloud-link">Cloud Computing</a>
+                <a href="#" class="tag-cloud-link">Python</a>
+                <a href="#" class="tag-cloud-link">Dash</a>
+                <a href="#" class="tag-cloud-link">Web Apps</a>
+              </div>
+            </div>
+
+            <div class="sidebar-box ftco-animate">
+              <h3 class="heading-sidebar">Related Projects</h3>
+              <div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/azure.png);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="deploy-dash-app-to-azure.html">Deploying a Python Dash App Using the Azure App Service</a></h3>
+                  <div class="meta">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section> <!-- .section -->
+
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About</h2>
+              <p>I am an experienced data scientist with a proven track record of success throughout multiple roles and domains. I have experience in information architecture, data engineering, data analytics, and quantitative modeling. Please feel free to reach out if you'd like to work together!</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                <li><a href="index.html#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                <li><a href="portfolio.html"><span class="icon-long-arrow-right mr-2"></span>Portfolio</a></li>
+                <li><a href="blog.html"><span class="icon-long-arrow-right mr-2"></span>Blog</a></li>
+                <li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- TODO CT Work on service
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Services</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
+              </ul>
+            </div>
+          </div>
+        -->
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have a Question?</h2>
+            	<div class="block-23 mb-3">
+            		<p>Drop me a line!</p>
+	              <ul>
+	                <li><a href="mailto:mail@curtistoupin.com"><span class="icon icon-envelope"></span><span class="text">mail@curtistoupin.com</span></a></li>
+	              </ul>
+	              <!-- TODO CT ADD SOCIALS 
+	              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                	<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                	<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                	<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              	</ul>
+              	-->
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
