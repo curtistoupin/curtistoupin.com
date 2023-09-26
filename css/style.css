@@ -9693,3 +9693,18 @@ span.ps-command {
 span.ps-param {
   color:#B0B0B0;
 }
+emph {
+  font-style:italic;
+}
+table.dice th,td {
+  border: 1px solid black;
+  width: 50px;
+  text-align:center;
+  color:black;
+}
+td.even-roll{
+  background-color:rgba(200, 0, 0, 0.4);
+}
+td.odd-roll{
+  background-color:rgba(0, 200, 0, 0.4);
+}

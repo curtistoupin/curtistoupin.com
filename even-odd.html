@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Curtis Toupin - MAVis</title>
+    <title>Curtis Toupin - Even or Odd</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -22,6 +22,12 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+    <script type="text/javascript"
+      src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
@@ -50,40 +56,83 @@
     <section class="ftco-section">
       <div class="container">
         <div class="row">
-          <h2 class="mb-3">Visualizing Network Graphs with Multiple Layers</h2>
+          <h2 class="mb-3">Playing even or odd is fair, no matter how many dice (with a surprise lesson on induction)</h2>
           <div class="col-lg-8 ftco-animate" >
-            <p>This is an app I originally wrote to visualize and explore supply chains in various sectors of a market, and have since adapted for my personal use to visualize trends in various formats of strategy games. In particular, the Metagame Analysis Visualizer, affectionately dubbed MAVis for short, displays data relating to some of the most popular formats in Magic: the Gathering. Nodes in the graph represent cards being played and edges between cards denote that they have been played together in the same deck.
-            </p>
-            <p>All data displayed in MAVis has been scraped from tournament results which are publicly available on <a href='https://www.mtggoldfish.com/metagame/#paper'>MTG Goldfish</a>, however this data structure is very ubiquitous can be adapted quickly to almost any line of business which supply-chain-like data. If you want to see MAVis for yourself, click below to view it, or see the code used to produce it. Please note that to keep costs down, MAVis turns off after 30 minutes of inactivity so please allow about 30 to 60 seconds for the app to start when you open it.</p>
+            <p>"Odd is favored because 7 is the most likely outcome."</p>
+            <p>"Even is favored because you can't roll a 1."</p>
+            <p>"You're trying to trick me aren't you?"</p>
+            <p>These are all things that have been said to me at the beginning of Magic: the Gathering games when I offer to roll for who goes first with two dice. For the uninitiated, in order to determine who goes first in turn based tabletop games, a pair of dice are usually rolled. The most common way, historically, has been to say whoever rolls the highest number goes first. But due to the bad feelings that players can get when they roll high but lose anyway, or the rolls come up the same and forces a re-roll, there has been a growing faction of people who prefer to have one person roll the dice, and have the other player call even or odd. If the player who called is correct, they get to play first.</p>
+            <p>Now everyone seems to agree that rolling one die is fair, but the minute a second die is added, people start to get suspicious. I've heard people who think even is more likely, or that odd is more likely, and they all have their reasons. The only thing they have in common, unfortunately, is that their fears are all unfounded. Rolling two dice is perfectly fair, and indeed rolling <emph>any</emph> number of dice is fair. And I plan to prove it.</p>
+            <p>The two dice case is especially easy to prove. We can simply count up the combinations. Let's draw a chart with the possible rolls of one die along one axis and the possible rolls along the other axis. In each place of the chart we will write the corresponding outcome of the dice roll.</p>
             <p>
               <div style='display:flex;justify-content:center;'>
-                <a style='margin-left:auto;margin-right:auto' href="https://mavis-mtg.azurewebsites.net" class="btn btn-primary py-3 px-3">Launch MAVis</a>
-                <a style='margin-left:auto;margin-right:auto' href="https://github.com/curtistoupin/mavis" class="btn btn-primary py-3 px-3">View the code</a>
+                <table class='dice'>
+              <tr>
+                <th style='border:none'></th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+              </tr>
+              <tr>
+                <th>1</th>
+                <td class='even-roll'>2</td>
+                <td class='odd-roll'>3</td>
+                <td class='even-roll'>4</td>
+                <td class='odd-roll'>5</td>
+                <td class='even-roll'>6</td>
+                <td class='odd-roll'>7</td>
+              </tr>
+              <tr>
+                <th>2</th>
+                <td class='odd-roll'>3</td>
+                <td class='even-roll'>4</td>
+                <td class='odd-roll'>5</td>
+                <td class='even-roll'>6</td>
+                <td class='odd-roll'>7</td>
+                <td class='even-roll'>8</td>
+              </tr>
+              <tr>
+                <th>3</th>
+                <td class='even-roll'>4</td>
+                <td class='odd-roll'>5</td>
+                <td class='even-roll'>6</td>
+                <td class='odd-roll'>7</td>
+                <td class='even-roll'>8</td>
+                <td class='odd-roll'>9</td>
+              </tr>
+              <tr>
+                <th>4</th>
+                <td class='odd-roll'>5</td>
+                <td class='even-roll'>6</td>
+                <td class='odd-roll'>7</td>
+                <td class='even-roll'>8</td>
+                <td class='odd-roll'>9</td>
+                <td class='even-roll'>10</td>
+              </tr>
+              <tr>
+                <th>5</th>
+                <td class='even-roll'>6</td>
+                <td class='odd-roll'>7</td>
+                <td class='even-roll'>8</td>
+                <td class='odd-roll'>9</td>
+                <td class='even-roll'>10</td>
+                <td class='odd-roll'>11</td>
+              </tr>
+              <tr>
+                <th>6</th>
+                <td class='odd-roll'>7</td>
+                <td class='even-roll'>8</td>
+                <td class='odd-roll'>9</td>
+                <td class='even-roll'>10</td>
+                <td class='odd-roll'>11</td>
+                <td class='even-roll'>12</td>
+              </tr>
+            </table>
               </div>
             </p>
-            <p>
-              <img src="images/mavis.png" alt="" class="img-fluid">
-            </p>
-            <p>MAVis is coded in Python and runs on the Dash framework. It is deployed on an Azure App Service using the Free tier plan to lower costs. If you'd like to see how to deploy your own Dash app to an Azure App Service, you can follow the steps outlined in <a href="deploy-dash-app-to-azure.html">my article on the subject</a>. </p>
-            <h2 class="mb-3 mt-5">Navigating MAVis</h2>
-            <p>When you launch MAVis, a network will open and begin arranging itself via a physics engine which has been tuned specifically for MAVis. Scrolling on the network will allow you to zoom in and out, while clicking and dragging on the network will allow you to move through it. Hovering over a node will highlight all the edges touching that node, and clicking on it will make those edges remain highlighted until you click elsewhere.</p>
-            <p>Looking over to the settings pane on the left, there is a number of options. First up is the Format Selection dropdown. Choosing an option here will hide all cards and edges which do not belong to the chosen format. If you want to see all cards and edges, simply choose the "All" option. </p>
-            <p>Next is the neighbourhood type selection. Choosing an option here will allow you to select a node in the graph and show only those edges and nodes which are related to your selection in a particular way. For example, if I choose "Direct Neighbours" as my neighbourhood type and click on "Lightning Bolt" in my network, only Lightning Bolt and those cards who are directly linked to it are displayed in the graph.</p>
-            <p>If you're struggling to find Lighting Bolt yourself, in the network, the search bar can help. Start typing in the name of the node you'd like to find, and all nodes that don't match will fade into the background, leaving only your search target.</p>
-            <p>When viewing data at this scale, it can be helpful to be able to identify broad categories at a glance. Choosing an option in the "Color nodes by" dropdown will group the nodes into classes based on your selection, and color each class a different color. Clicking the "Legends" button to the right of it will reveal a popup pane with a color legend for your reference.</p>
-            <p>Similarly, it can be helpful at this scale to use the size of a node to represent various properties of it. Choosing an option from the "Size nodes by" dropdown will resize the nodes to represent the value you've chosen. For example if I select the "Number of Copies" option, cards which have shown up in the top results of tournaments very frequently will be shown larger than those which show up less frequently.</p>
-            <p>Lastly, you may want to keep a copy of the data you're looking at for reference later. Clicking the "Export CSV" button at the bottom of the settings pane will download a CSV file containing information only about those nodes who are shown on screen, so that if you only want to know about cards that are played alongside Lightning Bolt in the Legacy format, that option is available.</p>
-            <h2 class="mb-3 mt-5">Insights from MAVis</h2>
-            <p>The most obvious insight to be drawn from MAVis is card synergies. Since MAVis arranges the network automatically based on the edge configuration and the physics engine, the end result will be that cards which pair well together, and therefore show up in decks together frequently, will stick more closely together than cards that don't. Moreover, cards which are strong and generic enough to be more ubiquitous will tend to be pulled toward the middle of the network as they are played with many different cards. Therefore if we were looking to, say, curate a list of banned cards, we would want to keep an eye on cards that are pulled closer to the middle of the network.</p>
-            <p>This can be seen using our previous Lightning Bolt example. In the image below to the left, we can see that a card like Lava Spike synergizes well with Lightning Bolt, and as a result they are played together often. Lava Spike is traditionally a card which is only good in a very aggressive, burn style strategy. Thus it is also often paired with cards like Goblin Guide and Boros Charm, and we can see that these cards form a small cluster together. In stark contrast to this, however, Lightning Bolt is such a strong card that it is played in multiple strategies, and thus is pulled squarely into the middle of the network, as in the image below and to the left.</p>
-            <p>
-              <div style='display:flex;justify-content:center;'>
-                <a style='margin-left:auto;margin-right:auto;width:45%' href='images/bolt-burn.JPG'><img style='width:100%' src="images/bolt-burn.JPG"/></a>
-                <a style='margin-left:auto;margin-right:auto;width:45%' href='images/bolt-center.JPG'><img style='width:100%' src="images/bolt-center.JPG"/>
-              </div>
-            </p>
-            <p>I encourage you to explore the data and think about what insights could be drawn from the data in this style. For example, swapping between older formats like Modern and newer formats like Standard, how much of the network is shared between the two? Is this indicative that the power level of newer card designs are too strong? Is this something that should be addressed?</p>
-            <p>What kinds of insights could be drawn by exploring the data your organization keeps about its own supply chain in this way? This might be something you could make use of yourself. In the meantime, thank you for reading and I hope you got something out of MAVis as well as my other projects.</p>
             <div style='display:none' class="tag-widget post-tag-container mb-5 mt-5">
               <div class="tagcloud">
                 <a href="#" class="tag-cloud-link">Azure</a>
@@ -93,6 +142,16 @@
                 <a href="#" class="tag-cloud-link">Web Apps</a>
               </div>
             </div>
+
+            <p>When it's laid out like this it's fairly obvious that even and odd outcomes have the same probability. You can just count the number of squares with even vs odd outcomes to figure it out (there's 18 of each, I promise).</p>
+            <p>But there's an even simpler way to prove it for two dice. Think about the situations that lead to the total of two dice being even vs odd. The only way to roll an even total is for both dice to land on an odd number, or both dice to land on an even number. The actual numbers don't matter, just that their parity is the same. However, as I said earlier, everyone agrees that for a single die, landing on even vs odd is 50/50. So to roll two even numbers is two 50/50 events happening at the same time. The chance of that is exactly $0.5\times 0.5 = 0.25$. For the exact same reason, the chance of rolling double odds is also $0.25$. Therefore the odds of rolling an even total has to be $0.25+0.25 = 0.5$. Cool! Much easier than counting all those squares, right?</p>
+            <p>But now what do we do when there's three dice being rolled? The number of combinations starts to get out of hand pretty fast as the number of dice grow. Don't worry. There's a simpler way to handle all that.</p>
+            <p>Instead of thinking of them as three dice, let's think of them as one pair of dice and one lone die. Then rolling all three is the same as rolling the two groups separately and adding the two results up. Now, the only way we can get an even result from the three dice is if we get an odd result from the pair at the same time as an odd result from the singleton, or else an even result from both the pair and the singleton.</p>
+            <p>We know the result of rolling an odd number from the singleton is $0.5$. But wait a second $-$ we also just showed that rolling a pair of dice for even vs odd was also fair! That means that the result of rolling an odd number from the pair is also $0.5$! For the exact same reasons, the odds of rolling an even number from the singleton and the pair are also $0.5$, respectively. This means that again the probability of rolling an even result from three dice is $0.5\times 0.5 + 0.5\times 0.5 = 0.25 + 0.25 = 0.5.$ Do you see the pattern forming?</p>
+            <p>We can do this again and again as many times as we want, and we will always get the same outcome. What we have accidentally discovered here is something called the <a href='https://en.wikipedia.org/wiki/Mathematical_induction'>principle of mathematical induction</a>. This is an extremely powerful tool we use in math to prove things about an infinite number of situations in one go.</p>
+            <p>Think of it like dominoes. We set them up in such a way that if one falls down, they all do. This is a lot like what we did when we were discovering the pattern of adding one die at a time to show that the end result was still a fair roll. We take some number, $n$, of dice, and we add one. We then say "Well, if $n$ dice are fair, then $n+1$ dice must also be fair!" because of the arguments we outlined above. But then since $n+1$ dice is fair, it must also be the case that $n+2$ dice is fair, and $n+3$ dice, and on and on.</p>
+            <p>All it takes now is for someone to knock over the first domino. After all, even if they're all lined up like that, if the first one in the row doesn't fall, then we haven't really achieved anything. This is called the <emph>base case</emph> of the induction. We need to find some $n$ where we all agree that $n$ dice is fair, no question, independent of the other numbers. But we already have such a number! We all agreed from the jump that a single die was perfectly fair, no ifs, ands, or buts. This knocks down the first domino, which means that the second will fall over, so 2 dice must be fair, and the next, so that 3 dice must be fair, and so on ad infinitum. The end result of this, of course, is that you can roll any number of dice you want, and the roll will be perfectly, 100%, fair.</p>
+            <p>Hopefully someone googling for a way to explain to their friends at the game table that this method is totally fair found this useful, education, and entertaining. And if your friends still don't believe you, just tell them that they can pick the side they believe is favoured!</p>
             
             <!-- Author box <div class="about-author d-flex p-4 bg-light">
               <div class="bio mr-5">
@@ -107,27 +166,19 @@
           </div> <!-- .col-md-8 -->
           <div class="col-lg-4 sidebar ftco-animate">
             <div class="sidebar-box ftco-animate">
-              <h3 class="heading-sidebar">Categories</h3>
-              <div class="tagcloud">
-                <a href="#" class="tag-cloud-link" disabled>Python</a>
-                <a href="#" class="tag-cloud-link" disabled>Dash</a>
-                <a href="#" class="tag-cloud-link" disabled>Azure</a>
-                <a href="#" class="tag-cloud-link" disabled>Data Visualization</a>
-                <a href="#" class="tag-cloud-link" disabled>Dashboarding</a>
-                <a href="#" class="tag-cloud-link" disabled>Web Apps</a>
-              </div>
+              <img style="width:100%" src='images/dicerollpair.jpg'/>
             </div>
 
             <div class="sidebar-box ftco-animate">
-              <h3 class="heading-sidebar">Related Projects</h3>
-              <div class="block-21 mb-4 d-flex">
+              <h3 class="heading-sidebar">Recent Blog Posts</h3>
+              <!--<div class="block-21 mb-4 d-flex">
                 <a class="blog-img mr-4" style="background-image: url(images/azure.png);"></a>
                 <div class="text">
                   <h3 class="heading"><a href="deploy-dash-app-to-azure.html">Deploying a Python Dash App Using the Azure App Service</a></h3>
                   <div class="meta">
                   </div>
                 </div>
-              </div>
+              </div>-->
             </div>
 
           </div>
