@@ -9715,6 +9715,9 @@ li.card-list-item {
   color: black;
   padding: 3px;
   border: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 li.white {
