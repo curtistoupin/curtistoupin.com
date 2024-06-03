@@ -1,0 +1,6206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spoiler set="">
+  <card>
+    <name>Clone Ball</name>
+    <cost>3</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>You may choose not to untap Clone Ball during your untap step.
+2, T: Create a token that’s a copy of target creature, except it’s black in addition to its other colors. Put a +1/+1 counter on it. When Clone Ball becomes untapped, sacrifice that creature.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>1/1</number>
+  </card>
+  <card>
+    <name>Dragonite</name>
+    <cost>11</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Dragon Flying </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Protection from all colors
+Flying, trample
+Whenever Dragonite enters the battlefield or attacks, destroy target permanent that’s one or more colors.                      </rules>
+    <flavor></flavor>
+    <stats>
+      <power>10</power>
+      <toughness>10</toughness>
+    </stats>
+    <illustrator>WolfHooligans</illustrator>
+    <number>1/343</number>
+  </card>
+  <card>
+    <name>Jasmine, Iron-Clad</name>
+    <cost>8</cost>
+    <type>
+      <supertype>Legendary Planeswalker</supertype>
+      <subtype>Jasmine </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Destroy target nonland permanent.
+Search your library for an artifact card with converted mana cost X or less and put it onto the battlefield. Then shuffle your library.
+Destroy all lands target player controls.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>akkijin</illustrator>
+    <number>2/343</number>
+  </card>
+  <card>
+    <name>Lance, Dragon Master</name>
+    <cost>8</cost>
+    <type>
+      <supertype>Legendary Planeswalker</supertype>
+      <subtype>Lance </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Freeze up to two target permanents.
+Lance, Dragon Master deals 3 damage to any target.
+Destroy all nonland permanents you don’t control. You skip your next untap step.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>3/343</number>
+  </card>
+  <card>
+    <name>Lugia, Guardian of the Sea</name>
+    <cost>10</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Psychic Flying </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Lugia costs 1 less to cast for each basic land type among lands you control.
+Flying, shroud, trample
+Whenever Lugia deals combat damage to an opponent, look at the top X cards of your library where X is the amount of damage dealt. Exile one of those cards face-down, then put the rest on the bottom of your library in any order. If the exiled card has mana value X or less, you may cast it without paying its mana cost. If you don’t cast that card this way, put it into your hand.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>8</power>
+      <toughness>8</toughness>
+    </stats>
+    <illustrator>Dragolisco</illustrator>
+    <number>4/343</number>
+  </card>
+  <card>
+    <name>Aipom</name>
+    <cost>WW</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Normal </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>When Aipom enters the battlefield, you may exile target artifact or enchantment until Aipom leaves the battlefield. You may cast that card for as long as it remains exiled.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>5/343</number>
+  </card>
+  <card>
+    <name>Ampharos</name>
+    <cost>2W</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Electric </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Opponents cant cast spells during your turn.
+While choosing targets of a spell, activated ability, or triggered ability, your opponents must choose Ampharos if able.
+Whenever Ampharos becomes the target of a spell or ability, draw a card.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>NikitaBolyakov, Jamaal Raoof</illustrator>
+    <number>6/343</number>
+  </card>
+  <card>
+    <name>Chansey</name>
+    <cost>2W</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Normal </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Flash, lifelink
+When Chansey enters the battlefield, exile target permanent you control, then return it to the battlefield under its owner’s control.
+Whenever a creature enters the battlefield under your control, you gain 1 life.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>7/343</number>
+  </card>
+  <card>
+    <name>Clefairy</name>
+    <cost>1W</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Normal </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>When Clefairy enters the battlefield search your library for an artifact card, reveal it, then shuffle and put that card on top of your library.
+2/B: Transform Clefairy. Use only mana produced by artifacts to   activate this ability.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>8/343</number>
+  </card>
+  <card>
+    <name>Dance of the Kimono Girls</name>
+    <cost>W</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Search your library for a historic card, reveal it, put it into your hand, then shuffle. (Artifacts, legendaries, and Sagas are historic.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>9/343</number>
+  </card>
+  <card>
+    <name>Detective Pikachu</name>
+    <cost>1W</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Electric </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>First strike
+Whenever a creature leaves the battlefield, investigate.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Detective Pikachu Trailer 2</illustrator>
+    <number>10/343</number>
+  </card>
+  <card>
+    <name>Double Slap</name>
+    <cost>W</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Tap target permanent.
+Draw a card.
+Same type attack boost — If you control a creature that shares a color with this spell, copy it. You may choose new targets for the copy.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>mcgmark</illustrator>
+    <number>11/343</number>
+  </card>
+  <card>
+    <name>Espeon</name>
+    <cost>2W</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Psychic Eeveelution </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>If it is neither day nor night as Espeon enters the battlefield, it becomes day.
+Whenever it becomes day, draw a card.
+As long as it’s night, white spells you cast cost 1 less to cast.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>12/343</number>
+  </card>
+  <card>
+    <name>Farfetch’d</name>
+    <cost>1W</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Normal Flying </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Flying
+If an effect would add two or more mana to a player’s mana pool, it adds C to that player’s mana pool instead.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>13/343</number>
+  </card>
+  <card>
+    <name>Furret</name>
+    <cost>1W</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Normal </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>When Furret enters the battlefield, you may search your library for an aura or equipment card, reveal it, put it into your hand, then shuffle.
+Whenever an equipment enters the battlefield under your control, you may attach it to Furret.
+Unattach an equipment from Furret: Furret gains hexproof until end of turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Johan Brits</illustrator>
+    <number>14/343</number>
+  </card>
+  <card>
+    <name>Got Away Safely</name>
+    <cost>W</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Exile target attacking, blocking, or tapped creature.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Archir</illustrator>
+    <number>15/343</number>
+  </card>
+  <card>
+    <name>Hyper Beam</name>
+    <cost>2WW</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Destroy all creatures. 
+They can’t be regenerated.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>jeffrey chen</illustrator>
+    <number>16/343</number>
+  </card>
+  <card>
+    <name>Isolation</name>
+    <cost>2W</cost>
+    <type>
+      <supertype>Enchantment</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Exile target nonland permanent until Isolation leaves the battlefield.
+Morbid — If a creature died this turn, exile that permanent instead.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>potaterto on twitter</illustrator>
+    <number>17/343</number>
+  </card>
+  <card>
+    <name>Jigglypuff</name>
+    <cost>W</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Normal </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T: Tap target creature. It gains indestructible until end of turn.
+2/B: Transform Jigglypuff. Spend only mana produced by artifacts to activate this ability.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Detective Pikachu</illustrator>
+    <number>18/343</number>
+  </card>
+  <card>
+    <name>Lickitung</name>
+    <cost>1W</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Normal </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Players can’t draw more than one card each turn.
+Noncreature spells cost 1 more to cast.   </rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Detective Pikachu</illustrator>
+    <number>19/343</number>
+  </card>
+  <card>
+    <name>Lingering Souls</name>
+    <cost>2W</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Create two white 1/1 Spirit creature tokens with flying.
+Flashback 1B (You may cast this card from your graveyard for its flashback cost. Then exile it.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>KirscheTea</illustrator>
+    <number>20/343</number>
+  </card>
+  <card>
+    <name>Moonlight Masquerade</name>
+    <cost>2/W2/W2/W</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Create three 1/1 Faerie creature tokens with lifelink. If it’s your turn, draw a card.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Megan Langan</illustrator>
+    <number>21/343</number>
+  </card>
+  <card>
+    <name>Nurse Joy</name>
+    <cost>2WW</cost>
+    <type>
+      <supertype>Planeswalker</supertype>
+      <subtype>Joy </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Flash                                                                         As long as Nurse Joy entered the battlefield this turn, you may activate her loyalty abilities any time you could cast an instant.
+You gain 2 life. Then if you have more life than an opponent, draw a card.
+Exile target creature, then return it to the battlefield under its owner’s control. You gain 1 life.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>creamyws</illustrator>
+    <number>22/343</number>
+  </card>
+  <card>
+    <name>Peek At ’Chu</name>
+    <cost>W</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Target player reveals their hand. Exile a nonland card from it. For as long as that card remains exiled, its owner may play it. A spell cast this way costs 2 more to cast.
+Draw a card.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>otsumami</illustrator>
+    <number>23/343</number>
+  </card>
+  <card>
+    <name>Pidgeot</name>
+    <cost>2W</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Normal Flying </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Flying
+Battle cry (Whenever this creature attacks, each other attacking creature gets +1/+0 until end of turn.)
+Whenever one or more creatures you control attack, create a 1/1 white Bird creature token with flying that’s tapped and attacking.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Detective Pikachu</illustrator>
+    <number>24/343</number>
+  </card>
+  <card>
+    <name>Pidgey</name>
+    <cost>W</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Normal Flying </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Flying
+Battle cry
+When Pidgey deals combat damage to a player or planeswalker, transform it.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Tygarii-Razil</illustrator>
+    <number>25/343</number>
+  </card>
+  <card>
+    <name>Raikou, the Thunder</name>
+    <cost>2WW</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Electric Beast </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Flash, first strike
+When Raikou enters the battlefield, you may destroy target tapped permanent.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>dekunobou-kizakura</illustrator>
+    <number>26/343</number>
+  </card>
+  <card>
+    <name>Roar</name>
+    <cost>W</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Exile target creature. Its controller may put a land card from their hand onto the battlefield.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>27/343</number>
+  </card>
+  <card>
+    <name>Sentret</name>
+    <cost>W</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Normal </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Vigilance
+Whenever Sentret attacks roll a d20. Create an equipment artifact token named Held Item with equip 1 and the corresponding ability. Equip it to Sentret.
+1-10:  “Equipped creature gets +1/+1.”
+11-15: “Sacrifice this artifact: Regenerate equipped creature.”
+16-20: “Sacrifice this artifact: Transform equipped creature.”</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>CaptainHanyuu</illustrator>
+    <number>28/343</number>
+  </card>
+  <card>
+    <name>Thunder</name>
+    <cost>2WW</cost>
+    <type>
+      <supertype>Tribal Sorcery</supertype>
+      <subtype>Electric </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Destroy all creatures.
+Put a paralyze counter on each creature. (A paralyzed creature can’t attack, block, or activate abilities.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>dreamTech</illustrator>
+    <number>29/343</number>
+  </card>
+  <card>
+    <name>Thunder Wave</name>
+    <cost>1W</cost>
+    <type>
+      <supertype>Enchantment</supertype>
+      <subtype>Aura </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Enchant creature or planeswalker
+Enchanted permanent is paralyzed. (A paralyzed permanent can’t attack or block, and its activated abilities can’t be activated.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>30/343</number>
+  </card>
+  <card>
+    <name>Togepi</name>
+    <cost>W</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Normal Baby </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Whenever Togepi and at least 2 other creatures attack, transform Togepi.
+1W: Togepi gains all abilities of target creature until your next end step.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>N/A</illustrator>
+    <number>31/343</number>
+  </card>
+  <card>
+    <name>Unown</name>
+    <cost>1W</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Psychic </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Whenever you cast a historic spell, create a token that’s a copy of Unown.  (Artifacts, legendaries, and Sagas are historic.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>otsumami</illustrator>
+    <number>32/343</number>
+  </card>
+  <card>
+    <name>Whirlwind</name>
+    <cost>W</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Shuffle target creature into its owner’s library.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Rufinator</illustrator>
+    <number>33/343</number>
+  </card>
+  <card>
+    <name>Wing Attack</name>
+    <cost>XWW</cost>
+    <type>
+      <supertype>Tribal Instant</supertype>
+      <subtype>Flying </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Create X 1/1 white Bird creature tokens with flying, then tap any number of untapped creatures you control. Shuffle target nonland permanent into its owner’s library if its converted mana cost is equal to the number of creatures you tapped.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Ruth-Tay</illustrator>
+    <number>34/343</number>
+  </card>
+  <card>
+    <name>Abra</name>
+    <cost>U</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Psychic </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T: Exile Abra. At the beginning of your next end step, return it to the battlefield under any player’s control.
+When Abra enters the battlefield, draw a card, then discard a card. If you don’t own Abra, transform it. Return it to its owner’s control at the beginning of the next end step.               </rules>
+    <flavor></flavor>
+    <stats>
+      <power>0</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>35/343</number>
+  </card>
+  <card>
+    <name>Blizzard</name>
+    <cost>2UU</cost>
+    <type>
+      <supertype>Tribal Sorcery</supertype>
+      <subtype>Ice </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Freeze all nonland permanents target player controls. (Tap them. They don’t untap during their controller’s next untap step.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>dreamTech</illustrator>
+    <number>36/343</number>
+  </card>
+  <card>
+    <name>Break Free</name>
+    <cost>U</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Counter target creature spell unless its controller pays 2.</rules>
+    <flavor>It appeared to be caught!</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Silézio Batista de Freitas</illustrator>
+    <number>37/343</number>
+  </card>
+  <card>
+    <name>Bubble</name>
+    <cost>1U</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Counter target spell unless its controller pays 2. 
+Same type attack boost — If you control a creature which shares a color with Bubble, counter that spell unless its controller pays 4 instead.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Kai Kiat</illustrator>
+    <number>38/343</number>
+  </card>
+  <card>
+    <name>Buried Secrets</name>
+    <cost>2U</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Draw three cards, then discard two cards unless you discard a historic card. (Artifacts, legendaries, and Sagas are historic.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>kelvin_trainerk</illustrator>
+    <number>39/343</number>
+  </card>
+  <card>
+    <name>Calm Mind</name>
+    <cost>2U</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Draw three cards.
+Until your next turn, you can’t cast spells.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>40/343</number>
+  </card>
+  <card>
+    <name>Check Under the Truck</name>
+    <cost>1U</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype>Glitch </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Search your library for a noncreature card, reveal it, and put it into your hand. Then shuffle your library.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>N/A</illustrator>
+    <number>41/343</number>
+  </card>
+  <card>
+    <name>Consult the Helix</name>
+    <cost>UU</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Put target spell into its owner’s library, sixth from the top.</rules>
+    <flavor>“This isn’t the time to use that!”
+— Oak</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>42/343</number>
+  </card>
+  <card>
+    <name>Encounter on the Bridge</name>
+    <cost>2U</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype>Glitch </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Splice onto Glitch—2G
+Each player may put a permanent card from their hand onto the battlefield. If this spell was spliced, instead you may put a permanent card from your hand onto the battlefield.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>N/A</illustrator>
+    <number>43/343</number>
+  </card>
+  <card>
+    <name>Foresight</name>
+    <cost>1UU</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Gameshark 0  (You may choose to cast this spell for its gameshark cost.)
+Counter target spell. If Foresight’s gameshark cost was paid, exile that spell with a time counter on it instead. If it doesn’t have suspend, it gains suspend.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>44/343</number>
+  </card>
+  <card>
+    <name>Gone Fishing</name>
+    <cost>U</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype>Glitch </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Until end of turn, artifacts you control gain “T: Add U.”</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>N/A</illustrator>
+    <number>45/343</number>
+  </card>
+  <card>
+    <name>Hydro Pump</name>
+    <cost>4UU</cost>
+    <type>
+      <supertype>Tribal Sorcery</supertype>
+      <subtype>Water </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Return all tapped permanents to their owners’ hands.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>46/343</number>
+  </card>
+  <card>
+    <name>Hypno</name>
+    <cost>2U</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Psychic </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>When Hypno enters the battlefield, target permanent phases out.
+Permanents can’t phase in.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>47/343</number>
+  </card>
+  <card>
+    <name>Hypnosis</name>
+    <cost>1UU</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Tap all permanents target player controls.
+Same type attack boost — If you control a creature that shares a color with this spell, that player skips their next untap step.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Grozyll</illustrator>
+    <number>48/343</number>
+  </card>
+  <card>
+    <name>Krabby</name>
+    <cost>2U</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Water </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>When Krabby enters the battlefield, exile target artifact, instant, or sorcery card from a graveyard. For as long as that card remains exiled, you may cast that card.
+Whenever you cast a card exiled    with Krabby, transform it.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>49/343</number>
+  </card>
+  <card>
+    <name>Lapras</name>
+    <cost>4UU</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Water Ice Mount </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Islandwalk
+Whenever Lapras becomes saddled, target land becomes an island until your next turn.
+Whenever a creature you control deals combat damage to a player or planeswalker while Lapras is saddled, draw a card.
+Saddle 1</rules>
+    <flavor></flavor>
+    <stats>
+      <power>5</power>
+      <toughness>6</toughness>
+    </stats>
+    <illustrator>dekunobou-kizakura</illustrator>
+    <number>50/343</number>
+  </card>
+  <card>
+    <name>Light Screen</name>
+    <cost>U</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Scry 1, draw a card, then scry 1.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>TheNiftyFox</illustrator>
+    <number>51/343</number>
+  </card>
+  <card>
+    <name>Lost in Time</name>
+    <cost>U</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Exile target creature and put four time counters on it. If it doesn’t have suspend, it gains suspend.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>otsumami</illustrator>
+    <number>52/343</number>
+  </card>
+  <card>
+    <name>Match Wits</name>
+    <cost>U</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Each player reveals a card from their hand. If each card revealed this way shares a card type, draw a card.
+Draw a card.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>purplekecleon</illustrator>
+    <number>53/343</number>
+  </card>
+  <card>
+    <name>Meditate</name>
+    <cost></cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Suspend 4—U
+Tap an untapped creature you control: Remove a time counter from Meditate.
+Target player draws 3 cards.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>54/343</number>
+  </card>
+  <card>
+    <name>Mew</name>
+    <cost>1U</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Psychic </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Hexproof, flying
+1U, T: Draw a card, then exile a card from your hand. If you exiled a creature card this way, you may have Mew become a copy of that creature, except it has this ability.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>BlondynkiTezGraja, Fhoenox</illustrator>
+    <number>55/343</number>
+  </card>
+  <card>
+    <name>Misty, Waterspeaker</name>
+    <cost>1UU</cost>
+    <type>
+      <supertype>Legendary Planeswalker</supertype>
+      <subtype>Misty </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Tap target creature or artifact at the beginning of the next upkeep.
+Target creature’s owner puts it on the top of bottom of their library.
+Return each nonland permanent you don’t control to its owner’s hand. </rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>kvilledrew</illustrator>
+    <number>56/343</number>
+  </card>
+  <card>
+    <name>Moon Dance</name>
+    <cost>2U</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Escalate—Tap an untapped creature you control
+Choose one or more:
+• Search your library for an artifact card, reveal it, then shuffle and put it on top of your library.
+• Draw a card.
+• You may put an artifact card from your hand onto the battlefield.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>doki rosi</illustrator>
+    <number>57/343</number>
+  </card>
+  <card>
+    <name>Mr. Mime</name>
+    <cost>2U</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Psychic </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>At the beginning of each upkeep, if you control no Substitutes, create a blue 0/1 Substitute artifact creature token with “While choosing targets of a spell, activated ability, or triggered ability, your opponents must choose this creature if able.”
+Whenever Mr. Mime deals combat damage to a player, draw a card.
+As long as you control a Substitute, Mr. Mime can’t be blocked.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Josh Dunlop</illustrator>
+    <number>58/343</number>
+  </card>
+  <card>
+    <name>Nope</name>
+    <cost>UU</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Counter target spell.</rules>
+    <flavor>There’s only trash here.</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknoown</illustrator>
+    <number>59/343</number>
+  </card>
+  <card>
+    <name>Ponder</name>
+    <cost>U</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Look at the top three cards of your library, then put them back in any order. You may shuffle your library.
+Draw a card.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Ramón Cansino</illustrator>
+    <number>60/343</number>
+  </card>
+  <card>
+    <name>Praise Helix</name>
+    <cost>2U</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Reveal the top 4 cards of your library. An opponent separates them into two piles. You put one pile into your hand and the other into your graveyard. Shuffle Praise Helix into your library.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>ThroughSpaceAndTime</illustrator>
+    <number>61/343</number>
+  </card>
+  <card>
+    <name>Professor Oak</name>
+    <cost>UU</cost>
+    <type>
+      <supertype>Legendary Planeswalker</supertype>
+      <subtype>Oak </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Whenever you draw your second card each turn, put a loyalty counter on Professor Oak.
+Draw a card, then discard a card unless there are four or more creature types among creatures in your graveyard.           
+Shuffle your hand and graveyard into your library, then draw seven cards.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>62/343</number>
+  </card>
+  <card>
+    <name>Recover</name>
+    <cost>U</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Scry 1.
+When Recover is put into your graveyard from anywhere, draw a card.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>onlySFW</illustrator>
+    <number>63/343</number>
+  </card>
+  <card>
+    <name>Reflect</name>
+    <cost>U</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Look at the top three cards of your library. Put one of them into your hand, one on top of your library, and one into your graveyard.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Eve栗子湯</illustrator>
+    <number>64/343</number>
+  </card>
+  <card>
+    <name>Slowking</name>
+    <cost>4UU</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Water Psychic </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>You may pay 3U and tap an untapped artifact you control rather than pay Slowking’s mana cost.
+When Slowking enters the battlefield, you become the monarch.
+Put a -1/-1 counter on Slowking: Slowking can’t be blocked this turn.
+U, Put a -1/-1 counter on Slowking: Counter target spell that targets you or a permanent you control.
+At the beginning of your end step, scry 2.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>5</power>
+      <toughness>5</toughness>
+    </stats>
+    <illustrator>SanjulSajeev</illustrator>
+    <number>65/343</number>
+  </card>
+  <card>
+    <name>Slowpoke</name>
+    <cost>1U</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Water Psychic </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>T: Draw a card, then discard a card. If a creature card is discarded this way, transform Slowpoke and remove it from combat.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>0</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Jaime Jr. Quiano</illustrator>
+    <number>66/343</number>
+  </card>
+  <card>
+    <name>Staryu</name>
+    <cost>1U</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Water </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>T: Draw a card, then discard a card.
+2/U: Transform Staryu. Spend only mana produced by artifacts to activate this ability.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>67/343</number>
+  </card>
+  <card>
+    <name>Suicune, the Aurora</name>
+    <cost>2UU</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Water Beast </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Flash, ward 4
+When Suicune enters the battlefield, return target spell or permanent to its owner’s hand. Its controller can’t cast spells with the same name for as long as you control Suicune.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>dekunobou-kizakura</illustrator>
+    <number>68/343</number>
+  </card>
+  <card>
+    <name>Super Rod</name>
+    <cost>3UU</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype>Equipment </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>When Super Rod enters the battlefield, search target opponent’s library for a creature card, put that card onto the battlefield, and attach Super Rod to it. That player shuffles.
+When Super Rod becomes unattached from equipped creature, that creature into its owner’s library.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>N/A</illustrator>
+    <number>69/343</number>
+  </card>
+  <card>
+    <name>Teleport</name>
+    <cost>1U</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Entwine 1
+Choose one or more —
+• Put target creature or planeswalker on top of its owner’s library.
+• Fateseal 1 (To fateseal 1, look at the top card of an opponent’s library, then you may put it on the bottom of that player’s library.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Hozure</illustrator>
+    <number>70/343</number>
+  </card>
+  <card>
+    <name>Teleport Away</name>
+    <cost>U</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype>-Glitch </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Return target permanent you control and target permanent you don’t control to their owners’ hands.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>N/A</illustrator>
+    <number>71/343</number>
+  </card>
+  <card>
+    <name>Tentacool</name>
+    <cost>1U</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Water Poison </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Retrace (You may cast this card from your graveyard by discarding a land card in addition to paying its other costs.)
+When Tentacool enters the battlefield, if it wasn’t cast from your hand, transform it.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>cry-ky</illustrator>
+    <number>72/343</number>
+  </card>
+  <card>
+    <name>Transform</name>
+    <cost>1U</cost>
+    <type>
+      <supertype>Enchantment</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Enchant creature
+As Transform enters the battlefield, choose one—
+• Choose a creature on the battlefield. Enchanted creature is a copy of that creature.
+• Exile a creature card from your hand. Enchanted creature is a copy of the exiled creature.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>super_citron</illustrator>
+    <number>73/343</number>
+  </card>
+  <card>
+    <name>A Wild '̷̧̘͎̹̹̠̹̥̥̭̣̻̖̓̅͑̍̀͑͊̓̾M̸̫̪͔͒̀͑̊͗̆̔̏̋̄͝ ̶̢̜͖̹̄̑̾̾̀́͋͒͑̓͑̈́͌͘̚(̸̧̦͖͓͔̥̩͇͕͔͐̂̈́͌͛́͗̉̊̈̊̃͒0̸̛̛͍̭͖̬̼͑̀̋̄̈̈́̉̈͗̕͝͝0̵̡͇͔͍͖͍̙̗̙́̈̄̊̐̀̐͐̈́̆̈͑̚͠ͅ)̵̳̊̌̅̊̕  Appeared</name>
+    <cost></cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype>Glitch </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Splice onto Glitch—2UU
+Create your choice of a Master Ball artifact token with “Sacrifice this artifact: Gain control of target creature.”, a Rare Candy artifact token with “Sacrifice this artifact: Distribute five +1/+1 counters among any number of target creatures.”,  a Full Restore artifact token with “Sacrifice this artifact: Gain 5 life”, and a Max Revive artifact token with “Sacrifice this artifact: Return target creature card from your graveyard to the battlefield.” 
+If this spell isn’t a copy, copy this spell for each other Glitch spell you’ve cast this turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>74/343</number>
+  </card>
+  <card>
+    <name>Wild Missingno Was Caught</name>
+    <cost>2U</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype>Glitch </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Each player shuffles their hand and graveyard into their library, then draws seven cards. Exile Wild Missingno Was Caught.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>75/343</number>
+  </card>
+  <card>
+    <name>Wrap</name>
+    <cost>U</cost>
+    <type>
+      <supertype>Enchantment</supertype>
+      <subtype>Aura </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Enchant creature or artifact
+Enchanted permanent loses all abilities and doesn’t untap during its controller’s untap step.
+Same type attack boost — When Wrap enters the battlefield, if you control a creature that shares a color with Wrap, tap enchanted permanent.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>CG.Draug</illustrator>
+    <number>76/343</number>
+  </card>
+  <card>
+    <name>Xatu</name>
+    <cost>2U</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Psychic Flying </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Flash, flying
+When Xatu enters the battlefield, you may cast target instant or sorcery card with converted mana cost two or less from your graveyard without paying its mana cost. If that card would be put into your graveyard this turn, exile it instead.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Abraham Hernández</illustrator>
+    <number>77/343</number>
+  </card>
+  <card>
+    <name>Confuse Ray</name>
+    <cost>B</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Target player reveals his or her hand. You choose a nonland card from it. That player discards that card. You lose 2 life.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>78/343</number>
+  </card>
+  <card>
+    <name>The Creation of Mewtwo</name>
+    <cost>2B</cost>
+    <type>
+      <supertype>Enchantment</supertype>
+      <subtype>Saga </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Search your library for a creature card, put that card into your graveyard, then shuffle.     
+Exile a creature card from your graveyard. You draw a card and lose 2 life.
+Create a token that’s a copy of a creature card exiled with The Creation of Mewtwo      </rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>79/343</number>
+  </card>
+  <card>
+    <name>Damnation</name>
+    <cost>2BB</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Destroy all creatures.
+They can’t be regenerated.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>80/343</number>
+  </card>
+  <card>
+    <name>Dream Eater</name>
+    <cost>B</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Target player reveals their hand. You choose a noncreature, nonland card from it. That player discards that card.
+Same type attack boost — If you control a creature that shares a color with this spell, you gain 2 life.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Ka1ty0</illustrator>
+    <number>81/343</number>
+  </card>
+  <card>
+    <name>Drowzee</name>
+    <cost>1B</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Psychic </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>When Drowzee enters the battlefield, target opponent reveals their hand. Exile a nonland, noncreature card from it until Drowzee leaves the battlefield.
+At the beginning of your upkeep, if no player cast a spell last turn, transform Drowzee.                                                  </rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>82/343</number>
+  </card>
+  <card>
+    <name>Fearow</name>
+    <cost>2B</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Flying Normal </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Flying
+When Fearow enters the battlefield, pay X life. When you do, target creature gets -X/-X until end of turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Xannador</illustrator>
+    <number>83/343</number>
+  </card>
+  <card>
+    <name>Feb 6 - Mew Gave Birth</name>
+    <cost>B</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Exile target creature card from a graveyard. Create a token that’s a copy of the exiled card, except it’s black in addition to its other colors and an artifact in addition to its other types. You lose life equal to its converted mana cost.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Olly Lawson</illustrator>
+    <number>84/343</number>
+  </card>
+  <card>
+    <name>Glare</name>
+    <cost>BB</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>You lose 1 life. Then, target player discards X cards at random where X is the amount of life you’ve lost this turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>85/343</number>
+  </card>
+  <card>
+    <name>Golbat</name>
+    <cost>1B</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Poison Flying </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Flying, lifelink, deathtouch
+When Golbat enters the battlefield, you draw a card and you lose 1 life.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>86/343</number>
+  </card>
+  <card>
+    <name>In Mewtwo’s Wake</name>
+    <cost>1BB</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>All creatures get -3/-3 until end of turn.</rules>
+    <flavor>“Humans may have created me, but they will never enslave me.”
+—Mewtwo</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Mewtwo Strikes Back Remake</illustrator>
+    <number>87/343</number>
+  </card>
+  <card>
+    <name>Koffing</name>
+    <cost>2B</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Poison </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>B: Koffing deals 1 damage to each creature and each player. When a creature dealt damage this way dies this turn, transform Koffing.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>88/343</number>
+  </card>
+  <card>
+    <name>Lay to Rest</name>
+    <cost>B</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Search your hand and/or library for a creature card and put that card into your graveyard. If you searched your library this way, shuffle.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>blackroseknight</illustrator>
+    <number>89/343</number>
+  </card>
+  <card>
+    <name>Leech Life</name>
+    <cost>BB</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Leech Life deals 3 damage to target creature or planeswalker. You gain 3 life.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>xSheepi</illustrator>
+    <number>90/343</number>
+  </card>
+  <card>
+    <name>Max Revive</name>
+    <cost>1B</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Put target creature card from a graveyard onto the battlefield tapped under your control.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Pokemon TCG</illustrator>
+    <number>91/343</number>
+  </card>
+  <card>
+    <name>Mewtwo’s Command</name>
+    <cost>1BBB</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Choose two —
+• All creatures get -2/-2 until end of turn.
+• Destroy target creature or planeswalker.
+• You draw a card and lose 1 life.
+• Target player reveals his or her hand. You choose a card from it. That player discards that card.                            </rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>semilex</illustrator>
+    <number>92/343</number>
+  </card>
+  <card>
+    <name>Misdreavus</name>
+    <cost>2B</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Ghost </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>When Misdreavus enters the battlefield, each opponent sacrifices a creature.
+Persist (When this creature dies, if it had no -1/-1 counters on it, return it to the battlefield under its owner’s control with a -1/-1 counter on it.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Sanjul Sajeev</illustrator>
+    <number>93/343</number>
+  </card>
+  <card>
+    <name>Moonlight</name>
+    <cost>1B</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Entwine B
+Choose one:
+• You draw two cards and lose 2 life.
+• You gain life equal to the life you’ve lost this turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Kel-Del</illustrator>
+    <number>94/343</number>
+  </card>
+  <card>
+    <name>Muk</name>
+    <cost>5BB</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Poison </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Delve (Each card you exile from your graveyard while casting this spell pays for 1.)
+When Muk enters the battlefield, distribute X -1/-1 counters among any number of target creatures, where X is the number of cards exiled with it.            </rules>
+    <flavor></flavor>
+    <stats>
+      <power>5</power>
+      <toughness>5</toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>95/343</number>
+  </card>
+  <card>
+    <name>Murkrow</name>
+    <cost>1B</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Dark Flying </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Flying
+When Murkrow enters the battlefield, target opponent reveals his or her hand. Exile a noncreature nonland card from it until Murkrow leaves the battlefield. You may cast that card for as long as it remains exiled, and you may spend B as though it were mana of any color to cast it.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>ShadeofShinon</illustrator>
+    <number>96/343</number>
+  </card>
+  <card>
+    <name>Night Shade</name>
+    <cost>B</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Target creature gets -X/-X until end of turn, where X is its mana value.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown Reddit User</illustrator>
+    <number>97/343</number>
+  </card>
+  <card>
+    <name>Pain Split</name>
+    <cost>BB</cost>
+    <type>
+      <supertype>Enchantment</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>At the beginning of your end step, you gain X life and each opponent loses X life, where X is half the amount of life you lost this turn, rounded down.
+1B: You draw a card and lose 2 life.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>kirelaiga</illustrator>
+    <number>98/343</number>
+  </card>
+  <card>
+    <name>Perish Song</name>
+    <cost>XBB</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Put 3 minus X vanishing counters on each creature. For each of those creatures, if it doesn’t have vanishing, it gains vanishing. (At the beginning of that creature’s controller’s upkeep, remove a time counter from it. When the last is removed, its controller sacrifices it.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>NeverLateThanBetter</illustrator>
+    <number>99/343</number>
+  </card>
+  <card>
+    <name>Psywave</name>
+    <cost>B</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Target player reveals their hand. You choose a nonland, nonblack card from it. That player discards that card.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>suwan</illustrator>
+    <number>100/343</number>
+  </card>
+  <card>
+    <name>Pursuit</name>
+    <cost>B</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>As an additional cost to cast this spell, discard a card or pay 1B.
+Destroy target creature or planeswalker.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>101/343</number>
+  </card>
+  <card>
+    <name>Raise From Ash</name>
+    <cost>2B</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>You may cast Raise From Ash as though it had flash as long as a creature died this turn.
+Return target creature card from a graveyard to the battlefield. If it isn’t your turn, exile that creature at the beginning of the next end step.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Alvaro Estrada</illustrator>
+    <number>102/343</number>
+  </card>
+  <card>
+    <name>Revive</name>
+    <cost>1B</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Return target creature card from your graveyard to the battlefield tapped. Put a -1/-1 counter on it.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Pokemon TCG</illustrator>
+    <number>103/343</number>
+  </card>
+  <card>
+    <name>Rocket Boss Giovanni</name>
+    <cost>1BB</cost>
+    <type>
+      <supertype>Legendary Planeswalker</supertype>
+      <subtype>Giovanni </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Whenever you commit a crime, put a loyalty counter on Rocket Boss Giovanni.
+Gain control of target creature an opponent controls with converted mana cost X. You lose X life.
+Each opponent sacrifices all creatures they control. Put all creature cards from all graveyards onto the battlefield under your control.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>104/343</number>
+  </card>
+  <card>
+    <name>Spearow</name>
+    <cost>1B</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Normal Flying </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Flying
+When Spearow enters the battlefield, target opponent reveals their hand. You choose a nonland card from it. Exile that card until Spearow leaves the battlefield.
+At the beginning of each player’s end step, if that player has more cards in hand than  you, transform Spearow.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Martin Luna</illustrator>
+    <number>105/343</number>
+  </card>
+  <card>
+    <name>Spite</name>
+    <cost>B</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Cleave BB (You may cast this spell for its cleave cost. If you do, remove the words in square brackets.)
+Destroy target creature [if it dealt damage to you or a permanent you control this turn].</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>106/343</number>
+  </card>
+  <card>
+    <name>Summon from the Deep</name>
+    <cost>1B</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Search your graveyard and/or library for a card and put that card into your hand. If you searched your library this way, shuffle. Exile Summon from the Deep.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>scarvil</illustrator>
+    <number>107/343</number>
+  </card>
+  <card>
+    <name>Team Rocket Heist</name>
+    <cost>B</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>As an additional cost to cast Team Rocket Heist, pay X life.
+Search your library for a card with mana cost X or less, reveal it, put it into your hand, then shuffle Team Rocket Heist into your library.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>108/343</number>
+  </card>
+  <card>
+    <name>Umbreon</name>
+    <cost>2B</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Dark Eeveelution </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>If it is not night as Umbreon enters the battlefield, it becomes night.
+Whenever it becomes night, each opponent discards a card at random.
+As long as it’s day, spells your opponents cast cost an additional 2 life to cast.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>dekunobou-kizakura</illustrator>
+    <number>109/343</number>
+  </card>
+  <card>
+    <name>Weezing</name>
+    <cost>5BB</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Poison </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Nonblack creatures get -2/-2.
+Whenever a creature an opponent controls dies, its controller loses 2 life.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>6</power>
+      <toughness>5</toughness>
+    </stats>
+    <illustrator>Robert Schilling</illustrator>
+    <number>110/343</number>
+  </card>
+  <card>
+    <name>Zubat</name>
+    <cost>1B</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Poison Flying Bat </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Flying, lifelink
+1B, Discard a card: Create a token that’s a copy of Zubat.
+At the beginning of your upkeep, if you control 3 or more creatures named Zubat and Zubat isn’t a token, transform Zubat.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Tygarii-Razil</illustrator>
+    <number>111/343</number>
+  </card>
+  <card>
+    <name>Blaine, Fire Tempered</name>
+    <cost>4RR</cost>
+    <type>
+      <supertype>Legendary Planeswalker</supertype>
+      <subtype>Blaine </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Blaine deals 2 damage to any target. Put a burn counter on each permanent dealt damage this way.
+Discard any number of cards. Draw that many cards. Add R to your mana pool for each card discarded this way.
+Blaine deals 6 damage divided as you choose among any number of targets.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>CrossToons</illustrator>
+    <number>112/343</number>
+  </card>
+  <card>
+    <name>Blaine’s Quiz</name>
+    <cost>R</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Reveal the top three cards of your library. Name a card from among them. An opponent separates them into three face-down piles of one card each. You choose a pile. That opponent reveals a pile of their choice other than the one you picked which does not contain the named card. Put one of the remaining face-down piles into your hand and put the other two piles into your graveyard.
+Flashback R</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>kvilledrew</illustrator>
+    <number>113/343</number>
+  </card>
+  <card>
+    <name>Burning of Brass Tower</name>
+    <cost>4RR</cost>
+    <type>
+      <supertype>Enchantment</supertype>
+      <subtype>Saga </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>(As this Saga enters and after your draw step, add a lore counter. Sacrifice after III.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Chris Walker</illustrator>
+    <number>114/343</number>
+  </card>
+  <card>
+    <name>Champion Red, Pride of Pallet</name>
+    <cost>2RR</cost>
+    <type>
+      <supertype>Legendary Planeswalker</supertype>
+      <subtype>Red </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>You may activate the loyalty abilities of target planeswalker you control twice this turn rather than only once.
+Exile the top card of your library. You may play it this turn.
+Champion Red deals 3 damage divided as you choose among any number of targets.
+Create a legendary 4/4 red Fire Flying creature token with flying named Charizard.                                                   </rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>115/343</number>
+  </card>
+  <card>
+    <name>Criticial Hit</name>
+    <cost>2R</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Until end of turn, if a source you control would deal damage to a player or permanent, it deals that much damage plus one to that player or permanent instead. Damage can’t be prevented this turn.
+Criticial Hit deals 1 damage to each of up to two targets.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Moozika</illustrator>
+    <number>116/343</number>
+  </card>
+  <card>
+    <name>Destruction of Cinnabar Island</name>
+    <cost>RR</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Destroy target land. If that land was an island, Destruction of Cinnabar Island deals 2 damage to that land’s controller.</rules>
+    <flavor>A volcano erupts, and just like that a whole town disappears.</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Squeegee — Drawception</illustrator>
+    <number>117/343</number>
+  </card>
+  <card>
+    <name>Double Team</name>
+    <cost>2RR</cost>
+    <type>
+      <supertype>Enchantment</supertype>
+      <subtype>Aura </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Enchant creature
+Enchanted creature has “T: Create a token that’s a copy of this creature. It gains haste. Sacrifice it at the beginning of the next end step.”</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Eric Simmons</illustrator>
+    <number>118/343</number>
+  </card>
+  <card>
+    <name>Enemy is Confused</name>
+    <cost>R</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Target creature deals damage to itself equal to its power.</rules>
+    <flavor>It hurt itself in its confusion!</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Detective Pikachu</illustrator>
+    <number>119/343</number>
+  </card>
+  <card>
+    <name>Entei, the Volcano</name>
+    <cost>2RR</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Fire Beast </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Haste
+When Entei enters the battlefield, you may destroy target nonbasic land.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>dekunobou-kizakura</illustrator>
+    <number>120/343</number>
+  </card>
+  <card>
+    <name>Explosion</name>
+    <cost>1RR</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Explosion deals 3 damage to each creature.
+Same type attack boost — If you control a creature that shares a color with this spell, it also deals 3 damage to each player and each planeswalker.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Jonathan Soto</illustrator>
+    <number>121/343</number>
+  </card>
+  <card>
+    <name>Fire Blast</name>
+    <cost>2RR</cost>
+    <type>
+      <supertype>Tribal Sorcery</supertype>
+      <subtype>Fire </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Fire Blast deals 6 damage divided as you choose among any number of targets. Put a burn counter on each creature dealt damage this way. (Burned creatures lose indestructible and can’t gain indestructible. If a burned creature would die, it is exiled instead.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>dreamTech</illustrator>
+    <number>122/343</number>
+  </card>
+  <card>
+    <name>Fire Spin</name>
+    <cost>1R</cost>
+    <type>
+      <supertype>Enchantment</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>At the beginning of each player’s upkeep and whenever a player casts a spell, Fire Spin deals 1 damage to that player.
+R: Players can’t gain life this turn.ce</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Teru Sakura</illustrator>
+    <number>123/343</number>
+  </card>
+  <card>
+    <name>Hitmonchan</name>
+    <cost>1R</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Fighting Hitmon </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Double strike
+Whenever Hitmonchan deals combat damage, it deals damage equal to its power to target opponent.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>124/343</number>
+  </card>
+  <card>
+    <name>Karate Chop</name>
+    <cost>R</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Karate Chop deals 2 damage to any target.
+Same type attack boost — If you control a creature that shares a color with this spell, Karate Chop deals 3 damage to that target instead.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>125/343</number>
+  </card>
+  <card>
+    <name>Mach Punch</name>
+    <cost>R</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Split second (As long as this spell is on the stack, players can’t cast spells or activate abilities that aren’t mana abilities.)
+Mach Punch deals 2 damage to any target.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>126/343</number>
+  </card>
+  <card>
+    <name>Machop</name>
+    <cost>R</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Fighting </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>2R,T: Exchange control of Machop and target creature an opponent controls until your next turn. Untap that creature. It gains haste for as long as you control it. Transform Machop. Activate only  as a sorcery.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>127/343</number>
+  </card>
+  <card>
+    <name>Magmar</name>
+    <cost>3R</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Fire </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>When Magmar enters the battlefield, it deals 4 damage to target creature or planeswalker an opponent controls. Put a burn counter on it. (Burned permanents lose indestructible and can’t gain indestructible. If a burned permanent would be put into a graveyard, exile it instead.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>128/343</number>
+  </card>
+  <card>
+    <name>Magnemite</name>
+    <cost>2R</cost>
+    <type>
+      <supertype>Artifact Creature</supertype>
+      <subtype>Electric Steel </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>When Magnemite enters the battlefield, gain control of target artifact until end of turn. Untap it. If it’s a creature, it gains haste until end of turn.
+At the beginning of your end step, if you control 3 or more artifacts, transform Magnemite.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Benjamin Lagouche</illustrator>
+    <number>129/343</number>
+  </card>
+  <card>
+    <name>Mankey</name>
+    <cost>R</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Fighting </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Haste
+Whenever Mankey deals combat damage to a player, transform it.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>130/343</number>
+  </card>
+  <card>
+    <name>Mega Punch</name>
+    <cost>1R</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Mega Punch has deathtouch as long as B was spent to cast it.
+Mega Punch deals 3 damage to any target.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Yiming Nie</illustrator>
+    <number>131/343</number>
+  </card>
+  <card>
+    <name>Ninetales</name>
+    <cost>2RR</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Fire </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Haste
+When Ninetales enters the battlefield or attacks, it deals 1 damage to any target. If a creature was dealt damage this way, put a burn counter on it. Then, tap each burned creature you don’t control. (A burned creature loses indestructible and can’t gain indestructible. If a burned creature would die, exile it instead.)           </rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>132/343</number>
+  </card>
+  <card>
+    <name>Pokemon Trainer Red</name>
+    <cost>1RR</cost>
+    <type>
+      <supertype>Planeswalker</supertype>
+      <subtype>Red </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Pokemon Trainer Red deals 1 damage to any target. A creature dealt damage this way can’t block this turn.
+Discard a card then draw a card.
+Target creature gains haste until end of turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>133/343</number>
+  </card>
+  <card>
+    <name>Sacred Fire</name>
+    <cost>1R</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Choose one:
+• Sacred Fire deals 3 damage to target player or planeswalker.
+• Destroy target artifact.
+• Sacred Fire deals 4 damage to target creature. Put a burn counter on that creature. (A burned creature loses indestructible and can’t gain indestructible. If it would die, exile it instead.)       </rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Kimberley Potrio</illustrator>
+    <number>134/343</number>
+  </card>
+  <card>
+    <name>Seismic Toss</name>
+    <cost>1R</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Seismic Toss deals damage to target creature equal to your life total.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>135/343</number>
+  </card>
+  <card>
+    <name>Smeargle</name>
+    <cost>2RR</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Normal </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Smeargle has haste as long as an artifact entered the battlefield this turn.
+T: Create a token that’s a copy of target artifact or creature you control, except it’s an artifact in addition to its other types. It gains haste. Exile it at the beginning of the next end step.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>elridge</illustrator>
+    <number>136/343</number>
+  </card>
+  <card>
+    <name>Sneak Attack</name>
+    <cost>3R</cost>
+    <type>
+      <supertype>Enchantment</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>R: You may put a creature card from your hand onto the battlefield. That creature gains haste. Sacrifice it at the beginning of the next end step.</rules>
+    <flavor>“Is that a fucking wh-”
+— Anonymous trainer, final words          </flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>137/343</number>
+  </card>
+  <card>
+    <name>Struggle</name>
+    <cost>R</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Struggle deals 2 damage any target.
+Hellbent — If you have no cards in hand, Struggle deals 4 damage to that target instead.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>OneMegaWatt</illustrator>
+    <number>138/343</number>
+  </card>
+  <card>
+    <name>Thunderbolt</name>
+    <cost>R</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Thunderbolt deals 3 damage to any target.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>139/343</number>
+  </card>
+  <card>
+    <name>Trash for Treasure</name>
+    <cost>2R</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>As an additional cost to cast Trash for Treasure, sacrifice an artifact.
+Return target artifact from your graveyard to the battlefield.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>N/A</illustrator>
+    <number>140/343</number>
+  </card>
+  <card>
+    <name>Twitch Plays Pokemon</name>
+    <cost>2R</cost>
+    <type>
+      <supertype>Enchantment</supertype>
+      <subtype>Saga </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Create a 1/1 white Bird creature token with flying and a Helix artifact token with “T: Scry 1. This artifact deals 1 damage to each opponent.”
+Discard two cards, then draw two cards. When you do, put a +1/+1 counter on target creature for each nonland card discarded this way.
+Sacrifice an artifact. When you do, put target artifact card from a graveyard onto the battlefield under your control.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>141/343</number>
+  </card>
+  <card>
+    <name>Bellossom</name>
+    <cost>GG</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Grass </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T: Add G to your mana pool for each creature you control.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>mcgmark, Shen YH</illustrator>
+    <number>142/343</number>
+  </card>
+  <card>
+    <name>Bellsprout</name>
+    <cost>G</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Grass Poison </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>T: Add G to your mana pool.
+2/G: Transform Bellsprout. Spend only mana produced by artifacts to activate this ability.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>143/343</number>
+  </card>
+  <card>
+    <name>Caterpie</name>
+    <cost>G</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Bug </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>1G: Target noncreature artifact or enchantment becomes an aura Enchantment with vanishing, “Enchanted creature has base power and toughness 0/3”, and “When this permanent leaves the battlefield, transform enchanted creature”, and loses all other types and abilities. Attach it to Caterpie and put two time counters on it.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>king joe (neoroto)</illustrator>
+    <number>144/343</number>
+  </card>
+  <card>
+    <name>Diglett</name>
+    <cost>G</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Ground </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Whenever a land enters the battlefield under your control, venture into the dungeon. (The dungeons are Diglett’s Cave, Rock Tunnel, or Victory Road).
+Whenever you complete a     dungeon, transform Diglett.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>145/343</number>
+  </card>
+  <card>
+    <name>Ding-Dong! Time’s Up</name>
+    <cost>G</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype>Glitch </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Splice onto Glitch—1G
+Search your library for a land card, reveal it, and put it into your hand. If this spell was spliced, you may instead reveal a land card you own from outside the game and put it into your hand.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>N/A</illustrator>
+    <number>146/343</number>
+  </card>
+  <card>
+    <name>Erika, Evergreen</name>
+    <cost>2G</cost>
+    <type>
+      <supertype>Legendary Planeswalker</supertype>
+      <subtype>Erika </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Whenever a player plays a land, that player draws a card.
+You may play an additional land this turn.
+Draw a card, then each player may put a creature card from their hand onto the battlefield.                                                       </rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>tsuaii</illustrator>
+    <number>147/343</number>
+  </card>
+  <card>
+    <name>Erika’s Expertise</name>
+    <cost>2G</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Search your library for a basic land card and put it onto the battlefield tapped.
+You may cast a card with converted mana cost 2 or less from your hand without paying its mana cost.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>kvilledrew</illustrator>
+    <number>148/343</number>
+  </card>
+  <card>
+    <name>Exeggcute</name>
+    <cost>4G</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Grass Psychic </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>When Exeggcute enters the battlefield, create five green 1/1 Egg creature tokens.
+Exeggcute gets +1/+1 for each Egg you control.
+2/G: Transform Exeggcute. Spend only mana produced by artifacts to activate this ability.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>BeastySakura</illustrator>
+    <number>149/343</number>
+  </card>
+  <card>
+    <name>Exeggcutor</name>
+    <cost>5GG</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Grass Psychic </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Trample
+When Exeggcutor enters the battlefield, create five green 1/1 Egg creature tokens.
+Tokens you control have T: Add one mana of any color.
+1G, Sacrifice an Egg: Draw a card. You may play an additional land this turn.
+2U, Sacrifice an Egg: Return target nonland permanent to its owner’s hand.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>6</power>
+      <toughness>6</toughness>
+    </stats>
+    <illustrator>TamberElla</illustrator>
+    <number>150/343</number>
+  </card>
+  <card>
+    <name>Geodude</name>
+    <cost>G</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Rock Ground </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Add R or G to your mana pool.
+2R: Exchange control of Geodude and target creature an opponent controls until your next turn. Untap that creature. It gains haste for as long as you control it. Transform Geodude. Activate only as      a sorcery.                                                    </rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>151/343</number>
+  </card>
+  <card>
+    <name>Goldenrod Bug Catching Contest</name>
+    <cost>1G</cost>
+    <type>
+      <supertype>Enchantment</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>At the beginning of your upkeep, each player reveals cards from the top of their library until they reveal a creature card. Each player that revealed a card with the highest converted mana cost puts that creature onto the battlefield. All other cards revealed this way are shuffled into their owners’ libraries.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Sa-Dui</illustrator>
+    <number>152/343</number>
+  </card>
+  <card>
+    <name>Got</name>
+    <cost>G</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Look at the top four cards of your library. You may reveal a land or creature card from among them and put it into your hand. Put the rest on the bottom of your library in any order.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>やっくん</illustrator>
+    <number>153/343</number>
+  </card>
+  <card>
+    <name>Horn Drill</name>
+    <cost>2G</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Destroy target noncreature permanent.
+Same type attack boost — If you control a creature that shares a color with this spell, creatures you control gain trample until end of turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Titapa Khemakavat</illustrator>
+    <number>154/343</number>
+  </card>
+  <card>
+    <name>Journey Unfolds</name>
+    <cost>1G</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Search your library for a nonbasic land and put it onto the battlefield.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>toni infante</illustrator>
+    <number>155/343</number>
+  </card>
+  <card>
+    <name>Leech Seed</name>
+    <cost>1G</cost>
+    <type>
+      <supertype>Enchantment</supertype>
+      <subtype>Aura </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Enchant land
+Enchanted land is a forest.
+When Leech Seed enters the battlefield, search your library for a forest card and put it onto the battlefield tapped. Then shuffle your library.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>uchuubranko</illustrator>
+    <number>156/343</number>
+  </card>
+  <card>
+    <name>Nidoking</name>
+    <cost>6GGG</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Poison Ground </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Trample
+When Nidoking enters the battlefield, choose two —
+• Destroy target noncreature permanent.
+• Nidoking fights another target creature.
+• Nidoking gains haste until end of turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>8</power>
+      <toughness>8</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>157/343</number>
+  </card>
+  <card>
+    <name>Nidoqueen</name>
+    <cost>3GG</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Poison Ground </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>As long as you control a creature with power 1 or less, you may cast Nidoqueen as though it had flash, and Nidoqueen has vigilance.
+Whenever Nidoqueen attacks or blocks, choose one — 
+• Draw a card.
+• Create a 1/2 Nidoran creature token with “T: Add G.”
+• Nidoqueen fights another target creature if you control a creature with power 1 or less.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>6</power>
+      <toughness>6</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>158/343</number>
+  </card>
+  <card>
+    <name>Oddish</name>
+    <cost>G</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Grass Poison </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Add G to your mana pool.
+2/G: Transform Oddish. Spend only mana produced by artifacts to activate this ability.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Jamie Dunbar</illustrator>
+    <number>159/343</number>
+  </card>
+  <card>
+    <name>Old Man’s Lesson</name>
+    <cost>G</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype>Glitch </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Reveal cards from the top of your library until you reveal a creature card. Put that card into your hand, and the rest on the bottom of your library in any order.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>160/343</number>
+  </card>
+  <card>
+    <name>Paras</name>
+    <cost>G</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Bug Grass </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>When Paras enters the battlefield, you may exile it, leeching target land, artifact or enchantment. Put 2 time counters on that permanent. When it leaves the battlefield, return Paras to the battlefield transformed.
+Permanents being leeched by Paras lose all abilities and gain vanishing and             “T: Add C.” </rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>161/343</number>
+  </card>
+  <card>
+    <name>Petal Dance</name>
+    <cost>G</cost>
+    <type>
+      <supertype>Enchantment</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Whenever a land enters the battlefield under your control, create a Petal artifact token with “T, Sacrifice this artifact: Add one mana of any color to your mana pool.”
+1: Return target land you control to its owner’s hand.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>162/343</number>
+  </card>
+  <card>
+    <name>Pinsir</name>
+    <cost>1G</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Bug </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>When Pinsir enters the battlefield, reveal the top three cards of your library. Put up to one land card from among them into your hand, and the rest into your graveyard.
+Threshold — 1G, Exile three cards from your graveyard: Return target permanent card from your graveyard to your hand. Activate only as a sorcery and only as long as there are seven or more cards in your graveyard.      </rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>163/343</number>
+  </card>
+  <card>
+    <name>Rhyhorn</name>
+    <cost>2GG</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Rock Ground. </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Trample, haste
+Whenever Rhyhorn deals combat damage to a player, you may destroy target nonland, noncreature permanent with mana value less than or equal to the amount of damage that was dealt.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>4</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>John Yau</illustrator>
+    <number>164/343</number>
+  </card>
+  <card>
+    <name>Shuckle</name>
+    <cost>1G</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Bug Rock </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>T, Put a berry counter on Shuckle: Add one mana of any color to your mana pool.
+When Shuckle dies, you gain 1 life for each berry counter on it.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>0</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>Cryptid-Creations</illustrator>
+    <number>165/343</number>
+  </card>
+  <card>
+    <name>Sudowoodo</name>
+    <cost>1G</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Rock </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Sudowoodo enters the battlefield as a copy of any land on the battlefield, except it has “U: This land becomes a 2/2 green Elemental creature until end of turn. It’s still a land.”</rules>
+    <flavor></flavor>
+    <stats>
+      <power>0</power>
+      <toughness>0</toughness>
+    </stats>
+    <illustrator>Erik Tassinari</illustrator>
+    <number>166/343</number>
+  </card>
+  <card>
+    <name>Tangela</name>
+    <cost>1G</cost>
+    <type>
+      <supertype>Creatures</supertype>
+      <subtype>Grass </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Shroud
+You may look at the top card of your library at any time.
+T: Tangela explores.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>N/A</illustrator>
+    <number>167/343</number>
+  </card>
+  <card>
+    <name>Victreebel</name>
+    <cost>2GGG</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Grass Poison </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Deathtouch
+When Victreebel enters the battlefield, destroy target noncreature permanent.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>168/343</number>
+  </card>
+  <card>
+    <name>Visit the Phantom PC</name>
+    <cost>G</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype>Glitch </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>As an additional cost to cast Visit the Phantom PC, discard a creature card.
+Search your library for a creature card, reveal it, and put it into your hand. Then shuffle your library.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>N/A</illustrator>
+    <number>169/343</number>
+  </card>
+  <card>
+    <name>Far</name>
+    <cost>G</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Search your library for a basic land card, reveal it, and put it into your hand.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Xinhai Cheng</illustrator>
+    <number>170/343</number>
+  </card>
+  <card>
+    <name>Alakazam</name>
+    <cost>4UUB</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Psychic </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Whenever you draw one or more cards, each opponent discards a card.
+Pay 2 life: Draw a card.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>6</power>
+      <toughness>6</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>171/343</number>
+  </card>
+  <card>
+    <name>Articuno</name>
+    <cost>3WU</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Ice Flying </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Flying, flash
+Whenever Articuno enters the battlefield or attacks, exile target permanent or permanent card in a graveyard with mana value 3 or less. Return the exiled card to the battlefield under its owner’s control. If it enters under an opponent’s control, tap it.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>TamberElla</illustrator>
+    <number>172/343</number>
+  </card>
+  <card>
+    <name>Brock, Adamantine</name>
+    <cost>3RG</cost>
+    <type>
+      <supertype>Legendary Planeswalker</supertype>
+      <subtype>Brock </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Exile the top two cards of your library. You may play them this turn. You may play an additional land this turn.
+Brock deals damage to target creature or planeswalker equal to the number of lands you control.
+Until your next turn, lands you control become green 3/3 Elemental creatures with haste and indestructible. They’re still lands.       </rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>173/343</number>
+  </card>
+  <card>
+    <name>Bruno, Unflinching</name>
+    <cost>BR</cost>
+    <type>
+      <supertype>Legendary Planeswalker</supertype>
+      <subtype>Bruno </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Cards in your hand have spectacle. Their spectacle cost is equal to their mana cost reduced by 1.
+Bruno deals 1 damage to any target and 1 damage to you.
+Destroy target artifact. Bruno deals 1 damage to its controller.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>kvilledrew</illustrator>
+    <number>174/343</number>
+  </card>
+  <card>
+    <name>Butterfree</name>
+    <cost>GWU</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Bug Flying </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Flying, vigilance
+When Butterfree enters the battlefield or attacks, target permanent an opponent controls becomes paralyzed until your next turn. (A paralyzed permanent can’t attack or block and its activated abilities can’t be activated.)         </rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Abraham Hernández</illustrator>
+    <number>175/343</number>
+  </card>
+  <card>
+    <name>Celebi, Guardian of the Forest</name>
+    <cost>1GU</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Psychic Grass </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Ward—Celebi’s controller draws a card.
+The first time you would draw a card each turn, instead choose one:
+• Return a card from your graveyard to your hand.
+• Look at the top two cards of your library. Put one into your hand and the other on the bottom of your library.                                        </rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>KidScribbles</illustrator>
+    <number>176/343</number>
+  </card>
+  <card>
+    <name>Cloyster</name>
+    <cost>5WU</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Water Ice </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Whenever each opponent casts their first spell each turn, counter that spell unless its controller pays 2.
+Whenever an opponent taps a permanent for mana, freeze it. (Tap it. It doesn’t untap during its controller’s next untap step.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>6</power>
+      <toughness>8</toughness>
+    </stats>
+    <illustrator>EnigmaSystem</illustrator>
+    <number>177/343</number>
+  </card>
+  <card>
+    <name>Ekans</name>
+    <cost>BG</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Poison </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>When Ekans enters the battlefield, put a -1/-1 counter on target creature.
+If you would put one or more counters on a permanent or player, instead you put that many counters plus one on that permanent or player instead.
+Whenever a creature with a counter on it dies, transform Ekans.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>178/343</number>
+  </card>
+  <card>
+    <name>Erika’s Command</name>
+    <cost>GW</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Choose two —
+• Search your library for a forest or plains card, reveal it, and put it into your hand. Then shuffle.
+• You may put a land card from your hand onto the battlefield tapped.
+• Target creature gains hexproof and indestructible until end of turn.
+• Destroy target artifact or enchantment. You gain 2 life.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>tsuaii</illustrator>
+    <number>179/343</number>
+  </card>
+  <card>
+    <name>Featherdance</name>
+    <cost>WU</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Counter target spell.
+Create a white 1/1 Bird creature token with flying.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>purplekecleon</illustrator>
+    <number>180/343</number>
+  </card>
+  <card>
+    <name>Gengar</name>
+    <cost>1WB</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Ghost Poison </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Persist
+Ghost and spirit creatures you control have “WB, Pay 1 life: Sacrifice this creature: Destroy target permanent. Activate only as a sorcery”.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Addams AI</illustrator>
+    <number>181/343</number>
+  </card>
+  <card>
+    <name>Giovanni’s Command</name>
+    <cost>1BBR</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Choose two —
+• Gain control of target creature until end of turn. Untap it. It gains haste until end of turn.
+• Search your library for a card. Then shuffle your library and put that card on top of it.
+• Discard any number of cards. Draw a card for each card discarded this way.
+• Target player sacrifices a creature.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>jako_(boke_poke)</illustrator>
+    <number>182/343</number>
+  </card>
+  <card>
+    <name>Golem</name>
+    <cost>1RG</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Rock Ground </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Trample
+R, T, Discard a land card: Golem deals 2 damage to any target.
+1G, T, Discard a land card: Destroy target artifact or enchantment.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>183/343</number>
+  </card>
+  <card>
+    <name>Heracross</name>
+    <cost>BRG</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Bug Fighting </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Once per turn during your turn, you may play a permanent card from your graveyard.
+Whenever a land enters the battlefield under your control, each opponent loses 1 life. You gain life equal to the life lost this way.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>A T T O Z - (Erick Peñaloza)</illustrator>
+    <number>184/343</number>
+  </card>
+  <card>
+    <name>Ho-oh, Guardian of the Skies</name>
+    <cost>WUBRG</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Fire Flying </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Flying
+When Ho-oh enters the battlefield, it deals 3 damage to any target. You gain 3 life and draw a card. You may put a creature card from a graveyard onto the battlefield. If you do, it gains haste and fights up to one target creature. Exile it at the beginning of the next end step.    </rules>
+    <flavor></flavor>
+    <stats>
+      <power>6</power>
+      <toughness>6</toughness>
+    </stats>
+    <illustrator>Ruth-Tay</illustrator>
+    <number>185/343</number>
+  </card>
+  <card>
+    <name>Jynx</name>
+    <cost>WUB</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Ice Psychic </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Creatures you control have ward 1.
+Whenever Jynx attacks, freeze target permanent until your next turn.
+Whenever Jynx deals combat damage to a player, target player mills 3 cards.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>arvalis, mrredbutcher</illustrator>
+    <number>186/343</number>
+  </card>
+  <card>
+    <name>Kingdra</name>
+    <cost>1UR</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Water </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Whenever you cast your first noncreature spell each turn, you may draw a card. If you do, discard a card.
+Whenever you draw your second card each turn, Kingdra deals 2 damage to any target.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Satsume ART</illustrator>
+    <number>187/343</number>
+  </card>
+  <card>
+    <name>Koga, Venom-Veined</name>
+    <cost>2BG</cost>
+    <type>
+      <supertype>Legendary Planeswalker</supertype>
+      <subtype>Koga </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Proliferate.
+Put a -1/-1 counter on each creature you don’t control. Each opponent gets a poison counter.
+You get an emblem with “Creatures you control have infect.” and each opponent gets an emblem with “When you have one or more poison counters, you lose the game.”</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>188/343</number>
+  </card>
+  <card>
+    <name>Koga’s Command</name>
+    <cost>1BG</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Choose two —
+• Distribute two -1/-1 counters among one or two target creatures.
+• Return target creature or land card from your graveyard to your hand.
+• Destroy target artifact or enchantment.
+• Proliferate.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>kvilledrew</illustrator>
+    <number>189/343</number>
+  </card>
+  <card>
+    <name>Larvitar</name>
+    <cost>RG</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Rock Ground </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Each land card in your hand has cycling R.
+Whenever a land card is put into your graveyard, put a +1/+1 counter on Larvitar. Then you may transform Larvitar.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>SanjulSajeev</illustrator>
+    <number>190/343</number>
+  </card>
+  <card>
+    <name>Lorelei, Ice Queen</name>
+    <cost>1WU</cost>
+    <type>
+      <supertype>Legendary Planeswalker</supertype>
+      <subtype>Lorelei </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Freeze target permanent.
+Return target tapped permanent to its owner’s hand. Draw a card.
+You get an emblem with “Whenever a permanent an opponent controls becomes tapped, freeze that permanent.” </rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>kvilledrew</illustrator>
+    <number>191/343</number>
+  </card>
+  <card>
+    <name>Lt Surge, Lightning American</name>
+    <cost>1RW</cost>
+    <type>
+      <supertype>Legendary Planeswalker</supertype>
+      <subtype>Surge </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Create a 1/1 red Voltorb creature token with “Sacrifice this creature: This creature deals 1 damage to any target.”     
+Lt Surge deals X damage to any target and you gain X life where X is the number of loyalty counters on Lt Surge.
+You get an emblem with “Creatures you control have haste.”</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>ibralui, toxicsquall</illustrator>
+    <number>192/343</number>
+  </card>
+  <card>
+    <name>Machamp</name>
+    <cost>1BR</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Fighting </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Haste, doubles strike
+Whenever Machamp deals combat damage, it deals that much damage to any target.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Cicros</illustrator>
+    <number>193/343</number>
+  </card>
+  <card>
+    <name>Moltres</name>
+    <cost>3UR</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Fire Flying </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Flying, flash
+Whenever Moltres enters the battlefield or attacks, draw a card, then Moltres deals damage to any target equal to the number of cards you’ve drawn this turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>TamberElla</illustrator>
+    <number>194/343</number>
+  </card>
+  <card>
+    <name>Officer Jenny</name>
+    <cost>2WU</cost>
+    <type>
+      <supertype>Legendary Planeswalker</supertype>
+      <subtype>Jenny </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Investigate. Until your next turn, activated abilities of artifacts you control cost 1 less to activate.
+Until end of turn, spells you cast have improvise.
+Exile target creature or artifact until Officer Jenny leaves the battlefield.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>PixAI</illustrator>
+    <number>195/343</number>
+  </card>
+  <card>
+    <name>Peaceful Departure</name>
+    <cost>WB</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Target creature dies.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>InezMaria</illustrator>
+    <number>196/343</number>
+  </card>
+  <card>
+    <name>Poliwrath</name>
+    <cost>UBR</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Water Fighting </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Whenever an opponent draws a card other than the first card they draw each turn, that player discards a card at random.
+Whenever a player discards a card, that player loses 1 life.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>197/343</number>
+  </card>
+  <card>
+    <name>Red Gyarados</name>
+    <cost>1UR</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Water Flying </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Whenever Red Gyarados attacks, it deals 1 damage to any target.
+Enrage — Whenever Red Gyarados is dealt damage, draw a card.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>dekunobou-kizakura</illustrator>
+    <number>198/343</number>
+  </card>
+  <card>
+    <name>Red, Pokemon Master</name>
+    <cost>WUBRG</cost>
+    <type>
+      <supertype>Legendary Planeswalker</supertype>
+      <subtype>Red </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>You may spend loyalty counters on Red as though they were mana of any color.
+Red deals 3 damage to any target. If it’s a permanent, paralyze it until your next turn.
+Look at the top X cards of your library. Put up to two of them in your hand and the rest on the bottom of your library in any order.      </rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>usao</illustrator>
+    <number>199/343</number>
+  </card>
+  <card>
+    <name>Rhydon</name>
+    <cost>5RG</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Rock Ground </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Domain — Rhydon costs 1 less to cast for each basic land type among land types you control.
+Rhydon has first strike as long as you control a Plains, ward 2 as long as you control an Island, lifelink as long as you control a Swamp, haste as long as you control a Mountain, and trample as long as you control a Forest.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>5</power>
+      <toughness>5</toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>200/343</number>
+  </card>
+  <card>
+    <name>Sabrina, Prodigal Telepath</name>
+    <cost>1UB</cost>
+    <type>
+      <supertype>Legendary Planeswalker</supertype>
+      <subtype>Sabrina </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Any number of target players each mill three cards.
+Search your library for a card, put that card into your graveyard, then shuffle.
+You may cast target instant or sorcery card in a graveyard with mana value X without paying its mana cost. If it would be put into a graveyard this turn, exile it instead.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>kvilledrew</illustrator>
+    <number>201/343</number>
+  </card>
+  <card>
+    <name>Sabrina’s Command</name>
+    <cost>3UB</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Choose two —
+• Put target permanent on top of its owner’s library.
+• Target player mills six cards.
+• You may cast an instant or sorcery card from a graveyard without paying its mana cost.
+• You may put a creature card from a graveyard onto the battlefield under your control.                </rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>kawacy</illustrator>
+    <number>202/343</number>
+  </card>
+  <card>
+    <name>Slowbro</name>
+    <cost>1UUB</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Water Psychic </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Flash
+When Slowbro enters the battlefield, return target spell or permanent to its owner’s hand. Then, that player discards a card.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>203/343</number>
+  </card>
+  <card>
+    <name>Submission</name>
+    <cost>BR</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Submission deals damage to target creature or planeswalker equal to your life total. It deals damage to you equal to its converted mana cost.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Namh</illustrator>
+    <number>204/343</number>
+  </card>
+  <card>
+    <name>Surge’s Command</name>
+    <cost>RW</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Choose two —
+• Instant and sorcery spells you control gain lifelink.
+• Surge’s Command deals 3 damage to any target.
+• Create a red 1/1 Voltorb creature token with “When this creature dies it deals 1 damage to any target.”
+• Exile the top card of your library. You may play that card this turn.       </rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>kvilledrew</illustrator>
+    <number>205/343</number>
+  </card>
+  <card>
+    <name>Tauros</name>
+    <cost>GW</cost>
+    <type>
+      <supertype>Creautre</supertype>
+      <subtype>Normal</subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>You may exert Tauros as it attacks. When you do, destroy target artifact or enchantment. (An exerted creature won’t untap during your next untap step.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>206/343</number>
+  </card>
+  <card>
+    <name>Team Rocket Jesse and James</name>
+    <cost>1UR</cost>
+    <type>
+      <supertype>Legendary Planeswalker</supertype>
+      <subtype>Jesse and James </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Draw a card, then discard a card. Create a tapped treasure token.
+Create a token that’s a copy of target artifact or creature, except it’s an artifact in addition to its other types. It gains haste. Sacrifice it at the beginning of your next end step.
+Gain control of all permanents until end of turn. They gain haste until end of turn. Untap them. Exile Team Rocket Jesse and James.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>RenaIllusion</illustrator>
+    <number>207/343</number>
+  </card>
+  <card>
+    <name>Trouble at the Lake of Rage</name>
+    <cost>2GU</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>As an additional cost to cast Trouble at the Lake of Rage, sacrifice a creature.
+Search your library for a creature card that shares a color with the sacrificed creature and put it onto the battlefield, then shuffle.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>208/343</number>
+  </card>
+  <card>
+    <name>Tyranitar</name>
+    <cost>5BRG</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Rock Dark </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Trample, ward 4, haste
+Whenever Tyranitar enters the battlefield or attacks, each opponent sacrifices a land and discards a card. You search your library for a land card, put it onto the battlefield tapped, shuffle, then draw a card.           </rules>
+    <flavor></flavor>
+    <stats>
+      <power>7</power>
+      <toughness>7</toughness>
+    </stats>
+    <illustrator>angel5art</illustrator>
+    <number>209/343</number>
+  </card>
+  <card>
+    <name>Venomoth</name>
+    <cost>1BG</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Poison Bug </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Flying
+Whenever Venomoth attacks choose one—
+• Put a -1/-1 counter on target creature
+• You draw a card and lose 1 life.         </rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Yixin He</illustrator>
+    <number>210/343</number>
+  </card>
+  <card>
+    <name>Zapdos</name>
+    <cost>3RW</cost>
+    <type>
+      <supertype>Legendary Creature</supertype>
+      <subtype>Electric Flying </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Flying, flash
+Whenever Zapdos enters the battlefield or attacks, exile the top two cards of your library. Until your next end step, you may play cards exiled with Zapdos.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>4</toughness>
+    </stats>
+    <illustrator>TamberElla</illustrator>
+    <number>211/343</number>
+  </card>
+  <card>
+    <name>Ash’s</name>
+    <cost>R/WR/W</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Create a red and white 2/2 Pikachu creature token with first strike.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>212/343</number>
+  </card>
+  <card>
+    <name>Gastly</name>
+    <cost>W/B</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Ghost Poison </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Flying
+When Gastly dies, return it to the battlefield transformed under an opponent’s control.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>juan_arrabel_hernandez</illustrator>
+    <number>213/343</number>
+  </card>
+  <card>
+    <name>Primeape</name>
+    <cost>B/R</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Fighting </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Haste
+Whenever Primeape deals combat damage, surveil 1.
+Delirium — As long as there are four or more card types among cards in your graveyard, Primeape gets +2/+2 and has menace.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>214/343</number>
+  </card>
+  <card>
+    <name>Shellder</name>
+    <cost>W/U</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Water </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>T: Target creature gains hexproof until end of turn.
+2/U: Transform Shellder. Spend only mana produced by artifacts to activate this ability.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Anonymous 9Gag User</illustrator>
+    <number>215/343</number>
+  </card>
+  <card>
+    <name>Vileplume</name>
+    <cost>BB/GG</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Grass Poison </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Lifelink, trample
+When Vileplume enters the battlefield, put a -1/-1 counter on each nonblack creature your opponents control.
+Whenever Vileplume deals combat damage to a player, proliferate.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>216/343</number>
+  </card>
+  <card>
+    <name>Oh! A Bite!</name>
+    <cost>R</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Destroy target artifact. Its controller puts a 1/1 blue Jellyfish creature token onto the battlefield.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Cody Chan</illustrator>
+    <number>217/343</number>
+  </card>
+  <card>
+    <name>Prepare for Trouble</name>
+    <cost>4R</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>You may put a creature card from your hand onto the battlefield. It gains haste. Sacrifice it at the beginning of the next end step.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>SakimiChan</illustrator>
+    <number>218/343</number>
+  </card>
+  <card>
+    <name>Bicycle</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype>Vehicle </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>First strike
+Whenever Bicycle attacks, you may discard a card. If you do, draw a card.  
+Crew 1 (Tap any number of creatures you control with total power 1 or greater: This Vehicle becomes an artifact creature until end of turn.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Kevin Darthial</illustrator>
+    <number>219/343</number>
+  </card>
+  <card>
+    <name>Boulder Badge</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Add R or G.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Artkal</illustrator>
+    <number>220/343</number>
+  </card>
+  <card>
+    <name>Cascade Badge</name>
+    <cost>1</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Add U.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Artkal</illustrator>
+    <number>221/343</number>
+  </card>
+  <card>
+    <name>Deoxys</name>
+    <cost>10</cost>
+    <type>
+      <supertype>Legendary Artifact Creature</supertype>
+      <subtype>Psychic </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>When Deoxys enters the battlefield, destroy up to one target permanent of each permanent type.
+1: Flip Deoxys.
+1: Transform Deoxys.
+1: Transform Deoxys, then flip it.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>6</power>
+      <toughness>6</toughness>
+    </stats>
+    <illustrator>asteroid_ill on twitter</illustrator>
+    <number>222/343</number>
+  </card>
+  <card>
+    <name>Deoxys — Attack Forme</name>
+    <cost></cost>
+    <type>
+      <supertype>Legendary Artifact Creature</supertype>
+      <subtype>Psychic </subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>Trample
+1: Flip Deoxys — Attack Forme.
+1: Transform Deoxys — Attack Forme.
+1: Transform Deoxys — Attack Forme, then flip it.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>10</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>asteroid_ill on twitter</illustrator>
+    <number>223/343</number>
+  </card>
+  <card>
+    <name>Ditto</name>
+    <cost>3</cost>
+    <type>
+      <supertype>Artifact Creature</supertype>
+      <subtype>Normal </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>You may have Ditto enter the battlefield as a copy of any creature or planeswalker on the battlefield.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>0</power>
+      <toughness>0</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>224/343</number>
+  </card>
+  <card>
+    <name>Earth Badge</name>
+    <cost>1</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Add G.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Artkal</illustrator>
+    <number>225/343</number>
+  </card>
+  <card>
+    <name>Escape Rope</name>
+    <cost>1</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>2, T: Venture into the dungeon. (The dungeons are Diglett’s Cave, Rock Tunnel, and Victory Road.)
+XX, Sacrifice Escape Rope: Venture into the dugeon X times.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>226/343</number>
+  </card>
+  <card>
+    <name>Everstone</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>T: Add C.
+Creatures can’t transform. If a creature would enter the battlefield transformed, instead it enters the battlefield.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>227/343</number>
+  </card>
+  <card>
+    <name>Fire Stone</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>T: Add R.
+2R, T, Sacrifice Fire Stone: Fire Stone deals 3 damage to target creature or player.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Pokemon Company</illustrator>
+    <number>228/343</number>
+  </card>
+  <card>
+    <name>Fog Badge</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Add W or B.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Artkal, Zexion21</illustrator>
+    <number>229/343</number>
+  </card>
+  <card>
+    <name>Forretress</name>
+    <cost>8</cost>
+    <type>
+      <supertype>Artifact Creature</supertype>
+      <subtype>Bug Steel </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Forretress enters the battlefield with 4 +1/+1 counters on it.
+Reach
+Remove a +1/+1 counter from Forretress: Forretress deals 1 damage to each opponent and each nonartifact creature they control.            </rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Asterism Studio</illustrator>
+    <number>230/343</number>
+  </card>
+  <card>
+    <name>Glacier Badge</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Add U or W.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Artkal, Zexion21</illustrator>
+    <number>231/343</number>
+  </card>
+  <card>
+    <name>Great Ball</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Great Ball doesn’t untap during your untap step.
+T: Add CCC.
+3: Untap Great Ball.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>sahinduezguen, Alex Daluiso</illustrator>
+    <number>232/343</number>
+  </card>
+  <card>
+    <name>Hive Badge</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Add G or U.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Artkal, Zexion21</illustrator>
+    <number>233/343</number>
+  </card>
+  <card>
+    <name>HM01 - Cut</name>
+    <cost>3</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype>Equipment </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Equip 2
+Equipped creature gets +2/+2 and has first strike.
+Whenever equipped creature deals damage to a player, up to one target creature gets -X/-X until end of turn where X is equipped creature’s power.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>234/343</number>
+  </card>
+  <card>
+    <name>HM02 - Fly</name>
+    <cost>3</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype>Equipment </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Equip 2
+Equipped creature gets +2/+2 and has flying.
+Whenever equipped creature deals combat damage to a player, you may exile target nonland permanent. If you do, return it to the battlefield at the beginning of its controller’s next end step.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>235/343</number>
+  </card>
+  <card>
+    <name>HM03 - Surf</name>
+    <cost>3</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype>Equipment </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Equip 2
+Equipped creature gets +2/+2 has hexproof.
+Whenever equipped creature deals combat damage to a player, put a flood counter on target land with no flood counters and draw a card. That land becomes an island for as long as it has a flood counter. When you put a counter on a land this way, remove a flood counter from another target land with a flood counter.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>236/343</number>
+  </card>
+  <card>
+    <name>HM04 - Strength</name>
+    <cost>3</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype>Equipment </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Equip 2
+Equipped creature gets +2/+2 and can’t be blocked by creatures with power 2 or less..
+Whenever equipped creature deals combat damage to a player, you may sacrifice a land. If you do, equipped creature deals damage equal to its power to any target.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>LindseyWArt</illustrator>
+    <number>237/343</number>
+  </card>
+  <card>
+    <name>HM05 - Flash</name>
+    <cost>3</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype>Equipment </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Equip 2
+Equipped creature gets +2/+2 has “While choosing targets as part of casting a spell or activating an ability, your opponents must choose this creature if able.”
+Whenever equipped creature deals combat damage to a player, that player can’t cast noncreature spells until your next turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>FionaHsieh</illustrator>
+    <number>238/343</number>
+  </card>
+  <card>
+    <name>HM06 — Whirlpool</name>
+    <cost>3</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype>Equipment </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Equip 2
+Equipped creature gets +2/+2 and has “Whenever this creature becomes tapped for the first time each turn, untap it.”
+Whenever equipped creature deals combat damage to a player, tap target permanent. It doesn’t untap during its controller’s next untap step.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>New Pokemon Snap</illustrator>
+    <number>239/343</number>
+  </card>
+  <card>
+    <name>HM07 — Waterfall</name>
+    <cost>3</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype>Equipment </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Equip 2
+Equipped creature gets +2/+2 and has trample.
+Whenever equipped creature deals combat damage to a player, return target permanent to its owner’s hand.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Antonio Gomez</illustrator>
+    <number>240/343</number>
+  </card>
+  <card>
+    <name>Leaf Stone</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>T: Add G.
+2G, T, Sacrifice Leaf Stone: Search your library for two land cards and put them onto the battlefield tapped.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Pokemon Company</illustrator>
+    <number>241/343</number>
+  </card>
+  <card>
+    <name>Lost Item</name>
+    <cost>3</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T, Sacrifice Lost Item: Put target artifact card from a graveyard onto the battlefield. Activate only as a sorcery.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Mark Cosmiano</illustrator>
+    <number>242/343</number>
+  </card>
+  <card>
+    <name>Magneton</name>
+    <cost>8</cost>
+    <type>
+      <supertype>Artifact Creature</supertype>
+      <subtype>Electric Steel </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Whenever Magneton attacks, it deals X damage to any target where X is the number of artifacts you control.
+When Magneton dies, create three colorless 2/2 Magnemite artifact creature tokens with “Whenever this creature attacks, deal X damage to any target, where X is the number of artifacts you control.”</rules>
+    <flavor></flavor>
+    <stats>
+      <power>6</power>
+      <toughness>6</toughness>
+    </stats>
+    <illustrator>Simon Gangl</illustrator>
+    <number>243/343</number>
+  </card>
+  <card>
+    <name>Marsh Badge</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Add U or B.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Artkal</illustrator>
+    <number>244/343</number>
+  </card>
+  <card>
+    <name>Master Ball</name>
+    <cost>0</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>T, Sacrifice Master Ball: Add 3 mana of any one color.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>sahinduezguen, Alex Daluiso</illustrator>
+    <number>245/343</number>
+  </card>
+  <card>
+    <name>Mewtwo</name>
+    <cost>10</cost>
+    <type>
+      <supertype>Legendary Artifact Creature</supertype>
+      <subtype>Psychic </subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>When Mewtwo enters the battlefield, or attacks, each player mills five cards. When they do, put up to one target creature card from a graveyard onto the battlefield under your control.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>10</power>
+      <toughness>10</toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>246/343</number>
+  </card>
+  <card>
+    <name>Mindslaver</name>
+    <cost>6</cost>
+    <type>
+      <supertype>Legendary Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>4, T, Sacrifice Mindslaver: You control target player during their next turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Hemesh Patel</illustrator>
+    <number>247/343</number>
+  </card>
+  <card>
+    <name>Mineral Badge</name>
+    <cost>1</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Add C.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Artkal, Zexion21</illustrator>
+    <number>248/343</number>
+  </card>
+  <card>
+    <name>Moon Stone</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>T: Add B.
+2B, T, Sacrifice Moon Stone: Target creature gets -4/-4 until end of turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Pokemon Company</illustrator>
+    <number>249/343</number>
+  </card>
+  <card>
+    <name>Mysterious Fossil</name>
+    <cost>3</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>T, Sacrifice Mysterious Fossil: Exile target creature card from your graveyard. Put that card onto the battlefield at the beginning of the next upkeep. It becomes an artifact in addition to its other types.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>250/343</number>
+  </card>
+  <card>
+    <name>Plain Badge</name>
+    <cost>1</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Add B.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Artkal, Zexion21</illustrator>
+    <number>251/343</number>
+  </card>
+  <card>
+    <name>Pokeball</name>
+    <cost>1</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Add CC.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>sahinduezguen</illustrator>
+    <number>252/343</number>
+  </card>
+  <card>
+    <name>Pokedoll</name>
+    <cost>0</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>T, Sacrifice Pokedoll: Remove up to one target creature from combat.
+When Pokedoll is put into your graveyard from the battlefield, draw a card.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Studio Bora Inc.</illustrator>
+    <number>253/343</number>
+  </card>
+  <card>
+    <name>Pokeflute</name>
+    <cost>1</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>1, T: Untap target permanent.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Nick Rosenthal</illustrator>
+    <number>254/343</number>
+  </card>
+  <card>
+    <name>Porygon</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Artifact Creature</supertype>
+      <subtype>Normal </subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>Whenever an opponent casts a spell, choose one of that spell’s colors. At the beginning of the next end step, Porygon loses protection from all colors, then gains protection from the chosen color.
+T: Add C to your mana pool for each artifact you control. When you spend this mana to cast an artifact spell for the first time each turn, draw a card.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>Josha Dunlop</illustrator>
+    <number>255/343</number>
+  </card>
+  <card>
+    <name>Porygon2</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Artifact Creature</supertype>
+      <subtype>Normal </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T: Add one mana of any color.
+R, T, Sacrifice an artifact: Return target artifact card from your graveyard to the battlefield.
+1U, T, Sacrifice an artifact, Sacrifice Porygon2: Search your library for an artifact card, put it on the battlefield, then shuffle. Activate only as a sorcery.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>sanjul sajeev</illustrator>
+    <number>256/343</number>
+  </card>
+  <card>
+    <name>Rainbow Badge</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Add G or W.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Artkal</illustrator>
+    <number>257/343</number>
+  </card>
+  <card>
+    <name>Rainbow Wing</name>
+    <cost>3</cost>
+    <type>
+      <supertype>Legendary Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Rainbow Wing is all colors.
+T: Add one mana of any color.
+You may pay WUBRG rather than pay the mana cost of spells you cast.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>N/A</illustrator>
+    <number>258/343</number>
+  </card>
+  <card>
+    <name>Rising Badge</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Add U or R.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Artkal, Zexion21</illustrator>
+    <number>259/343</number>
+  </card>
+  <card>
+    <name>Silph Scope</name>
+    <cost>1</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Target player exiles a card from their graveyard.
+1, Sacrifice Silph Scope: Exile target card from a graveyard. Draw a card.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>260/343</number>
+  </card>
+  <card>
+    <name>Silver Wing</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Legendary Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>T: Add C.
+1, T: The next spell you cast this turn costs WUBRG less to cast. This effect reduces only the amount of colored mana you pay.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>N/A</illustrator>
+    <number>261/343</number>
+  </card>
+  <card>
+    <name>Soul Badge</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Add G or B.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Artkal</illustrator>
+    <number>262/343</number>
+  </card>
+  <card>
+    <name>Steelix</name>
+    <cost>9</cost>
+    <type>
+      <supertype>Artifact Creature</supertype>
+      <subtype>Steel Ground </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>Protection from black
+Trample
+When Steelix enters the battlefield, sacrifice any number of lands. Each opponent sacrifices that many lands.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>8</power>
+      <toughness>10</toughness>
+    </stats>
+    <illustrator>oOIsiusOo</illustrator>
+    <number>263/343</number>
+  </card>
+  <card>
+    <name>Storm Badge</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Add R or B.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Artkal, Zexion21</illustrator>
+    <number>264/343</number>
+  </card>
+  <card>
+    <name>Sun Stone</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>T: Add one mana of any color.
+WUBRG, T, Sacrifice Sun Stone: Draw three cards.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Pokemon Company</illustrator>
+    <number>265/343</number>
+  </card>
+  <card>
+    <name>Thunder Badge</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Add R or W.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Artkal</illustrator>
+    <number>266/343</number>
+  </card>
+  <card>
+    <name>Thunder Stone</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>T: Add W.
+2W, T, Sacrifice Thunder Stone: Destroy target attacking or blocking creature.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Pokemon Company</illustrator>
+    <number>267/343</number>
+  </card>
+  <card>
+    <name>Town Map</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>T: Add one mana of any color a land you control could produce.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Pokemon Company</illustrator>
+    <number>268/343</number>
+  </card>
+  <card>
+    <name>Ultra Ball</name>
+    <cost>4</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T: Add CCC.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>sahinduezguen, Alex Daluiso</illustrator>
+    <number>269/343</number>
+  </card>
+  <card>
+    <name>Volcano Badge</name>
+    <cost>1</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Add R.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Artkal</illustrator>
+    <number>270/343</number>
+  </card>
+  <card>
+    <name>Water Stone</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>U</rarity>
+    <rules>T: Add U.
+2U, T: Sacrifice Water Stone: Draw two cards.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Pokemon Company</illustrator>
+    <number>271/343</number>
+  </card>
+  <card>
+    <name>Zephyr Badge</name>
+    <cost>1</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Add W.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Artkal, Zexion21</illustrator>
+    <number>272/343</number>
+  </card>
+  <card>
+    <name>Azalea Town</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>When Azalea Town enters the battlefield, it doesn’t untap during your next untap step.
+T: Add G or W.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Gary Gill</illustrator>
+    <number>273/343</number>
+  </card>
+  <card>
+    <name>Bellchime Trail</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T, Pay 1 life, Sacrifice Bellchime Trail: Search your library for a Forest or Plains card and put it onto the battlefield, then shuffle.</rules>
+    <flavor>A path bathed in the light of the sun.</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>asteroid ill</illustrator>
+    <number>274/343</number>
+  </card>
+  <card>
+    <name>Blackthorn City</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>When Blackthorn City enters the battlefield, it doesn’t untap during your next untap step.
+T: Add B or R.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Klaus Pillon</illustrator>
+    <number>275/343</number>
+  </card>
+  <card>
+    <name>Burned Tower</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype>Swamp Mountain </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>As Burned Tower enters the battlefield, you may have an opponent create a 1/1 black Bat creature token. If you don’t, Burned Tower enters the battlefield tapped.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Pokemon Generations</illustrator>
+    <number>276/343</number>
+  </card>
+  <card>
+    <name>Celadon City</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>When Celadon City enters the battlefield, it doesn’t untap during your next untap step.
+T: Add B or G.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>277/343</number>
+  </card>
+  <card>
+    <name>Celadon Dept Store</name>
+    <cost></cost>
+    <type>
+      <supertype>Legendary Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>C</rarity>
+    <rules>T: Add C.
+XX, T, Sacrifice Celadon Dept Store: Search your library for an artifact card with mana value X or less, put it onto the battlefield, then shuffle. Activate only as a sorcery.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>278/343</number>
+  </card>
+  <card>
+    <name>Cerulean Bike Shop</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T: Add C.
+1, T, Discard a card: Draw a card.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>279/343</number>
+  </card>
+  <card>
+    <name>Cerulean Cape</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype>Forest Island </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>280/343</number>
+  </card>
+  <card>
+    <name>Cerulean Cave</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype>Island Swamp </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>slipstreambrendan</illustrator>
+    <number>281/343</number>
+  </card>
+  <card>
+    <name>Cerulean City</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>When Cerulean City enters the battlefield, it doesn’t untap during your next untap step.
+T: Add G or U.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Cronoan</illustrator>
+    <number>282/343</number>
+  </card>
+  <card>
+    <name>Cianwood City</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>When Cianwood City enters the battlefield, it doesn’t untap during your next untap step.
+T: Add U or R.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>283/343</number>
+  </card>
+  <card>
+    <name>Cinnabar Island</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype>Island Mountain </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>284/343</number>
+  </card>
+  <card>
+    <name>Cinnabar Laboratories</name>
+    <cost></cost>
+    <type>
+      <supertype>Legendary Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>T: Add C to your mana pool.
+5, T, Pay 1 life: Create a colorless 1/1 Ditto artifact creature token with “You may have this creature enter the battlefield as a copy of any creature on the battlefield except its a 1/1.”
+5, Sacrifice an artifact, a creature, and a land: Transform Cinnabar Laboratories.</rules>
+    <flavor>We dreamed of creating the world’s strongest Pokémon...</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>285/343</number>
+  </card>
+  <card>
+    <name>Cinnabar Volcano</name>
+    <cost></cost>
+    <type>
+      <supertype>Legendary Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>T: Add R.
+T, Sacrifice Cinnabar Volcano: Destroy target nonbasic land.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>toxicsquall</illustrator>
+    <number>286/343</number>
+  </card>
+  <card>
+    <name>Cycling Road</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T, Pay 1 life, Sacrifice Cycling Road: Search your library for a Mountain or Plains card and put it onto the battlefield, then shuffle.</rules>
+    <flavor>A peaceful path where the peaks meet the sky.</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>287/343</number>
+  </card>
+  <card>
+    <name>Dark Cave</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T, Pay 1 life, Sacrifice Dark Cave: Search your library for a Swamp or Mountain card and put it onto the battlefield, then shuffle.</rules>
+    <flavor>A cave veiled by unending night.</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>288/343</number>
+  </card>
+  <card>
+    <name>Diglett’s Cave</name>
+    <cost></cost>
+    <type>
+      <supertype>Legendary Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T: Add CC to your mana pool. Each opponent creates a 1/1 colorless Diglett creature token.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>289/343</number>
+  </card>
+  <card>
+    <name>Dragon’s Den</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype>Island Mountain </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>As Dragon’s Den enters the battlefield, you may have an opponent create a 1/1 blue Dragon creature token. If you don’t, Dragon’s Den enters the battlefield tapped.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>290/343</number>
+  </card>
+  <card>
+    <name>Ecruteak City</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T, Pay 1 life, Sacrifice Ecruteak City: Search your library for a Plains or Swamp card and put it onto the battlefield, then shuffle.</rules>
+    <flavor>A city that bears the scars of history.</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>JYArtWorkDesigns</illustrator>
+    <number>291/343</number>
+  </card>
+  <card>
+    <name>Fuschia City</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T, Pay 1 life, Sacrifice Fuschia City: Search your library for a Swamp or Forest card and put it onto the battlefield, then shuffle.</rules>
+    <flavor>An historic city made new.</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>292/343</number>
+  </card>
+  <card>
+    <name>Glitch City</name>
+    <cost></cost>
+    <type>
+      <supertype>Legendary Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Decks may not contain any cards named Glitch City.
+You have protection from everything.
+You can’t play lands.
+At the beginning of your upkeep, sacrifice a land.
+T: Add C.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>N/A</illustrator>
+    <number>293/343</number>
+  </card>
+  <card>
+    <name>Ice Path</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype>Plains Island </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>As Ice Path enters the battlefield, you may have an opponent create a 1/1 white Bird creature token. If you don’t, Ice Path enters the battlefield tapped.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Katie Draws Stuff</illustrator>
+    <number>294/343</number>
+  </card>
+  <card>
+    <name>Ilex Forest</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype>Swamp Forest </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>As Ilex Forest enters the battlefield, you may have an opponent create a 1/1 black Insect creature token. If you don’t, Ilex Forest enters the battlefield tapped.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>ilex_forest on twitter</illustrator>
+    <number>295/343</number>
+  </card>
+  <card>
+    <name>Ilex Forest Shrine</name>
+    <cost></cost>
+    <type>
+      <supertype>Legendary Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>T: Add an amount of G equal to your devotion to green.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>RhymeWithRay</illustrator>
+    <number>296/343</number>
+  </card>
+  <card>
+    <name>Indigo Plateau</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T, Pay 1 life, Sacrifice Indigo Plateau: Search your library for a Mountain or Forest card and put it onto the battlefield, then shuffle.</rules>
+    <flavor>The fate of trainers aiming for the top rests here.</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>aocom</illustrator>
+    <number>297/343</number>
+  </card>
+  <card>
+    <name>Lake of Rage</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype>Forest Island </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>As Lake of Rage enters the battlefield, you may have an opponent create a 1/1 blue Fish creature token. If you don’t, Lake of Rage enters the battlefield tapped.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>AudGreen</illustrator>
+    <number>298/343</number>
+  </card>
+  <card>
+    <name>Lavender Town</name>
+    <cost></cost>
+    <type>
+      <supertype>Legendary Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T: Add C.
+W/B, T, Exile a creature card from your graveyard: Create a white 1/1 Spirit creature token with flying.</rules>
+    <flavor>May the souls of Pokémon rest easy.</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>299/343</number>
+  </card>
+  <card>
+    <name>Mahogany Town</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>When Mahogany Town enters the battlefield, it doesn’t untap during your next untap step.
+T: Add W or U.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Libiao</illustrator>
+    <number>300/343</number>
+  </card>
+  <card>
+    <name>Mt. Moon</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype>Mountain Forest </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>301/343</number>
+  </card>
+  <card>
+    <name>Mt. Silver</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype>Mountain Forest </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>As Mt. Silver enters the battlefield, you may have an opponent create a 1/1 red Elemental creature token. If you don’t, Mt. Silver enters the battlefield tapped.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>302/343</number>
+  </card>
+  <card>
+    <name>Mt. Silver Spires</name>
+    <cost></cost>
+    <type>
+      <supertype>Legendary Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Mt. Silver Spires enters the battlefield tapped.
+T: Add C.
+6, T: Create an X/X red Elemental creature token where X is the number of mountains you control. This ability costs 1 less to activate for each basic land type among lands you control. </rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Ipan Hf / iHF95</illustrator>
+    <number>303/343</number>
+  </card>
+  <card>
+    <name>National Park</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype>Forest Plains </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>As National Park enters the battlefield, you may have an opponent create a 1/1 green Insect creature token. If you don’t, National Park enters the battlefield tapped.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>304/343</number>
+  </card>
+  <card>
+    <name>Olivine City</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T, Pay 1 life, Sacrifice Olivine City: Search your library for a Forest or Island card and put it onto the battlefield, then shuffle.</rules>
+    <flavor>A city swathed in the melody of the sea.</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>debumegu</illustrator>
+    <number>305/343</number>
+  </card>
+  <card>
+    <name>Olivine Lighthouse</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T: Add C.
+W, T, Sacrifice Olivine Lighthouse. Prevent all combat damage that would be dealt by creatures this turn. Opponents can’t cast noncreature spells until end of turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Matthew G</illustrator>
+    <number>306/343</number>
+  </card>
+  <card>
+    <name>Pallet Town</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T, Sacrifice Pallet Town: Search your library for a basic land card, and put it onto the battlefield, then shuffle.</rules>
+    <flavor>Shades of your journey await!</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>307/343</number>
+  </card>
+  <card>
+    <name>Pewter City</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>When Pewter City enters the battlefield, it doesn’t untap during your next untap step.
+T: Add R or G.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Cronoan</illustrator>
+    <number>308/343</number>
+  </card>
+  <card>
+    <name>Pewter Museum of Science</name>
+    <cost></cost>
+    <type>
+      <supertype>Legendary Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>T: Add U for each historic nonland permanent you control. (Artifacts, legendaries, and Sagas are historic.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>309/343</number>
+  </card>
+  <card>
+    <name>PokeMart</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T: Add C.
+T, Sacrifice an artifact: Create a number of Treasure tokens equal to half the sacrificed artifact’s converted mana cost, rounded down.
+T, Sacrifice X artifacts: Search your library for an artifact with converted mana cost X or less and put it onto the battlefield.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>310/343</number>
+  </card>
+  <card>
+    <name>Pokemon Centre</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T: Add C.
+2, T: Remove all burn. freeze, paralyze, and -1/-1 counters from target creature. Regenerate it.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>311/343</number>
+  </card>
+  <card>
+    <name>Pokemon Tower</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype>Plains Swamp </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>312/343</number>
+  </card>
+  <card>
+    <name>Power Plant</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype>Mountain Plains </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>313/343</number>
+  </card>
+  <card>
+    <name>Rock Tunnel</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>When Rock Tunnel becomes tapped, target opponent ventures into the dungeon. (The dungeons are Diglett’s Cave, Rock Tunnel, and Victory Road).
+T: Add CC.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>314/343</number>
+  </card>
+  <card>
+    <name>Rocket Game Corner</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T: Add C to your mana pool.
+T: Flip a coin. If you win the flip, draw a card.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>315/343</number>
+  </card>
+  <card>
+    <name>Ruins of Alph</name>
+    <cost></cost>
+    <type>
+      <supertype>Legendary Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Exalted
+T: Add W.
+Whenever you attack with three or more creatures, transform Ruins of Alph.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Hiro</illustrator>
+    <number>316/343</number>
+  </card>
+  <card>
+    <name>Safari Zone</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype>Forest Plains </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>317/343</number>
+  </card>
+  <card>
+    <name>Saffron City</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>When Saffron City enters the battlefield, it doesn’t untap during your next untap step.
+T: Add U or B.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>318/343</number>
+  </card>
+  <card>
+    <name>Seafoam Islands</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype>Plains Island </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>319/343</number>
+  </card>
+  <card>
+    <name>Sprout Tower</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype>Plains Swamp </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>As Sprout Tower enters the battlefield, you may have an opponent create a 1/1 white Spirit creature token. If you don’t, Sprout Tower enters the battlefield tapped.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>RhymeWithRay</illustrator>
+    <number>320/343</number>
+  </card>
+  <card>
+    <name>Tin Tower</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype>Mountain Plains </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>As Tin Tower enters the battlefield, you may have an opponent create a 1/1 white Rat creature token. If you don’t, Tin Tower enters the battlefield tapped.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>RhymeWithRay</illustrator>
+    <number>321/343</number>
+  </card>
+  <card>
+    <name>Tohjo Falls</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T, Pay 1 life, Sacrifice Tohjo Falls: Search your library for an Island or Mountain card and put it onto the battlefield, then shuffle.</rules>
+    <flavor>A link between the past and future.</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>tiago alexandre</illustrator>
+    <number>322/343</number>
+  </card>
+  <card>
+    <name>Underground Path</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T: Add one mana of any color another land could produce.
+3, T: Target creature can’t be blocked this turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>323/343</number>
+  </card>
+  <card>
+    <name>Union Cave</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T, Pay 1 life, Sacrifice Union Cave: Search your library for an Island or Swamp card and put it onto the battlefield, then shuffle.</rules>
+    <flavor>Deep underground, all seas converge.</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>mgcmark</illustrator>
+    <number>324/343</number>
+  </card>
+  <card>
+    <name>Unknown Dungeon</name>
+    <cost></cost>
+    <type>
+      <supertype>Legendary Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>T, Pay 1 life: Add an amount of B equal to the life you’ve lost this turn.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>arvalis</illustrator>
+    <number>325/343</number>
+  </card>
+  <card>
+    <name>Vermilion City</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>When Vermilion City enters the battlefield, it doesn’t untap during your next untap step.
+T: Add R or W.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>326/343</number>
+  </card>
+  <card>
+    <name>Vermilion Harbour</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T, Pay 1 life, Sacrifice Vermilion Harbour: Search your library for a Plains or Island card and put it onto the battlefield, then shuffle.</rules>
+    <flavor>The port of exquisite sunsets.</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mandl</illustrator>
+    <number>327/343</number>
+  </card>
+  <card>
+    <name>Victory Road</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype>Swamp Mountain </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>328/343</number>
+  </card>
+  <card>
+    <name>Violet City</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>When Violet City enters the battlefield, it doesn’t untap during your next untap step.
+T: Add W or B.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>RhymeWithRay</illustrator>
+    <number>329/343</number>
+  </card>
+  <card>
+    <name>Viridian Forest</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype>Swamp Forest </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules></rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>Simone Mändl</illustrator>
+    <number>330/343</number>
+  </card>
+  <card>
+    <name>Warp Tile</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>T: Add C.
+1, T: Exile target creature you control.
+2, T: Return a creature card exiled with Warp Tile to the battlefield under its owner’s control.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>N/A</illustrator>
+    <number>331/343</number>
+  </card>
+  <card>
+    <name>Whirl Islands</name>
+    <cost></cost>
+    <type>
+      <supertype>Land</supertype>
+      <subtype>Island Swamp </subtype>
+    </type>
+    <rarity>R</rarity>
+    <rules>As Whirl Islands enters the battlefield you may have an opponent create a 1/1 blue Jellyfish creature token. If you don’t, Whirl Islands enters the battlefield tapped.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>ka0susama</illustrator>
+    <number>332/343</number>
+  </card>
+  <card>
+    <name>Eevee</name>
+    <cost>2</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Normal </subtype>
+    </type>
+    <rarity>S</rarity>
+    <rules>Starter — Two mana of any one color. (You may cast this card for its starter cost from outside the game as long as it is the first spell you’ve cast this game.)
+Eevee is all colors.
+First strike
+1, Exile Eevee: Search your library for an Eeveelution creature card, put it onto the battlefield, then shuffle. Spend only mana produced by artifacts to activate this ability.             </rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Addams AI</illustrator>
+    <number>333/343</number>
+  </card>
+  <card>
+    <name>Pikachu</name>
+    <cost>W</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Electric Starter </subtype>
+    </type>
+    <rarity>S</rarity>
+    <rules>Starter — W (You may cast this card for its starter cost from outside the game as long as it is the first spell you’ve cast this game.)
+When Pikachu enters the battlefield, paralyze target creature an opponent controls until end of turn.
+2/W: Transform Pikachu. Spend only mana produced by artifacts to activate this ability. Activate this ability only if Pikachu was not your starter.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>JC Soto</illustrator>
+    <number>334/343</number>
+  </card>
+  <card>
+    <name>Squirtle</name>
+    <cost>1U</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Water Starter </subtype>
+    </type>
+    <rarity>S</rarity>
+    <rules>Starter — UU (You may cast this card for its starter cost from outside the game as long as it is the first spell you’ve cast this game.)
+Flash
+When Squirtle enters the battlefield, return target spell to its owner’s hand.
+Whenever an opponent casts their second spell each turn, transform Squirtle.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>0</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Joshua Dunlop</illustrator>
+    <number>335/343</number>
+  </card>
+  <card>
+    <name>Meowth</name>
+    <cost>1B</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Normal </subtype>
+    </type>
+    <rarity>S</rarity>
+    <rules>Starter — BB (You may cast this card for its starter cost from outside the game as long as it is the first spell you’ve cast this game.)
+When Meowth enters the battlefield or at the beginning of your upkeep, you scry 1 and lose 1 life. Then if your life total is at least 4 less than your starting life total, transform Meowth.                   </rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>TamberElla</illustrator>
+    <number>336/343</number>
+  </card>
+  <card>
+    <name>Charizard</name>
+    <cost>3RR</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Fire Flying </subtype>
+    </type>
+    <rarity>S</rarity>
+    <rules>Flying, haste
+Damage can’t be prevented.
+Whenever Charizard deals combat damage to a player, it deals that much damage to target planeswalker that player controls.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>5</power>
+      <toughness>5</toughness>
+    </stats>
+    <illustrator>Nininak AI</illustrator>
+    <number>337/343</number>
+  </card>
+  <card>
+    <name>Charmander</name>
+    <cost>1R</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Fire Starter </subtype>
+    </type>
+    <rarity>S</rarity>
+    <rules>Starter — RR (You may cast this card for its starter cost from outside the game as long as it is the first spell you’ve cast this game.)
+T: Charmander deals 1 damage to any target.
+Whenever a creature dealt damage by Charmander this turn dies, transform Charmander.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>0</power>
+      <toughness>1</toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>338/343</number>
+  </card>
+  <card>
+    <name>Flamethrower</name>
+    <cost>1R</cost>
+    <type>
+      <supertype>Instant</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>S</rarity>
+    <rules>Flamethrower deals 3 damage to any target.
+Same type attack boost — If you control a creature that shares a color with this spell, put a burn counter on each permanent dealt damage this way. (A burned permanent loses indestructible and can’t gain indestructible. If it would be put into a graveyard, exile it instead.)</rules>
+    <flavor></flavor>
+    <stats>
+      <power>5</power>
+      <toughness>5</toughness>
+    </stats>
+    <illustrator>ChrisMasna</illustrator>
+    <number>339/343</number>
+  </card>
+  <card>
+    <name>Typhlosion</name>
+    <cost>2R</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Fire </subtype>
+    </type>
+    <rarity>S</rarity>
+    <rules>Menace
+Players can’t gain life.
+Whenever a land card is put into a graveyard from anywhere, Typhlosion deals 1 damage to any target.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>3</power>
+      <toughness>3</toughness>
+    </stats>
+    <illustrator>nell-fallcard</illustrator>
+    <number>340/343</number>
+  </card>
+  <card>
+    <name>Bulbasaur</name>
+    <cost>G</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Grass Poison Starter </subtype>
+    </type>
+    <rarity>S</rarity>
+    <rules>Starter — GG (You may cast this card for its starter cost from outside the game as long as it is the first spell you’ve cast this game.)
+T: Add G. When this mana is spent to cast a spell with mana value 5 or greater, transform Bulbasaur.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>1</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>341/343</number>
+  </card>
+  <card>
+    <name>Meganium</name>
+    <cost>2G</cost>
+    <type>
+      <supertype>Creature</supertype>
+      <subtype>Grass </subtype>
+    </type>
+    <rarity>S</rarity>
+    <rules>You may play land cards from your graveyard.
+Whenever a land enters the battlefield from anywhere other than your hand, you scry 1 and gain 1 life.</rules>
+    <flavor></flavor>
+    <stats>
+      <power>2</power>
+      <toughness>2</toughness>
+    </stats>
+    <illustrator>Unknown</illustrator>
+    <number>342/343</number>
+  </card>
+  <card>
+    <name>GS Ball</name>
+    <cost>0</cost>
+    <type>
+      <supertype>Legendary Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>S</rarity>
+    <rules>T: Add C or one mana of any color.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>sahinduezguen, Dackjaw 3D</illustrator>
+    <number>343/343</number>
+  </card>
+</spoiler>
