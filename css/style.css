@@ -9855,3 +9855,7 @@ a.card-link {
 * html #preview {
 	position:		absolute;
 }
+
+.card-preview {
+  margin: 3px 3px 3px 3px;
+}
