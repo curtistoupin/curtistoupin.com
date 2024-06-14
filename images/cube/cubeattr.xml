@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <spoiler set="">
   <card>
-    <name>Clone Ball</name>
-    <cost>3</cost>
-    <type>
-      <supertype>Artifact</supertype>
-      <subtype></subtype>
-    </type>
-    <rarity>M</rarity>
-    <rules>You may choose not to untap Clone Ball during your untap step.
-2, T: Create a token that’s a copy of target creature, except it’s black in addition to its other colors. Put a +1/+1 counter on it. When Clone Ball becomes untapped, sacrifice that creature.</rules>
-    <flavor></flavor>
-    <stats>
-      <power></power>
-      <toughness></toughness>
-    </stats>
-    <illustrator></illustrator>
-    <number>1/1</number>
-  </card>
-  <card>
     <name>Dragonite</name>
     <cost>11</cost>
     <type>
@@ -35,7 +17,7 @@ Whenever Dragonite enters the battlefield or attacks, destroy target permanent t
       <toughness>10</toughness>
     </stats>
     <illustrator>WolfHooligans</illustrator>
-    <number>1/370</number>
+    <number>1/372</number>
   </card>
   <card>
     <name>Lance, Dragon Master</name>
@@ -54,7 +36,7 @@ Destroy all nonland permanents you don’t control. You skip your next untap ste
       <toughness></toughness>
     </stats>
     <illustrator></illustrator>
-    <number>2/370</number>
+    <number>2/372</number>
   </card>
   <card>
     <name>Lugia, Guardian of the Sea</name>
@@ -73,7 +55,7 @@ Whenever Lugia deals combat damage to an opponent, look at the top X cards of yo
       <toughness>8</toughness>
     </stats>
     <illustrator>Dragolisco</illustrator>
-    <number>3/370</number>
+    <number>3/372</number>
   </card>
   <card>
     <name>Aipom</name>
@@ -90,7 +72,7 @@ Whenever Lugia deals combat damage to an opponent, look at the top X cards of yo
       <toughness>2</toughness>
     </stats>
     <illustrator></illustrator>
-    <number>4/370</number>
+    <number>4/372</number>
   </card>
   <card>
     <name>Ampharos</name>
@@ -109,7 +91,7 @@ Whenever Ampharos becomes the target of a spell or ability, draw a card.</rules>
       <toughness>3</toughness>
     </stats>
     <illustrator>NikitaBolyakov, Jamaal Raoof</illustrator>
-    <number>5/370</number>
+    <number>5/372</number>
   </card>
   <card>
     <name>Chansey</name>
@@ -128,7 +110,7 @@ Whenever a creature enters the battlefield under your control, you gain 1 life.<
       <toughness>4</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>6/370</number>
+    <number>6/372</number>
   </card>
   <card>
     <name>Clefairy</name>
@@ -146,7 +128,7 @@ Whenever a creature enters the battlefield under your control, you gain 1 life.<
       <toughness>1</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>7/370</number>
+    <number>7/372</number>
   </card>
   <card>
     <name>Dance of the Kimono Girls</name>
@@ -163,7 +145,7 @@ Whenever a creature enters the battlefield under your control, you gain 1 life.<
       <toughness></toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>8/370</number>
+    <number>8/372</number>
   </card>
   <card>
     <name>Detective Pikachu</name>
@@ -181,7 +163,7 @@ Whenever a creature leaves the battlefield, investigate.</rules>
       <toughness>1</toughness>
     </stats>
     <illustrator>Detective Pikachu Trailer 2</illustrator>
-    <number>9/370</number>
+    <number>9/372</number>
   </card>
   <card>
     <name>Double Slap</name>
@@ -200,7 +182,7 @@ Same type attack boost — If you control a creature that shares a color with th
       <toughness></toughness>
     </stats>
     <illustrator>mcgmark</illustrator>
-    <number>10/370</number>
+    <number>10/372</number>
   </card>
   <card>
     <name>Espeon</name>
@@ -219,7 +201,7 @@ As long as it’s night, white spells you cast cost 1 less to cast.</rules>
       <toughness>3</toughness>
     </stats>
     <illustrator></illustrator>
-    <number>11/370</number>
+    <number>11/372</number>
   </card>
   <card>
     <name>Farfetch’d</name>
@@ -237,7 +219,7 @@ If an effect would add two or more mana to a player’s mana pool, it adds C to 
       <toughness>1</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>12/370</number>
+    <number>12/372</number>
   </card>
   <card>
     <name>Furret</name>
@@ -248,7 +230,7 @@ If an effect would add two or more mana to a player’s mana pool, it adds C to 
     </type>
     <rarity>R</rarity>
     <rules>When Furret enters the battlefield, you may search your library for an aura or equipment card, reveal it, put it into your hand, then shuffle.
-Whenever an equipment enters the battlefield under your control, you may attach it to Furret.
+Whenever Furret attacks, you may put an equipment card from your hand onto the battlefield. When you do, you may attach it to Furret.
 Unattach an equipment from Furret: Furret gains hexproof until end of turn.</rules>
     <flavor></flavor>
     <stats>
@@ -256,7 +238,7 @@ Unattach an equipment from Furret: Furret gains hexproof until end of turn.</rul
       <toughness>2</toughness>
     </stats>
     <illustrator>Johan Brits</illustrator>
-    <number>13/370</number>
+    <number>13/372</number>
   </card>
   <card>
     <name>Got Away Safely</name>
@@ -273,7 +255,7 @@ Unattach an equipment from Furret: Furret gains hexproof until end of turn.</rul
       <toughness></toughness>
     </stats>
     <illustrator>Archir</illustrator>
-    <number>14/370</number>
+    <number>14/372</number>
   </card>
   <card>
     <name>Hyper Beam</name>
@@ -291,7 +273,7 @@ They can’t be regenerated.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>jeffrey chen</illustrator>
-    <number>15/370</number>
+    <number>15/372</number>
   </card>
   <card>
     <name>Isolation</name>
@@ -309,7 +291,7 @@ Morbid — If a creature died this turn, exile that permanent instead.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>potaterto on twitter</illustrator>
-    <number>16/370</number>
+    <number>16/372</number>
   </card>
   <card>
     <name>Jigglypuff</name>
@@ -327,7 +309,7 @@ Morbid — If a creature died this turn, exile that permanent instead.</rules>
       <toughness>1</toughness>
     </stats>
     <illustrator>Detective Pikachu</illustrator>
-    <number>17/370</number>
+    <number>17/372</number>
   </card>
   <card>
     <name>Jolteon</name>
@@ -346,7 +328,7 @@ Whenever an opponent draws a card other than the first card they draw in each of
       <toughness>2</toughness>
     </stats>
     <illustrator>dekunobou-kizakura</illustrator>
-    <number>18/370</number>
+    <number>18/372</number>
   </card>
   <card>
     <name>Lickitung</name>
@@ -364,7 +346,7 @@ Instant and sorcery spells cost 1 more to cast.</rules>
       <toughness>2</toughness>
     </stats>
     <illustrator>Detective Pikachu</illustrator>
-    <number>19/370</number>
+    <number>19/372</number>
   </card>
   <card>
     <name>Lingering Souls</name>
@@ -382,7 +364,7 @@ Flashback 1B (You may cast this card from your graveyard for its flashback cost.
       <toughness></toughness>
     </stats>
     <illustrator>KirscheTea</illustrator>
-    <number>20/370</number>
+    <number>20/372</number>
   </card>
   <card>
     <name>Moonlight Masquerade</name>
@@ -392,14 +374,14 @@ Flashback 1B (You may cast this card from your graveyard for its flashback cost.
       <subtype></subtype>
     </type>
     <rarity>U</rarity>
-    <rules>Create three 1/1 Faerie creature tokens with lifelink. If it’s your turn, draw a card.</rules>
+    <rules>Create three 1/1 Clefairy creature tokens with lifelink. If it’s your turn, draw a card.</rules>
     <flavor></flavor>
     <stats>
       <power></power>
       <toughness></toughness>
     </stats>
     <illustrator>Megan Langan</illustrator>
-    <number>21/370</number>
+    <number>21/372</number>
   </card>
   <card>
     <name>Nurse Joy</name>
@@ -418,7 +400,7 @@ Exile target creature, then return it to the battlefield under its owner’s con
       <toughness></toughness>
     </stats>
     <illustrator>creamyws</illustrator>
-    <number>22/370</number>
+    <number>22/372</number>
   </card>
   <card>
     <name>Peek At ’Chu</name>
@@ -436,7 +418,7 @@ Draw a card.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>otsumami</illustrator>
-    <number>23/370</number>
+    <number>23/372</number>
   </card>
   <card>
     <name>Pidgeot</name>
@@ -455,7 +437,7 @@ Whenever one or more creatures you control attack, create a 1/1 white Bird creat
       <toughness>3</toughness>
     </stats>
     <illustrator>Detective Pikachu</illustrator>
-    <number>24/370</number>
+    <number>24/372</number>
   </card>
   <card>
     <name>Pidgey</name>
@@ -474,7 +456,7 @@ When Pidgey deals combat damage to a player or planeswalker, transform it.</rule
       <toughness>1</toughness>
     </stats>
     <illustrator>Tygarii-Razil</illustrator>
-    <number>25/370</number>
+    <number>25/372</number>
   </card>
   <card>
     <name>Raichu</name>
@@ -491,7 +473,7 @@ When Pidgey deals combat damage to a player or planeswalker, transform it.</rule
       <toughness>1</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>26/370</number>
+    <number>26/372</number>
   </card>
   <card>
     <name>Raikou, the Thunder</name>
@@ -509,7 +491,7 @@ When Raikou enters the battlefield, you exile up to one target tapped permanent.
       <toughness>3</toughness>
     </stats>
     <illustrator>dekunobou-kizakura</illustrator>
-    <number>27/370</number>
+    <number>27/372</number>
   </card>
   <card>
     <name>Roar</name>
@@ -526,7 +508,7 @@ When Raikou enters the battlefield, you exile up to one target tapped permanent.
       <toughness></toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>28/370</number>
+    <number>28/372</number>
   </card>
   <card>
     <name>Scyther</name>
@@ -545,7 +527,7 @@ Whenever another creature enters the battlefield, untap Scyther.</rules>
       <toughness>1</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>29/370</number>
+    <number>29/372</number>
   </card>
   <card>
     <name>Sentret</name>
@@ -555,18 +537,18 @@ Whenever another creature enters the battlefield, untap Scyther.</rules>
       <subtype>Normal </subtype>
     </type>
     <rarity>R</rarity>
-    <rules>Vigilance
+    <rules>When Sentret enters the battlefield, search your library for an equipment card, reveal it, put it in your hand, then shuffle.
 Whenever Sentret attacks roll a d20. Create an equipment artifact token named Held Item with equip 1 and the corresponding ability. Equip it to Sentret.
 1-10:  “Equipped creature gets +1/+1.”
 11-15: “Sacrifice this artifact: Regenerate equipped creature.”
-16-20: “Sacrifice this artifact: Transform equipped creature.”</rules>
+16-20: “Sacrifice this artifact: Transform equipped    creature.”</rules>
     <flavor></flavor>
     <stats>
       <power>1</power>
       <toughness>1</toughness>
     </stats>
     <illustrator>CaptainHanyuu</illustrator>
-    <number>30/370</number>
+    <number>30/372</number>
   </card>
   <card>
     <name>Thunder</name>
@@ -584,7 +566,7 @@ Put a paralyze counter on each creature. (A paralyzed creature can’t attack, b
       <toughness></toughness>
     </stats>
     <illustrator>dreamTech</illustrator>
-    <number>31/370</number>
+    <number>31/372</number>
   </card>
   <card>
     <name>Thunder Wave</name>
@@ -602,7 +584,7 @@ Enchanted permanent is paralyzed. (A paralyzed permanent can’t attack or block
       <toughness></toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>32/370</number>
+    <number>32/372</number>
   </card>
   <card>
     <name>Togepi</name>
@@ -620,7 +602,7 @@ Enchanted permanent is paralyzed. (A paralyzed permanent can’t attack or block
       <toughness>1</toughness>
     </stats>
     <illustrator>N/A</illustrator>
-    <number>33/370</number>
+    <number>33/372</number>
   </card>
   <card>
     <name>Unown</name>
@@ -637,7 +619,7 @@ Enchanted permanent is paralyzed. (A paralyzed permanent can’t attack or block
       <toughness>1</toughness>
     </stats>
     <illustrator>otsumami</illustrator>
-    <number>34/370</number>
+    <number>34/372</number>
   </card>
   <card>
     <name>Whirlwind</name>
@@ -654,7 +636,7 @@ Enchanted permanent is paralyzed. (A paralyzed permanent can’t attack or block
       <toughness></toughness>
     </stats>
     <illustrator>Rufinator</illustrator>
-    <number>35/370</number>
+    <number>35/372</number>
   </card>
   <card>
     <name>Wing Attack</name>
@@ -671,7 +653,7 @@ Enchanted permanent is paralyzed. (A paralyzed permanent can’t attack or block
       <toughness></toughness>
     </stats>
     <illustrator>Ruth-Tay</illustrator>
-    <number>36/370</number>
+    <number>36/372</number>
   </card>
   <card>
     <name>Abra</name>
@@ -689,7 +671,7 @@ When Abra enters the battlefield, draw a card, then discard a card. If you don�
       <toughness>1</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>37/370</number>
+    <number>37/372</number>
   </card>
   <card>
     <name>Bill, Pokemaniac</name>
@@ -708,7 +690,7 @@ Search your library for any number of creature cards, reveal them, put them in y
       <toughness></toughness>
     </stats>
     <illustrator>sen pic</illustrator>
-    <number>38/370</number>
+    <number>38/372</number>
   </card>
   <card>
     <name>Blizzard</name>
@@ -725,7 +707,7 @@ Search your library for any number of creature cards, reveal them, put them in y
       <toughness></toughness>
     </stats>
     <illustrator>dreamTech</illustrator>
-    <number>39/370</number>
+    <number>39/372</number>
   </card>
   <card>
     <name>Break Free</name>
@@ -742,7 +724,7 @@ Search your library for any number of creature cards, reveal them, put them in y
       <toughness></toughness>
     </stats>
     <illustrator>Silézio Batista de Freitas</illustrator>
-    <number>40/370</number>
+    <number>40/372</number>
   </card>
   <card>
     <name>Bubble</name>
@@ -760,7 +742,7 @@ Same type attack boost — If you control a creature which shares a color with B
       <toughness></toughness>
     </stats>
     <illustrator>Kai Kiat</illustrator>
-    <number>41/370</number>
+    <number>41/372</number>
   </card>
   <card>
     <name>Buried Secrets</name>
@@ -777,7 +759,7 @@ Same type attack boost — If you control a creature which shares a color with B
       <toughness></toughness>
     </stats>
     <illustrator>kelvin_trainerk</illustrator>
-    <number>42/370</number>
+    <number>42/372</number>
   </card>
   <card>
     <name>Calm Mind</name>
@@ -795,7 +777,7 @@ Until your next turn, you can’t cast spells.</rules>
       <toughness></toughness>
     </stats>
     <illustrator></illustrator>
-    <number>43/370</number>
+    <number>43/372</number>
   </card>
   <card>
     <name>Check Under the Truck</name>
@@ -812,7 +794,7 @@ Until your next turn, you can’t cast spells.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>N/A</illustrator>
-    <number>44/370</number>
+    <number>44/372</number>
   </card>
   <card>
     <name>Consult the Helix</name>
@@ -830,7 +812,7 @@ Until your next turn, you can’t cast spells.</rules>
       <toughness></toughness>
     </stats>
     <illustrator></illustrator>
-    <number>45/370</number>
+    <number>45/372</number>
   </card>
   <card>
     <name>Encounter on the Bridge</name>
@@ -848,7 +830,7 @@ Each player may put a permanent card from their hand onto the battlefield. If th
       <toughness></toughness>
     </stats>
     <illustrator>N/A</illustrator>
-    <number>46/370</number>
+    <number>46/372</number>
   </card>
   <card>
     <name>Foresight</name>
@@ -866,7 +848,7 @@ Counter target spell. If Foresight’s gameshark cost was paid, exile that spell
       <toughness></toughness>
     </stats>
     <illustrator></illustrator>
-    <number>47/370</number>
+    <number>47/372</number>
   </card>
   <card>
     <name>Gone Fishing</name>
@@ -883,27 +865,27 @@ Counter target spell. If Foresight’s gameshark cost was paid, exile that spell
       <toughness></toughness>
     </stats>
     <illustrator>N/A</illustrator>
-    <number>48/370</number>
+    <number>48/372</number>
   </card>
   <card>
     <name>Gyarados</name>
-    <cost>3UU</cost>
+    <cost>6UU</cost>
     <type>
       <supertype>Creature</supertype>
       <subtype>Water Flying </subtype>
     </type>
     <rarity>R</rarity>
-    <rules>Emerge 3UU (You may cast this spell by sacrificing a creature and paying the emerge cost reduced by that creature’s mana value.)
+    <rules>Emerge 7UU
 You may emerge Gyarados as though it had flash.
-When Gyarados enters the battlefield, return target spell or permanent to its owner’s hand.
-Attacking creatures your opponents control get -1/-0.</rules>
+When you cast Gyarados, tap up to four target permanents.
+When Gyarados enters the battlefield, return all tapped permanents to their owners’ hands.</rules>
     <flavor></flavor>
     <stats>
-      <power>4</power>
-      <toughness>4</toughness>
+      <power>8</power>
+      <toughness>8</toughness>
     </stats>
     <illustrator>Lindsey Wakefield</illustrator>
-    <number>49/370</number>
+    <number>49/372</number>
   </card>
   <card>
     <name>Hypno</name>
@@ -921,7 +903,7 @@ Permanents can’t phase in.</rules>
       <toughness>2</toughness>
     </stats>
     <illustrator></illustrator>
-    <number>50/370</number>
+    <number>50/372</number>
   </card>
   <card>
     <name>Hypnosis</name>
@@ -938,7 +920,7 @@ Permanents can’t phase in.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Grozyll</illustrator>
-    <number>51/370</number>
+    <number>51/372</number>
   </card>
   <card>
     <name>Krabby</name>
@@ -956,7 +938,7 @@ Whenever you cast a card exiled    with Krabby, transform it.</rules>
       <toughness>2</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>52/370</number>
+    <number>52/372</number>
   </card>
   <card>
     <name>Lapras</name>
@@ -975,7 +957,7 @@ Saddle 1</rules>
       <toughness>6</toughness>
     </stats>
     <illustrator>dekunobou-kizakura</illustrator>
-    <number>53/370</number>
+    <number>53/372</number>
   </card>
   <card>
     <name>Lost in Time</name>
@@ -992,7 +974,7 @@ Saddle 1</rules>
       <toughness></toughness>
     </stats>
     <illustrator>otsumami</illustrator>
-    <number>54/370</number>
+    <number>54/372</number>
   </card>
   <card>
     <name>Match Wits</name>
@@ -1010,7 +992,7 @@ Draw a card.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>purplekecleon</illustrator>
-    <number>55/370</number>
+    <number>55/372</number>
   </card>
   <card>
     <name>Meditate</name>
@@ -1029,7 +1011,7 @@ Target player draws 3 cards.</rules>
       <toughness></toughness>
     </stats>
     <illustrator></illustrator>
-    <number>56/370</number>
+    <number>56/372</number>
   </card>
   <card>
     <name>Mew</name>
@@ -1047,7 +1029,7 @@ Target player draws 3 cards.</rules>
       <toughness>1</toughness>
     </stats>
     <illustrator>BlondynkiTezGraja, Fhoenox</illustrator>
-    <number>57/370</number>
+    <number>57/372</number>
   </card>
   <card>
     <name>Misty, Waterspeaker</name>
@@ -1066,7 +1048,7 @@ Return each nonland permanent you don’t control to its owner’s hand. </rules
       <toughness></toughness>
     </stats>
     <illustrator>kvilledrew</illustrator>
-    <number>58/370</number>
+    <number>58/372</number>
   </card>
   <card>
     <name>Moon Dance</name>
@@ -1087,7 +1069,7 @@ Choose one or more:
       <toughness></toughness>
     </stats>
     <illustrator>doki rosi</illustrator>
-    <number>59/370</number>
+    <number>59/372</number>
   </card>
   <card>
     <name>Mr. Mime</name>
@@ -1106,7 +1088,7 @@ As long as you control a Substitute, Mr. Mime can’t be blocked.</rules>
       <toughness>3</toughness>
     </stats>
     <illustrator>Josh Dunlop</illustrator>
-    <number>60/370</number>
+    <number>60/372</number>
   </card>
   <card>
     <name>Nope</name>
@@ -1123,7 +1105,7 @@ As long as you control a Substitute, Mr. Mime can’t be blocked.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Unknoown</illustrator>
-    <number>61/370</number>
+    <number>61/372</number>
   </card>
   <card>
     <name>Omanyte</name>
@@ -1142,7 +1124,7 @@ When you draw your third card in a turn, transform Omanyte.</rules>
       <toughness>1</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>62/370</number>
+    <number>62/372</number>
   </card>
   <card>
     <name>Ponder</name>
@@ -1160,7 +1142,7 @@ Draw a card.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Ramón Cansino</illustrator>
-    <number>63/370</number>
+    <number>63/372</number>
   </card>
   <card>
     <name>Praise Helix</name>
@@ -1177,7 +1159,7 @@ Draw a card.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>ThroughSpaceAndTime</illustrator>
-    <number>64/370</number>
+    <number>64/372</number>
   </card>
   <card>
     <name>Professor Oak</name>
@@ -1187,7 +1169,7 @@ Draw a card.</rules>
       <subtype>Oak </subtype>
     </type>
     <rarity>M</rarity>
-    <rules>Whenever you draw your second card each turn, put a loyalty counter on Professor Oak.
+    <rules>Whenever a player draws a card other than the first one they would draw in each of their draw steps, put a loyalty counter on Professor Oak.
 Draw a card, then discard a card unless there are four or more creature types among creatures in your graveyard.           
 Shuffle your hand and graveyard into your library, then draw seven cards.</rules>
     <flavor></flavor>
@@ -1196,7 +1178,7 @@ Shuffle your hand and graveyard into your library, then draw seven cards.</rules
       <toughness></toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>65/370</number>
+    <number>65/372</number>
   </card>
   <card>
     <name>Psychic</name>
@@ -1215,7 +1197,7 @@ Shuffle your hand and graveyard into your library, then draw seven cards.</rules
       <toughness></toughness>
     </stats>
     <illustrator>Detective Pikachu</illustrator>
-    <number>66/370</number>
+    <number>66/372</number>
   </card>
   <card>
     <name>Recover</name>
@@ -1233,7 +1215,7 @@ When Recover is put into your graveyard from anywhere, draw a card.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>onlySFW</illustrator>
-    <number>67/370</number>
+    <number>67/372</number>
   </card>
   <card>
     <name>Reflect</name>
@@ -1250,7 +1232,25 @@ When Recover is put into your graveyard from anywhere, draw a card.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Eve栗子湯</illustrator>
-    <number>68/370</number>
+    <number>68/372</number>
+  </card>
+  <card>
+    <name>Reflections of the Past</name>
+    <cost>4UU</cost>
+    <type>
+      <supertype>Sorcery</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>Each player discards their hand, then draws seven cards. Exile Reflections of the Past.
+Flashback—2R, Sacrifice a mountain or island</rules>
+    <flavor>A volcano erupts and just like that a whole town disappears.</flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator>potaterto on twitter</illustrator>
+    <number>69/372</number>
   </card>
   <card>
     <name>Slowking</name>
@@ -1271,7 +1271,7 @@ At the beginning of your end step, scry 2.</rules>
       <toughness>5</toughness>
     </stats>
     <illustrator>SanjulSajeev</illustrator>
-    <number>69/370</number>
+    <number>70/372</number>
   </card>
   <card>
     <name>Slowpoke</name>
@@ -1288,7 +1288,7 @@ At the beginning of your end step, scry 2.</rules>
       <toughness>2</toughness>
     </stats>
     <illustrator>Jaime Jr. Quiano</illustrator>
-    <number>70/370</number>
+    <number>71/372</number>
   </card>
   <card>
     <name>Suicune, the Aurora</name>
@@ -1306,7 +1306,7 @@ When Suicune enters the battlefield, return target spell or permanent to its own
       <toughness>3</toughness>
     </stats>
     <illustrator>dekunobou-kizakura</illustrator>
-    <number>71/370</number>
+    <number>72/372</number>
   </card>
   <card>
     <name>Super Rod</name>
@@ -1324,7 +1324,7 @@ When Super Rod becomes unattached from equipped creature, that creature into its
       <toughness></toughness>
     </stats>
     <illustrator>N/A</illustrator>
-    <number>72/370</number>
+    <number>73/372</number>
   </card>
   <card>
     <name>Teleport Away</name>
@@ -1341,7 +1341,7 @@ When Super Rod becomes unattached from equipped creature, that creature into its
       <toughness></toughness>
     </stats>
     <illustrator>N/A</illustrator>
-    <number>73/370</number>
+    <number>74/372</number>
   </card>
   <card>
     <name>Tentacool</name>
@@ -1359,7 +1359,7 @@ When Tentacool enters the battlefield, if it wasn’t cast from your hand, trans
       <toughness>1</toughness>
     </stats>
     <illustrator>cry-ky</illustrator>
-    <number>74/370</number>
+    <number>75/372</number>
   </card>
   <card>
     <name>Transform</name>
@@ -1379,7 +1379,7 @@ As Transform enters the battlefield, choose one—
       <toughness></toughness>
     </stats>
     <illustrator>super_citron</illustrator>
-    <number>75/370</number>
+    <number>76/372</number>
   </card>
   <card>
     <name>Vaporeon</name>
@@ -1397,7 +1397,7 @@ Whenever you draw your second card each turn, return target creature to its owne
       <toughness>4</toughness>
     </stats>
     <illustrator>dekunobou-kizakura</illustrator>
-    <number>76/370</number>
+    <number>77/372</number>
   </card>
   <card>
     <name>A Wild '̷̧̘͎̹̹̠̹̥̥̭̣̻̖̓̅͑̍̀͑͊̓̾M̸̫̪͔͒̀͑̊͗̆̔̏̋̄͝ ̶̢̜͖̹̄̑̾̾̀́͋͒͑̓͑̈́͌͘̚(̸̧̦͖͓͔̥̩͇͕͔͐̂̈́͌͛́͗̉̊̈̊̃͒0̸̛̛͍̭͖̬̼͑̀̋̄̈̈́̉̈͗̕͝͝0̵̡͇͔͍͖͍̙̗̙́̈̄̊̐̀̐͐̈́̆̈͑̚͠ͅ)̵̳̊̌̅̊̕  Appeared</name>
@@ -1416,7 +1416,7 @@ If this spell isn’t a copy, copy this spell for each other Glitch spell you’
       <toughness></toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>77/370</number>
+    <number>78/372</number>
   </card>
   <card>
     <name>Wild Missingno Was Caught</name>
@@ -1433,7 +1433,7 @@ If this spell isn’t a copy, copy this spell for each other Glitch spell you’
       <toughness></toughness>
     </stats>
     <illustrator></illustrator>
-    <number>78/370</number>
+    <number>79/372</number>
   </card>
   <card>
     <name>Wrap</name>
@@ -1452,7 +1452,7 @@ Same type attack boost — When Wrap enters the battlefield, if you control a cr
       <toughness></toughness>
     </stats>
     <illustrator>CG.Draug</illustrator>
-    <number>79/370</number>
+    <number>80/372</number>
   </card>
   <card>
     <name>Xatu</name>
@@ -1470,7 +1470,7 @@ When Xatu enters the battlefield, you may cast target instant or sorcery card wi
       <toughness>1</toughness>
     </stats>
     <illustrator>Abraham Hernández</illustrator>
-    <number>80/370</number>
+    <number>81/372</number>
   </card>
   <card>
     <name>Confuse Ray</name>
@@ -1487,7 +1487,7 @@ When Xatu enters the battlefield, you may cast target instant or sorcery card wi
       <toughness></toughness>
     </stats>
     <illustrator></illustrator>
-    <number>81/370</number>
+    <number>82/372</number>
   </card>
   <card>
     <name>The Creation of Mewtwo</name>
@@ -1506,7 +1506,7 @@ Create a token that’s a copy of a creature card exiled with The Creation of Me
       <toughness></toughness>
     </stats>
     <illustrator></illustrator>
-    <number>82/370</number>
+    <number>83/372</number>
   </card>
   <card>
     <name>Crobat</name>
@@ -1525,7 +1525,7 @@ When Crobat enters the battlefield, it deals X damage to target creature or plan
       <toughness>3</toughness>
     </stats>
     <illustrator>Guikao</illustrator>
-    <number>83/370</number>
+    <number>84/372</number>
   </card>
   <card>
     <name>Cubone</name>
@@ -1543,7 +1543,7 @@ At the beginning of your upkeep, if you control another creature, transform Cubo
       <toughness>1</toughness>
     </stats>
     <illustrator>kozsen_810290</illustrator>
-    <number>84/370</number>
+    <number>85/372</number>
   </card>
   <card>
     <name>Damnation</name>
@@ -1561,7 +1561,7 @@ They can’t be regenerated.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>85/370</number>
+    <number>86/372</number>
   </card>
   <card>
     <name>Dream Eater</name>
@@ -1579,7 +1579,7 @@ Same type attack boost — If you control a creature that shares a color with th
       <toughness></toughness>
     </stats>
     <illustrator>Ka1ty0</illustrator>
-    <number>86/370</number>
+    <number>87/372</number>
   </card>
   <card>
     <name>Drowzee</name>
@@ -1597,7 +1597,7 @@ At the beginning of your upkeep, if no player cast a spell last turn, transform 
       <toughness>2</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>87/370</number>
+    <number>88/372</number>
   </card>
   <card>
     <name>Fearow</name>
@@ -1615,7 +1615,7 @@ When Fearow enters the battlefield, pay X life. When you do, target creature get
       <toughness>1</toughness>
     </stats>
     <illustrator>Xannador</illustrator>
-    <number>88/370</number>
+    <number>89/372</number>
   </card>
   <card>
     <name>Feb 6 - Mew Gave Birth</name>
@@ -1632,7 +1632,7 @@ When Fearow enters the battlefield, pay X life. When you do, target creature get
       <toughness></toughness>
     </stats>
     <illustrator>Olly Lawson</illustrator>
-    <number>89/370</number>
+    <number>90/372</number>
   </card>
   <card>
     <name>Glare</name>
@@ -1649,7 +1649,7 @@ When Fearow enters the battlefield, pay X life. When you do, target creature get
       <toughness></toughness>
     </stats>
     <illustrator></illustrator>
-    <number>90/370</number>
+    <number>91/372</number>
   </card>
   <card>
     <name>Golbat</name>
@@ -1668,7 +1668,7 @@ As long as you’ve completed a dungeon, Golbat has retrace.</rules>
       <toughness>1</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>91/370</number>
+    <number>92/372</number>
   </card>
   <card>
     <name>In Mewtwo’s Wake</name>
@@ -1686,7 +1686,7 @@ As long as you’ve completed a dungeon, Golbat has retrace.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Mewtwo Strikes Back Remake</illustrator>
-    <number>92/370</number>
+    <number>93/372</number>
   </card>
   <card>
     <name>Kabuto</name>
@@ -1704,7 +1704,7 @@ At the beginning of your upkeep, target opponent discards a card at random. If a
       <toughness>1</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>93/370</number>
+    <number>94/372</number>
   </card>
   <card>
     <name>Koffing</name>
@@ -1721,7 +1721,7 @@ At the beginning of your upkeep, target opponent discards a card at random. If a
       <toughness>2</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>94/370</number>
+    <number>95/372</number>
   </card>
   <card>
     <name>Leech Life</name>
@@ -1738,7 +1738,7 @@ At the beginning of your upkeep, target opponent discards a card at random. If a
       <toughness></toughness>
     </stats>
     <illustrator>xSheepi</illustrator>
-    <number>95/370</number>
+    <number>96/372</number>
   </card>
   <card>
     <name>Lost in the Dark</name>
@@ -1756,7 +1756,7 @@ Descend — At the beginning of each end step, if a permanent card was put into 
       <toughness></toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>96/370</number>
+    <number>97/372</number>
   </card>
   <card>
     <name>Marowak</name>
@@ -1776,7 +1776,7 @@ Exile Marowak from your graveyard: Target creature gains lifelink until end of t
       <toughness>2</toughness>
     </stats>
     <illustrator>Nikolay Zakharov</illustrator>
-    <number>97/370</number>
+    <number>98/372</number>
   </card>
   <card>
     <name>Max Revive</name>
@@ -1793,7 +1793,7 @@ Exile Marowak from your graveyard: Target creature gains lifelink until end of t
       <toughness></toughness>
     </stats>
     <illustrator>Pokemon TCG</illustrator>
-    <number>98/370</number>
+    <number>99/372</number>
   </card>
   <card>
     <name>Misdreavus</name>
@@ -1811,7 +1811,7 @@ Persist (When this creature dies, if it had no -1/-1 counters on it, return it t
       <toughness>1</toughness>
     </stats>
     <illustrator>Sanjul Sajeev</illustrator>
-    <number>99/370</number>
+    <number>100/372</number>
   </card>
   <card>
     <name>Moonlight</name>
@@ -1831,7 +1831,7 @@ Choose one:
       <toughness></toughness>
     </stats>
     <illustrator>Kel-Del</illustrator>
-    <number>100/370</number>
+    <number>101/372</number>
   </card>
   <card>
     <name>Muk</name>
@@ -1849,7 +1849,7 @@ When Muk enters the battlefield, distribute X -1/-1 counters among any number of
       <toughness>5</toughness>
     </stats>
     <illustrator></illustrator>
-    <number>101/370</number>
+    <number>102/372</number>
   </card>
   <card>
     <name>Murkrow</name>
@@ -1867,7 +1867,7 @@ When Murkrow enters the battlefield, target opponent reveals his or her hand. Ex
       <toughness>2</toughness>
     </stats>
     <illustrator>PanzerTheTank</illustrator>
-    <number>102/370</number>
+    <number>103/372</number>
   </card>
   <card>
     <name>Night Shade</name>
@@ -1884,7 +1884,7 @@ When Murkrow enters the battlefield, target opponent reveals his or her hand. Ex
       <toughness></toughness>
     </stats>
     <illustrator>Unknown Reddit User</illustrator>
-    <number>103/370</number>
+    <number>104/372</number>
   </card>
   <card>
     <name>Pain Split</name>
@@ -1902,7 +1902,7 @@ When Murkrow enters the battlefield, target opponent reveals his or her hand. Ex
       <toughness></toughness>
     </stats>
     <illustrator>kirelaiga</illustrator>
-    <number>104/370</number>
+    <number>105/372</number>
   </card>
   <card>
     <name>Perish Song</name>
@@ -1919,7 +1919,7 @@ When Murkrow enters the battlefield, target opponent reveals his or her hand. Ex
       <toughness></toughness>
     </stats>
     <illustrator>NeverLateThanBetter</illustrator>
-    <number>105/370</number>
+    <number>106/372</number>
   </card>
   <card>
     <name>Pokemon Trainer Blue</name>
@@ -1938,7 +1938,7 @@ Each player sacrifices a creature.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>N/A</illustrator>
-    <number>106/370</number>
+    <number>107/372</number>
   </card>
   <card>
     <name>Psywave</name>
@@ -1955,7 +1955,7 @@ Each player sacrifices a creature.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>suwan</illustrator>
-    <number>107/370</number>
+    <number>108/372</number>
   </card>
   <card>
     <name>Pursuit</name>
@@ -1973,7 +1973,7 @@ Destroy target creature or planeswalker.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>108/370</number>
+    <number>109/372</number>
   </card>
   <card>
     <name>Raise From Ash</name>
@@ -1991,7 +1991,7 @@ Return target creature card from a graveyard to the battlefield. If it isn’t y
       <toughness></toughness>
     </stats>
     <illustrator>Alvaro Estrada</illustrator>
-    <number>109/370</number>
+    <number>110/372</number>
   </card>
   <card>
     <name>Rattata</name>
@@ -2008,7 +2008,7 @@ Return target creature card from a graveyard to the battlefield. If it isn’t y
       <toughness>1</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>110/370</number>
+    <number>111/372</number>
   </card>
   <card>
     <name>Revive</name>
@@ -2025,7 +2025,7 @@ Return target creature card from a graveyard to the battlefield. If it isn’t y
       <toughness></toughness>
     </stats>
     <illustrator>Pokemon TCG</illustrator>
-    <number>111/370</number>
+    <number>112/372</number>
   </card>
   <card>
     <name>Rocket Boss Giovanni</name>
@@ -2044,7 +2044,7 @@ Each opponent sacrifices each creature they control. Put a creature card from a 
       <toughness></toughness>
     </stats>
     <illustrator>Uknown</illustrator>
-    <number>112/370</number>
+    <number>113/372</number>
   </card>
   <card>
     <name>Spite</name>
@@ -2062,7 +2062,7 @@ Destroy target creature [if it dealt damage to you or a permanent you control th
       <toughness></toughness>
     </stats>
     <illustrator></illustrator>
-    <number>113/370</number>
+    <number>114/372</number>
   </card>
   <card>
     <name>Summon From the Depths</name>
@@ -2079,7 +2079,7 @@ Destroy target creature [if it dealt damage to you or a permanent you control th
       <toughness></toughness>
     </stats>
     <illustrator>scarvil</illustrator>
-    <number>114/370</number>
+    <number>115/372</number>
   </card>
   <card>
     <name>Team Rocket Heist</name>
@@ -2097,7 +2097,7 @@ Search your library for a card with mana cost X or less, reveal it, put it into 
       <toughness></toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>115/370</number>
+    <number>116/372</number>
   </card>
   <card>
     <name>Umbreon</name>
@@ -2116,7 +2116,7 @@ As long as it’s day, spells your opponents cast cost an additional 2 life to c
       <toughness>4</toughness>
     </stats>
     <illustrator>dekunobou-kizakura</illustrator>
-    <number>116/370</number>
+    <number>117/372</number>
   </card>
   <card>
     <name>Weezing</name>
@@ -2134,7 +2134,7 @@ Whenever a creature an opponent controls dies, its controller loses 2 life.</rul
       <toughness>5</toughness>
     </stats>
     <illustrator>Robert Schilling</illustrator>
-    <number>117/370</number>
+    <number>118/372</number>
   </card>
   <card>
     <name>Wobbuffet</name>
@@ -2153,7 +2153,7 @@ Ward—Mill five cards</rules>
       <toughness>4</toughness>
     </stats>
     <illustrator></illustrator>
-    <number>118/370</number>
+    <number>119/372</number>
   </card>
   <card>
     <name>Zubat</name>
@@ -2172,7 +2172,7 @@ At the beginning of your upkeep, if you control 3 or more creatures named Zubat 
       <toughness>1</toughness>
     </stats>
     <illustrator>Tygarii-Razil</illustrator>
-    <number>119/370</number>
+    <number>120/372</number>
   </card>
   <card>
     <name>Arcanine</name>
@@ -2191,7 +2191,7 @@ At the beginning of your end step, Arcanine deals 1 damage to each burned creatu
       <toughness>4</toughness>
     </stats>
     <illustrator>dekunobou-kizakura</illustrator>
-    <number>120/370</number>
+    <number>121/372</number>
   </card>
   <card>
     <name>Blaine, Fire Tempered</name>
@@ -2210,7 +2210,7 @@ Blaine deals 6 damage divided as you choose among any number of targets.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>CrossToons</illustrator>
-    <number>121/370</number>
+    <number>122/372</number>
   </card>
   <card>
     <name>Blaine’s Quiz</name>
@@ -2228,11 +2228,11 @@ Flashback R</rules>
       <toughness></toughness>
     </stats>
     <illustrator>kvilledrew</illustrator>
-    <number>122/370</number>
+    <number>123/372</number>
   </card>
   <card>
-    <name>Burning of Brass Tower</name>
-    <cost>4RR</cost>
+    <name>The Burning of Brass Tower</name>
+    <cost>3RR</cost>
     <type>
       <supertype>Enchantment</supertype>
       <subtype>Saga </subtype>
@@ -2245,7 +2245,7 @@ Flashback R</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Chris Walker</illustrator>
-    <number>123/370</number>
+    <number>124/372</number>
   </card>
   <card>
     <name>Call From the Skies</name>
@@ -2262,7 +2262,7 @@ Flashback R</rules>
       <toughness></toughness>
     </stats>
     <illustrator>hungry-hag1</illustrator>
-    <number>124/370</number>
+    <number>125/372</number>
   </card>
   <card>
     <name>Champion Red, Pride of Pallet</name>
@@ -2275,14 +2275,14 @@ Flashback R</rules>
     <rules>You may activate the loyalty abilities of target planeswalker you control twice this turn rather than only once.
 Exile the top card of your library. You may play it this turn.
 Champion Red deals 3 damage divided as you choose among any number of targets.
-Create a legendary 4/4 red Fire Flying creature token with flying named Charizard.                                                   </rules>
+Create a legendary 4/4 red Fire Flying creature token with flying named Red’s Charizard.                                                   </rules>
     <flavor></flavor>
     <stats>
       <power></power>
       <toughness></toughness>
     </stats>
     <illustrator></illustrator>
-    <number>125/370</number>
+    <number>126/372</number>
   </card>
   <card>
     <name>Criticial Hit</name>
@@ -2300,7 +2300,7 @@ Criticial Hit deals 1 damage to each of up to two targets.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Moozika</illustrator>
-    <number>126/370</number>
+    <number>127/372</number>
   </card>
   <card>
     <name>Destruction of Cinnabar Island</name>
@@ -2310,14 +2310,14 @@ Criticial Hit deals 1 damage to each of up to two targets.</rules>
       <subtype></subtype>
     </type>
     <rarity>U</rarity>
-    <rules>Destroy target land. If that land was an island, Destruction of Cinnabar Island deals 2 damage to that land’s controller.</rules>
+    <rules>Destroy target land. Destruction of Cinnabar Island deals 2 damage to that land’s controller.</rules>
     <flavor>A volcano erupts, and just like that a whole town disappears.</flavor>
     <stats>
       <power></power>
       <toughness></toughness>
     </stats>
     <illustrator>Squeegee — Drawception</illustrator>
-    <number>127/370</number>
+    <number>128/372</number>
   </card>
   <card>
     <name>Double Team</name>
@@ -2335,7 +2335,7 @@ Enchanted creature has “T: Create a token that’s a copy of this creature. It
       <toughness></toughness>
     </stats>
     <illustrator>Eric Simmons</illustrator>
-    <number>128/370</number>
+    <number>129/372</number>
   </card>
   <card>
     <name>Enemy is Confused</name>
@@ -2352,7 +2352,7 @@ Enchanted creature has “T: Create a token that’s a copy of this creature. It
       <toughness></toughness>
     </stats>
     <illustrator>Detective Pikachu</illustrator>
-    <number>129/370</number>
+    <number>130/372</number>
   </card>
   <card>
     <name>Entei, the Volcano</name>
@@ -2370,7 +2370,7 @@ When Entei enters the battlefield, you may destroy target nonbasic land.</rules>
       <toughness>3</toughness>
     </stats>
     <illustrator>dekunobou-kizakura</illustrator>
-    <number>130/370</number>
+    <number>131/372</number>
   </card>
   <card>
     <name>Explosion</name>
@@ -2388,7 +2388,7 @@ Same type attack boost — If you control a creature that shares a color with th
       <toughness></toughness>
     </stats>
     <illustrator>Jonathan Soto</illustrator>
-    <number>131/370</number>
+    <number>132/372</number>
   </card>
   <card>
     <name>Fire Blast</name>
@@ -2405,7 +2405,7 @@ Same type attack boost — If you control a creature that shares a color with th
       <toughness></toughness>
     </stats>
     <illustrator>dreamTech</illustrator>
-    <number>132/370</number>
+    <number>133/372</number>
   </card>
   <card>
     <name>Flareon</name>
@@ -2423,7 +2423,7 @@ Whenever you draw your second card each turn, Flareon deals 2 damage to any targ
       <toughness>3</toughness>
     </stats>
     <illustrator>dekunobou-kizakura</illustrator>
-    <number>133/370</number>
+    <number>134/372</number>
   </card>
   <card>
     <name>Growlithe</name>
@@ -2441,7 +2441,7 @@ Whenever you draw your second card each turn, Flareon deals 2 damage to any targ
       <toughness>1</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>134/370</number>
+    <number>135/372</number>
   </card>
   <card>
     <name>Hitmonchan</name>
@@ -2459,7 +2459,7 @@ Whenever Hitmonchan deals combat damage, it deals that much damage to target opp
       <toughness>2</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>135/370</number>
+    <number>136/372</number>
   </card>
   <card>
     <name>Hitmonlee</name>
@@ -2477,7 +2477,7 @@ Whenever you cast a kicked spell, Hitmonlee deals 2 damage to any target.</rules
       <toughness>1</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>136/370</number>
+    <number>137/372</number>
   </card>
   <card>
     <name>Lost to Time</name>
@@ -2494,7 +2494,7 @@ Whenever you cast a kicked spell, Hitmonlee deals 2 damage to any target.</rules
       <toughness></toughness>
     </stats>
     <illustrator>ostumami</illustrator>
-    <number>137/370</number>
+    <number>138/372</number>
   </card>
   <card>
     <name>Mach Punch</name>
@@ -2512,7 +2512,7 @@ Mach Punch deals 2 damage to any target.</rules>
       <toughness></toughness>
     </stats>
     <illustrator></illustrator>
-    <number>138/370</number>
+    <number>139/372</number>
   </card>
   <card>
     <name>Machop</name>
@@ -2529,7 +2529,7 @@ Mach Punch deals 2 damage to any target.</rules>
       <toughness>1</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>139/370</number>
+    <number>140/372</number>
   </card>
   <card>
     <name>Magmar</name>
@@ -2546,7 +2546,7 @@ Mach Punch deals 2 damage to any target.</rules>
       <toughness>2</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>140/370</number>
+    <number>141/372</number>
   </card>
   <card>
     <name>Magnemite</name>
@@ -2556,7 +2556,7 @@ Mach Punch deals 2 damage to any target.</rules>
       <subtype>Electric Steel </subtype>
     </type>
     <rarity>R</rarity>
-    <rules>When Magnemite enters the battlefield, gain control of target artifact until end of turn. Untap it. If it’s a creature, it gains haste until end of turn.
+    <rules>When Magnemite enters the battlefield, gain control of target artifact. Untap it. If it’s a creature, it gains haste until end of turn. At the beginning of the next end step, its owner gains control of it. 
 At the beginning of your end step, if you control 3 or more artifacts, transform Magnemite.</rules>
     <flavor></flavor>
     <stats>
@@ -2564,7 +2564,7 @@ At the beginning of your end step, if you control 3 or more artifacts, transform
       <toughness>3</toughness>
     </stats>
     <illustrator>Benjamin Lagouche</illustrator>
-    <number>141/370</number>
+    <number>142/372</number>
   </card>
   <card>
     <name>Mankey</name>
@@ -2583,7 +2583,7 @@ Delirium — When you have four or more card types among cards in your graveyard
       <toughness>1</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>142/370</number>
+    <number>143/372</number>
   </card>
   <card>
     <name>Mega Punch</name>
@@ -2601,7 +2601,7 @@ Mega Punch deals 3 damage to any target.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Yiming Nie</illustrator>
-    <number>143/370</number>
+    <number>144/372</number>
   </card>
   <card>
     <name>Ninetales</name>
@@ -2619,7 +2619,7 @@ When Ninetales enters the battlefield or attacks, it deals 1 damage to any targe
       <toughness>3</toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>144/370</number>
+    <number>145/372</number>
   </card>
   <card>
     <name>Pokemon Trainer Red</name>
@@ -2638,7 +2638,7 @@ Target creature gains haste until end of turn.</rules>
       <toughness></toughness>
     </stats>
     <illustrator></illustrator>
-    <number>145/370</number>
+    <number>146/372</number>
   </card>
   <card>
     <name>Ponyta</name>
@@ -2657,7 +2657,7 @@ Dash 1R</rules>
       <toughness>1</toughness>
     </stats>
     <illustrator>Nathan Ruch</illustrator>
-    <number>146/370</number>
+    <number>147/372</number>
   </card>
   <card>
     <name>Rapidash</name>
@@ -2675,7 +2675,7 @@ Whenever a Fire creature you control attacks, Rapidash deals 1 damage to target 
       <toughness>2</toughness>
     </stats>
     <illustrator>sakusakufugashi</illustrator>
-    <number>147/370</number>
+    <number>148/372</number>
   </card>
   <card>
     <name>Sacred Fire</name>
@@ -2695,7 +2695,7 @@ Whenever a Fire creature you control attacks, Rapidash deals 1 damage to target 
       <toughness></toughness>
     </stats>
     <illustrator>Kimberley Potrio</illustrator>
-    <number>148/370</number>
+    <number>149/372</number>
   </card>
   <card>
     <name>Seismic Toss</name>
@@ -2712,7 +2712,7 @@ Whenever a Fire creature you control attacks, Rapidash deals 1 damage to target 
       <toughness></toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>149/370</number>
+    <number>150/372</number>
   </card>
   <card>
     <name>Smeargle</name>
@@ -2730,7 +2730,7 @@ T: Create a token that’s a copy of target artifact or creature you control, ex
       <toughness>2</toughness>
     </stats>
     <illustrator>elridge</illustrator>
-    <number>150/370</number>
+    <number>151/372</number>
   </card>
   <card>
     <name>Sneak Attack</name>
@@ -2748,7 +2748,7 @@ T: Create a token that’s a copy of target artifact or creature you control, ex
       <toughness></toughness>
     </stats>
     <illustrator></illustrator>
-    <number>151/370</number>
+    <number>152/372</number>
   </card>
   <card>
     <name>Struggle</name>
@@ -2766,7 +2766,7 @@ Hellbent — If you have no cards in hand, Struggle deals 4 damage to that targe
       <toughness></toughness>
     </stats>
     <illustrator>OneMegaWatt</illustrator>
-    <number>152/370</number>
+    <number>153/372</number>
   </card>
   <card>
     <name>Thunderbolt</name>
@@ -2783,7 +2783,7 @@ Hellbent — If you have no cards in hand, Struggle deals 4 damage to that targe
       <toughness></toughness>
     </stats>
     <illustrator>rajewel</illustrator>
-    <number>153/370</number>
+    <number>154/372</number>
   </card>
   <card>
     <name>Trash for Treasure</name>
@@ -2801,7 +2801,7 @@ Return target artifact from your graveyard to the battlefield.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>N/A</illustrator>
-    <number>154/370</number>
+    <number>155/372</number>
   </card>
   <card>
     <name>Twitch Plays Pokemon</name>
@@ -2820,7 +2820,7 @@ Sacrifice an artifact. When you do, put target artifact card from a graveyard on
       <toughness></toughness>
     </stats>
     <illustrator></illustrator>
-    <number>155/370</number>
+    <number>156/372</number>
   </card>
   <card>
     <name>Voltorb</name>
@@ -2840,7 +2840,7 @@ When you have 3 or more E, transform Voltorb.</rules>
       <toughness>2</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>156/370</number>
+    <number>157/372</number>
   </card>
   <card>
     <name>Vulpix</name>
@@ -2858,7 +2858,7 @@ When you have 3 or more E, transform Voltorb.</rules>
       <toughness>2</toughness>
     </stats>
     <illustrator>Midjjourney</illustrator>
-    <number>157/370</number>
+    <number>158/372</number>
   </card>
   <card>
     <name>Bellossom</name>
@@ -2875,7 +2875,7 @@ When you have 3 or more E, transform Voltorb.</rules>
       <toughness>1</toughness>
     </stats>
     <illustrator>mcgmark, Shen YH</illustrator>
-    <number>158/370</number>
+    <number>159/372</number>
   </card>
   <card>
     <name>Bellsprout</name>
@@ -2893,7 +2893,7 @@ When you have 3 or more E, transform Voltorb.</rules>
       <toughness>1</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>159/370</number>
+    <number>160/372</number>
   </card>
   <card>
     <name>Caterpie</name>
@@ -2910,7 +2910,7 @@ When you have 3 or more E, transform Voltorb.</rules>
       <toughness>1</toughness>
     </stats>
     <illustrator>king joe (neoroto)</illustrator>
-    <number>160/370</number>
+    <number>161/372</number>
   </card>
   <card>
     <name>Diglett</name>
@@ -2928,7 +2928,7 @@ Whenever you complete a     dungeon, transform Diglett.</rules>
       <toughness>2</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>161/370</number>
+    <number>162/372</number>
   </card>
   <card>
     <name>Ding-Dong! Time’s Up</name>
@@ -2946,7 +2946,7 @@ Search your library for a land card, reveal it, and put it into your hand. If th
       <toughness></toughness>
     </stats>
     <illustrator>N/A</illustrator>
-    <number>162/370</number>
+    <number>163/372</number>
   </card>
   <card>
     <name>Dugtrio</name>
@@ -2964,7 +2964,7 @@ Whenever Dugtrio deals combat damage to a player or planeswalker, venture into t
       <toughness>4</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>163/370</number>
+    <number>164/372</number>
   </card>
   <card>
     <name>Erika, Evergreen</name>
@@ -2983,7 +2983,7 @@ Draw a card, then each player may put a creature card from their hand onto the b
       <toughness></toughness>
     </stats>
     <illustrator>tsuaii</illustrator>
-    <number>164/370</number>
+    <number>165/372</number>
   </card>
   <card>
     <name>Erika’s Expertise</name>
@@ -3001,7 +3001,7 @@ You may cast a card with converted mana cost 2 or less from your hand without pa
       <toughness></toughness>
     </stats>
     <illustrator>kvilledrew</illustrator>
-    <number>165/370</number>
+    <number>166/372</number>
   </card>
   <card>
     <name>Exeggcute</name>
@@ -3020,7 +3020,7 @@ Exeggcute gets +1/+1 for each Egg you control.
       <toughness>1</toughness>
     </stats>
     <illustrator>BeastySakura</illustrator>
-    <number>166/370</number>
+    <number>167/372</number>
   </card>
   <card>
     <name>Exeggcutor</name>
@@ -3041,7 +3041,7 @@ Tokens you control have T: Add one mana of any color.
       <toughness>6</toughness>
     </stats>
     <illustrator>TamberElla</illustrator>
-    <number>167/370</number>
+    <number>168/372</number>
   </card>
   <card>
     <name>Food Chain</name>
@@ -3058,7 +3058,7 @@ Tokens you control have T: Add one mana of any color.
       <toughness></toughness>
     </stats>
     <illustrator>Chris Masna</illustrator>
-    <number>168/370</number>
+    <number>169/372</number>
   </card>
   <card>
     <name>Geodude</name>
@@ -3076,7 +3076,7 @@ Tokens you control have T: Add one mana of any color.
       <toughness>2</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>169/370</number>
+    <number>170/372</number>
   </card>
   <card>
     <name>Goldenrod Bug Catching Contest</name>
@@ -3093,7 +3093,7 @@ Tokens you control have T: Add one mana of any color.
       <toughness></toughness>
     </stats>
     <illustrator>Sa-Dui</illustrator>
-    <number>170/370</number>
+    <number>171/372</number>
   </card>
   <card>
     <name>Got</name>
@@ -3110,7 +3110,7 @@ Tokens you control have T: Add one mana of any color.
       <toughness></toughness>
     </stats>
     <illustrator>やっくん</illustrator>
-    <number>171/370</number>
+    <number>172/372</number>
   </card>
   <card>
     <name>Horn Drill</name>
@@ -3128,7 +3128,7 @@ Same type attack boost — If you control a creature that shares a color with th
       <toughness></toughness>
     </stats>
     <illustrator>Titapa Khemakavat</illustrator>
-    <number>172/370</number>
+    <number>173/372</number>
   </card>
   <card>
     <name>Journey Unfolds</name>
@@ -3145,7 +3145,7 @@ Same type attack boost — If you control a creature that shares a color with th
       <toughness></toughness>
     </stats>
     <illustrator>toni infante</illustrator>
-    <number>173/370</number>
+    <number>174/372</number>
   </card>
   <card>
     <name>Leech Seed</name>
@@ -3164,7 +3164,7 @@ When Leech Seed enters the battlefield, search your library for a forest card an
       <toughness></toughness>
     </stats>
     <illustrator>uchuubranko</illustrator>
-    <number>174/370</number>
+    <number>175/372</number>
   </card>
   <card>
     <name>Nidoking</name>
@@ -3185,7 +3185,7 @@ When Nidoking enters the battlefield, choose two —
       <toughness>8</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>175/370</number>
+    <number>176/372</number>
   </card>
   <card>
     <name>Nidoqueen</name>
@@ -3206,7 +3206,7 @@ Whenever Nidoqueen attacks or blocks, choose one —
       <toughness>6</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>176/370</number>
+    <number>177/372</number>
   </card>
   <card>
     <name>Oddish</name>
@@ -3224,7 +3224,7 @@ Whenever Nidoqueen attacks or blocks, choose one —
       <toughness>1</toughness>
     </stats>
     <illustrator>Jamie Dunbar</illustrator>
-    <number>177/370</number>
+    <number>178/372</number>
   </card>
   <card>
     <name>Old Man’s Lesson</name>
@@ -3241,7 +3241,7 @@ Whenever Nidoqueen attacks or blocks, choose one —
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>178/370</number>
+    <number>179/372</number>
   </card>
   <card>
     <name>Onix</name>
@@ -3259,7 +3259,7 @@ Enrage — Whenever Onix is dealt damage, it fights up to one target creature.</
       <toughness>6</toughness>
     </stats>
     <illustrator></illustrator>
-    <number>179/370</number>
+    <number>180/372</number>
   </card>
   <card>
     <name>Paras</name>
@@ -3270,14 +3270,14 @@ Enrage — Whenever Onix is dealt damage, it fights up to one target creature.</
     </type>
     <rarity>R</rarity>
     <rules>When Paras enters the battlefield, you may exile it, leeching target land, artifact or enchantment. Put 2 time counters on that permanent. When it leaves the battlefield, return Paras to the battlefield transformed.
-Permanents being leeched by Paras lose all abilities and gain fading and “T: Add C.”</rules>
+Permanents being leeched by Paras lose all abilities and gain fading and “T: Add C.” </rules>
     <flavor></flavor>
     <stats>
       <power>1</power>
       <toughness>1</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>180/370</number>
+    <number>181/372</number>
   </card>
   <card>
     <name>Petal Dance</name>
@@ -3295,7 +3295,7 @@ Permanents being leeched by Paras lose all abilities and gain fading and “T: A
       <toughness></toughness>
     </stats>
     <illustrator></illustrator>
-    <number>181/370</number>
+    <number>182/372</number>
   </card>
   <card>
     <name>Pinsir</name>
@@ -3313,7 +3313,7 @@ Threshold — 1G, Exile three cards from your graveyard: Return target permanent
       <toughness>1</toughness>
     </stats>
     <illustrator></illustrator>
-    <number>182/370</number>
+    <number>183/372</number>
   </card>
   <card>
     <name>Rhyhorn</name>
@@ -3331,7 +3331,7 @@ Whenever Rhyhorn deals combat damage to a player, it deals that much damage to u
       <toughness>4</toughness>
     </stats>
     <illustrator>John Yau</illustrator>
-    <number>183/370</number>
+    <number>184/372</number>
   </card>
   <card>
     <name>Shuckle</name>
@@ -3349,7 +3349,7 @@ When Shuckle dies, you gain 1 life for each berry counter on it.</rules>
       <toughness>4</toughness>
     </stats>
     <illustrator>Cryptid-Creations</illustrator>
-    <number>184/370</number>
+    <number>185/372</number>
   </card>
   <card>
     <name>Sudowoodo</name>
@@ -3366,7 +3366,7 @@ When Shuckle dies, you gain 1 life for each berry counter on it.</rules>
       <toughness>0</toughness>
     </stats>
     <illustrator>Erik Tassinari</illustrator>
-    <number>185/370</number>
+    <number>186/372</number>
   </card>
   <card>
     <name>Tangela</name>
@@ -3385,7 +3385,7 @@ T: Tangela explores.</rules>
       <toughness>3</toughness>
     </stats>
     <illustrator>N/A</illustrator>
-    <number>186/370</number>
+    <number>187/372</number>
   </card>
   <card>
     <name>Ursaring</name>
@@ -3402,7 +3402,7 @@ T: Tangela explores.</rules>
       <toughness>3</toughness>
     </stats>
     <illustrator>SebasVishno</illustrator>
-    <number>187/370</number>
+    <number>188/372</number>
   </card>
   <card>
     <name>Victreebel</name>
@@ -3420,7 +3420,7 @@ When Victreebel enters the battlefield, destroy target noncreature permanent.</r
       <toughness>2</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>188/370</number>
+    <number>189/372</number>
   </card>
   <card>
     <name>Visit the Phantom PC</name>
@@ -3438,7 +3438,7 @@ Search your library for a creature card, reveal it, and put it into your hand. T
       <toughness></toughness>
     </stats>
     <illustrator>N/A</illustrator>
-    <number>189/370</number>
+    <number>190/372</number>
   </card>
   <card>
     <name>Far</name>
@@ -3455,7 +3455,7 @@ Search your library for a creature card, reveal it, and put it into your hand. T
       <toughness></toughness>
     </stats>
     <illustrator>Xinhai Cheng</illustrator>
-    <number>190/370</number>
+    <number>191/372</number>
   </card>
   <card>
     <name>Agatha, the White Chrysanthemum</name>
@@ -3474,7 +3474,7 @@ Return target creature card from your graveyard to the battlefield. Put a finali
       <toughness></toughness>
     </stats>
     <illustrator>toxicsquall</illustrator>
-    <number>191/370</number>
+    <number>192/372</number>
   </card>
   <card>
     <name>Alakazam</name>
@@ -3494,7 +3494,7 @@ Pay 2 life: Draw a card.</rules>
       <toughness>7</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>192/370</number>
+    <number>193/372</number>
   </card>
   <card>
     <name>Articuno</name>
@@ -3512,7 +3512,7 @@ Whenever Articuno enters the battlefield or attacks, exile target permanent or p
       <toughness>4</toughness>
     </stats>
     <illustrator>TamberElla</illustrator>
-    <number>193/370</number>
+    <number>194/372</number>
   </card>
   <card>
     <name>Brock, Adamantine</name>
@@ -3522,7 +3522,7 @@ Whenever Articuno enters the battlefield or attacks, exile target permanent or p
       <subtype>Brock </subtype>
     </type>
     <rarity>M</rarity>
-    <rules>Exile the top two cards of your library. You may play them this turn. You may play an additional land this turn.
+    <rules>Exile the top two cards of your library. You may play one of them this turn. You may play an additional land this turn.
 Brock deals damage to target creature or planeswalker equal to the number of lands you control.
 Until your next turn, lands you control become green 3/3 Elemental creatures with haste and indestructible. They’re still lands.       </rules>
     <flavor></flavor>
@@ -3531,7 +3531,7 @@ Until your next turn, lands you control become green 3/3 Elemental creatures wit
       <toughness></toughness>
     </stats>
     <illustrator></illustrator>
-    <number>194/370</number>
+    <number>195/372</number>
   </card>
   <card>
     <name>Bruno, Unflinching</name>
@@ -3550,7 +3550,7 @@ Destroy target artifact. Bruno deals 1 damage to its controller.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>kvilledrew</illustrator>
-    <number>195/370</number>
+    <number>196/372</number>
   </card>
   <card>
     <name>Butterfree</name>
@@ -3568,7 +3568,7 @@ When Butterfree enters the battlefield or attacks, target permanent an opponent 
       <toughness>3</toughness>
     </stats>
     <illustrator>Abraham Hernández</illustrator>
-    <number>196/370</number>
+    <number>197/372</number>
   </card>
   <card>
     <name>Cable Club</name>
@@ -3587,7 +3587,7 @@ When Butterfree enters the battlefield or attacks, target permanent an opponent 
       <toughness></toughness>
     </stats>
     <illustrator>N/A</illustrator>
-    <number>197/370</number>
+    <number>198/372</number>
   </card>
   <card>
     <name>Celebi, Guardian of the Forest</name>
@@ -3607,7 +3607,7 @@ The first time you would draw a card each turn, instead choose one:
       <toughness>3</toughness>
     </stats>
     <illustrator>KidScribbles</illustrator>
-    <number>198/370</number>
+    <number>199/372</number>
   </card>
   <card>
     <name>Copycat</name>
@@ -3624,7 +3624,7 @@ The first time you would draw a card each turn, instead choose one:
       <toughness></toughness>
     </stats>
     <illustrator>N/A</illustrator>
-    <number>199/370</number>
+    <number>200/372</number>
   </card>
   <card>
     <name>Dewgong</name>
@@ -3643,7 +3643,7 @@ Whenever an opponent taps a permanent for mana, freeze it. (It doesn’t untap d
       <toughness>7</toughness>
     </stats>
     <illustrator>glitchedpuppet</illustrator>
-    <number>200/370</number>
+    <number>201/372</number>
   </card>
   <card>
     <name>Dunsparce</name>
@@ -3661,7 +3661,7 @@ Whenever Dunsparce attacks or blocks, venture into the dungeon. (The dungeons ar
       <toughness>3</toughness>
     </stats>
     <illustrator>gumbogamer</illustrator>
-    <number>201/370</number>
+    <number>202/372</number>
   </card>
   <card>
     <name>Ekans</name>
@@ -3680,7 +3680,7 @@ Whenever a creature with a counter on it dies, transform Ekans.</rules>
       <toughness>2</toughness>
     </stats>
     <illustrator></illustrator>
-    <number>202/370</number>
+    <number>203/372</number>
   </card>
   <card>
     <name>Electabuzz</name>
@@ -3698,7 +3698,7 @@ Whenever Electabuzz enters the battlefield or attacks, exile the top two cards o
       <toughness>4</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>203/370</number>
+    <number>204/372</number>
   </card>
   <card>
     <name>Gengar</name>
@@ -3716,7 +3716,7 @@ Ghost and spirit creatures you control have “WB, Pay 1 life: Sacrifice this cr
       <toughness>3</toughness>
     </stats>
     <illustrator>Midjourney</illustrator>
-    <number>204/370</number>
+    <number>205/372</number>
   </card>
   <card>
     <name>Giovanni’s Command</name>
@@ -3737,7 +3737,7 @@ Ghost and spirit creatures you control have “WB, Pay 1 life: Sacrifice this cr
       <toughness></toughness>
     </stats>
     <illustrator>jako_(boke_poke)</illustrator>
-    <number>205/370</number>
+    <number>206/372</number>
   </card>
   <card>
     <name>Golem</name>
@@ -3756,7 +3756,7 @@ R, T, Discard a land card: Golem deals 2 damage to any target.
       <toughness>3</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>206/370</number>
+    <number>207/372</number>
   </card>
   <card>
     <name>Heracross</name>
@@ -3774,7 +3774,7 @@ Whenever a land enters the battlefield under your control, each opponent loses 1
       <toughness>4</toughness>
     </stats>
     <illustrator>A T T O Z - (Erick Peñaloza)</illustrator>
-    <number>207/370</number>
+    <number>208/372</number>
   </card>
   <card>
     <name>Ho-oh, Guardian of the Skies</name>
@@ -3792,7 +3792,7 @@ When Ho-oh enters the battlefield, it deals 3 damage to any target. You gain 3 l
       <toughness>6</toughness>
     </stats>
     <illustrator>Ruth-Tay</illustrator>
-    <number>208/370</number>
+    <number>209/372</number>
   </card>
   <card>
     <name>Jynx</name>
@@ -3811,7 +3811,7 @@ Whenever Jynx deals combat damage to a player, target player mills 3 cards.</rul
       <toughness>3</toughness>
     </stats>
     <illustrator>arvalis, mrredbutcher</illustrator>
-    <number>209/370</number>
+    <number>210/372</number>
   </card>
   <card>
     <name>Kangaskhan</name>
@@ -3832,7 +3832,7 @@ When Kangaskhan enters the battlefield, choose one —
       <toughness>4</toughness>
     </stats>
     <illustrator></illustrator>
-    <number>210/370</number>
+    <number>211/372</number>
   </card>
   <card>
     <name>Kingdra</name>
@@ -3850,7 +3850,7 @@ Whenever you draw your second card each turn, Kingdra deals 2 damage to any targ
       <toughness>2</toughness>
     </stats>
     <illustrator>Satsume ART</illustrator>
-    <number>211/370</number>
+    <number>212/372</number>
   </card>
   <card>
     <name>Koga, Venom-Veined</name>
@@ -3862,14 +3862,14 @@ Whenever you draw your second card each turn, Kingdra deals 2 damage to any targ
     <rarity>M</rarity>
     <rules>Proliferate.
 Put a -1/-1 counter on each creature you don’t control. Each opponent gets a poison counter.
-You get an emblem with “Creatures you control have infect.” and each opponent gets an emblem with “When you have one or more poison counters, you lose the game.”</rules>
+You get an emblem with “Creatures you control have infect and may assign combat damage as though they weren’t blocked.”           </rules>
     <flavor></flavor>
     <stats>
       <power></power>
       <toughness></toughness>
     </stats>
     <illustrator>kvilledrew</illustrator>
-    <number>212/370</number>
+    <number>213/372</number>
   </card>
   <card>
     <name>Larvitar</name>
@@ -3887,7 +3887,7 @@ Whenever a land card is put into your graveyard, put a +1/+1 counter on Larvitar
       <toughness>2</toughness>
     </stats>
     <illustrator>SanjulSajeev</illustrator>
-    <number>213/370</number>
+    <number>214/372</number>
   </card>
   <card>
     <name>Lorelei, Ice Queen</name>
@@ -3906,7 +3906,7 @@ You get an emblem with “Whenever a permanent an opponent controls becomes tapp
       <toughness></toughness>
     </stats>
     <illustrator>kvilledrew</illustrator>
-    <number>214/370</number>
+    <number>215/372</number>
   </card>
   <card>
     <name>Lt Surge, Lightning American</name>
@@ -3925,7 +3925,7 @@ Lt Surge deals X damage to any target and you gain X life where X is the number 
       <toughness></toughness>
     </stats>
     <illustrator>ibralui, toxicsquall</illustrator>
-    <number>215/370</number>
+    <number>216/372</number>
   </card>
   <card>
     <name>Machamp</name>
@@ -3935,7 +3935,7 @@ Lt Surge deals X damage to any target and you gain X life where X is the number 
       <subtype>Fighting </subtype>
     </type>
     <rarity>R</rarity>
-    <rules>Haste, doubles strike
+    <rules>Haste, double strike
 Whenever Machamp deals combat damage, it deals that much damage to any target.</rules>
     <flavor></flavor>
     <stats>
@@ -3943,7 +3943,7 @@ Whenever Machamp deals combat damage, it deals that much damage to any target.</
       <toughness>3</toughness>
     </stats>
     <illustrator>RenderTime, Detective Pikachu</illustrator>
-    <number>216/370</number>
+    <number>217/372</number>
   </card>
   <card>
     <name>Moltres</name>
@@ -3961,7 +3961,7 @@ Whenever Moltres enters the battlefield or attacks, draw a card, then Moltres de
       <toughness>4</toughness>
     </stats>
     <illustrator>TamberElla</illustrator>
-    <number>217/370</number>
+    <number>218/372</number>
   </card>
   <card>
     <name>Officer Jenny</name>
@@ -3980,7 +3980,7 @@ Exile target creature or artifact until Officer Jenny leaves the battlefield.</r
       <toughness></toughness>
     </stats>
     <illustrator>PixAI</illustrator>
-    <number>218/370</number>
+    <number>219/372</number>
   </card>
   <card>
     <name>Peaceful Departure</name>
@@ -3997,7 +3997,7 @@ Exile target creature or artifact until Officer Jenny leaves the battlefield.</r
       <toughness></toughness>
     </stats>
     <illustrator>InezMaria</illustrator>
-    <number>219/370</number>
+    <number>220/372</number>
   </card>
   <card>
     <name>Poliwrath</name>
@@ -4015,7 +4015,7 @@ Whenever a player discards a card, that player loses 1 life.</rules>
       <toughness>3</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>220/370</number>
+    <number>221/372</number>
   </card>
   <card>
     <name>Red Gyarados</name>
@@ -4033,7 +4033,7 @@ Enrage — Whenever Red Gyarados is dealt damage, draw a card.</rules>
       <toughness>3</toughness>
     </stats>
     <illustrator>dekunobou-kizakura</illustrator>
-    <number>221/370</number>
+    <number>222/372</number>
   </card>
   <card>
     <name>Red, Pokemon Master</name>
@@ -4052,7 +4052,7 @@ Look at the top X cards of your library. Put up to two of them in your hand and 
       <toughness></toughness>
     </stats>
     <illustrator>usao</illustrator>
-    <number>222/370</number>
+    <number>223/372</number>
   </card>
   <card>
     <name>Rhydon</name>
@@ -4070,7 +4070,7 @@ Rhydon has first strike as long as you control a Plains, ward 2 as long as you c
       <toughness>5</toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>223/370</number>
+    <number>224/372</number>
   </card>
   <card>
     <name>Sabrina, Prodigal Telepath</name>
@@ -4089,7 +4089,7 @@ You may cast target instant or sorcery card in a graveyard with mana value X wit
       <toughness></toughness>
     </stats>
     <illustrator>ag+_(atelieriji)</illustrator>
-    <number>224/370</number>
+    <number>225/372</number>
   </card>
   <card>
     <name>Sabrina’s Command</name>
@@ -4110,7 +4110,7 @@ You may cast target instant or sorcery card in a graveyard with mana value X wit
       <toughness></toughness>
     </stats>
     <illustrator>kawacy</illustrator>
-    <number>225/370</number>
+    <number>226/372</number>
   </card>
   <card>
     <name>Slowbro</name>
@@ -4128,7 +4128,7 @@ When Slowbro enters the battlefield, return target spell or permanent to its own
       <toughness>2</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>226/370</number>
+    <number>227/372</number>
   </card>
   <card>
     <name>Snorlax</name>
@@ -4148,7 +4148,7 @@ Opponent’s cant activate abilities of Food they control.</rules>
       <toughness>3</toughness>
     </stats>
     <illustrator></illustrator>
-    <number>227/370</number>
+    <number>228/372</number>
   </card>
   <card>
     <name>Submission</name>
@@ -4165,7 +4165,7 @@ Opponent’s cant activate abilities of Food they control.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>David Gau</illustrator>
-    <number>228/370</number>
+    <number>229/372</number>
   </card>
   <card>
     <name>Surge’s Command</name>
@@ -4186,7 +4186,7 @@ Opponent’s cant activate abilities of Food they control.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>kvilledrew</illustrator>
-    <number>229/370</number>
+    <number>230/372</number>
   </card>
   <card>
     <name>Tauros</name>
@@ -4196,14 +4196,14 @@ Opponent’s cant activate abilities of Food they control.</rules>
       <subtype>Normal</subtype>
     </type>
     <rarity>R</rarity>
-    <rules>You may exert Tauros as it attacks. When you do, destroy target artifact or enchantment. (An exerted creature won’t untap during your next untap step.)</rules>
+    <rules>You may exert Tauros as it attacks. When you do, destroy target artifact or enchantment.</rules>
     <flavor></flavor>
     <stats>
       <power>3</power>
       <toughness>3</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>230/370</number>
+    <number>231/372</number>
   </card>
   <card>
     <name>Team Rocket Jesse and James</name>
@@ -4214,7 +4214,7 @@ Opponent’s cant activate abilities of Food they control.</rules>
     </type>
     <rarity>M</rarity>
     <rules>Draw a card, then discard a card. Create a tapped treasure token.
-Create a token that’s a copy of target artifact or creature, except it’s an artifact in addition to its other types. It gains haste. Sacrifice it at the beginning of your next end step.
+Create a token that’s a copy of target artifact or creature, except it’s an artifact in addition to its other types and isn’t legendary. It gains haste. Sacrifice it at the beginning of your next end step.
 Gain control of all permanents until end of turn. They gain haste until end of turn. Untap them. Exile Team Rocket Jesse and James.</rules>
     <flavor></flavor>
     <stats>
@@ -4222,7 +4222,7 @@ Gain control of all permanents until end of turn. They gain haste until end of t
       <toughness></toughness>
     </stats>
     <illustrator>RenaIllusion</illustrator>
-    <number>231/370</number>
+    <number>232/372</number>
   </card>
   <card>
     <name>Trouble at the Lake of Rage</name>
@@ -4240,7 +4240,7 @@ Search your library for a creature card that shares a color with the sacrificed 
       <toughness></toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>232/370</number>
+    <number>233/372</number>
   </card>
   <card>
     <name>Tyranitar</name>
@@ -4258,7 +4258,7 @@ Whenever Tyranitar enters the battlefield or attacks, each opponent sacrifices a
       <toughness>7</toughness>
     </stats>
     <illustrator>angel5art</illustrator>
-    <number>233/370</number>
+    <number>234/372</number>
   </card>
   <card>
     <name>Venomoth</name>
@@ -4278,7 +4278,7 @@ Whenever Venomoth attacks choose one—
       <toughness>2</toughness>
     </stats>
     <illustrator>Yixin He</illustrator>
-    <number>234/370</number>
+    <number>235/372</number>
   </card>
   <card>
     <name>Zapdos</name>
@@ -4297,7 +4297,7 @@ Whenever you cast a card from exile, Zapdos deals 2 damage to any target.</rules
       <toughness>4</toughness>
     </stats>
     <illustrator>TamberElla</illustrator>
-    <number>235/370</number>
+    <number>236/372</number>
   </card>
   <card>
     <name>Ash’s</name>
@@ -4314,7 +4314,7 @@ Whenever you cast a card from exile, Zapdos deals 2 damage to any target.</rules
       <toughness></toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>236/370</number>
+    <number>237/372</number>
   </card>
   <card>
     <name>Gastly</name>
@@ -4333,7 +4333,7 @@ When Gastly dies, return it to the battlefield transformed under an opponent’s
       <toughness>1</toughness>
     </stats>
     <illustrator>juan_arrabel_hernandez</illustrator>
-    <number>237/370</number>
+    <number>238/372</number>
   </card>
   <card>
     <name>Primeape</name>
@@ -4352,7 +4352,7 @@ Delirium — As long as there are four or more card types among cards in your gr
       <toughness>1</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>238/370</number>
+    <number>239/372</number>
   </card>
   <card>
     <name>Shellder</name>
@@ -4370,7 +4370,7 @@ Delirium — As long as there are four or more card types among cards in your gr
       <toughness>1</toughness>
     </stats>
     <illustrator>Anonymous 9Gag User</illustrator>
-    <number>239/370</number>
+    <number>240/372</number>
   </card>
   <card>
     <name>Vileplume</name>
@@ -4389,7 +4389,7 @@ Whenever Vileplume deals combat damage to a player, proliferate.</rules>
       <toughness>3</toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>240/370</number>
+    <number>241/372</number>
   </card>
   <card>
     <name>Oh! A Bite!</name>
@@ -4406,7 +4406,7 @@ Whenever Vileplume deals combat damage to a player, proliferate.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Cody Chan</illustrator>
-    <number>241/370</number>
+    <number>242/372</number>
   </card>
   <card>
     <name>Prepare for Trouble</name>
@@ -4423,7 +4423,7 @@ Whenever Vileplume deals combat damage to a player, proliferate.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>SakimiChan</illustrator>
-    <number>242/370</number>
+    <number>243/372</number>
   </card>
   <card>
     <name>Aerodactyl</name>
@@ -4441,7 +4441,7 @@ When Aerodactyl enters the battlefield, you draw X cards and Aerodactyl gains an
       <toughness>7</toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>243/370</number>
+    <number>244/372</number>
   </card>
   <card>
     <name>Bicycle</name>
@@ -4460,7 +4460,7 @@ Crew 1 (Tap any number of creatures you control with total power 1 or greater: T
       <toughness>1</toughness>
     </stats>
     <illustrator>Kevin Darthial</illustrator>
-    <number>244/370</number>
+    <number>245/372</number>
   </card>
   <card>
     <name>Boulder Badge</name>
@@ -4477,7 +4477,7 @@ Crew 1 (Tap any number of creatures you control with total power 1 or greater: T
       <toughness></toughness>
     </stats>
     <illustrator>Artkal</illustrator>
-    <number>245/370</number>
+    <number>246/372</number>
   </card>
   <card>
     <name>Cascade Badge</name>
@@ -4494,7 +4494,25 @@ Crew 1 (Tap any number of creatures you control with total power 1 or greater: T
       <toughness></toughness>
     </stats>
     <illustrator>Artkal</illustrator>
-    <number>246/370</number>
+    <number>247/372</number>
+  </card>
+  <card>
+    <name>Clone Ball</name>
+    <cost>3</cost>
+    <type>
+      <supertype>Artifact</supertype>
+      <subtype></subtype>
+    </type>
+    <rarity>M</rarity>
+    <rules>You may choose not to untap Clone Ball during your untap step.
+2, T: Create a token that’s a copy of target creature, except it’s black in addition to its other colors. Put a +1/+1 counter on it. When Clone Ball becomes untapped, sacrifice that creature.</rules>
+    <flavor></flavor>
+    <stats>
+      <power></power>
+      <toughness></toughness>
+    </stats>
+    <illustrator></illustrator>
+    <number>248/372</number>
   </card>
   <card>
     <name>Ditto</name>
@@ -4504,14 +4522,14 @@ Crew 1 (Tap any number of creatures you control with total power 1 or greater: T
       <subtype>Normal </subtype>
     </type>
     <rarity>R</rarity>
-    <rules>You may have Ditto enter the battlefield as a copy of any creature or planeswalker on the battlefield.</rules>
+    <rules>You may have Ditto enter the battlefield as a copy of any creature or planeswalker on the battlefield, except it’s an artifact in addition to its other types.</rules>
     <flavor></flavor>
     <stats>
       <power>0</power>
       <toughness>0</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>247/370</number>
+    <number>249/372</number>
   </card>
   <card>
     <name>Earth Badge</name>
@@ -4528,7 +4546,7 @@ Crew 1 (Tap any number of creatures you control with total power 1 or greater: T
       <toughness></toughness>
     </stats>
     <illustrator>Artkal</illustrator>
-    <number>248/370</number>
+    <number>250/372</number>
   </card>
   <card>
     <name>Escape Rope</name>
@@ -4546,7 +4564,7 @@ XX, Sacrifice Escape Rope: Venture into the dugeon X times.</rules>
       <toughness></toughness>
     </stats>
     <illustrator></illustrator>
-    <number>249/370</number>
+    <number>251/372</number>
   </card>
   <card>
     <name>Everstone</name>
@@ -4564,7 +4582,7 @@ Creatures can’t transform. If a creature would enter the battlefield transform
       <toughness></toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>250/370</number>
+    <number>252/372</number>
   </card>
   <card>
     <name>Fire Stone</name>
@@ -4582,7 +4600,7 @@ Creatures can’t transform. If a creature would enter the battlefield transform
       <toughness></toughness>
     </stats>
     <illustrator>Pokemon Company</illustrator>
-    <number>251/370</number>
+    <number>253/372</number>
   </card>
   <card>
     <name>Fog Badge</name>
@@ -4599,7 +4617,7 @@ Creatures can’t transform. If a creature would enter the battlefield transform
       <toughness></toughness>
     </stats>
     <illustrator>Artkal, Zexion21</illustrator>
-    <number>252/370</number>
+    <number>254/372</number>
   </card>
   <card>
     <name>Forretress</name>
@@ -4618,7 +4636,7 @@ Remove a +1/+1 counter from Forretress: Forretress deals 1 damage to each oppone
       <toughness>1</toughness>
     </stats>
     <illustrator>Asterism Studio</illustrator>
-    <number>253/370</number>
+    <number>255/372</number>
   </card>
   <card>
     <name>Glacier Badge</name>
@@ -4635,7 +4653,7 @@ Remove a +1/+1 counter from Forretress: Forretress deals 1 damage to each oppone
       <toughness></toughness>
     </stats>
     <illustrator>Artkal, Zexion21</illustrator>
-    <number>254/370</number>
+    <number>256/372</number>
   </card>
   <card>
     <name>Great Ball</name>
@@ -4654,7 +4672,7 @@ T: Add CCC.
       <toughness></toughness>
     </stats>
     <illustrator>sahinduezguen, Alex Daluiso</illustrator>
-    <number>255/370</number>
+    <number>257/372</number>
   </card>
   <card>
     <name>Hive Badge</name>
@@ -4671,7 +4689,7 @@ T: Add CCC.
       <toughness></toughness>
     </stats>
     <illustrator>Artkal, Zexion21</illustrator>
-    <number>256/370</number>
+    <number>258/372</number>
   </card>
   <card>
     <name>HM01 - Cut</name>
@@ -4690,7 +4708,7 @@ Remove a +1/+1 counter from equipped creature: Target creature gets -1/-1 until 
       <toughness></toughness>
     </stats>
     <illustrator></illustrator>
-    <number>257/370</number>
+    <number>259/372</number>
   </card>
   <card>
     <name>HM02 - Fly</name>
@@ -4709,7 +4727,7 @@ Whenever equipped creature attacks, exile up to one target creature, then search
       <toughness></toughness>
     </stats>
     <illustrator></illustrator>
-    <number>258/370</number>
+    <number>260/372</number>
   </card>
   <card>
     <name>HM03 - Surf</name>
@@ -4729,7 +4747,7 @@ Sacrifice a Jellyfish: Discover X where X is the sacrificed creature’s power.<
       <toughness></toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>259/370</number>
+    <number>261/372</number>
   </card>
   <card>
     <name>HM04 - Strength</name>
@@ -4739,7 +4757,8 @@ Sacrifice a Jellyfish: Discover X where X is the sacrificed creature’s power.<
       <subtype>Equipment </subtype>
     </type>
     <rarity>R</rarity>
-    <rules>Equip 1
+    <rules>Equip 2
+Equipped creature gets +2/+2 and has trample.
 You may exert equipped creature as it attacks. When you do, sacrifice a land. Equipped creature deals damage to any target equal to its power.
 As long as equipped creature is tapped, you may play land cards from your graveyard.</rules>
     <flavor></flavor>
@@ -4748,7 +4767,7 @@ As long as equipped creature is tapped, you may play land cards from your gravey
       <toughness></toughness>
     </stats>
     <illustrator>LindseyWArt</illustrator>
-    <number>260/370</number>
+    <number>262/372</number>
   </card>
   <card>
     <name>HM05 - Flash</name>
@@ -4767,7 +4786,7 @@ Whenever equipped creature attacks, venture into the dungeon. (The dungeons are 
       <toughness></toughness>
     </stats>
     <illustrator>FionaHsieh</illustrator>
-    <number>261/370</number>
+    <number>263/372</number>
   </card>
   <card>
     <name>Leaf Stone</name>
@@ -4785,7 +4804,7 @@ Whenever equipped creature attacks, venture into the dungeon. (The dungeons are 
       <toughness></toughness>
     </stats>
     <illustrator>Pokemon Company</illustrator>
-    <number>262/370</number>
+    <number>264/372</number>
   </card>
   <card>
     <name>Lost Item</name>
@@ -4802,7 +4821,7 @@ Whenever equipped creature attacks, venture into the dungeon. (The dungeons are 
       <toughness></toughness>
     </stats>
     <illustrator>Mark Cosmiano</illustrator>
-    <number>263/370</number>
+    <number>265/372</number>
   </card>
   <card>
     <name>Magneton</name>
@@ -4813,14 +4832,14 @@ Whenever equipped creature attacks, venture into the dungeon. (The dungeons are 
     </type>
     <rarity>R</rarity>
     <rules>Whenever Magneton attacks, it deals X damage to any target where X is the number of artifacts you control.
-When Magneton dies, create three colorless 2/2 Magnemite artifact creature tokens with “Whenever this creature attacks, deal X damage to any target, where X is the number of artifacts you control.”</rules>
+When Magneton dies, create three colorless 2/2 Magnemite artifact creature tokens with “Whenever this creature attacks, it deals X damage to any target, where X is the number of artifacts you control.”</rules>
     <flavor></flavor>
     <stats>
       <power>6</power>
       <toughness>6</toughness>
     </stats>
     <illustrator>Simon Gangl</illustrator>
-    <number>264/370</number>
+    <number>266/372</number>
   </card>
   <card>
     <name>Marsh Badge</name>
@@ -4837,7 +4856,7 @@ When Magneton dies, create three colorless 2/2 Magnemite artifact creature token
       <toughness></toughness>
     </stats>
     <illustrator>Artkal</illustrator>
-    <number>265/370</number>
+    <number>267/372</number>
   </card>
   <card>
     <name>Master Ball</name>
@@ -4854,7 +4873,7 @@ When Magneton dies, create three colorless 2/2 Magnemite artifact creature token
       <toughness></toughness>
     </stats>
     <illustrator>sahinduezguen, Alex Daluiso</illustrator>
-    <number>266/370</number>
+    <number>268/372</number>
   </card>
   <card>
     <name>Mewtwo</name>
@@ -4871,7 +4890,7 @@ When Magneton dies, create three colorless 2/2 Magnemite artifact creature token
       <toughness>10</toughness>
     </stats>
     <illustrator></illustrator>
-    <number>267/370</number>
+    <number>269/372</number>
   </card>
   <card>
     <name>Mineral Badge</name>
@@ -4888,7 +4907,7 @@ When Magneton dies, create three colorless 2/2 Magnemite artifact creature token
       <toughness></toughness>
     </stats>
     <illustrator>Artkal, Zexion21</illustrator>
-    <number>268/370</number>
+    <number>270/372</number>
   </card>
   <card>
     <name>Moon Stone</name>
@@ -4906,7 +4925,7 @@ When Magneton dies, create three colorless 2/2 Magnemite artifact creature token
       <toughness></toughness>
     </stats>
     <illustrator>Pokemon Company</illustrator>
-    <number>269/370</number>
+    <number>271/372</number>
   </card>
   <card>
     <name>Mysterious Fossil</name>
@@ -4923,7 +4942,7 @@ When Magneton dies, create three colorless 2/2 Magnemite artifact creature token
       <toughness></toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>270/370</number>
+    <number>272/372</number>
   </card>
   <card>
     <name>Plain Badge</name>
@@ -4940,7 +4959,7 @@ When Magneton dies, create three colorless 2/2 Magnemite artifact creature token
       <toughness></toughness>
     </stats>
     <illustrator>Artkal, Zexion21</illustrator>
-    <number>271/370</number>
+    <number>273/372</number>
   </card>
   <card>
     <name>Pokeball</name>
@@ -4957,7 +4976,7 @@ When Magneton dies, create three colorless 2/2 Magnemite artifact creature token
       <toughness></toughness>
     </stats>
     <illustrator>sahinduezguen</illustrator>
-    <number>272/370</number>
+    <number>274/372</number>
   </card>
   <card>
     <name>Pokedex</name>
@@ -4976,7 +4995,7 @@ Whenever a creature enters the battlefield under your control, if it doesn’t s
       <toughness></toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>273/370</number>
+    <number>275/372</number>
   </card>
   <card>
     <name>Pokedoll</name>
@@ -4994,7 +5013,7 @@ When Pokedoll is put into your graveyard from the battlefield, draw a card.</rul
       <toughness></toughness>
     </stats>
     <illustrator>Studio Bora Inc.</illustrator>
-    <number>274/370</number>
+    <number>276/372</number>
   </card>
   <card>
     <name>Pokeflute</name>
@@ -5011,7 +5030,7 @@ When Pokedoll is put into your graveyard from the battlefield, draw a card.</rul
       <toughness></toughness>
     </stats>
     <illustrator>Nick Rosenthal</illustrator>
-    <number>275/370</number>
+    <number>277/372</number>
   </card>
   <card>
     <name>Porygon</name>
@@ -5029,7 +5048,7 @@ T: Add C to your mana pool for each artifact you control. When you spend this ma
       <toughness>3</toughness>
     </stats>
     <illustrator>Josha Dunlop</illustrator>
-    <number>276/370</number>
+    <number>278/372</number>
   </card>
   <card>
     <name>Porygon2</name>
@@ -5048,7 +5067,7 @@ R, T, Sacrifice an artifact: Return target artifact card from your graveyard to 
       <toughness>2</toughness>
     </stats>
     <illustrator>sanjul sajeev</illustrator>
-    <number>277/370</number>
+    <number>279/372</number>
   </card>
   <card>
     <name>Rainbow Badge</name>
@@ -5065,7 +5084,7 @@ R, T, Sacrifice an artifact: Return target artifact card from your graveyard to 
       <toughness></toughness>
     </stats>
     <illustrator>Artkal</illustrator>
-    <number>278/370</number>
+    <number>280/372</number>
   </card>
   <card>
     <name>Rainbow Wing</name>
@@ -5084,7 +5103,7 @@ You may pay WUBRG rather than pay the mana cost of spells you cast.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>N/A</illustrator>
-    <number>279/370</number>
+    <number>281/372</number>
   </card>
   <card>
     <name>Rising Badge</name>
@@ -5101,7 +5120,7 @@ You may pay WUBRG rather than pay the mana cost of spells you cast.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Artkal, Zexion21</illustrator>
-    <number>280/370</number>
+    <number>282/372</number>
   </card>
   <card>
     <name>S.S. Anne</name>
@@ -5119,7 +5138,7 @@ Crew 1</rules>
       <toughness>4</toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>281/370</number>
+    <number>283/372</number>
   </card>
   <card>
     <name>Silph Scope</name>
@@ -5138,7 +5157,7 @@ T: Target player exiles a card from their graveyard.
       <toughness></toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>282/370</number>
+    <number>284/372</number>
   </card>
   <card>
     <name>Silver Wing</name>
@@ -5156,7 +5175,7 @@ T: Target player exiles a card from their graveyard.
       <toughness></toughness>
     </stats>
     <illustrator>N/A</illustrator>
-    <number>283/370</number>
+    <number>285/372</number>
   </card>
   <card>
     <name>Soul Badge</name>
@@ -5173,7 +5192,7 @@ T: Target player exiles a card from their graveyard.
       <toughness></toughness>
     </stats>
     <illustrator>Artkal</illustrator>
-    <number>284/370</number>
+    <number>286/372</number>
   </card>
   <card>
     <name>Steelix</name>
@@ -5192,7 +5211,7 @@ When Steelix enters the battlefield, sacrifice any number of lands. Each opponen
       <toughness>10</toughness>
     </stats>
     <illustrator>oOIsiusOo</illustrator>
-    <number>285/370</number>
+    <number>287/372</number>
   </card>
   <card>
     <name>Storm Badge</name>
@@ -5209,7 +5228,7 @@ When Steelix enters the battlefield, sacrifice any number of lands. Each opponen
       <toughness></toughness>
     </stats>
     <illustrator>Artkal, Zexion21</illustrator>
-    <number>286/370</number>
+    <number>288/372</number>
   </card>
   <card>
     <name>Sun Stone</name>
@@ -5227,7 +5246,7 @@ WUBRG, T, Sacrifice Sun Stone: Draw three cards.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Pokemon Company</illustrator>
-    <number>287/370</number>
+    <number>289/372</number>
   </card>
   <card>
     <name>Team Rocket Armor</name>
@@ -5244,7 +5263,7 @@ WUBRG, T, Sacrifice Sun Stone: Draw three cards.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Hemesh Patel</illustrator>
-    <number>288/370</number>
+    <number>290/372</number>
   </card>
   <card>
     <name>Thunder Badge</name>
@@ -5261,7 +5280,7 @@ WUBRG, T, Sacrifice Sun Stone: Draw three cards.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Artkal</illustrator>
-    <number>289/370</number>
+    <number>291/372</number>
   </card>
   <card>
     <name>Thunder Stone</name>
@@ -5279,7 +5298,7 @@ WUBRG, T, Sacrifice Sun Stone: Draw three cards.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Pokemon Company</illustrator>
-    <number>290/370</number>
+    <number>292/372</number>
   </card>
   <card>
     <name>Town Map</name>
@@ -5296,7 +5315,7 @@ WUBRG, T, Sacrifice Sun Stone: Draw three cards.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Pokemon Company</illustrator>
-    <number>291/370</number>
+    <number>293/372</number>
   </card>
   <card>
     <name>Ultra Ball</name>
@@ -5313,7 +5332,7 @@ WUBRG, T, Sacrifice Sun Stone: Draw three cards.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>sahinduezguen, Alex Daluiso</illustrator>
-    <number>292/370</number>
+    <number>294/372</number>
   </card>
   <card>
     <name>Volcano Badge</name>
@@ -5330,7 +5349,7 @@ WUBRG, T, Sacrifice Sun Stone: Draw three cards.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Artkal</illustrator>
-    <number>293/370</number>
+    <number>295/372</number>
   </card>
   <card>
     <name>Water Stone</name>
@@ -5348,7 +5367,7 @@ WUBRG, T, Sacrifice Sun Stone: Draw three cards.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Pokemon Company</illustrator>
-    <number>294/370</number>
+    <number>296/372</number>
   </card>
   <card>
     <name>Zephyr Badge</name>
@@ -5365,7 +5384,7 @@ WUBRG, T, Sacrifice Sun Stone: Draw three cards.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Artkal, Zexion21</illustrator>
-    <number>295/370</number>
+    <number>297/372</number>
   </card>
   <card>
     <name>Azalea Town</name>
@@ -5383,7 +5402,7 @@ T: Add G or W.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Gary Gill</illustrator>
-    <number>296/370</number>
+    <number>298/372</number>
   </card>
   <card>
     <name>Bellchime Trail</name>
@@ -5400,7 +5419,7 @@ T: Add G or W.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>asteroid ill</illustrator>
-    <number>297/370</number>
+    <number>299/372</number>
   </card>
   <card>
     <name>Blackthorn City</name>
@@ -5418,7 +5437,7 @@ T: Add B or R.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Klaus Pillon</illustrator>
-    <number>298/370</number>
+    <number>300/372</number>
   </card>
   <card>
     <name>Burned Tower</name>
@@ -5435,7 +5454,7 @@ T: Add B or R.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Pokemon Generations</illustrator>
-    <number>299/370</number>
+    <number>301/372</number>
   </card>
   <card>
     <name>Celadon City</name>
@@ -5453,7 +5472,7 @@ T: Add B or G.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>300/370</number>
+    <number>302/372</number>
   </card>
   <card>
     <name>Celadon Dept Store</name>
@@ -5471,7 +5490,7 @@ XX, T, Sacrifice Celadon Dept Store: Search your library for an artifact card wi
       <toughness></toughness>
     </stats>
     <illustrator></illustrator>
-    <number>301/370</number>
+    <number>303/372</number>
   </card>
   <card>
     <name>Cerulean Bike Shop</name>
@@ -5489,7 +5508,7 @@ XX, T, Sacrifice Celadon Dept Store: Search your library for an artifact card wi
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>302/370</number>
+    <number>304/372</number>
   </card>
   <card>
     <name>Cerulean Cape</name>
@@ -5506,7 +5525,7 @@ XX, T, Sacrifice Celadon Dept Store: Search your library for an artifact card wi
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>303/370</number>
+    <number>305/372</number>
   </card>
   <card>
     <name>Cerulean Cave</name>
@@ -5523,7 +5542,7 @@ XX, T, Sacrifice Celadon Dept Store: Search your library for an artifact card wi
       <toughness></toughness>
     </stats>
     <illustrator>slipstreambrendan</illustrator>
-    <number>304/370</number>
+    <number>306/372</number>
   </card>
   <card>
     <name>Cerulean City</name>
@@ -5541,7 +5560,7 @@ T: Add G or U.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Cronoan</illustrator>
-    <number>305/370</number>
+    <number>307/372</number>
   </card>
   <card>
     <name>Cianwood City</name>
@@ -5559,7 +5578,7 @@ T: Add U or R.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>306/370</number>
+    <number>308/372</number>
   </card>
   <card>
     <name>Cinnabar Island</name>
@@ -5576,7 +5595,7 @@ T: Add U or R.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>307/370</number>
+    <number>309/372</number>
   </card>
   <card>
     <name>Cinnabar Laboratories</name>
@@ -5595,7 +5614,7 @@ T: Add U or R.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>308/370</number>
+    <number>310/372</number>
   </card>
   <card>
     <name>Cinnabar Volcano</name>
@@ -5613,7 +5632,7 @@ T, Sacrifice Cinnabar Volcano: Destroy target nonbasic land.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>toxicsquall</illustrator>
-    <number>309/370</number>
+    <number>311/372</number>
   </card>
   <card>
     <name>Cycling Road</name>
@@ -5630,7 +5649,7 @@ T, Sacrifice Cinnabar Volcano: Destroy target nonbasic land.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>310/370</number>
+    <number>312/372</number>
   </card>
   <card>
     <name>Dark Cave</name>
@@ -5647,7 +5666,7 @@ T, Sacrifice Cinnabar Volcano: Destroy target nonbasic land.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>311/370</number>
+    <number>313/372</number>
   </card>
   <card>
     <name>Diglett’s Cave</name>
@@ -5657,14 +5676,14 @@ T, Sacrifice Cinnabar Volcano: Destroy target nonbasic land.</rules>
       <subtype></subtype>
     </type>
     <rarity>R</rarity>
-    <rules>T: Add CC to your mana pool. Each opponent creates a 1/1 colorless Diglett creature token.</rules>
+    <rules>T: Add CC to your mana pool. Each opponent creates a 1/1 green Diglett creature token.</rules>
     <flavor></flavor>
     <stats>
       <power></power>
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>312/370</number>
+    <number>314/372</number>
   </card>
   <card>
     <name>Dragon’s Den</name>
@@ -5681,7 +5700,7 @@ T, Sacrifice Cinnabar Volcano: Destroy target nonbasic land.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>313/370</number>
+    <number>315/372</number>
   </card>
   <card>
     <name>Ecruteak City</name>
@@ -5698,7 +5717,7 @@ T, Sacrifice Cinnabar Volcano: Destroy target nonbasic land.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>karlen tam</illustrator>
-    <number>314/370</number>
+    <number>316/372</number>
   </card>
   <card>
     <name>Fuschia City</name>
@@ -5715,7 +5734,7 @@ T, Sacrifice Cinnabar Volcano: Destroy target nonbasic land.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>315/370</number>
+    <number>317/372</number>
   </card>
   <card>
     <name>Glitch City</name>
@@ -5736,7 +5755,7 @@ T: Add C.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>N/A</illustrator>
-    <number>316/370</number>
+    <number>318/372</number>
   </card>
   <card>
     <name>Ice Path</name>
@@ -5753,7 +5772,7 @@ T: Add C.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Katie Draws Stuff</illustrator>
-    <number>317/370</number>
+    <number>319/372</number>
   </card>
   <card>
     <name>Ilex Forest</name>
@@ -5770,7 +5789,7 @@ T: Add C.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>ilex_forest on twitter</illustrator>
-    <number>318/370</number>
+    <number>320/372</number>
   </card>
   <card>
     <name>Ilex Forest Shrine</name>
@@ -5787,7 +5806,7 @@ T: Add C.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>RhymeWithRay</illustrator>
-    <number>319/370</number>
+    <number>321/372</number>
   </card>
   <card>
     <name>Indigo Plateau</name>
@@ -5804,7 +5823,7 @@ T: Add C.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>aocom</illustrator>
-    <number>320/370</number>
+    <number>322/372</number>
   </card>
   <card>
     <name>Lake of Rage</name>
@@ -5821,7 +5840,7 @@ T: Add C.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>AudGreen</illustrator>
-    <number>321/370</number>
+    <number>323/372</number>
   </card>
   <card>
     <name>Lavender Town</name>
@@ -5839,7 +5858,7 @@ W/B, T, Exile a creature card from a graveyard: Create a white 1/1 Spirit creatu
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>322/370</number>
+    <number>324/372</number>
   </card>
   <card>
     <name>Mahogany Town</name>
@@ -5857,7 +5876,7 @@ T: Add W or U.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Libiao</illustrator>
-    <number>323/370</number>
+    <number>325/372</number>
   </card>
   <card>
     <name>Mt. Moon</name>
@@ -5874,7 +5893,7 @@ T: Add W or U.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>324/370</number>
+    <number>326/372</number>
   </card>
   <card>
     <name>Mt. Silver</name>
@@ -5891,7 +5910,7 @@ T: Add W or U.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>325/370</number>
+    <number>327/372</number>
   </card>
   <card>
     <name>Mt. Silver Spires</name>
@@ -5903,14 +5922,14 @@ T: Add W or U.</rules>
     <rarity>M</rarity>
     <rules>Mt. Silver Spires enters the battlefield tapped.
 T: Add C.
-6, T: Create an X/X red Elemental creature token where X is the number of mountains you control. This ability costs 1 less to activate for each basic land type among lands you control. </rules>
+6, T: Create an X/X red Graveler creature token where X is the number of mountains you control. This ability costs 1 less to activate for each basic land type among lands you control. </rules>
     <flavor></flavor>
     <stats>
       <power></power>
       <toughness></toughness>
     </stats>
     <illustrator>Ipan Hf / iHF95</illustrator>
-    <number>326/370</number>
+    <number>328/372</number>
   </card>
   <card>
     <name>National Park</name>
@@ -5927,7 +5946,7 @@ T: Add C.
       <toughness></toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>327/370</number>
+    <number>329/372</number>
   </card>
   <card>
     <name>Olivine City</name>
@@ -5944,7 +5963,7 @@ T: Add C.
       <toughness></toughness>
     </stats>
     <illustrator>debumegu</illustrator>
-    <number>328/370</number>
+    <number>330/372</number>
   </card>
   <card>
     <name>Olivine Lighthouse</name>
@@ -5962,7 +5981,7 @@ T: Add C.
       <toughness></toughness>
     </stats>
     <illustrator>Matthew G</illustrator>
-    <number>329/370</number>
+    <number>331/372</number>
   </card>
   <card>
     <name>Pallet Town</name>
@@ -5979,7 +5998,7 @@ T: Add C.
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>330/370</number>
+    <number>332/372</number>
   </card>
   <card>
     <name>Pewter City</name>
@@ -5997,7 +6016,7 @@ T: Add R or G.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Cronoan</illustrator>
-    <number>331/370</number>
+    <number>333/372</number>
   </card>
   <card>
     <name>Pewter Museum of Science</name>
@@ -6014,7 +6033,7 @@ T: Add R or G.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>332/370</number>
+    <number>334/372</number>
   </card>
   <card>
     <name>PokeMart</name>
@@ -6033,7 +6052,7 @@ T, Sacrifice X artifacts: Search your library for an artifact with converted man
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>333/370</number>
+    <number>335/372</number>
   </card>
   <card>
     <name>Pokemon Centre</name>
@@ -6051,7 +6070,7 @@ T, Sacrifice X artifacts: Search your library for an artifact with converted man
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>334/370</number>
+    <number>336/372</number>
   </card>
   <card>
     <name>Pokemon Tower</name>
@@ -6068,7 +6087,7 @@ T, Sacrifice X artifacts: Search your library for an artifact with converted man
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>335/370</number>
+    <number>337/372</number>
   </card>
   <card>
     <name>Power Plant</name>
@@ -6085,7 +6104,7 @@ T, Sacrifice X artifacts: Search your library for an artifact with converted man
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>336/370</number>
+    <number>338/372</number>
   </card>
   <card>
     <name>Rock Tunnel</name>
@@ -6103,7 +6122,7 @@ T: Add CC.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>337/370</number>
+    <number>339/372</number>
   </card>
   <card>
     <name>Rocket Game Corner</name>
@@ -6121,7 +6140,7 @@ T: Flip a coin. If you win the flip, draw a card.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>338/370</number>
+    <number>340/372</number>
   </card>
   <card>
     <name>Ruins of Alph</name>
@@ -6140,7 +6159,7 @@ Whenever you attack with three or more creatures, transform Ruins of Alph.</rule
       <toughness></toughness>
     </stats>
     <illustrator>Hiro</illustrator>
-    <number>339/370</number>
+    <number>341/372</number>
   </card>
   <card>
     <name>Safari Zone</name>
@@ -6157,7 +6176,7 @@ Whenever you attack with three or more creatures, transform Ruins of Alph.</rule
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>340/370</number>
+    <number>342/372</number>
   </card>
   <card>
     <name>Saffron City</name>
@@ -6175,7 +6194,7 @@ T: Add U or B.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>341/370</number>
+    <number>343/372</number>
   </card>
   <card>
     <name>Seafoam Islands</name>
@@ -6192,7 +6211,7 @@ T: Add U or B.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>342/370</number>
+    <number>344/372</number>
   </card>
   <card>
     <name>Silence Bridge</name>
@@ -6211,7 +6230,7 @@ T: Add C.
       <toughness></toughness>
     </stats>
     <illustrator>Hound and Princess</illustrator>
-    <number>343/370</number>
+    <number>345/372</number>
   </card>
   <card>
     <name>Sprout Tower</name>
@@ -6228,7 +6247,7 @@ T: Add C.
       <toughness></toughness>
     </stats>
     <illustrator>RhymeWithRay</illustrator>
-    <number>344/370</number>
+    <number>346/372</number>
   </card>
   <card>
     <name>Tin Tower</name>
@@ -6245,7 +6264,7 @@ T: Add C.
       <toughness></toughness>
     </stats>
     <illustrator>RhymeWithRay</illustrator>
-    <number>345/370</number>
+    <number>347/372</number>
   </card>
   <card>
     <name>Tohjo Falls</name>
@@ -6262,7 +6281,7 @@ T: Add C.
       <toughness></toughness>
     </stats>
     <illustrator>tiago alexandre</illustrator>
-    <number>346/370</number>
+    <number>348/372</number>
   </card>
   <card>
     <name>Underground Path</name>
@@ -6280,7 +6299,7 @@ T: Add C.
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>347/370</number>
+    <number>349/372</number>
   </card>
   <card>
     <name>Union Cave</name>
@@ -6297,7 +6316,7 @@ T: Add C.
       <toughness></toughness>
     </stats>
     <illustrator>mgcmark</illustrator>
-    <number>348/370</number>
+    <number>350/372</number>
   </card>
   <card>
     <name>Unknown Dungeon</name>
@@ -6314,7 +6333,7 @@ T: Add C.
       <toughness></toughness>
     </stats>
     <illustrator>arvalis</illustrator>
-    <number>349/370</number>
+    <number>351/372</number>
   </card>
   <card>
     <name>Vermilion City</name>
@@ -6332,7 +6351,7 @@ T: Add R or W.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>350/370</number>
+    <number>352/372</number>
   </card>
   <card>
     <name>Vermilion Harbour</name>
@@ -6349,7 +6368,7 @@ T: Add R or W.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mandl</illustrator>
-    <number>351/370</number>
+    <number>353/372</number>
   </card>
   <card>
     <name>Victory Road</name>
@@ -6366,7 +6385,7 @@ T: Add R or W.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>352/370</number>
+    <number>354/372</number>
   </card>
   <card>
     <name>Violet City</name>
@@ -6384,7 +6403,7 @@ T: Add W or B.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>RhymeWithRay</illustrator>
-    <number>353/370</number>
+    <number>355/372</number>
   </card>
   <card>
     <name>Viridian Forest</name>
@@ -6401,7 +6420,7 @@ T: Add W or B.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>Simone Mändl</illustrator>
-    <number>354/370</number>
+    <number>356/372</number>
   </card>
   <card>
     <name>Warp Tile</name>
@@ -6420,7 +6439,7 @@ T: Add W or B.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>N/A</illustrator>
-    <number>355/370</number>
+    <number>357/372</number>
   </card>
   <card>
     <name>Whirl Islands</name>
@@ -6437,7 +6456,7 @@ T: Add W or B.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>ka0susama</illustrator>
-    <number>356/370</number>
+    <number>358/372</number>
   </card>
   <card>
     <name>Eevee</name>
@@ -6457,7 +6476,7 @@ First strike
       <toughness>1</toughness>
     </stats>
     <illustrator>Addams AI</illustrator>
-    <number>357/370</number>
+    <number>359/372</number>
   </card>
   <card>
     <name>Pikachu</name>
@@ -6476,7 +6495,7 @@ When Pikachu enters the battlefield, paralyze target creature an opponent contro
       <toughness>1</toughness>
     </stats>
     <illustrator>JC Soto</illustrator>
-    <number>358/370</number>
+    <number>360/372</number>
   </card>
   <card>
     <name>Blastoise</name>
@@ -6495,7 +6514,7 @@ Whenever you draw your third card in a turn, you may cast a card exiled with Bla
       <toughness>4</toughness>
     </stats>
     <illustrator>Teru Sakura</illustrator>
-    <number>359/370</number>
+    <number>361/372</number>
   </card>
   <card>
     <name>Feraligatr</name>
@@ -6513,7 +6532,7 @@ Whenever a creature you control deals combat damage to an opponent, you may draw
       <toughness>3</toughness>
     </stats>
     <illustrator>Robyn Drayson</illustrator>
-    <number>360/370</number>
+    <number>362/372</number>
   </card>
   <card>
     <name>Squirtle</name>
@@ -6533,7 +6552,7 @@ Whenever a player casts their second spell in a turn, transform Squirtle.</rules
       <toughness>1</toughness>
     </stats>
     <illustrator>Joshua Dunlop</illustrator>
-    <number>361/370</number>
+    <number>363/372</number>
   </card>
   <card>
     <name>Meowth</name>
@@ -6551,7 +6570,7 @@ When Meowth enters the battlefield or at the beginning of your upkeep, you scry 
       <toughness>1</toughness>
     </stats>
     <illustrator>TamberElla</illustrator>
-    <number>362/370</number>
+    <number>364/372</number>
   </card>
   <card>
     <name>Charizard</name>
@@ -6570,7 +6589,7 @@ Whenever Charizard deals combat damage to a player, it deals that much damage to
       <toughness>5</toughness>
     </stats>
     <illustrator>Nininak AI</illustrator>
-    <number>363/370</number>
+    <number>365/372</number>
   </card>
   <card>
     <name>Charmander</name>
@@ -6589,7 +6608,7 @@ Whenever a creature dealt damage by Charmander this turn dies, transform Charman
       <toughness>1</toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>364/370</number>
+    <number>366/372</number>
   </card>
   <card>
     <name>Flamethrower</name>
@@ -6607,7 +6626,7 @@ Same type attack boost — If you control a creature that shares a color with th
       <toughness>5</toughness>
     </stats>
     <illustrator>ChrisMasna</illustrator>
-    <number>365/370</number>
+    <number>367/372</number>
   </card>
   <card>
     <name>Typhlosion</name>
@@ -6626,7 +6645,7 @@ Whenever a land card is put into a graveyard from anywhere, Typhlosion deals 1 d
       <toughness>2</toughness>
     </stats>
     <illustrator>nell-fallcard</illustrator>
-    <number>366/370</number>
+    <number>368/372</number>
   </card>
   <card>
     <name>Bulbasaur</name>
@@ -6644,7 +6663,7 @@ T: Add G. When this mana is spent to cast a spell with mana value 5 or greater, 
       <toughness>2</toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>367/370</number>
+    <number>369/372</number>
   </card>
   <card>
     <name>Meganium</name>
@@ -6662,7 +6681,7 @@ Whenever a land enters the battlefield from anywhere other than your hand, you s
       <toughness>2</toughness>
     </stats>
     <illustrator>Unknown</illustrator>
-    <number>368/370</number>
+    <number>370/372</number>
   </card>
   <card>
     <name>Venusaur</name>
@@ -6681,7 +6700,7 @@ You may play an additional land each turn.</rules>
       <toughness>3</toughness>
     </stats>
     <illustrator>Teru Sakura</illustrator>
-    <number>369/370</number>
+    <number>371/372</number>
   </card>
   <card>
     <name>GS Ball</name>
@@ -6698,6 +6717,6 @@ You may play an additional land each turn.</rules>
       <toughness></toughness>
     </stats>
     <illustrator>sahinduezguen, Dackjaw 3D</illustrator>
-    <number>370/370</number>
+    <number>372/372</number>
   </card>
 </spoiler>
