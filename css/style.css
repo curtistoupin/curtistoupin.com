@@ -9859,3 +9859,223 @@ a.card-link {
 .card-preview {
   margin: 3px 3px 3px 3px;
 }
+
+svg {
+  display: block;
+  width: 100%;  /* Make the SVG fill the container's width */
+  height: auto; /* Maintain the aspect ratio */
+  max-width: 100%; /* Prevent it from exceeding the container width */
+  pointer-events: all;
+}
+path {
+    fill: gray; /* Default fill color */
+    stroke: #000; /* Default stroke color (border) */
+    stroke-width: 1px;
+    transition: fill 0.3s ease; /* Smooth transition for hover effect */
+}
+path {
+pointer-events: all;
+}
+path.democrat {
+fill: blue;
+}
+path.republican {
+fill: red;
+}
+path.swing:hover {
+    fill: white; /* Change the fill color to red on hover */
+}
+
+.sticky-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 50px; /* This is the point where the element sticks to the top */
+  z-index: 999; /* Ensures the button stays on top when scrolling */
+  background-color: white; /* Optional: Give it a background to ensure visibility */
+  padding: 10px; /* Optional: Some padding for aesthetics */
+}
+
+/* Container for the stars */
+.stars-container {
+  display: inline-block;
+  gap: 0px; /* No gap between stars */
+  width: 90px; /* 30px per star */
+  height: 30px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Individual star wrapper */
+.star {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  position: relative;
+}
+
+/* Star outline styling */
+.star-outline {
+  stroke: black;
+  stroke-width: 2px;
+  fill: dimgrey;
+}
+
+/* Star fill styling */
+.star-fill {
+  fill: gold;
+  stroke: black;
+  stroke-width: 2px;
+  clip-path: inset(0 100% 0 0); /* Start with no fill */
+  transition: clip-path 0.3s ease; /* Smooth fill transition */
+}
+      /* Basic styling for the table */
+.poll-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0; /* Reduce margin */
+  font-size: 12px; /* Smaller font size */
+  text-align: left;
+}
+
+.poll-table th, .poll-table td {
+  padding: 6px 8px; /* Reduce padding for smaller cells */
+  border: 1px solid #ddd;
+  text-align: center; /* Center text and contents horizontally */
+  vertical-align: middle; /* Center contents vertically */
+  height: 40px;
+}
+
+.poll-table th {
+  background-color: #f2f2f2;
+  font-size: 12px; /* Smaller font for headers */
+}
+
+.poll-table td {
+  line-height: 1.2;
+}
+
+/* Styling for the 'Popular Vote' and 'Head to Head' combined headers */
+.poll-table th[colspan="2"] {
+  text-align: center;
+}
+
+/* Align candidate name and vote percentage on the same line */
+.vote-container {
+  display: flex; /* Use flexbox to align items horizontally */
+  justify-content: center; /* Center the contents of the container */
+  align-items: center; /* Vertically align the candidate name and vote percentage */
+}
+
+/* Candidate name styling */
+.candidate-name {
+  font-weight: bold;
+  margin-right: 8px; /* Add space between the name and vote percentage */
+  white-space: nowrap; /* Prevent line breaks for long names */
+}
+
+/* Soft blue for Democratic vote */
+.dem-vote {
+  color: #4682b4; /* Soft blue color */
+  font-weight: bold;
+}
+
+/* Soft red for Republican vote */
+.rep-vote {
+  color: #dc143c; /* Soft red color */
+  font-weight: bold;
+}
+
+/* Dim grey for tie vote */
+.tie-vote {
+  color: dimgray; /* Soft red color */
+  font-weight: bold;
+}
+
+.poll-table td:nth-child(2), /* Poll Date column */
+.poll-table th:nth-child(2) {
+  white-space: nowrap; /* Prevent date from wrapping */
+  min-width: 100px; /* Adjust this width as needed to fit the dates */
+}
+.poll-table td:nth-child(1), /* Poll Date column */
+.poll-table th:nth-child(1) {
+  white-space: nowrap; /* Prevent date from wrapping */
+  min-width: 150px; /* Adjust this width as needed to fit the dates */
+  max-width: 150px;
+  overflow: hidden; /* Hide the overflowing text */
+  text-overflow: ellipsis; /* Show ellipsis (...) when text overflows */
+}
+
+/* Target the right border between Popular Vote and Head to Head (fifth column) */
+.poll-table td:nth-child(5),
+.poll-table th:nth-child(4) {
+  border-right: 2px solid #000; /* Darker border between Popular Vote and Head to Head */
+}
+
+.poll-table td:nth-child(3),
+.poll-table th:nth-child(3) {
+  border-right: 2px solid #000; /* Make the border darker, adjust color to black or dark grey */
+}
+#poll-data, #bayesian-statistics {
+  scroll-margin-top: 100px; /* Adjust the value based on the height of your navbar */
+}
+.poll-table th {
+  color: black;
+}
+h6 {
+  color: dimgray;
+}
+
+.float-right {
+  float: right;
+  margin: 0 0 10px 15px; /* Adds space around the image */
+  max-width: 350px; /* Optional: Set max width for the image */
+}
+
+li {
+  color: var(--gray-dark)
+}
+
+summary {
+  color: #0b636f; 
+  border:1px solid #e95f30; 
+  padding-left: 10px
+}
+
+details {
+  color: var(--gray-dark);
+  margin-bottom: 15px;
+}
+
+.states-breakdown th,
+.states-breakdown td{
+  min-width: 200px;
+  border: 1px solid black;
+}
+
+.states-breakdown th:nth-child(1) {
+  font-size: 12px;
+}
+
+.states-breakdown th {
+  background-color: #f2f2f2;
+  font-size: 12px; /* Smaller font for headers */
+  color: black;
+  text-align: center;
+}
+
+th.top-left {
+  border: none;
+  background-color: white;
+}
+
+.states-breakdown {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+div.latex-style {
+  color: var(--gray-dark);
+  margin:auto;
+}
