@@ -21,16 +21,26 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-    <script type="text/x-mathjax-config">
-      MathJax = {
+    <script>
+      window.MathJax = {
+        loader: {load: ['[tex]/cancel']},
+        tex: {packages: {'[+]': ['cancel']}}
+      };
+    </script>
+    <script type="text/javascript">
+      window.MathJax = {
         tex: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']],
-          processEscapes: true
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
         }
       };
     </script>
+    <script type="text/javascript" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script type="text/javascript"
+      src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Latin+Modern+Roman:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -60,10 +70,10 @@
     <section class="ftco-section">
       <div class="container">
         <div class="row">
-          <h2 class="mb-3">A New Election Forecasting Model Based on Polling</h2>
+          <h2 class="mb-3">A New Election Forecasting Model Based on</h2>
           <div class="col-lg-8 ftco-animate" >
             <p>Recently, polls have been taking a very rapid turn away from Kamala Harris and toward Donald Trump. At the time of writing, the 538 forecast has Donald Trump listed as the favourite to win the election, with a 53% chance of victory.</p>
-            <img src="images/538-trump.png" alt="Trump overtakes Harris in the 538 election forecast." class="float-right">
+            <img src="/images/538-trump.png" alt="Trump overtakes Harris in the 538 election forecast." class="float-right">
             <p>Now, 538 does great work to be sure, but I spot a few things that I find questionable about their approach overall, as well as other popular election forecasters:</p>
             <ul>
               <li>At the moment, they and other aggregators have been overrun by low quality right-wing partisan pollsters, which skew the numbers toward Republicans.</li>
