@@ -10017,8 +10017,8 @@ path.swing:hover {
 .poll-table th:nth-child(3) {
   border-right: 2px solid #000; /* Make the border darker, adjust color to black or dark grey */
 }
-#poll-data, #bayesian-statistics {
-  scroll-margin-top: 100px; /* Adjust the value based on the height of your navbar */
+#poll-data, #bayesian-statistics, #voteChart, #scatterChart {
+  scroll-margin-top: 1000px; /* Adjust the value based on the height of your navbar */
 }
 .poll-table th {
   color: black;
@@ -10038,11 +10038,12 @@ li {
 }
 
 summary {
-  color: #0b636f; 
-  border:1px solid #e95f30; 
-  padding-left: 10px
+  color: #0b636f;
+  padding: 0px;
+  border: 1px solid #e95f30;
+  border-radius: 10px;
+  padding-left: 10px;
 }
-
 details {
   color: var(--gray-dark);
   margin-bottom: 15px;
@@ -10078,4 +10079,33 @@ th.top-left {
 div.latex-style {
   color: var(--gray-dark);
   margin:auto;
+}
+
+/* New sleek smaller index buttons */
+#election-status-button {
+  background-color: #f0f0f0;  /* Light gray background */
+  color: #333;  /* Darker text */
+  padding: 8px 16px;  /* Smaller padding */
+  border-radius: 8px;  /* Slightly rounded corners */
+  border: 1px solid #ccc;  /* Subtle border */
+  cursor: pointer;
+  font-size: 14px;  /* Smaller text size */
+  display: block;
+  margin: 5px 0;  /* Small space between index buttons */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  min-width: 167px;
+  font-size: 13px;
+}
+
+#election-status-button:hover {
+  background-color: #0056b3;  /* Blue background on hover */
+  color: white;  /* White text on hover */
+  border-color: #0056b3;  /* Change border to blue */
+}
+
+/* Optional active state for currently active section */
+#election-status-button.active {
+  background-color: #007BFF;
+  color: white;
+  border-color: #007BFF;
 }

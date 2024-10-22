@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Curtis Toupin - Even or Odd</title>
+    <title>Curtis Toupin - Using Statistics to Forecast an Election</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -70,22 +70,9 @@
     <section class="ftco-section">
       <div class="container">
         <div class="row">
-          <h2 class="mb-3">A New Election Forecasting Model Based on Polling</h2>
+          <h2 class="mb-3">Using Statistics to Forecast an Election</h2>
           <div class="col-lg-8 ftco-animate" >
-            <p>Recently, polls have been taking a very rapid turn away from Kamala Harris and toward Donald Trump. At the time of writing, the 538 forecast has Donald Trump listed as the favourite to win the election, with a 53% chance of victory.</p>
-            <img src="images/538-trump.PNG" alt="Trump overtakes Harris in the 538 election forecast." class="float-right">
-            <p>Now, 538 does great work to be sure, but I spot a few things that I find questionable about their approach overall, as well as other popular election forecasters:</p>
-            <ul>
-              <li>At the moment, they and other aggregators have been overrun by low quality right-wing partisan pollsters, which skew the numbers toward Republicans.</li>
-              <li>Even absent this, the most popular models appear to combine techniques from signals processing such as <a href="https://en.wikipedia.org/wiki/Infinite_impulse_response">IIR filters</a> or simple <a href="https://en.wikipedia.org/wiki/Finite_impulse_response">rolling averages</a> along with other more empyrical things like weighting pollsters according to their perceived trustworthiness, or nudging the averages one direction or another to account for public opinion for notable events like the debate.</li>
-              <li>While I know that the popular vote is somewhat of a moving target, as more and more polls are token, uncertainty on the thing being measured <i>should</i> decrease.</li>
-            </ul>
-            <p>My proposed solution to this is two-fold.</p>
-            <ul>
-              <li>Rather than trying to account for low quality/high bias in polls by weighting them less than a higher quality poll, low quality polls should simply be ignored. There is a plethora of polls to choose from in swing states, so if a pollster can't be trusted to remain unbiased, their results should simply be ignored rather than weighted less.</li>
-              <li>There are already exising tools in probablity and statistics to deal with situations like this, and we should use them rather than invent new ones from whole cloth. <a href='https://en.wikipedia.org/wiki/Bayesian_statistics#:~:text=Bayesian%20inference%20refers%20to%20statistical,or%20hypotheses%20in%20frequentist%20inference.'>Bayesian statistics</a> is a framework which is used to update beliefs as information changes. More on that <a href='#bayesian-statistics'>below</a>.</li>
-            </ul>
-            <p>Considering this topic's importance and interest to a wide range of readers, I am going to aim to make this article accessible to as broad of an audience as possible. However, this is ultimately a math article. As such, whenever there is a need to explain something in depth, I will put it inside a box which can be expanded for further details, like the one below.</p>
+            <p>Considering this topic's importance and interest to a wide range of readers, I am going to aim to make this article accessible to as broad of an audience as possible. As such, whenever there is a need to explain something in depth, I will put it inside a box which can be expanded for further details, like the one below.</p>
             <details>
               <summary>Details</summary>
               Han shot first.
@@ -93,7 +80,7 @@
             <h5>The Head-to-Head</h5>
             <p>Imagine a big box full of red and blue balls. We don't know how many of the balls are red or blue, or even how many balls are in the box total, we just know that the box is full of red and blue balls. If we want to get an idea of how many red and blue balls are in the box, what we would probably do is start scooping out samples of balls and counting them up.</p>
             <p>This is effectively what an election is. In Pennsylvania there is somewhere between 6 and 7 million red and blue balls. When we take a poll, ideally we are effectively just pulling out a few hundred balls and trying to get an idea about what the rest of the 7 million are doing.</p>
-            <p>Of course, the matter is complicated somewhat because somes when we pull out a ball, it's neither red, nor blue. It's a third color, say white, as that person is voting for a third party. Hopefully everyone reading this can all agree that there is no reasonable chance that any state is won by a third party. If that's the case, then the question becomes: "Will Trump or Harris get more of the non-third-party vote?" While this is not strictly necessary as a first step, it does simplify the math quite a bit.</p>
+            <p>Of course, the matter is complicated somewhat because some of the balls we pull are neither red nor blue. It's a third color, say white. These balls represent third-party voters. Hopefully everyone reading this can all agree that there is no reasonable chance that any state is won by a third party. If that's the case, then the question becomes: "Will Trump or Harris get more of the non-third-party vote?" While this is not strictly necessary as a first step, it does simplify the math quite a bit.</p>
             <p>With this in mind, if we pull 1000 balls from the box and we get, for example, 50 white balls, we can freely toss them back in the box, and just think of the poll as having polled 950 of the non-third-party voters. For the more mathematically inclined readers, this step does require some justification, which I'll leave in the box below.</p>
             <details>
               <summary>Details</summary>
@@ -115,16 +102,31 @@
                 &= \dfrac{\binom{R}{n_R}\binom{B}{n_B}}{\binom{R+B}{n_R + n_B}}
               \end{align*}
               $$
-              which describes the distribution of the $R+B$ red and blue balls in a sample of $n_R + n_B$ balls, as expected.
+              which describes the distribution of the $R+B$ red and blue balls in a sample of $n-n_W = n_R + n_B$ balls, as expected.
             </details>
             <p>With that out of the way, we can simplify the situation down to the head-to-head vote of Harris vs Trump after removing third party votes. I should clarify here that this is not to say that third-party votes should be ignored in the election. They are a very important part of the system. However, for the sake of the math model, it is convenient to not consider them.</p>
             <h5 id="bayesian-statistics">Bayesian Statistics</h5>
-            <p>Bayesian statistics are similar but slightly different collection of tools than the typical statistics most people are familiar with. Typically, we usually start with a model or assumption and then test it against the data we collect to see if the evidence supports or rejects the model. By contrast, in Bayesian statistics, we begin with an initial belief or assumption, and as we collect new evidence, we update that belief to improve our understanding of the model.</p>
+            <p>Bayesian statistics are similar but slightly different collection of tools than the typical statistics most people are familiar with. Typically we start with a model and then test it against the data we collect to see if the evidence supports or rejects the model. By contrast, in Bayesian statistics, we begin with an initial belief about the model, and as we collect new evidence, we update that belief to improve our understanding of the model.</p>
             <p>We do this by using Bayes' theorem. Although this is a more technical component of this, it's so central that I think it's important to leave it out in the open. Bayes' theorem is as follows.</p>
             <div class='latex-style'>$$ P(\text{model}\mid\text{evidence}) = \dfrac{P(\text{evidence} \mid \text{model})\cdot P(\text{model})}{P(\text{evidence})} $$</div>
-            <p>$P(\text{model}\mid\text{evidence})$ is the thing we're ultimately after. This tells us the how much we should believe a particular claim about the election <i>given</i> the evidence.</p>
+            <p>$P(\text{model}\mid\text{evidence})$ is the thing we're ultimately after. This tells us the how much we should believe a particular claim about the election given the evidence we have already observed, in this case the polls.</p>
             <p>$P(\text{evidence}\mid\text{model})$ is the opposite. It asks, assuming that a particular claim about the election is true, how likely were we to see what we saw in the polls?</p>
-            <p>$P(\text{model})$ is called the <b>prior</b> distribution. This is a measure of how likely we were to believe a particular claim about the election before collecting our evidence. As mentioned above, <i>this</i> is the place where we can input our qualitative believes about the election, such as impact from the presidential debate, and so on.</p>
+            <p>$P(\text{model})$ is called the <b>prior</b> distribution. This is a measure of how likely we were to believe a particular claim about the election before collecting our evidence. Among other things, this is useful because we can use it to inject our qualitative beliefs about the election external to the polls, such as impact from the presidential debate, and so on. With that said, for the purposes of this analysis, I do not attempt to meddle with prior distributions in this way.</p>
+            
+            <h5 id="conclusion">In Summary</h5>
+            <p>Recently, polls have been taking a very rapid turn away from Kamala Harris and toward Donald Trump. At the time of writing, the 538 forecast has Donald Trump listed as the favourite to win the election, with a 53% chance of victory.</p>
+            <img src="images/538-trump.PNG" alt="Trump overtakes Harris in the 538 election forecast." class="float-right">
+            <p>Now, 538 does great work to be sure, but I spot a few things that I find questionable about their approach overall, as well as other popular election forecasters:</p>
+            <ul>
+              <li>At the moment, they and other aggregators have been overrun by low quality right-wing partisan pollsters, which skew the numbers toward Republicans.</li>
+              <li>Even absent this, the most popular models appear to combine techniques from signals processing such as <a href="https://en.wikipedia.org/wiki/Infinite_impulse_response">IIR filters</a> or simple <a href="https://en.wikipedia.org/wiki/Finite_impulse_response">rolling averages</a> along with other more empyrical things like weighting pollsters according to their perceived trustworthiness, or nudging the averages one direction or another to account for public opinion for notable events like the debate.</li>
+              <li>While I know that the popular vote is somewhat of a moving target, as more and more polls are token, uncertainty on the thing being measured <i>should</i> decrease, especially in a period like the time since the debate where nothing of particular note has happened publicly that would sway the vote one way or another.</li>
+            </ul>
+            <p>My proposed solution to this is two-fold.</p>
+            <ul>
+              <li>Rather than trying to account for low quality/high bias in polls by weighting them less than a higher quality poll, low quality polls should simply be ignored. There is a plethora of polls to choose from in swing states, so if a pollster can't be trusted to remain unbiased, their results should simply be ignored rather than weighted less.</li>
+              <li>There are already exising tools in probablity and statistics to deal with situations like this, and we should use them rather than invent new ones from whole cloth. <a href='https://en.wikipedia.org/wiki/Bayesian_statistics#:~:text=Bayesian%20inference%20refers%20to%20statistical,or%20hypotheses%20in%20frequentist%20inference.'>Bayesian statistics</a> is a framework which is used to update beliefs as information changes. More on that <a href='#bayesian-statistics'>below</a>.</li>
+            </ul>
             <!-- Author box <div class="about-author d-flex p-4 bg-light">
               <div class="bio mr-5">
                 <img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid mb-4">
