@@ -100,173 +100,203 @@
           <div class="col-lg-8 ftco-animate" >
             <h2 class="mb-3" id="page-title" style="text-align: center"></h2>
             <h5 id="vote-projection" style="text-align: center"></h5>
-            <canvas id="scatterChart"></canvas>
+            <p style="text-align: center;">All data are rounded <b>down</b>, which is why a value of 50% indicates a Democrat win. </p>
+            <!-- First chart: Expected Democrat Vote Share -->
+            <canvas id="voteShareChart"></canvas>
+            <p id="most-likely-outcome"></p>
+            <p id="confidence-interval"></p>
+            <canvas id="demWinChart"></canvas>
             <script>
-          
-              // Extract x-axis and y-axis values
               const labels = ['2024-09-10', '2024-09-18', '2024-09-20', '2024-09-25', '2024-10-03', '2024-10-08', '2024-10-17', '2024-10-22'];
-              const pcMode = [50.0, 50.0, 50.0, 51.0, 50.0, 50.0, 50.0, 50.0];
-              const pcMin = [45.0, 48.5, 48.4, 49.2, 48.5, 47.3, 48.4, 48.4];
-              const pcMax = [54.8, 51.5, 51.5, 53.0, 51.6, 53.7, 51.8, 51.8];
-              const pDemWin = [49.8, 55.7, 52.0, 88.6, 57.0, 64.0, 57.4, 57.4];
+              const pcMode = [50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0, 50.0];
+              const pcMin = [45.0, 46.6, 47.2, 48.9, 49.0, 49.1, 49.2, 49.1];
+              const pcMax = [54.8, 53.3, 52.0, 52.3, 52.0, 51.8, 51.4, 51.4];
+              const pDemWin = [49.8, 51.9, 46.6, 81.9, 80.8, 83.8, 81.7, 73.2];
 
-              y_scale_min = Math.floor(Math.min(45, Math.min(...pcMin), Math.min(...pDemWin)) / 5) * 5 - 5;
-              y_scale_max = Math.ceil(Math.max(55, Math.max(...pcMax), Math.max(...pDemWin)) / 5) * 5 + 5;
-          
-              const ctx2 = document.getElementById('scatterChart').getContext('2d');
+              const vote_y_scale_min = Math.floor(Math.min(45, Math.min(...pcMin)) / 2) * 2 - 2;
+              const vote_y_scale_max = Math.ceil(Math.max(55, Math.max(...pcMax)) / 2) * 2 + 2;
+
+              const prob_y_scale_min = Math.floor(Math.min(45, Math.min(...pDemWin)) / 5) * 5 - 5;
+              const prob_y_scale_max = Math.ceil(Math.max(55, Math.max(...pDemWin)) / 5) * 5 + 5;
+
               const horizontalLinePlugin = {
-                  id: 'horizontalLine',
-                  beforeDatasetsDraw: (chart) => {
-                      const ctx = chart.ctx;
-                      const yScale = chart.scales.y;
-                      const yValue = yScale.getPixelForValue(50); // Get pixel value for y = 50
+                id: 'horizontalLine',
+                beforeDatasetsDraw: (chart) => {
+                  const ctx = chart.ctx;
+                  const yScale = chart.scales.y;
+                  const yValue = yScale.getPixelForValue(50); // Get pixel value for y = 50
 
-                      // Draw the line at y = 50, before the datasets are drawn
-                      ctx.save();
-                      ctx.beginPath();
-                      ctx.moveTo(chart.chartArea.left, yValue);
-                      ctx.lineTo(chart.chartArea.right, yValue);
-                      ctx.lineWidth = 2;
-                      ctx.strokeStyle = 'red';
-                      ctx.stroke();
-                      ctx.restore();
-                  }
+                  // Draw the line at y = 50, before the datasets are drawn
+                  ctx.save();
+                  ctx.beginPath();
+                  ctx.moveTo(chart.chartArea.left, yValue);
+                  ctx.lineTo(chart.chartArea.right, yValue);
+                  ctx.lineWidth = 2;
+                  ctx.strokeStyle = 'red';
+                  ctx.stroke();
+                  ctx.restore();
+                }
               };
 
               // Register the custom plugin globally
               Chart.register(horizontalLinePlugin);
 
-              const scatterChart = new Chart(ctx2, {
-                  type: 'line',
-                  data: {
-                      labels: labels,
-                      datasets: [
-                          // Dataset for pc_min (lower bound)
-                          {
-                              label: 'PC Min',
-                              data: pcMin,
-                              borderColor: 'transparent',
-                              pointRadius: 0,
-                              fill: '+1', // Fill between this and pc_max
-                              backgroundColor: 'rgba(0, 0, 255, 0.1)', // Light blue area for the lower bound
-                              showInLegend: false, // Hide from legend
-                          },
-                          // Dataset for pc_max (upper bound)
-                          {
-                              label: 'PC Max',
-                              data: pcMax,
-                              borderColor: 'transparent',
-                              pointRadius: 0,
-                              backgroundColor: 'rgba(0, 0, 255, 0.1)', // Light blue area for the upper bound
-                              fill: '-1', // Fill downwards between this and pc_min
-                              showInLegend: false, // Hide from legend
-                          },
-                          // Scatter plot and line for pDemWin
-                          {
-                              label: 'Probability of Democrat Win',
-                              data: pDemWin,
-                              borderColor: 'black',
-                              backgroundColor: 'black',
-                              pointBackgroundColor: 'black', // Red dots
-                              fill: false, // No area fill for this line
-                              tension: 0.1, // Smooth line
-                          },
-                          // Scatter plot and line for pc_mode
-                          {
-                              label: 'Expected Democrat Vote Share',
-                              data: pcMode,
-                              borderColor: 'blue',
-                              backgroundColor: 'blue',
-                              pointBackgroundColor: 'blue', // Blue dots
-                              fill: false, // No area fill for this line
-                              tension: 0.1, // Smooth line
-                          }
-                      ]
-                  },
-                  options: {
-                      scales: {
-                          x: {
-                              type: 'time',
-                              time: {
-                                  unit: 'day', // You can set this to 'day', 'week', 'month' based on your data
-                                  tooltipFormat: 'YYYY-MM-DD', // Display format in tooltips
-                                  displayFormats: {
-                                      day: 'YYYY-MM-DD'
-                                  }
-                              },
-                              title: {
-                                  display: true,
-                                  text: 'Date'
-                              }
-                          },
-                          y: {
-                              title: {
-                                  display: true,
-                                  text: 'Percentage'
-                              },
-                              min: y_scale_min,
-                              max: y_scale_max,
-                          }
+              // First chart: Expected Democrat Vote Share
+              const ctx1 = document.getElementById('voteShareChart').getContext('2d');
+              new Chart(ctx1, {
+                type: 'line',
+                data: {
+                  labels: labels,
+                  datasets: [
+                    {
+                      label: 'PC Min',
+                      data: pcMin,
+                      borderColor: 'transparent',
+                      pointRadius: 0,
+                      fill: '+1',
+                      backgroundColor: 'rgba(0, 0, 255, 0.1)', // Light blue area
+                      showInLegend: false,
+                    },
+                    {
+                      label: 'PC Max',
+                      data: pcMax,
+                      borderColor: 'transparent',
+                      pointRadius: 0,
+                      fill: '-1',
+                      backgroundColor: 'rgba(0, 0, 255, 0.1)', // Light blue area
+                      showInLegend: false,
+                    },
+                    {
+                      label: 'Expected Democrat Vote Share',
+                      data: pcMode,
+                      borderColor: 'blue',
+                      backgroundColor: 'blue',
+                      pointBackgroundColor: 'blue',
+                      fill: false,
+                      tension: 0.1,
+                    }
+                  ]
+                },
+                options: {
+                  scales: {
+                    x: {
+                      type: 'time',
+                      time: {
+                        unit: 'day',
+                        tooltipFormat: 'YYYY-MM-DD',
+                        displayFormats: {
+                          day: 'YYYY-MM-DD',
+                        }
                       },
-                      elements: {
-                          line: {
-                              borderWidth: 1, // Thin line for pc_min and pc_max
-                          }
+                      title: {
+                        display: true,
+                        text: 'Date'
+                      }
+                    },
+                    y: {
+                      title: {
+                        display: true,
+                        text: 'Percentage'
                       },
-                      plugins: {
-                          legend: {
-                              labels: {
-                                  filter: function(item, chart) {
-                                      // Filter out 'PC Min' and 'PC Max' from the legend
-                                      return item.text !== 'PC Min' && item.text !== 'PC Max';
-                                  }
+                      min: vote_y_scale_min,
+                      max: vote_y_scale_max,
+                      ticks: {
+                          callback: function(value) {
+                              // Only show ticks between 0 and 100
+                              if (value >= 0 && value <= 100) {
+                                  return value;
                               }
-                          },
-                          tooltip: {
-                              callbacks: {
-                                  label: function(context) {
-                                      // Only show tooltips for the 'PC Mode' dataset
-                                      if ((context.dataset.label === 'Expected Vote Share')||(context.dataset.label === 'Probability of Democratic Win')) {
-                                          return `${context.label}: ${context.raw}`;
-                                      }
-                                      return null; // Don't display tooltips for pc_min or pc_max
-                                  }
-                              }
-                          }
-                      },
-                      horizontalLinePlugin: {
-                          id: 'horizontalLine', // Custom ID for the plugin
-                          afterDraw: (chart) => {
-                              const ctx3 = chart.ctx;
-                              const yScale = chart.scales.y;
-                              const yValue = yScale.getPixelForValue(50); // Get pixel value for y = 50
-
-                              // Draw the red line at y = 50
-                              ctx3.save();
-                              ctx3.beginPath();
-                              ctx3.moveTo(chart.chartArea.left, yValue);
-                              ctx3.lineTo(chart.chartArea.right, yValue);
-                              ctx3.lineWidth = 20;
-                              ctx3.strokeStyle = 'red';
-                              ctx3.stroke();
-                              ctx3.restore();
+                              return ''; // Don't display ticks outside the range
                           }
                       }
+                    }
+                  },
+                  elements: {
+                    line: {
+                      borderWidth: 1,
+                    }
+                  },
+                  plugins: {
+                    legend: {
+                      labels: {
+                        filter: function(item) {
+                          return item.text !== 'PC Min' && item.text !== 'PC Max';
+                        }
+                      }
+                    }
                   }
+                }
+              });
+
+              // Second chart: Probability of Democrat Win
+              const ctx2 = document.getElementById('demWinChart').getContext('2d');
+              new Chart(ctx2, {
+                type: 'line',
+                data: {
+                  labels: labels,
+                  datasets: [
+                    {
+                      label: 'Probability of Democrat Win',
+                      data: pDemWin,
+                      borderColor: 'black',
+                      backgroundColor: 'black',
+                      pointBackgroundColor: 'black',
+                      fill: false,
+                      tension: 0.1,
+                    }
+                  ]
+                },
+                options: {
+                  scales: {
+                    x: {
+                      type: 'time',
+                      time: {
+                        unit: 'day',
+                        tooltipFormat: 'YYYY-MM-DD',
+                        displayFormats: {
+                          day: 'YYYY-MM-DD',
+                        }
+                      },
+                      title: {
+                        display: true,
+                        text: 'Date'
+                      }
+                    },
+                    y: {
+                      title: {
+                        display: true,
+                        text: 'Percentage'
+                      },
+                      min: prob_y_scale_min,
+                      max: prob_y_scale_max,
+                      ticks: {
+                          callback: function(value) {
+                              // Only show ticks between 0 and 100
+                              if (value >= 0 && value <= 100) {
+                                  return value;
+                              }
+                              return ''; // Don't display ticks outside the range
+                          }
+                      }
+                    }
+                  },
+                  plugins: {
+                    legend: {
+                      display: true
+                    }
+                  }
+                }
               });
             </script>
-            
-            <p id="most-likely-outcome"></p>
-            <p id="confidence-interval"></p>
-            <p>Below is a chart that shows the probability distribution of the Democrats' head-to-head vote share in <span id="blurb-state-name"></span> based on pollsters that are well-rated by 538 since the Sept 10 presidential debate. All data is rounded <b>down</b> to the nearest 0.1% which is why a value of 50% on the chart indicates a Democrat win. Vertical black lines indicate a roughly 95% confidence interval.</p>
+            <p>Below is a chart that shows the probability distribution of the Democrats' head-to-head vote share in <span id="blurb-state-name"></span> based on pollsters that are well-rated by 538 since the Sept 10 presidential debate. Vertical black lines indicate a roughly 95% confidence interval.</p>
             <canvas id="voteChart" width="400" height="200"></canvas>
             <script>
                 // The data from Python (replace this with dynamically fetched data from your backend)
-                const dataFromPython = {"keys": [44.9, 45.0, 45.1, 45.2, 45.3, 45.4, 45.5, 45.6, 45.7, 45.8, 45.9, 46.0, 46.1, 46.2, 46.3, 46.4, 46.5, 46.6, 46.7, 46.8, 46.9, 47.0, 47.1, 47.2, 47.3, 47.4, 47.5, 47.6, 47.7, 47.8, 47.9, 48.0, 48.1, 48.2, 48.3, 48.4, 48.5, 48.6, 48.7, 48.8, 48.9, 49.0, 49.1, 49.2, 49.3, 49.4, 49.5, 49.6, 49.7, 49.8, 49.9, 50.0, 50.1, 50.2, 50.3, 50.4, 50.5, 50.6, 50.7, 50.8, 50.9, 51.0, 51.1, 51.2, 51.3, 51.4, 51.5, 51.6, 51.7, 51.8, 51.9, 52.0, 52.1, 52.2, 52.3, 52.4, 52.5, 52.6, 52.7, 52.8, 52.9, 53.0, 53.1, 53.2, 53.3, 53.4, 53.5, 53.6, 53.7, 53.8, 53.9, 54.0, 54.1, 54.2, 54.3, 54.4, 54.5, 54.6, 54.7, 54.8, 54.9], "values": [8.308457689555327e-10, 4.269424595617278e-09, 7.109790756050004e-09, 1.379841832665131e-08, 2.4673924962330743e-08, 4.457693533532128e-08, 8.148779139592757e-08, 1.4169570122275558e-07, 2.5813157510395206e-07, 4.417363403574496e-07, 6.75413869772987e-07, 1.3593918988275284e-06, 2.0876438636189097e-06, 3.481549485647067e-06, 5.544381030918219e-06, 8.823262820837556e-06, 1.448645457825185e-05, 2.3753870257648074e-05, 3.17157029647061e-05, 5.299462815845671e-05, 7.393558197847324e-05, 0.00011944220938064142, 0.00016722779317864453, 0.000250659839163624, 0.00034672960960162286, 0.00043784774665713184, 0.0007243869222081205, 0.0009625261829733806, 0.0012654323777020976, 0.0017235943736258785, 0.002066032573171781, 0.003210411474870133, 0.0037921957163645575, 0.004911054951357149, 0.006072846102908567, 0.007525806356333486, 0.009569211372073273, 0.011429104929688697, 0.013438973114221273, 0.016436763108217716, 0.01787179730140669, 0.022417039670427862, 0.024300428584602556, 0.027261130704606448, 0.031312739268241754, 0.03198597890154195, 0.037698439726510415, 0.03697456869213773, 0.043213517749518836, 0.034039947919463395, 0.03415934075057421, 0.06977201567582128, 0.03506252893226732, 0.047580364913822636, 0.03991836135773917, 0.04360576876742351, 0.03888572754444285, 0.039207734416601886, 0.033509126793230634, 0.03303243579127704, 0.028021258627453773, 0.027372151606785005, 0.023000656691493346, 0.020785447096925848, 0.01732550658142017, 0.015031139985958774, 0.012440950423425917, 0.010687925806798454, 0.008466929307285964, 0.0069860128098286674, 0.005158709568545123, 0.004828320553626657, 0.003379821681094907, 0.002651876323663846, 0.0019838483126587824, 0.001406276492173671, 0.0012188821308095692, 0.0008261440240507436, 0.0005876646660790744, 0.00043365310382913056, 0.0002862965154266507, 0.00021763559182852457, 0.00014139258096157575, 9.377028859819504e-05, 6.850610353440959e-05, 4.348064320520576e-05, 2.7946541506185808e-05, 1.8623528483417582e-05, 1.1425429817866635e-05, 7.325226281423509e-06, 4.230743468236562e-06, 3.074267188801342e-06, 1.6497050347314152e-06, 1.030952433122644e-06, 5.571226585596611e-07, 3.462329178420254e-07, 1.982611520610972e-07, 1.1222063922049942e-07, 6.180701556531829e-08, 3.530671574696257e-08, 8.730214026592978e-09], "colors": ["red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue"], "ci_min": 48.4, "ci_max": 51.8, "ci_p": 95.0, "p_dem_win": 57.4, "title": "2024 Election Forecast for Nevada", "projection": "There is a projected 57.4% chance that Harris wins Nevada.", "most_likely": "The most likely outcome is Harris winning with 50.0% of the head-to-head vote share.", "confidence": "With 95.0% confidence, Harris' head-to-head vote share will be between 48.4% and 51.8%.", "state_name": "Nevada", "abbrev": "NV"};
+                const dataFromPython = {"keys": [44.9, 45.0, 45.1, 45.2, 45.3, 45.4, 45.5, 45.6, 45.7, 45.8, 45.9, 46.0, 46.1, 46.2, 46.3, 46.4, 46.5, 46.6, 46.7, 46.8, 46.9, 47.0, 47.1, 47.2, 47.3, 47.4, 47.5, 47.6, 47.7, 47.8, 47.9, 48.0, 48.1, 48.2, 48.3, 48.4, 48.5, 48.6, 48.7, 48.8, 48.9, 49.0, 49.1, 49.2, 49.3, 49.4, 49.5, 49.6, 49.7, 49.8, 49.9, 50.0, 50.1, 50.2, 50.3, 50.4, 50.5, 50.6, 50.7, 50.8, 50.9, 51.0, 51.1, 51.2, 51.3, 51.4, 51.5, 51.6, 51.7, 51.8, 51.9, 52.0, 52.1, 52.2, 52.3, 52.4, 52.5, 52.6, 52.7, 52.8, 52.9, 53.0, 53.1, 53.2, 53.3, 53.4, 53.5, 53.6, 53.7, 53.8, 53.9, 54.0, 54.1, 54.2, 54.3, 54.4, 54.5, 54.6, 54.7, 54.8, 54.9], "values": [1.5996062657405957e-20, 1.8721702903436835e-19, 7.945106342216673e-19, 3.7315959881742515e-18, 1.5743020078065964e-17, 6.516906271049786e-17, 2.718400576523266e-16, 1.052164676281639e-15, 4.267209527662688e-15, 1.5933229961415674e-14, 4.9964243479031066e-14, 2.1557899490365372e-13, 6.945135796070921e-13, 2.3408433420130722e-12, 7.402367876654234e-12, 2.2860761807621522e-11, 7.283320331464592e-11, 2.31862228994532e-10, 5.683527958668549e-10, 1.7200930837349025e-09, 4.278489795895345e-09, 1.229171481557901e-08, 3.016044957950709e-08, 7.781304139634149e-08, 1.8179232581912007e-07, 3.684126029734983e-07, 9.994079931994216e-07, 2.174491096648011e-06, 4.520005470369692e-06, 9.545951311204461e-06, 1.7156006698961366e-05, 4.03850306936365e-05, 7.138569472657631e-05, 0.00013417099011817264, 0.00023690349670490497, 0.00041099808572717827, 0.0007249449921937245, 0.001182139185219505, 0.001858648055235891, 0.002996591114268028, 0.004205340969187491, 0.006716802180562993, 0.00915162712007421, 0.012620221320934976, 0.017602688932257988, 0.02139518777999801, 0.02959478433257207, 0.0334831421590055, 0.04449159352504627, 0.038792791392937884, 0.042099337328525874, 0.09464928516015728, 0.051219049542344304, 0.0723416522915167, 0.062470124316240216, 0.06906732743555541, 0.061360933140170756, 0.06061280969661041, 0.04994243293551237, 0.046715305053892694, 0.03700598780653614, 0.0331918556583392, 0.025146139963055755, 0.020171496804417502, 0.014673354117791516, 0.010946281887843192, 0.0076605577126980335, 0.005468874301664132, 0.0035376586915791108, 0.002350763050384088, 0.0013846074415963467, 0.0010099391219133313, 0.000534945145401656, 0.00031656733028749296, 0.00017545692063525618, 9.188632639618991e-05, 5.734017541207555e-05, 2.700592942506513e-05, 1.33260174498964e-05, 6.7048160878807315e-06, 2.9756776581079503e-06, 1.5001597551419984e-06, 6.273026557108342e-07, 2.689147613108583e-07, 1.2379797143793484e-07, 4.802048865004024e-08, 1.8752772736797713e-08, 7.46408945564378e-09, 2.6756566806151808e-09, 9.947668116430503e-10, 3.314448336219067e-10, 1.3579228275859883e-10, 3.883223049334344e-11, 1.3068559120961578e-11, 3.724888088837605e-12, 1.2329530300913791e-12, 3.6111033181294447e-13, 1.0296673194643865e-13, 2.813861406331755e-14, 7.858672037209775e-15, 1.1004860917723468e-15], "colors": ["red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue"], "ci_min": 49.1, "ci_max": 51.4, "ci_p": 95.9, "p_dem_win": 73.2, "title": "2024 Election Forecast for Nevada", "projection": "There is a projected <span class='dem-vote'>73.2%</span> chance that <span class='dem-vote'>Harris</span> wins Nevada.", "most_likely": "The most likely outcome is Harris winning with 50.0% of the head-to-head vote share.", "confidence": "With 95.9% confidence, Harris' head-to-head vote share will be between 49.1% and 51.4%.", "state_name": "Nevada", "abbrev": "NV"};
 
                 // Set the title from the Python data
                 document.getElementById('page-title').textContent = dataFromPython.title;
-                document.getElementById('vote-projection').textContent = dataFromPython.projection;
+                document.getElementById('vote-projection').innerHTML = dataFromPython.projection;
                 document.getElementById('most-likely-outcome').textContent = dataFromPython.most_likely;
                 document.getElementById('confidence-interval').textContent = dataFromPython.confidence;
                 document.getElementById('blurb-state-name').textContent = dataFromPython.state_name;
@@ -432,23 +462,6 @@
                 <td>Sep 20 - 25</td>
                 <td><div class="stars-container" data-rating="2.6" title="2.7/3 Stars"></div></td>
                 <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">50.5%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">47.7%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">51.4%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">48.6%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>AtlasIntel</td>
-                <td>Sep 20 - 25</td>
-                <td><div class="stars-container" data-rating="2.6" title="2.7/3 Stars"></div></td>
-                <td><div class="vote-container">
                 <span class="candidate-name">Harris</span><span class="dem-vote">50.6%</span>
                 </div></td>
                 <td><div class="vote-container">
@@ -459,6 +472,23 @@
                 </div></td>
                 <td><div class="vote-container">
                 <span class="candidate-name">Trump</span><span class="rep-vote">48.5%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>AtlasIntel</td>
+                <td>Sep 20 - 25</td>
+                <td><div class="stars-container" data-rating="2.6" title="2.7/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">50.5%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">47.7%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.4%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.6%</span>
                 </div></td>
                 </tr>
                 <tr>
@@ -496,7 +526,6 @@
                 </div></td>
                 </tr>
                 </tbody>
-                
             </table>
             <script>
               document.querySelectorAll('.stars-container').forEach(container => {
@@ -1046,10 +1075,12 @@
                 style="stroke-width:0.97063118000000004" />
               </svg>
               <div style='display:flex;justify-content:center;align-items: center;flex-direction: column;'>
-                <a style='margin-left:auto;margin-right:auto;margin-top:10px;margin-bottom:10px' href="election2024.html" class="btn btn-primary py-3 px-3">Return to Map</a>
-                <button class="election-index-button" onclick="scrollToSection('scatterChart')">Election Forecast</button>
+                <a style='margin-left:auto;margin-right:auto;margin-top:10px;margin-bottom:20px' href="election2024.html" class="btn btn-primary py-3 px-3">Return to Map</a>
+                <button class="election-index-button" onclick="scrollToSection('voteShareChart')">Election Forecast</button>
                 <button class="election-index-button" onclick="scrollToSection('voteChart')">Expected Vote Share</button>
                 <button class="election-index-button" onclick="scrollToSection('poll-data')">Polling Data</button>
+                <a href='election-math.html'><button class="election-index-button">Methodology</button></a>
+                <a href='example-state-2024.html'><button class="election-index-button">See an Example</button></a>
                 <script>
                   // Function to scroll to the section with a 100px offset
                   function scrollToSection(sectionId) {

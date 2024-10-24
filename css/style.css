@@ -10081,31 +10081,6 @@ div.latex-style {
   margin:auto;
 }
 
-/* New sleek smaller index buttons */
-#election-status-button {
-  background-color: #f0f0f0;  /* Light gray background */
-  color: #333;  /* Darker text */
-  padding: 8px 16px;  /* Smaller padding */
-  border-radius: 8px;  /* Slightly rounded corners */
-  border: 1px solid #ccc;  /* Subtle border */
-  cursor: pointer;
-  font-size: 14px;  /* Smaller text size */
-  display: block;
-  margin: 5px 0;  /* Small space between index buttons */
-  transition: background-color 0.3s ease, color 0.3s ease;
-  min-width: 167px;
-  font-size: 13px;
-}
-
-#election-status-button:hover {
-  background-color: #0056b3;  /* Blue background on hover */
-  color: white;  /* White text on hover */
-  border-color: #0056b3;  /* Change border to blue */
-}
-
-/* Optional active state for currently active section */
-#election-status-button.active {
-  background-color: #007BFF;
-  color: white;
-  border-color: #007BFF;
+#voteShareChart, #demWinChart {
+  max-height: 300px;
 }

@@ -42,6 +42,36 @@
     </script>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
     <link href="https://fonts.googleapis.com/css2?family=Latin+Modern+Roman:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      .election-index-button {
+        background-color: #f0f0f0;  /* Light gray background */
+        color: var(--gray-dark);  /* Darker text */
+        padding: 8px 16px;  /* Smaller padding */
+        border-radius: 8px;  /* Slightly rounded corners */
+        border: 1px solid #ccc;  /* Subtle border */
+        cursor: pointer;
+        font-size: 14px;  /* Smaller text size */
+        display: block;
+        margin: 5px 0;  /* Small space between index buttons */
+        transition: background-color 0.3s ease, color 0.3s ease;
+        min-width: 167px;
+        font-size: 13px;
+      }
+
+      /* Hover effect for index buttons */
+      .election-index-button:hover {
+        background-color: #3e64ff;  /* Blue background on hover */
+        color: white;  /* White text on hover */
+        border-color: #3e64ff;  /* Change border to blue */
+      }
+
+      /* Optional active state for currently active section */
+      .election-index-button.active {
+        background-color: #3e64ff;
+        color: white;
+        border-color: #3e64ff;
+      }
+    </style>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
@@ -70,17 +100,17 @@
     <section class="ftco-section">
       <div class="container">
         <div class="row">
-          <h2 class="mb-3">Using Statistics to Forecast an Election</h2>
           <div class="col-lg-8 ftco-animate" >
-            <p>Considering this topic's importance and interest to a wide range of readers, I am going to aim to make this article accessible to as broad of an audience as possible. As such, whenever there is a need to explain something in depth, I will put it inside a box which can be expanded for further details, like the one below.</p>
+            <h2 class="mb-3" style="text-align: center;">How to Use Statistics to Forecast an Election</h2>
+            <p>Considering this topic's importance and interest to a wide range of readers, I am going to aim to make this article accessible to as broad of an audience as possible. As such, whenever there is a need to explain something in depth, I will put it inside a box which can be expanded for further details for readers who are interested, like the one below.</p>
             <details>
               <summary>Details</summary>
               Han shot first.
             </details>
-            <h5>The Head-to-Head</h5>
+            <h5 id="head-to-head">The Head-to-Head</h5>
             <p>Imagine a big box full of red and blue balls. We don't know how many of the balls are red or blue, or even how many balls are in the box total, we just know that the box is full of red and blue balls. If we want to get an idea of how many red and blue balls are in the box, what we would probably do is start scooping out samples of balls and counting them up.</p>
             <p>This is effectively what an election is. In Pennsylvania there is somewhere between 6 and 7 million red and blue balls. When we take a poll, ideally we are effectively just pulling out a few hundred balls and trying to get an idea about what the rest of the 7 million are doing.</p>
-            <p>Of course, the matter is complicated somewhat because some of the balls we pull are neither red nor blue. It's a third color, say white. These balls represent third-party voters. Hopefully everyone reading this can all agree that there is no reasonable chance that any state is won by a third party. If that's the case, then the question becomes: "Will Trump or Harris get more of the non-third-party vote?" While this is not strictly necessary as a first step, it does simplify the math quite a bit.</p>
+            <p>Of course, the matter is complicated somewhat because some of the balls we pull are neither red nor blue, but rather a third color, say white. These balls represent third-party voters. Hopefully everyone reading this can all agree that there is no reasonable chance that any state is won by a third party. If that's the case, then the question becomes: "Will Trump or Harris get more of the non-third-party vote?" While this is not strictly necessary as a first step, it does simplify the math quite a bit.</p>
             <p>With this in mind, if we pull 1000 balls from the box and we get, for example, 50 white balls, we can freely toss them back in the box, and just think of the poll as having polled 950 of the non-third-party voters. For the more mathematically inclined readers, this step does require some justification, which I'll leave in the box below.</p>
             <details>
               <summary>Details</summary>
@@ -112,21 +142,71 @@
             <p>$P(\text{model}\mid\text{evidence})$ is the thing we're ultimately after. This tells us the how much we should believe a particular claim about the election given the evidence we have already observed, in this case the polls.</p>
             <p>$P(\text{evidence}\mid\text{model})$ is the opposite. It asks, assuming that a particular claim about the election is true, how likely were we to see what we saw in the polls?</p>
             <p>$P(\text{model})$ is called the <b>prior</b> distribution. This is a measure of how likely we were to believe a particular claim about the election before collecting our evidence. Among other things, this is useful because we can use it to inject our qualitative beliefs about the election external to the polls, such as impact from the presidential debate, and so on. With that said, for the purposes of this analysis, I do not attempt to meddle with prior distributions in this way.</p>
-            
-            <h5 id="conclusion">In Summary</h5>
+            <p>Intuitively, Bayesian updating is very similar to how we update our beliefs in real life when presented with new evidence. For example if we have plans for a hike tomorrow we might check the weather forecast. If the forecast for tomorrow says it will be sunny, you'll wake up tomorrow with the <i>prior</i> belief that it is unlikely to rain today. However, when you walk outside and see clouds, you will try to reconcile your prior belief that it would not rain and that it would be sunny with the new evidence that points to not being sunny and potentially being rainy. After this you'll probably end up somewhere in the middle, believing that the clouds might pass some time soon, but being more open than before to the chance of rain.</p>
+            <p>The important thing about Bayesian statistics is that it only requires the polls to be fair. Typically, we require the polls to be something called <a href="https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables">independent and identically distributed</a>, which is a fancy way of saying that the results of one poll don't affect the results of another, and that they all have the same chance of having any particular outcome.</p>
+            <p>In the case of polls, the last requirement translates roughly to saying that the polls are all of the same size. Here, we run into issues, since polls might range from a few hundred respondents to well over 1000.</p>
+            <p>Bayesian statistics, on the other hand, have no such requirement. As long as we know how a particular model affects our chances of seeing a particular set of polls, we're good to go.</p>            
+            <h5 id="the-election-model">The Election Model</h5>
+            <p>Going back to our model of an election being effectively a large box with an unknown number of red and blue balls, it becomes straightforward that the outcome of a poll follows a <a href="https://en.wikipedia.org/wiki/Hypergeometric_distribution">hypergeometric distribution</a>.</p>
+            <p>The goal then becomes to determine the size of the voting population, as well as the size of the population voting for one of the parties (for the sake of this analysis, let's say Democrats). Once we have these things, we can combine them into a distribution of overall vote percentage, which will tell us the likelihood of a particular candidate winning in a particular state.</p>
+            <p>To find the probability of a particular electorate size and Democratic electorate size, which I will start referring to as "the model" for short, we need to calculate the pieces described in the last section. </p>
+            <p>$P(\text{evidence}\mid\text{model})$ is pretty straightforward, as this is just the aforementioned hypergeometric distribution. </p>
+            <p>The prior distribution, $P(\text{model})$, is a little more interesting. Since we have not collected evidence yet we get to choose what our starting beliefs are about the election.</p>
+            <p>For the sake of this model, which is meant to forecast the outcome of swing states, believe that the voter turnout overall could be anywhere between the 2016 turnout and the 2020 turnout. Since they are swing states I expect that the total number of Democrat voters will be about 50% of the total population, but to be safe let's say anywhere between 45% and 55%.</p>
+            <p>$P(\text{evidence})$ is a little bit more involved, but just involves repeating the above steps for every possible model we believe could be viable.</p>
+            <p>The details are in the box below, for curious readers.</p>
+            <details>
+              <summary>Details</summary>
+              Suppose the model suggests a voter turnout of $N$ with $B$ total Democrat voters. A poll is taken of size $n$, finding $b$ Democrat voters. Then
+              \begin{align*} 
+                P(\text{evidence}\mid\text{model}) &= \dfrac{\binom{B}{b}\binom{N-B}{n-b}}{\binom{N}{n}}
+              \end{align*}
+              Since polls are, at least ostensibly, independent, if we have multiple polls we can simply multiply these probabilities together. More formally, suppose a series of polls of size $n_i$ each finds $b_i$ Democrat voters, then
+              \begin{align*} 
+                P(\text{evidence}\mid\text{model}) &= \prod\limits_{i} \dfrac{\binom{B}{b_i}\binom{N-B}{n_i-b_i}}{\binom{N}{n_i}}
+              \end{align*}
+              Since we are starting with a prior belief of any $N$ and any $B$ within a reasonable range being equally likely,
+              $$P(\text{model}) = \frac{1}{|M|}$$
+              Where $M$ is the set of models being considered, and therefore 
+              \begin{align*} 
+                P(\text{evidence}) &= \sum\limits_{\text{model}\in M} P(\text{evidence}\mid \text{model}) P(\text{model}) \\
+                &= \sum\limits_{N,B} \prod\limits_i \dfrac{\binom{B}{b_i}\binom{N-B}{n_i-b_i}}{\binom{N}{n_i}} \cdot \frac{1}{|M|}
+              \end{align*}
+            </details>
+            <p>It's important to remember that we should only consider all the polls at once if we believe that the underlying distribution has remained relatively static across the time when the polls were taken. When we believe that the electorate's opinion has changed, we can start a new cycle using the last obtained distribution as the prior distribution for the new cycle. This could happen at some regular fixed interval, or when a major event occurs that likely had a large impact on public opinion (such as the presidential debate).</p>
+            <h5 id='election-outcome'>Election Outcome</h5>
+            <p>Of course determining the popular vote is not the be all, end all of determining the winner of the election. In the U.S. presidential election, there is also the matter of the electoral college.</p>
+            <p>In order to win the presidency, a candidate must obtain at least 270 votes in the electoral college. Other models, to my knowledge, typically rely on simulations in order to determine the likelihood of each candidate winning the election.</p>
+            <p>This is another benefit of the Bayesian approach. Since it directly spits out a distribution, that is, how likely one candidate is to get 50.1% in a state, vs 50.2% and so on, we can direclty calculate the probability that a candidate wins each state simply by adding up the projected probabilities of each model where they win.</p>
+            <p>For example, say you flip three coins, two nickles and a dime, and you want to know the probability that at least 10 cents worth of coins came up heads. You can simply ask which combinations of coins lead to that outcome. In this example there are 5 possibilities:</p>
+            <ul>
+              <li>HHH</li>
+              <li>HHT</li>
+              <li>HTH</li>
+              <li>THH</li>
+              <li>TTH</li>
+            </ul>
+            <p>Each of these outcomes has a probability of $0.5 \times 0.5 \times 0.5 = 0.125$. Adding these up, we find that the probability of at least 10 cents coming up heads is 62.5%.</p>
+            <p>In essence we will be doing exactly this, but instead of coins we have states and instead of 10 cents we are hoping to add up to 270 electoral college votes.</p>
+            <p>The results of this are laid out in <a href='election2024.html'>the main election page</a>.</p>
+            <h5 id="motivation">Motivation and Differences</h5>
             <p>Recently, polls have been taking a very rapid turn away from Kamala Harris and toward Donald Trump. At the time of writing, the 538 forecast has Donald Trump listed as the favourite to win the election, with a 53% chance of victory.</p>
             <img src="images/538-trump.PNG" alt="Trump overtakes Harris in the 538 election forecast." class="float-right">
-            <p>Now, 538 does great work to be sure, but I spot a few things that I find questionable about their approach overall, as well as other popular election forecasters:</p>
+            <p>Now, 538 does great work to be sure, but I spot a few things that givem me pause about their approach overall, as well as other popular election forecasters:</p>
             <ul>
               <li>At the moment, they and other aggregators have been overrun by low quality right-wing partisan pollsters, which skew the numbers toward Republicans.</li>
-              <li>Even absent this, the most popular models appear to combine techniques from signals processing such as <a href="https://en.wikipedia.org/wiki/Infinite_impulse_response">IIR filters</a> or simple <a href="https://en.wikipedia.org/wiki/Finite_impulse_response">rolling averages</a> along with other more empyrical things like weighting pollsters according to their perceived trustworthiness, or nudging the averages one direction or another to account for public opinion for notable events like the debate.</li>
+              <li>Even absent this, the most popular models appear to combine techniques from signals processing such as <a href="https://en.wikipedia.org/wiki/Infinite_impulse_response">IIR filters</a> or simple <a href="https://en.wikipedia.org/wiki/Finite_impulse_response">rolling averages</a> along with other more subjective things like weighting pollsters according to their perceived trustworthiness, or nudging the averages one direction or another to account for public opinion for notable events like the debate.</li>
               <li>While I know that the popular vote is somewhat of a moving target, as more and more polls are token, uncertainty on the thing being measured <i>should</i> decrease, especially in a period like the time since the debate where nothing of particular note has happened publicly that would sway the vote one way or another.</li>
             </ul>
-            <p>My proposed solution to this is two-fold.</p>
+            <p>My approach takes two main steps differently in order to address these.</p>
             <ul>
-              <li>Rather than trying to account for low quality/high bias in polls by weighting them less than a higher quality poll, low quality polls should simply be ignored. There is a plethora of polls to choose from in swing states, so if a pollster can't be trusted to remain unbiased, their results should simply be ignored rather than weighted less.</li>
-              <li>There are already exising tools in probablity and statistics to deal with situations like this, and we should use them rather than invent new ones from whole cloth. <a href='https://en.wikipedia.org/wiki/Bayesian_statistics#:~:text=Bayesian%20inference%20refers%20to%20statistical,or%20hypotheses%20in%20frequentist%20inference.'>Bayesian statistics</a> is a framework which is used to update beliefs as information changes. More on that <a href='#bayesian-statistics'>below</a>.</li>
+              <li>Rather than trying to account for low quality/high bias in polls by weighting them less than a higher quality poll, low quality polls should simply be ignored. There is a plethora of polls to choose from in swing states, so if a pollster can't be trusted to remain unbiased, their results should simply be ignored rather than weighted less. For this project, I am using 538's pollster ratings, and I have cut off anyone who falls below a 2.3 out of 3 star grading.</li>
+              <li>As shown, by using Bayesian statistics we can overcome the limitations of the more common <a href = 'https://en.wikipedia.org/wiki/Frequentist_inference'> frequentist </a> statistics, and directly use well established mathematical foundations to build a projection of the election outcome.</li>
             </ul>
+            <h5 id="in-summary">In Summary</h5>
+            <p>Ultimately, only time will tell how well this method holds up. However, as we can see from a <a href='example-state-2024.html'>simulated example</a>, if the polls are representative and fair then it performs extremely well. However, polls do often have some average bias one way or the other, and in an election as tight as this one, even a 1% bias in any direction can sway the entire election.</p>
+            <p>I realize that I don't have the name or brand recognition that some of the more popular election forecasters have. In lieu of that, I have elected to be as transparent about my model as I can be. I encourage you to check my work, either by reading the methodology above or by checing out the <a href='https://github.com/curtistoupin/election-insights'>git repo where I keep the code I wrote to perform these calculations</a> (apologies in advance, the code is a little messy as I've put this projet together in the last 4 days or so).</p>
+            <p>In the end, whether the model performs well or not, I will continue trying to update and refine this methodology to try and squeeze the most out of it that I can. Until then, check out <a href='election2024.html'>main project page</a> to see my predictions, and I'll see everyone on November 6th.</p>
             <!-- Author box <div class="about-author d-flex p-4 bg-light">
               <div class="bio mr-5">
                 <img src="images/person_1.jpg" alt="Image placeholder" class="img-fluid mb-4">
@@ -640,7 +720,32 @@
                 style="stroke-width:0.97063118000000004" />
               </svg>
               <div style='display:flex;justify-content:center;align-items: center;flex-direction: column;'>
-                <a style='margin-left:auto;margin-right:auto;margin-top:10px;margin-bottom:10px' href="election2024.html" class="btn btn-primary py-3 px-3">View Election Map</a>
+                <a style='margin-left:auto;margin-right:auto;margin-top:10px;margin-bottom:20px' href="election2024.html" class="btn btn-primary py-3 px-3">View Election Map</a>
+                <button class="election-index-button" onclick="scrollToSection('head-to-head')">The Head-to-Head</button>
+                <button class="election-index-button" onclick="scrollToSection('bayesian-statistics')">Bayesian Statistics</button>
+                <button class="election-index-button" onclick="scrollToSection('the-election-model')">The Election Model</button>
+                <button class="election-index-button" onclick="scrollToSection('election-outcome')">Election Outcome</button>
+                <button class="election-index-button" onclick="scrollToSection('motivation')">Motivation</button>
+                <button class="election-index-button" onclick="scrollToSection('in-summary')">In Summary</button>
+                <script>
+                  // Function to scroll to the section with a 100px offset
+                  function scrollToSection(sectionId) {
+                      const element = document.getElementById(sectionId);
+                      const offset = 100; // The desired offset (100px below the top)
+                  
+                      // Get the element's position relative to the document
+                      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+                  
+                      // Subtract the offset from the element's position and scroll to that position
+                      const offsetPosition = elementPosition - offset;
+                  
+                      // Scroll to the calculated position
+                      window.scrollTo({
+                          top: offsetPosition,
+                          behavior: 'smooth' // Smooth scrolling
+                      });
+                  }
+                  </script>
               </div>
               </div>
             </div>

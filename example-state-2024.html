@@ -27,7 +27,7 @@
         fill: darkgray;
         pointer-events: none;
       }
-      path#AZ {
+      path#EG {
         fill: red;
       }
       
@@ -99,19 +99,21 @@
         <div class="row">
           <div class="col-lg-8 ftco-animate" >
             <h2 class="mb-3" id="page-title" style="text-align: center"></h2>
+            <p style="text-align: center;">This example was set up to demonstrate how the method works with a known electorate. The true outcome is a Harris win with 50.5% of about 1.4 million votes.</p>
             <h5 id="vote-projection" style="text-align: center"></h5>
             <p style="text-align: center;">All data are rounded <b>down</b>, which is why a value of 50% indicates a Democrat win. </p>
+            
             <!-- First chart: Expected Democrat Vote Share -->
             <canvas id="voteShareChart"></canvas>
             <p id="most-likely-outcome"></p>
             <p id="confidence-interval"></p>
             <canvas id="demWinChart"></canvas>
             <script>
-              const labels = ['2024-09-10', '2024-09-18', '2024-09-21', '2024-09-24', '2024-09-25', '2024-09-28', '2024-10-02', '2024-10-08', '2024-10-10', '2024-10-16', '2024-10-17', '2024-10-22', '2024-10-23'];
-              const pcMode = [50.0, 50.0, 47.9, 48.5, 48.6, 48.6, 48.5, 48.6, 48.2, 48.2, 48.5, 48.5, 48.5];
-              const pcMin = [45.0, 46.1, 46.2, 47.5, 47.7, 47.7, 47.7, 47.7, 47.6, 47.6, 47.9, 47.8, 47.8];
-              const pcMax = [54.8, 52.6, 49.6, 49.4, 49.4, 49.4, 49.3, 49.3, 49.0, 49.0, 49.2, 49.1, 49.1];
-              const pDemWin = [49.9, 38.6, 0.8, 0.2, 0.2, 0.1, 0.1, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0];
+              const labels = ['2024-09-10', '2024-09-14', '2024-09-16', '2024-09-19', '2024-09-22', '2024-09-25', '2024-09-29', '2024-10-01', '2024-10-03', '2024-10-06', '2024-10-09', '2024-10-12', '2024-10-15', '2024-10-18', '2024-10-21', '2024-10-23'];
+              const pcMode = [50.0, 50.0, 51.0, 50.8, 50.0, 50.8, 50.0, 50.0, 50.0, 50.0, 50.4, 50.4, 50.8, 50.8, 50.8, 50.8];
+              const pcMin = [44.8, 48.2, 49.3, 49.3, 49.2, 49.7, 49.3, 49.3, 49.3, 49.5, 49.7, 49.7, 50.0, 50.0, 50.1, 50.2];
+              const pcMax = [54.2, 53.0, 52.8, 52.0, 51.7, 51.7, 51.2, 51.2, 51.1, 51.1, 51.2, 51.2, 51.4, 51.4, 51.4, 51.4];
+              const pDemWin = [48.5, 70.9, 90.2, 87.2, 81.4, 93.3, 75.7, 75.4, 76.0, 79.7, 89.1, 91.1, 98.7, 99.2, 99.5, 99.7];
 
               const vote_y_scale_min = Math.floor(Math.min(45, Math.min(...pcMin)) / 2) * 2 - 2;
               const vote_y_scale_max = Math.ceil(Math.max(55, Math.max(...pcMax)) / 2) * 2 + 2;
@@ -292,8 +294,8 @@
             <canvas id="voteChart" width="400" height="200"></canvas>
             <script>
                 // The data from Python (replace this with dynamically fetched data from your backend)
-                const dataFromPython = {"keys": [44.9, 45.0, 45.1, 45.2, 45.3, 45.4, 45.5, 45.6, 45.7, 45.8, 45.9, 46.0, 46.1, 46.2, 46.3, 46.4, 46.5, 46.6, 46.7, 46.8, 46.9, 47.0, 47.1, 47.2, 47.3, 47.4, 47.5, 47.6, 47.7, 47.8, 47.9, 48.0, 48.1, 48.2, 48.3, 48.4, 48.5, 48.6, 48.7, 48.8, 48.9, 49.0, 49.1, 49.2, 49.3, 49.4, 49.5, 49.6, 49.7, 49.8, 49.9, 50.0, 50.1, 50.2, 50.3, 50.4, 50.5, 50.6, 50.7, 50.8, 50.9, 51.0, 51.1, 51.2, 51.3, 51.4, 51.5, 51.6, 51.7, 51.8, 51.9, 52.0, 52.1, 52.2, 52.3, 52.4, 52.5, 52.6, 52.7, 52.8, 52.9, 53.0, 53.1, 53.2, 53.3, 53.4, 53.5, 53.6, 53.7, 53.8, 53.9, 54.0, 54.1, 54.2, 54.3, 54.4, 54.5, 54.6, 54.7, 54.8, 54.9], "values": [1.3593787031193863e-26, 9.358907707543428e-25, 1.8712972402473562e-23, 3.595018012372875e-22, 6.1314596257157366e-21, 9.58027412697475e-20, 1.382602869079798e-18, 1.839656744353181e-17, 2.199956460036783e-16, 2.430074649097629e-15, 2.2682556560098795e-14, 2.288498849715288e-13, 1.9079908738255254e-12, 1.4784682611685462e-11, 1.0343150505654026e-10, 6.683220046320231e-10, 4.0331232869654815e-09, 2.1888815018351368e-08, 1.0710075538597027e-07, 4.967634042635954e-07, 2.011626391610619e-06, 7.93706248618006e-06, 2.7373906102084775e-05, 8.910443749102426e-05, 0.00025998155108518655, 0.0006585550982645489, 0.001751090797990936, 0.003921935004496155, 0.008059017788749193, 0.01533458803486891, 0.025630461174207305, 0.043556573723748514, 0.061854789188267485, 0.08299700759673656, 0.10110829238320007, 0.1139575218037649, 0.1181465739249055, 0.1115230691329171, 0.0953368705554165, 0.07680628554184628, 0.05470541276374643, 0.03750760110182719, 0.022497206452082474, 0.01260671999567201, 0.00652017777279506, 0.003006357374146625, 0.0013346319658873126, 0.0005156441644280272, 0.00018905995251631676, 6.153873960599935e-05, 1.725055133734497e-05, 6.983509989255467e-06, 1.3361433964853544e-06, 3.250530153388994e-07, 6.69323150646161e-08, 1.374234910409082e-08, 2.4019258510438367e-09, 4.060393971552739e-10, 5.945037986594332e-11, 8.546608252862511e-12, 1.0566814652777783e-12, 1.2900665863357636e-13, 1.3214834370247791e-14, 1.3120902542621906e-15, 1.161793453408933e-16, 9.602326772084323e-18, 7.25318268098639e-19, 5.042069370482116e-20, 3.1114961332093196e-21, 1.828984962503906e-22, 9.516983797785953e-24, 5.146309375983147e-25, 2.0458993479724504e-26, 8.46749062525562e-28, 3.107304773573713e-29, 1.0757803474075303e-30, 3.8250862600602735e-32, 9.688664560463992e-34, 2.4914032285339986e-35, 6.101172069608708e-37, 1.297497594798237e-38, 2.795953961299157e-40, 4.809148393045812e-42, 8.257882437018617e-44, 1.246249857884905e-45, 1.7960423151827703e-47, 2.2981563886173407e-49, 2.73621932326204e-51, 2.8461426427603834e-53, 2.8780699900813697e-55, 2.5314900762589494e-57, 2.4453515186840438e-59, 1.5570831730369755e-61, 1.1009636163241155e-63, 6.779811062105875e-66, 4.067258295426286e-68, 2.1267660486152172e-70, 1.0006612211490075e-72, 4.2884643033489416e-75, 1.7769766452995484e-77, 6.169489529592649e-80], "colors": ["red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue"], "ci_min": 47.8, "ci_max": 49.1, "ci_p": 96.1, "p_dem_win": 0.0, "title": "2024 Election Forecast for Arizona", "projection": "There is a projected <span class='rep-vote'>100.0%</span> chance that <span class='rep-vote'>Trump</span> wins Arizona.", "most_likely": "The most likely outcome is Trump winning with 51.5% of the head-to-head vote share.", "confidence": "With 96.1% confidence, Trump's head-to-head vote share will be between 50.9% and 52.2%.", "state_name": "Arizona", "abbrev": "AZ"};
-                
+                const dataFromPython = {"keys": [44.9, 45.0, 45.1, 45.2, 45.3, 45.4, 45.5, 45.6, 45.7, 45.8, 45.9, 46.0, 46.1, 46.2, 46.3, 46.4, 46.5, 46.6, 46.7, 46.8, 46.9, 47.0, 47.1, 47.2, 47.3, 47.4, 47.5, 47.6, 47.7, 47.8, 47.9, 48.0, 48.1, 48.2, 48.3, 48.4, 48.5, 48.6, 48.7, 48.8, 48.9, 49.0, 49.1, 49.2, 49.3, 49.4, 49.5, 49.6, 49.7, 49.8, 49.9, 50.0, 50.1, 50.2, 50.3, 50.4, 50.5, 50.6, 50.7, 50.8, 50.9, 51.0, 51.1, 51.2, 51.3, 51.4, 51.5, 51.6, 51.7, 51.8, 51.9, 52.0, 52.1, 52.2, 52.3, 52.4, 52.5, 52.6, 52.7, 52.8, 52.9, 53.0, 53.1, 53.2, 53.3, 53.4, 53.5, 53.6, 53.7, 53.8, 53.9, 54.0, 54.1, 54.2, 54.3, 54.4, 54.5, 54.6, 54.7, 54.8, 54.9], "values": [5.093754756436453e-73, 4.202656593836642e-70, 9.036472174528697e-68, 2.0652890400685973e-65, 3.6099969071081824e-63, 5.563927515181608e-61, 8.80608010379966e-59, 1.1168336978030477e-56, 1.5878201723301795e-54, 1.8198832799140842e-52, 1.2751256422236528e-50, 1.835129401796519e-48, 1.487019495814975e-46, 1.1638297029169036e-44, 7.846181140948335e-43, 4.726739727100574e-41, 3.058379610874417e-39, 1.9571028382084255e-37, 7.064219957874031e-36, 3.404539481408733e-34, 1.1493476700857178e-32, 4.870279795530961e-31, 1.552755387303256e-29, 5.049876605101516e-28, 1.3375874330866313e-26, 2.3757084369629464e-25, 7.201265377805829e-24, 1.5943971703195041e-22, 2.9198345893853906e-21, 5.1197694518159604e-20, 6.338851867665616e-19, 1.204894824694743e-17, 1.50111465940814e-16, 1.80894824112715e-15, 1.9024667452078038e-14, 1.822743980523949e-13, 1.7434093452179362e-12, 1.4336976130643765e-11, 1.0424357215569879e-10, 7.460277030112309e-10, 4.169861579068928e-09, 2.5994423712949227e-08, 1.2916388466098614e-07, 5.952869696370421e-07, 2.677541239316976e-06, 9.508855213352414e-06, 3.725520821573829e-05, 0.00010966016602982525, 0.00036605253940271066, 0.0006734396227184372, 0.0013704428458190011, 0.007671289264960783, 0.00874303908494678, 0.02129234007297724, 0.030981707504097795, 0.05399133060572105, 0.07167285241692903, 0.09925209843934618, 0.10736190358125854, 0.12349661283301686, 0.11318499201015689, 0.1103402104964957, 0.08536292887005462, 0.06553486496720742, 0.04279118961101778, 0.026930897639855744, 0.014919039408516688, 0.007904454536903298, 0.0035509031245613888, 0.0015464382490997049, 0.000567026888042769, 0.00024031140608691198, 6.670407769838567e-05, 2.0092011931270354e-05, 5.291277048845865e-06, 1.2744341464660668e-06, 3.412459842114872e-07, 6.045203665047383e-08, 1.0987161778933943e-08, 1.918094130212004e-09, 2.75258617938282e-10, 4.337009688210739e-11, 5.0141759300827325e-12, 5.931303328725311e-13, 7.023996753503242e-14, 6.208076999281752e-15, 5.343790333748245e-16, 4.444129690096946e-17, 3.019806762295862e-18, 2.0808105475141422e-19, 1.2109257267572073e-20, 8.573263769231733e-22, 3.251953581875607e-23, 1.551092983864343e-24, 5.506636277696197e-26, 2.448368509560298e-27, 8.164551280680377e-29, 2.5028466633645495e-30, 6.839979376223911e-32, 1.8512887642090976e-33, 3.0999722026034466e-35], "colors": ["red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue"], "ci_min": 50.2, "ci_max": 51.4, "ci_p": 95.2, "p_dem_win": 99.7, "title": "2024 Election Forecast Simulation", "projection": "There is a projected <span class='dem-vote'>99.7%</span> chance that <span class='dem-vote'>Harris</span> wins this simulation.", "most_likely": "The most likely outcome is Harris winning with 50.8% of the head-to-head vote share.", "confidence": "With 95.2% confidence, Harris' head-to-head vote share will be between 50.2% and 51.4%.", "state_name": "Example", "abbrev": "EG"};
+
                 // Set the title from the Python data
                 document.getElementById('page-title').textContent = dataFromPython.title;
                 document.getElementById('vote-projection').innerHTML = dataFromPython.projection;
@@ -390,31 +392,31 @@
               </thead>
               <tbody>
                 <tr>
-                <td>AtlasIntel</td>
-                <td>Oct 12 - 17</td>
-                <td><div class="stars-container" data-rating="2.6" title="2.7/3 Stars"></div></td>
+                <td>Example</td>
+                <td>Oct 23 - 23</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
                 <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">49.3%</span>
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.7%</span>
                 </div></td>
                 <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">49.2%</span>
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.3%</span>
                 </div></td>
                 <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">50.1%</span>
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.7%</span>
                 </div></td>
                 <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">49.9%</span>
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.3%</span>
                 </div></td>
                 </tr>
                 <tr>
-                <td>AtlasIntel</td>
-                <td>Oct 12 - 17</td>
-                <td><div class="stars-container" data-rating="2.6" title="2.7/3 Stars"></div></td>
+                <td>Example</td>
+                <td>Oct 21 - 21</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
                 <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">48.6%</span>
+                <span class="candidate-name">Harris</span><span class="dem-vote">49.7%</span>
                 </div></td>
                 <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">49.2%</span>
+                <span class="candidate-name">Trump</span><span class="rep-vote">50.3%</span>
                 </div></td>
                 <td><div class="vote-container">
                 <span class="candidate-name">Harris</span><span class="dem-vote">49.7%</span>
@@ -424,371 +426,269 @@
                 </div></td>
                 </tr>
                 <tr>
-                <td>YouGov</td>
-                <td>Oct 11 - 16</td>
-                <td><div class="stars-container" data-rating="3.0" title="3.0/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">48%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">51%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">48.5%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">51.5%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>Siena/NYT</td>
-                <td>Oct 07 - 10</td>
-                <td><div class="stars-container" data-rating="3.0" title="3.0/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">45%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">50%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">47.4%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">52.6%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>Siena/NYT</td>
-                <td>Oct 07 - 10</td>
-                <td><div class="stars-container" data-rating="3.0" title="3.0/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">44%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">49%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">47.3%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">52.7%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>Siena/NYT</td>
-                <td>Oct 07 - 10</td>
-                <td><div class="stars-container" data-rating="3.0" title="3.0/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">46%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">51%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">47.4%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">52.6%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>Siena/NYT</td>
-                <td>Oct 07 - 10</td>
-                <td><div class="stars-container" data-rating="3.0" title="3.0/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">45%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">51%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">46.9%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">53.1%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>Emerson</td>
-                <td>Oct 05 - 08</td>
-                <td><div class="stars-container" data-rating="2.7" title="2.9/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">48.2%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">50.5%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">48.8%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">51.2%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>RMG Research</td>
-                <td>Sep 30 - Oct 02</td>
-                <td><div class="stars-container" data-rating="2.4" title="2.3/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">46%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">50%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">47.9%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">52.1%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>Emerson</td>
-                <td>Sep 27 - 28</td>
-                <td><div class="stars-container" data-rating="2.7" title="2.9/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">47.6%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">51.7%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">47.9%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">52.1%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>AtlasIntel</td>
-                <td>Sep 20 - 25</td>
-                <td><div class="stars-container" data-rating="2.6" title="2.7/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">48.6%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">49.7%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">49.4%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">50.6%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>AtlasIntel</td>
-                <td>Sep 20 - 25</td>
-                <td><div class="stars-container" data-rating="2.6" title="2.7/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">48.6%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">49.8%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">49.4%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">50.6%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>Suffolk</td>
-                <td>Sep 19 - 24</td>
-                <td><div class="stars-container" data-rating="2.7" title="2.9/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">42.4%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">48.4%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">46.7%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">53.3%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>Beacon/Shaw</td>
-                <td>Sep 20 - 24</td>
-                <td><div class="stars-container" data-rating="2.65" title="2.8/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">48%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">50%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">49.0%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">51.0%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>Marist</td>
-                <td>Sep 19 - 24</td>
-                <td><div class="stars-container" data-rating="2.7" title="2.9/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">49%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">50%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">49.5%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">50.5%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>Beacon/Shaw</td>
-                <td>Sep 20 - 24</td>
-                <td><div class="stars-container" data-rating="2.65" title="2.8/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">47%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">50%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">48.5%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">51.5%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>Marist</td>
-                <td>Sep 19 - 24</td>
-                <td><div class="stars-container" data-rating="2.7" title="2.9/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">48%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">50%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">49.0%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">51.0%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>Beacon/Shaw</td>
-                <td>Sep 20 - 24</td>
-                <td><div class="stars-container" data-rating="2.65" title="2.8/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">47%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">49%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">49.0%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">51.0%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>Beacon/Shaw</td>
-                <td>Sep 20 - 24</td>
-                <td><div class="stars-container" data-rating="2.65" title="2.8/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">48%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">51%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">48.5%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">51.5%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>Siena/NYT</td>
-                <td>Sep 17 - 21</td>
-                <td><div class="stars-container" data-rating="3.0" title="3.0/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">42%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">47%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">47.2%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">52.8%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>Siena/NYT</td>
-                <td>Sep 17 - 21</td>
-                <td><div class="stars-container" data-rating="3.0" title="3.0/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">45%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">50%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">47.4%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">52.6%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>Siena/NYT</td>
-                <td>Sep 17 - 21</td>
-                <td><div class="stars-container" data-rating="3.0" title="3.0/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">45%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">49%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">47.9%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">52.1%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>Siena/NYT</td>
-                <td>Sep 17 - 21</td>
-                <td><div class="stars-container" data-rating="3.0" title="3.0/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">43%</span>
+                <td>Example</td>
+                <td>Oct 21 - 21</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">52%</span>
                 </div></td>
                 <td><div class="vote-container">
                 <span class="candidate-name">Trump</span><span class="rep-vote">48%</span>
                 </div></td>
                 <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">47.3%</span>
+                <span class="candidate-name">Harris</span><span class="dem-vote">52%</span>
                 </div></td>
                 <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">52.7%</span>
+                <span class="candidate-name">Trump</span><span class="rep-vote">48%</span>
                 </div></td>
                 </tr>
                 <tr>
-                <td>Emerson</td>
-                <td>Sep 15 - 18</td>
-                <td><div class="stars-container" data-rating="2.7" title="2.9/3 Stars"></div></td>
+                <td>Example</td>
+                <td>Oct 18 - 18</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
                 <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">48.7%</span>
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.5%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.5%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.5%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.5%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>Example</td>
+                <td>Oct 18 - 18</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">50.6%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">49.4%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">50.6%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">49.4%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>Example</td>
+                <td>Oct 15 - 15</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">54.9%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">45.1%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">54.9%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">45.1%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>Example</td>
+                <td>Oct 15 - 15</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">52.2%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">47.8%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">52.2%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">47.8%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>Example</td>
+                <td>Oct 12 - 12</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.2%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.8%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.2%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.8%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>Example</td>
+                <td>Oct 09 - 09</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.5%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.5%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.5%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.5%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>Example</td>
+                <td>Oct 06 - 06</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">50.7%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">49.3%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">50.7%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">49.3%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>Example</td>
+                <td>Oct 06 - 06</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">50.1%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">49.9%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">50.1%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">49.9%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>Example</td>
+                <td>Oct 03 - 03</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">50.2%</span>
                 </div></td>
                 <td><div class="vote-container">
                 <span class="candidate-name">Trump</span><span class="rep-vote">49.8%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">50.2%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">49.8%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>Example</td>
+                <td>Oct 01 - 01</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">50%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">50%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">50%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">50%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>Example</td>
+                <td>Sep 29 - 29</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">48.3%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">51.7%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">48.3%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">51.7%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>Example</td>
+                <td>Sep 29 - 29</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">47.1%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">52.9%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">47.1%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">52.9%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>Example</td>
+                <td>Sep 25 - 25</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.3%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.7%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.3%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.7%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>Example</td>
+                <td>Sep 25 - 25</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.2%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.8%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.2%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.8%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>Example</td>
+                <td>Sep 22 - 22</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">49.4%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">50.6%</span>
                 </div></td>
                 <td><div class="vote-container">
                 <span class="candidate-name">Harris</span><span class="dem-vote">49.4%</span>
@@ -797,7 +697,110 @@
                 <span class="candidate-name">Trump</span><span class="rep-vote">50.6%</span>
                 </div></td>
                 </tr>
-                </tbody>                              
+                <tr>
+                <td>Example</td>
+                <td>Sep 19 - 19</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.1%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.9%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.1%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.9%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>Example</td>
+                <td>Sep 19 - 19</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">49.3%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">50.7%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">49.3%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">50.7%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>Example</td>
+                <td>Sep 16 - 16</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.5%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.5%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.5%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.5%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>Example</td>
+                <td>Sep 16 - 16</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.9%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.1%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.9%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.1%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>Example</td>
+                <td>Sep 14 - 14</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.5%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.5%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.5%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.5%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>Example</td>
+                <td>Sep 14 - 14</td>
+                <td><div class="stars-container" data-rating="3" title="3/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">50%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">50%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">50%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">50%</span>
+                </div></td>
+                </tr>
+                </tbody>
+                              
             </table>
             <script>
               document.querySelectorAll('.stars-container').forEach(container => {
@@ -1352,7 +1355,6 @@
                 <button class="election-index-button" onclick="scrollToSection('voteChart')">Expected Vote Share</button>
                 <button class="election-index-button" onclick="scrollToSection('poll-data')">Polling Data</button>
                 <a href='election-math.html'><button class="election-index-button">Methodology</button></a>
-                <a href='example-state-2024.html'><button class="election-index-button">See an Example</button></a>
                 <script>
                   // Function to scroll to the section with a 100px offset
                   function scrollToSection(sectionId) {
