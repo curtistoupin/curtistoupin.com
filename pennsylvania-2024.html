@@ -4,7 +4,7 @@
     <title>Curtis Toupin - 2024 Election</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- TODO MAKE MOBILE WORK <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -30,8 +30,44 @@
       path#PA {
         fill: red;
       }
+      
+      /* New sleek smaller index buttons */
+      .election-index-button {
+        background-color: #f0f0f0;  /* Light gray background */
+        color: var(--gray-dark);  /* Darker text */
+        padding: 8px 16px;  /* Smaller padding */
+        border-radius: 8px;  /* Slightly rounded corners */
+        border: 1px solid #ccc;  /* Subtle border */
+        cursor: pointer;
+        font-size: 14px;  /* Smaller text size */
+        display: block;
+        margin: 5px 0;  /* Small space between index buttons */
+        transition: background-color 0.3s ease, color 0.3s ease;
+        min-width: 167px;
+        font-size: 13px;
+      }
+
+      /* Hover effect for index buttons */
+      .election-index-button:hover {
+        background-color: #3e64ff;  /* Blue background on hover */
+        color: white;  /* White text on hover */
+        border-color: #3e64ff;  /* Change border to blue */
+      }
+
+      /* Optional active state for currently active section */
+      .election-index-button.active {
+        background-color: #3e64ff;
+        color: white;
+        border-color: #3e64ff;
+      }
     </style>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+    <!-- Load Moment.js -->
+    <!-- Use Chart.js version 3.x -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+    <!-- Load Moment.js -->
+    <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+    <!-- Load the Moment.js adapter for Chart.js 3.x -->
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-moment@1.0.0/dist/chartjs-adapter-moment.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation@1.1.0"></script>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -61,30 +97,206 @@
     <section class="ftco-section">
       <div class="container">
         <div class="row">
-          <h2 class="mb-3" id="page-title"></h2>
           <div class="col-lg-8 ftco-animate" >
+            <h2 class="mb-3" id="page-title" style="text-align: center"></h2>
+            <h5 id="vote-projection" style="text-align: center"></h5>
+            <p style="text-align: center;">All data are rounded <b>down</b>, which is why a value of 50% indicates a Democrat win. </p>
+            <!-- First chart: Expected Democrat Vote Share -->
+            <canvas id="voteShareChart"></canvas>
+            <p id="most-likely-outcome"></p>
+            <p id="confidence-interval"></p>
+            <canvas id="demWinChart"></canvas>
+            <script>
+              const labels = ['2024-09-10', '2024-09-14', '2024-09-16', '2024-09-17', '2024-09-18', '2024-09-19', '2024-09-20', '2024-09-22', '2024-09-24', '2024-09-25', '2024-09-28', '2024-10-02', '2024-10-07', '2024-10-08', '2024-10-09', '2024-10-10', '2024-10-17', '2024-10-22', '2024-10-23'];
+              const pcMode = [50.0, 50.0, 51.8, 51.5, 51.5, 51.3, 51.2, 51.2, 51.0, 50.7, 50.7, 50.7, 50.7, 50.7, 50.7, 50.8, 50.5, 50.6, 50.6];
+              const pcMin = [45.0, 47.7, 50.8, 50.5, 50.6, 50.6, 50.5, 50.5, 50.4, 50.1, 50.0, 50.1, 50.2, 50.2, 50.2, 50.3, 50.0, 50.1, 50.1];
+              const pcMax = [54.8, 54.8, 52.8, 52.2, 52.2, 52.1, 51.9, 51.9, 51.7, 51.3, 51.2, 51.3, 51.3, 51.3, 51.2, 51.3, 51.0, 51.0, 51.0];
+              const pDemWin = [50.0, 74.3, 100.0, 99.9, 100.0, 100.0, 100.0, 100.0, 100.0, 99.3, 99.3, 99.5, 99.8, 99.7, 99.7, 100.0, 99.5, 99.3, 99.3];
 
-            <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!--
-************* Copyright (c) 2017 Pareto Softare, LLC DBA Simplemaps.com *******************		
-************* Free for Commercial Use, full terms at  http://simplemaps.com/resources/svg-license ************
-************* Attribution is appreciated! http://simplemaps.com ***************************
--->
+              const vote_y_scale_min = Math.floor(Math.min(45, Math.min(...pcMin)) / 2) * 2 - 2;
+              const vote_y_scale_max = Math.ceil(Math.max(55, Math.max(...pcMax)) / 2) * 2 + 2;
 
-            
+              const prob_y_scale_min = Math.floor(Math.min(45, Math.min(...pDemWin)) / 5) * 5 - 5;
+              const prob_y_scale_max = Math.ceil(Math.max(55, Math.max(...pDemWin)) / 5) * 5 + 5;
 
-            <h5 id="vote-projection"></h5>
-            <p>Below is a chart that shows the probability distribution of the Democrats' head-to-head vote share in <span id="blurb-state-name"></span> based on pollsters that are well-rated by 538 since the Sept 10 presidential debate. All data is rounded <b>down</b> to the nearest 0.1% which is why a value of 50% on the chart indicates a Democrat win. Vertical black lines indicate a roughly 95% confidence interval.</p>
+              const horizontalLinePlugin = {
+                id: 'horizontalLine',
+                beforeDatasetsDraw: (chart) => {
+                  const ctx = chart.ctx;
+                  const yScale = chart.scales.y;
+                  const yValue = yScale.getPixelForValue(50); // Get pixel value for y = 50
+
+                  // Draw the line at y = 50, before the datasets are drawn
+                  ctx.save();
+                  ctx.beginPath();
+                  ctx.moveTo(chart.chartArea.left, yValue);
+                  ctx.lineTo(chart.chartArea.right, yValue);
+                  ctx.lineWidth = 2;
+                  ctx.strokeStyle = 'red';
+                  ctx.stroke();
+                  ctx.restore();
+                }
+              };
+
+              // Register the custom plugin globally
+              Chart.register(horizontalLinePlugin);
+
+              // First chart: Expected Democrat Vote Share
+              const ctx1 = document.getElementById('voteShareChart').getContext('2d');
+              new Chart(ctx1, {
+                type: 'line',
+                data: {
+                  labels: labels,
+                  datasets: [
+                    {
+                      label: 'PC Min',
+                      data: pcMin,
+                      borderColor: 'transparent',
+                      pointRadius: 0,
+                      fill: '+1',
+                      backgroundColor: 'rgba(0, 0, 255, 0.1)', // Light blue area
+                      showInLegend: false,
+                    },
+                    {
+                      label: 'PC Max',
+                      data: pcMax,
+                      borderColor: 'transparent',
+                      pointRadius: 0,
+                      fill: '-1',
+                      backgroundColor: 'rgba(0, 0, 255, 0.1)', // Light blue area
+                      showInLegend: false,
+                    },
+                    {
+                      label: 'Expected Democrat Vote Share',
+                      data: pcMode,
+                      borderColor: 'blue',
+                      backgroundColor: 'blue',
+                      pointBackgroundColor: 'blue',
+                      fill: false,
+                      tension: 0.1,
+                    }
+                  ]
+                },
+                options: {
+                  scales: {
+                    x: {
+                      type: 'time',
+                      time: {
+                        unit: 'day',
+                        tooltipFormat: 'YYYY-MM-DD',
+                        displayFormats: {
+                          day: 'YYYY-MM-DD',
+                        }
+                      },
+                      title: {
+                        display: true,
+                        text: 'Date'
+                      }
+                    },
+                    y: {
+                      title: {
+                        display: true,
+                        text: 'Percentage'
+                      },
+                      min: vote_y_scale_min,
+                      max: vote_y_scale_max,
+                      ticks: {
+                          callback: function(value) {
+                              // Only show ticks between 0 and 100
+                              if (value >= 0 && value <= 100) {
+                                  return value;
+                              }
+                              return ''; // Don't display ticks outside the range
+                          }
+                      }
+                    }
+                  },
+                  elements: {
+                    line: {
+                      borderWidth: 1,
+                    }
+                  },
+                  plugins: {
+                    legend: {
+                      labels: {
+                        filter: function(item) {
+                          return item.text !== 'PC Min' && item.text !== 'PC Max';
+                        }
+                      }
+                    }
+                  }
+                }
+              });
+
+              // Second chart: Probability of Democrat Win
+              const ctx2 = document.getElementById('demWinChart').getContext('2d');
+              new Chart(ctx2, {
+                type: 'line',
+                data: {
+                  labels: labels,
+                  datasets: [
+                    {
+                      label: 'Probability of Democrat Win',
+                      data: pDemWin,
+                      borderColor: 'black',
+                      backgroundColor: 'black',
+                      pointBackgroundColor: 'black',
+                      fill: false,
+                      tension: 0.1,
+                    }
+                  ]
+                },
+                options: {
+                  scales: {
+                    x: {
+                      type: 'time',
+                      time: {
+                        unit: 'day',
+                        tooltipFormat: 'YYYY-MM-DD',
+                        displayFormats: {
+                          day: 'YYYY-MM-DD',
+                        }
+                      },
+                      title: {
+                        display: true,
+                        text: 'Date'
+                      }
+                    },
+                    y: {
+                      title: {
+                        display: true,
+                        text: 'Percentage'
+                      },
+                      min: prob_y_scale_min,
+                      max: prob_y_scale_max,
+                      ticks: {
+                          callback: function(value) {
+                              // Only show ticks between 0 and 100
+                              if (value >= 0 && value <= 100) {
+                                  return value;
+                              }
+                              return ''; // Don't display ticks outside the range
+                          }
+                      }
+                    }
+                  },
+                  plugins: {
+                    legend: {
+                      display: true
+                    }
+                  }
+                }
+              });
+            </script>
+            <p>Below is a chart that shows the probability distribution of the Democrats' head-to-head vote share in <span id="blurb-state-name"></span> based on pollsters that are well-rated by 538 since the Sept 10 presidential debate. Vertical black lines indicate a roughly 95% confidence interval.</p>
             <canvas id="voteChart" width="400" height="200"></canvas>
-            <p id="most-likely-outcome">The most likely outcome is Harris winning with 50.6% of the head-to-head vote share.</p>
-            <p id="confidence-interval">With 95.6% confidence, Harris' head-to-head vote share will be between 50.0% and 51.3%.</p>
             <script>
                 // The data from Python (replace this with dynamically fetched data from your backend)
-                const dataFromPython = {"keys": [44.9, 45.0, 45.1, 45.2, 45.3, 45.4, 45.5, 45.6, 45.7, 45.8, 45.9, 46.0, 46.1, 46.2, 46.3, 46.4, 46.5, 46.6, 46.7, 46.8, 46.9, 47.0, 47.1, 47.2, 47.3, 47.4, 47.5, 47.6, 47.7, 47.8, 47.9, 48.0, 48.1, 48.2, 48.3, 48.4, 48.5, 48.6, 48.7, 48.8, 48.9, 49.0, 49.1, 49.2, 49.3, 49.4, 49.5, 49.6, 49.7, 49.8, 49.9, 50.0, 50.1, 50.2, 50.3, 50.4, 50.5, 50.6, 50.7, 50.8, 50.9, 51.0, 51.1, 51.2, 51.3, 51.4, 51.5, 51.6, 51.7, 51.8, 51.9, 52.0, 52.1, 52.2, 52.3, 52.4, 52.5, 52.6, 52.7, 52.8, 52.9, 53.0, 53.1, 53.2, 53.3, 53.4, 53.5, 53.6, 53.7, 53.8, 53.9, 54.0, 54.1, 54.2, 54.3, 54.4, 54.5, 54.6, 54.7, 54.8, 54.9], "values": [8.992610597482293e-110, 1.6024590637735759e-105, 8.580811721733058e-102, 4.0616635838874535e-98, 1.6007605342168486e-94, 5.257890537548778e-91, 1.5053475232909436e-87, 3.755755205576596e-84, 7.732458264037649e-81, 1.3878419319601224e-77, 1.8789363384954495e-74, 2.6925708010884242e-71, 2.9718845211476374e-68, 2.800514680504983e-65, 2.2112057977043946e-62, 1.5191677498907489e-59, 9.075218743653323e-57, 4.4696025772652616e-54, 1.8973934149820022e-51, 7.059026549966076e-49, 2.12152297932961e-46, 5.900305809934988e-44, 1.3276980359007397e-41, 2.6133411998710897e-39, 4.364421664878553e-37, 5.696163739896875e-35, 7.521457061506333e-33, 7.962411743822143e-31, 7.076659193974909e-29, 5.449550331774154e-27, 3.3466325582227217e-25, 1.9912555687877284e-23, 9.494152320819943e-22, 3.921373172975868e-20, 1.3652729635735446e-18, 4.1151828698918814e-17, 1.0668782611010414e-15, 2.3675760179558966e-14, 4.4422832749316014e-13, 7.237471758202222e-12, 9.860480262382752e-11, 1.1939665105629214e-09, 1.2122038929489932e-08, 1.067463841873196e-07, 7.991354564935761e-07, 5.116995797214091e-06, 2.8267637794878155e-05, 0.00013403047624657016, 0.0005413909643886909, 0.0018814202849045138, 0.004873388727153488, 0.014659631044613928, 0.03080041830362186, 0.05793331809693742, 0.09300411665679606, 0.12854670381996963, 0.15262184029127046, 0.15467582267022045, 0.1342080040371787, 0.10051446561701069, 0.06367023126489516, 0.03549581018844911, 0.016505621279608605, 0.006688960466037891, 0.00230713307427671, 0.0006827146671728667, 0.00017442286890712464, 3.7898776925113344e-05, 7.0507828940749195e-06, 1.1271959207663493e-06, 1.5370621900308594e-07, 1.880352675987911e-08, 1.827357921331163e-09, 1.573787987845141e-10, 1.1604525626177063e-11, 7.339441242522223e-13, 4.1924592494365567e-14, 1.8442314151691193e-15, 7.274059396967172e-17, 2.4921910440616424e-18, 7.194903557751436e-20, 1.8364089176302734e-21, 3.799654524531907e-23, 6.948018985992941e-25, 1.0675039323392808e-26, 1.4449447379619316e-28, 1.6532687178751942e-30, 1.5970913304868315e-32, 1.3176720347326185e-34, 9.415878262846238e-37, 5.6670203772580194e-39, 3.1821936102284476e-41, 1.3088432023361848e-43, 4.9455684452537134e-46, 1.5959168214964642e-48, 4.4323883714397783e-51, 1.0510527412568036e-53, 2.090224994787414e-56, 3.5450103747193535e-59, 5.223819796587627e-62, 6.3791992137505745e-65], "colors": ["red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue"], "ci_min": 50.1, "ci_max": 51.0, "ci_p": 95.1, "p_dem_win": 99.3, "title": "2024 Presidential Election Forecast for Pennsylvania", "projection": "There is a projected 99.3% chance that Harris wins Pennsylvania.", "most_likely": "The most likely outcome is Harris winning with 50.6% of the head-to-head vote share.", "confidence": "With 95.1% confidence, Harris' head-to-head vote share will be between 50.1% and 51.0%.", "state_name": "Pennsylvania", "abbrev": "PA"};
-                
+                const dataFromPython = {"keys": [44.9, 45.0, 45.1, 45.2, 45.3, 45.4, 45.5, 45.6, 45.7, 45.8, 45.9, 46.0, 46.1, 46.2, 46.3, 46.4, 46.5, 46.6, 46.7, 46.8, 46.9, 47.0, 47.1, 47.2, 47.3, 47.4, 47.5, 47.6, 47.7, 47.8, 47.9, 48.0, 48.1, 48.2, 48.3, 48.4, 48.5, 48.6, 48.7, 48.8, 48.9, 49.0, 49.1, 49.2, 49.3, 49.4, 49.5, 49.6, 49.7, 49.8, 49.9, 50.0, 50.1, 50.2, 50.3, 50.4, 50.5, 50.6, 50.7, 50.8, 50.9, 51.0, 51.1, 51.2, 51.3, 51.4, 51.5, 51.6, 51.7, 51.8, 51.9, 52.0, 52.1, 52.2, 52.3, 52.4, 52.5, 52.6, 52.7, 52.8, 52.9, 53.0, 53.1, 53.2, 53.3, 53.4, 53.5, 53.6, 53.7, 53.8, 53.9, 54.0, 54.1, 54.2, 54.3, 54.4, 54.5, 54.6, 54.7, 54.8, 54.9], "values": [8.992610597482288e-110, 1.6024590637735759e-105, 8.580811721733056e-102, 4.0616635838874516e-98, 1.6007605342168484e-94, 5.257890537548777e-91, 1.5053475232909427e-87, 3.7557552055765957e-84, 7.732458264037648e-81, 1.387841931960122e-77, 1.8789363384954487e-74, 2.6925708010884234e-71, 2.971884521147636e-68, 2.8005146805049824e-65, 2.2112057977043937e-62, 1.5191677498907487e-59, 9.075218743653318e-57, 4.46960257726526e-54, 1.8973934149820022e-51, 7.059026549966073e-49, 2.1215229793296098e-46, 5.9003058099349865e-44, 1.3276980359007392e-41, 2.6133411998710897e-39, 4.364421664878553e-37, 5.696163739896871e-35, 7.521457061506329e-33, 7.96241174382214e-31, 7.076659193974907e-29, 5.4495503317741516e-27, 3.34663255822272e-25, 1.9912555687877272e-23, 9.494152320819943e-22, 3.921373172975868e-20, 1.365272963573544e-18, 4.115182869891881e-17, 1.0668782611010412e-15, 2.3675760179558963e-14, 4.4422832749315994e-13, 7.23747175820222e-12, 9.860480262382751e-11, 1.193966510562921e-09, 1.2122038929489927e-08, 1.0674638418731956e-07, 7.991354564935759e-07, 5.11699579721409e-06, 2.826763779487815e-05, 0.00013403047624657008, 0.0005413909643886905, 0.001881420284904513, 0.004873388727153487, 0.014659631044613926, 0.03080041830362185, 0.0579333180969374, 0.09300411665679605, 0.12854670381996963, 0.1526218402912705, 0.1546758226702204, 0.13420800403717867, 0.10051446561701068, 0.06367023126489516, 0.03549581018844911, 0.016505621279608605, 0.006688960466037892, 0.0023071330742767105, 0.0006827146671728666, 0.00017442286890712467, 3.789877692511332e-05, 7.050782894074918e-06, 1.127195920766349e-06, 1.5370621900308591e-07, 1.8803526759879115e-08, 1.8273579213311628e-09, 1.573787987845141e-10, 1.160452562617706e-11, 7.339441242522222e-13, 4.1924592494365554e-14, 1.8442314151691193e-15, 7.274059396967168e-17, 2.492191044061643e-18, 7.194903557751434e-20, 1.836408917630273e-21, 3.7996545245319065e-23, 6.948018985992939e-25, 1.0675039323392805e-26, 1.4449447379619311e-28, 1.6532687178751942e-30, 1.597091330486831e-32, 1.317672034732618e-34, 9.415878262846236e-37, 5.667020377258017e-39, 3.1821936102284476e-41, 1.3088432023361848e-43, 4.945568445253712e-46, 1.5959168214964633e-48, 4.432388371439778e-51, 1.0510527412568034e-53, 2.090224994787413e-56, 3.545010374719353e-59, 5.223819796587627e-62, 6.3791992137505745e-65], "colors": ["red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "red", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue", "blue"], "ci_min": 50.1, "ci_max": 51.0, "ci_p": 95.1, "p_dem_win": 99.3, "title": "2024 Election Forecast for Pennsylvania", "projection": "There is a projected <span class='dem-vote'>99.3%</span> chance that <span class='dem-vote'>Harris</span> wins Pennsylvania.", "most_likely": "The most likely outcome is Harris winning with 50.6% of the head-to-head vote share.", "confidence": "With 95.1% confidence, Harris' head-to-head vote share will be between 50.1% and 51.0%.", "state_name": "Pennsylvania", "abbrev": "PA"};
+
                 // Set the title from the Python data
                 document.getElementById('page-title').textContent = dataFromPython.title;
-                document.getElementById('vote-projection').textContent = dataFromPython.projection;
+                document.getElementById('vote-projection').innerHTML = dataFromPython.projection;
                 document.getElementById('most-likely-outcome').textContent = dataFromPython.most_likely;
                 document.getElementById('confidence-interval').textContent = dataFromPython.confidence;
                 document.getElementById('blurb-state-name').textContent = dataFromPython.state_name;
@@ -163,6 +375,7 @@
                     }
                 });
             </script>
+            
             <h2 class="mb-3 mt-5" id="poll-data">Polling Data</h2>
             <h6>Credit to 538 for their incredibly generous sharing of aggregate 2024 polling data.</h6>
             <table class="poll-table">
@@ -215,23 +428,6 @@
                 <td>Oct 07 - 10</td>
                 <td><div class="stars-container" data-rating="3.0" title="3.0/3 Stars"></div></td>
                 <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">50%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">47%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">51.5%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">48.5%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>Siena/NYT</td>
-                <td>Oct 07 - 10</td>
-                <td><div class="stars-container" data-rating="3.0" title="3.0/3 Stars"></div></td>
-                <td><div class="vote-container">
                 <span class="candidate-name">Harris</span><span class="dem-vote">49%</span>
                 </div></td>
                 <td><div class="vote-container">
@@ -242,6 +438,23 @@
                 </div></td>
                 <td><div class="vote-container">
                 <span class="candidate-name">Trump</span><span class="rep-vote">47.9%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>Siena/NYT</td>
+                <td>Oct 07 - 10</td>
+                <td><div class="stars-container" data-rating="3.0" title="3.0/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">50%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">47%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.5%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.5%</span>
                 </div></td>
                 </tr>
                 <tr>
@@ -551,23 +764,6 @@
                 </div></td>
                 </tr>
                 <tr>
-                <td>University of Massachusetts Lowell/YouGov</td>
-                <td>Sep 11 - 19</td>
-                <td><div class="stars-container" data-rating="2.7" title="2.9/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">48%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">46%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">51.1%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">48.9%</span>
-                </div></td>
-                </tr>
-                <tr>
                 <td>Muhlenberg</td>
                 <td>Sep 16 - 19</td>
                 <td><div class="stars-container" data-rating="2.65" title="2.8/3 Stars"></div></td>
@@ -582,6 +778,23 @@
                 </div></td>
                 <td><div class="vote-container">
                 <span class="candidate-name">Trump</span><span class="rep-vote">50.0%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>University of Massachusetts Lowell/YouGov</td>
+                <td>Sep 11 - 19</td>
+                <td><div class="stars-container" data-rating="2.7" title="2.9/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">48%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">46%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.1%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.9%</span>
                 </div></td>
                 </tr>
                 <tr>
@@ -643,23 +856,6 @@
                 <span class="candidate-name">Harris</span><span class="dem-vote">49%</span>
                 </div></td>
                 <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">49%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">50.0%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">50.0%</span>
-                </div></td>
-                </tr>
-                <tr>
-                <td>Marist</td>
-                <td>Sep 12 - 17</td>
-                <td><div class="stars-container" data-rating="2.7" title="2.9/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">49%</span>
-                </div></td>
-                <td><div class="vote-container">
                 <span class="candidate-name">Trump</span><span class="rep-vote">48%</span>
                 </div></td>
                 <td><div class="vote-container">
@@ -670,20 +866,20 @@
                 </div></td>
                 </tr>
                 <tr>
-                <td>Quinnipiac</td>
-                <td>Sep 12 - 16</td>
-                <td><div class="stars-container" data-rating="2.65" title="2.8/3 Stars"></div></td>
+                <td>Marist</td>
+                <td>Sep 12 - 17</td>
+                <td><div class="stars-container" data-rating="2.7" title="2.9/3 Stars"></div></td>
                 <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">51%</span>
+                <span class="candidate-name">Harris</span><span class="dem-vote">49%</span>
                 </div></td>
                 <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">45%</span>
+                <span class="candidate-name">Trump</span><span class="rep-vote">49%</span>
                 </div></td>
                 <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">53.1%</span>
+                <span class="candidate-name">Harris</span><span class="dem-vote">50.0%</span>
                 </div></td>
                 <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">46.9%</span>
+                <span class="candidate-name">Trump</span><span class="rep-vote">50.0%</span>
                 </div></td>
                 </tr>
                 <tr>
@@ -742,6 +938,23 @@
                 <td>Sep 11 - 16</td>
                 <td><div class="stars-container" data-rating="3.0" title="3.0/3 Stars"></div></td>
                 <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">48%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">45%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">51.6%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">48.4%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>Siena/NYT</td>
+                <td>Sep 11 - 16</td>
+                <td><div class="stars-container" data-rating="3.0" title="3.0/3 Stars"></div></td>
+                <td><div class="vote-container">
                 <span class="candidate-name">Harris</span><span class="dem-vote">50%</span>
                 </div></td>
                 <td><div class="vote-container">
@@ -772,23 +985,6 @@
                 </div></td>
                 </tr>
                 <tr>
-                <td>Siena/NYT</td>
-                <td>Sep 11 - 16</td>
-                <td><div class="stars-container" data-rating="3.0" title="3.0/3 Stars"></div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">48%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">45%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Harris</span><span class="dem-vote">51.6%</span>
-                </div></td>
-                <td><div class="vote-container">
-                <span class="candidate-name">Trump</span><span class="rep-vote">48.4%</span>
-                </div></td>
-                </tr>
-                <tr>
                 <td>The Washington Post</td>
                 <td>Sep 12 - 16</td>
                 <td><div class="stars-container" data-rating="3.0" title="3.0/3 Stars"></div></td>
@@ -803,6 +999,23 @@
                 </div></td>
                 <td><div class="vote-container">
                 <span class="candidate-name">Trump</span><span class="rep-vote">50.0%</span>
+                </div></td>
+                </tr>
+                <tr>
+                <td>Quinnipiac</td>
+                <td>Sep 12 - 16</td>
+                <td><div class="stars-container" data-rating="2.65" title="2.8/3 Stars"></div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">51%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">45%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Harris</span><span class="dem-vote">53.1%</span>
+                </div></td>
+                <td><div class="vote-container">
+                <span class="candidate-name">Trump</span><span class="rep-vote">46.9%</span>
                 </div></td>
                 </tr>
                 <tr>
@@ -822,8 +1035,7 @@
                 <span class="candidate-name">Trump</span><span class="rep-vote">48.4%</span>
                 </div></td>
                 </tr>
-                </tbody>
-                
+                </tbody>                
             </table>
             <script>
               document.querySelectorAll('.stars-container').forEach(container => {
@@ -869,6 +1081,11 @@
           <div class="col-lg-4 sidebar ftco-animate">
             <div class="sticky-container">
               <div class="sidebar-box ftco-animate">
+              <!--
+              ************* Copyright (c) 2017 Pareto Softare, LLC DBA Simplemaps.com *******************		
+              ************* Free for Commercial Use, full terms at  http://simplemaps.com/resources/svg-license ************
+              ************* Attribution is appreciated! http://simplemaps.com ***************************
+              -->
               <svg
               xmlns:dc="http://purl.org/dc/elements/1.1/"
               xmlns:cc="http://creativecommons.org/ns#"
@@ -1368,9 +1585,32 @@
                 style="stroke-width:0.97063118000000004" />
               </svg>
               <div style='display:flex;justify-content:center;align-items: center;flex-direction: column;'>
-                <a style='margin-left:auto;margin-right:auto;margin-top:10px;margin-bottom:10px' href="election2024.html" class="btn btn-primary py-3 px-3">Return to Map</a>
-                <a style='margin-left:auto;margin-right:auto;margin-top:10px;margin-bottom:10px' href="#poll-data" class="btn btn-primary py-3 px-3">View Poll Data</a>
-              </div>
+                <a style='margin-left:auto;margin-right:auto;margin-top:10px;margin-bottom:20px' href="election2024.html" class="btn btn-primary py-3 px-3">Return to Map</a>
+                <button class="election-index-button" onclick="scrollToSection('voteShareChart')">Election Forecast</button>
+                <button class="election-index-button" onclick="scrollToSection('voteChart')">Expected Vote Share</button>
+                <button class="election-index-button" onclick="scrollToSection('poll-data')">Polling Data</button>
+                <a href='election-math.html'><button class="election-index-button">Methodology</button></a>
+                <a href='example-state-2024.html'><button class="election-index-button">See an Example</button></a>
+                <script>
+                  // Function to scroll to the section with a 100px offset
+                  function scrollToSection(sectionId) {
+                      const element = document.getElementById(sectionId);
+                      const offset = 100; // The desired offset (100px below the top)
+                  
+                      // Get the element's position relative to the document
+                      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+                  
+                      // Subtract the offset from the element's position and scroll to that position
+                      const offsetPosition = elementPosition - offset;
+                  
+                      // Scroll to the calculated position
+                      window.scrollTo({
+                          top: offsetPosition,
+                          behavior: 'smooth' // Smooth scrolling
+                      });
+                  }
+                  </script>
+                </div>
               </div>
             </div>
           </div>

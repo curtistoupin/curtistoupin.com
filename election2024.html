@@ -4,7 +4,8 @@
     <title>Curtis Toupin - 2024 Election</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=1920px"> 
+    <!--device-width, initial-scale=1, shrink-to-fit=no">-->
     
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
@@ -22,6 +23,39 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    <style>
+      
+      
+      /* New sleek smaller index buttons */
+      .election-index-button {
+        background-color: #f0f0f0;  /* Light gray background */
+        color: var(--gray-dark);  /* Darker text */
+        padding: 8px 16px;  /* Smaller padding */
+        border-radius: 8px;  /* Slightly rounded corners */
+        border: 1px solid #ccc;  /* Subtle border */
+        cursor: pointer;
+        font-size: 14px;  /* Smaller text size */
+        display: block;
+        margin: 5px 0;  /* Small space between index buttons */
+        transition: background-color 0.3s ease, color 0.3s ease;
+        min-width: 167px;
+        font-size: 13px;
+      }
+
+      /* Hover effect for index buttons */
+      .election-index-button:hover {
+        background-color: #3e64ff;  /* Blue background on hover */
+        color: white;  /* White text on hover */
+        border-color: #3e64ff;  /* Change border to blue */
+      }
+
+      /* Optional active state for currently active section */
+      .election-index-button.active {
+        background-color: #3e64ff;
+        color: white;
+        border-color: #3e64ff;
+      }
+    </style>
   </head>
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	  
@@ -52,10 +86,10 @@
         <div class="row">
           <div class="col-lg-8 ftco-animate" >
             <h2 class="mb-3" style="text-align: center;">2024 Presidential Election Forecast</h2>
-            <h4 style='text-align: center'>Harris has a <span class='dem-vote'>81.2%</span> chance to win.</h4>
-            <h4 style='text-align: center'>Trump has a <span class='rep-vote'>18.8%</span> chance to win.</h4>
+            <h4 style='text-align: center'>Harris has an <span class='dem-vote'>81.2%</span> chance to win.</h4>
+            <h4 style='text-align: center'>Trump has an <span class='rep-vote'>18.8%</span> chance to win.</h4>
             <h4 style='text-align: center'>There is a <span class='tie-vote'>0.0%</span> chance of a tie in the electoral college.</h4>
-            <h6 style="text-align: center">See below for more details or click on a swing state to see specifics.</h6>
+            <h6 style="text-align: center">See below for more details or click on a swing state for a closer look.</h6>
             <!--
             ************* Copyright (c) 2017 Pareto Softare, LLC DBA Simplemaps.com *******************		
             ************* Free for Commercial Use, full terms at  http://simplemaps.com/resources/svg-license ************
@@ -569,46 +603,48 @@
               </thead>
               <tbody>
                 <tr>
-                  <td>Arizona</td>
-                  <td><span class="dem-vote">0.0%</span></td>
-                  <td><span class="rep-vote">100.0%</span></td>
-                </tr>
-                <tr>
-                  <td>Georgia</td>
-                  <td><span class="dem-vote">0.2%</span></td>
-                  <td><span class="rep-vote">99.8%</span></td>
-                </tr>
-                <tr>
-                  <td>Michigan</td>
-                  <td><span class="dem-vote">60.1%</span></td>
-                  <td><span class="rep-vote">39.9%</span></td>
-                </tr>
-                <tr>
-                  <td>Nevada</td>
-                  <td><span class="dem-vote">73.2%</span></td>
-                  <td><span class="rep-vote">26.8%</span></td>
-                </tr>
-                <tr>
-                  <td>North Carolina</td>
-                  <td><span class="dem-vote">56.1%</span></td>
-                  <td><span class="rep-vote">43.9%</span></td>
-                </tr>
-                <tr>
-                  <td>Pennsylvania</td>
+                  <td><a href="pennsylvania-2024.html" style="color: #4682b4">Pennsylvania</a></td>
                   <td><span class="dem-vote">99.3%</span></td>
                   <td><span class="rep-vote">0.7%</span></td>
                 </tr>
                 <tr>
-                  <td>Wisconsin</td>
+                  <td><a href="wisconsin-2024.html" style="color: #5b759b">Wisconsin</a></td>
                   <td><span class="dem-vote">98.0%</span></td>
                   <td><span class="rep-vote">2.0%</span></td>
+                </tr>
+                <tr>
+                  <td><a href="nevada-2024.html" style="color: #6f697c">Nevada</a></td>
+                  <td><span class="dem-vote">73.2%</span></td>
+                  <td><span class="rep-vote">26.8%</span></td>
+                </tr>
+                <tr>
+                  <td><a href="michigan-2024.html" style="color: #845e61">Michigan</a></td>
+                  <td><span class="dem-vote">60.1%</span></td>
+                  <td><span class="rep-vote">39.9%</span></td>
+                </tr>
+                <tr>
+                  <td><a href="north-carolina-2024.html" style="color: #99434a">North Carolina</a></td>
+                  <td><span class="dem-vote">56.1%</span></td>
+                  <td><span class="rep-vote">43.9%</span></td>
+                </tr>
+                <tr>
+                  <td><a href="georgia-2024.html" style="color: #af2937">Georgia</a></td>
+                  <td><span class="dem-vote">0.2%</span></td>
+                  <td><span class="rep-vote">99.8%</span></td>
+                </tr>
+                <tr>
+                  <td><a href="arizona-2024.html" style="color: #dc143c">Arizona</a></td>
+                  <td><span class="dem-vote">0.0%</span></td>
+                  <td><span class="rep-vote">100.0%</span></td>
                 </tr>
               </tbody>
             </table>
             
+            
 
           </div> <!-- .col-md-8 -->
           <div class="col-lg-4 sidebar ftco-animate">
+            <!--
             <div class="sidebar-box ftco-animate">
               <h3 class="heading-sidebar">Categories</h3>
               <div class="tagcloud">
@@ -620,21 +656,22 @@
                 <a href="#" class="tag-cloud-link" disabled>Bayesian Inference</a>
               </div>
             </div>
-
-            <div class="sidebar-box ftco-animate">
-              <h3 class="heading-sidebar">Related Projects</h3>
-              <div class="block-21 mb-4 d-flex">
-                <a class="blog-img mr-4" style="background-image: url(images/election.jpg);"></a>
-                <div class="text">
-                  <h3 class="heading"><a href="election-math.html">Using Statistics to Forecast an Election</a></h3>
-                  <div class="meta">
+            -->
+            <div class="sticky-container">
+              <div class="sidebar-box ftco-animate">
+                <h3 class="heading-sidebar">Related Links</h3>
+                <div class="block-21 mb-4 d-flex">
+                  <div class="text">
+                    <a href='election-math.html'><button class="election-index-button">Methodology</button></a>
+                    <a href='example-state-2024.html'><button class="election-index-button">See an Example</button></a>
+                    <a href='https://github.com/curtistoupin/election-insights'><button class="election-index-button">Check My Work</button></a>
+                    <div class="meta">
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-
           </div>
-
         </div>
       </div>
     </section> <!-- .section -->

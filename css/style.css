@@ -10017,8 +10017,8 @@ path.swing:hover {
 .poll-table th:nth-child(3) {
   border-right: 2px solid #000; /* Make the border darker, adjust color to black or dark grey */
 }
-#poll-data, #bayesian-statistics {
-  scroll-margin-top: 100px; /* Adjust the value based on the height of your navbar */
+#poll-data, #bayesian-statistics, #voteChart, #scatterChart {
+  scroll-margin-top: 1000px; /* Adjust the value based on the height of your navbar */
 }
 .poll-table th {
   color: black;
@@ -10038,11 +10038,12 @@ li {
 }
 
 summary {
-  color: #0b636f; 
-  border:1px solid #e95f30; 
-  padding-left: 10px
+  color: #0b636f;
+  padding: 0px;
+  border: 1px solid #e95f30;
+  border-radius: 10px;
+  padding-left: 10px;
 }
-
 details {
   color: var(--gray-dark);
   margin-bottom: 15px;
@@ -10078,4 +10079,8 @@ th.top-left {
 div.latex-style {
   color: var(--gray-dark);
   margin:auto;
+}
+
+#voteShareChart, #demWinChart {
+  max-height: 300px;
 }
