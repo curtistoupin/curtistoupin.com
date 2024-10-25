@@ -10084,3 +10084,9 @@ div.latex-style {
 #voteShareChart, #demWinChart {
   max-height: 300px;
 }
+
+.float-left {
+  float: left;
+  margin: 0 0 10px 15px; /* Adds space around the image */
+  max-width: 350px; /* Optional: Set max width for the image */
+}

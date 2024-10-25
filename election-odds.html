@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Curtis Toupin - Even or Odd</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+      window.MathJax = {
+        loader: {load: ['[tex]/cancel']},
+        tex: {packages: {'[+]': ['cancel']}}
+      };
+    </script>
+    <script type="text/javascript">
+      window.MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        }
+      };
+    </script>
+    <script type="text/javascript" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+    <script type="text/javascript"
+      src="http://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Latin+Modern+Roman:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      #election-odds-table {
+            width: 100%;
+            table-layout: auto; /* Automatically adjust column widths */
+            border-collapse: collapse;
+            border-bottom: 2px solid black;
+        }
+
+        /* Style for table headers */
+        #election-odds-table th {
+            text-align: center;
+            font-size: 14px;
+            padding: 10px;
+            border: 1px solid black;
+            background-color: #eee;
+            min-width: 120px; /* Minimum width for each header */
+            white-space: nowrap; /* Prevent text from wrapping */
+            color:dimgray;
+        }
+
+        #election-odds-table td:first-child {
+          font-weight: bold;
+          background-color: #eee;
+          color:dimgray;
+        }
+
+        /* Style for table cells */
+        #election-odds-table td {
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            max-height: 15px;
+            font-size: 13px;
+        }
+
+        /* Style for table cells */
+        #election-odds-table td:nth-child(3) {
+            border-right: 1px solid #ddd;
+        }
+        
+        /* Style for table cells */
+        #election-odds-table td:nth-child(4) {
+            border-left: 1px solid #ddd;
+        }
+
+        /* Soft blue for Democratic vote */
+        .dem-odds {
+          background-color: #4682b4; /* Soft blue color */
+          font-weight: bold;
+          color: white;
+        }
+
+        /* Soft red for Republican vote */
+        .rep-odds {
+          background-color: #dc143c; /* Soft red color */
+          font-weight: bold;
+          color: white;
+        }
+        /* Soft red for Republican vote */
+        .tie-odds {
+          background-color: dimgray; /* Soft red color */
+          font-weight: bold;
+          color: white;
+        }
+      .election-index-button {
+        background-color: #f0f0f0;  /* Light gray background */
+        color: var(--gray-dark);  /* Darker text */
+        padding: 8px 16px;  /* Smaller padding */
+        border-radius: 8px;  /* Slightly rounded corners */
+        border: 1px solid #ccc;  /* Subtle border */
+        cursor: pointer;
+        font-size: 14px;  /* Smaller text size */
+        display: block;
+        margin: 5px 0;  /* Small space between index buttons */
+        transition: background-color 0.3s ease, color 0.3s ease;
+        min-width: 167px;
+        font-size: 13px;
+      }
+
+      /* Hover effect for index buttons */
+      .election-index-button:hover {
+        background-color: #3e64ff;  /* Blue background on hover */
+        color: white;  /* White text on hover */
+        border-color: #3e64ff;  /* Change border to blue */
+      }
+
+      /* Optional active state for currently active section */
+      .election-index-button.active {
+        background-color: #3e64ff;
+        color: white;
+        border-color: #3e64ff;
+      }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	       <ul class="navbar-nav nav ml-auto">
+	         <li class="nav-item"><a href="index.html" class="nav-link" style="font-weight: bold"><span>Home</span></a></li>
+	       </ul>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="portfolio.html" class="nav-link"><span>Portfolio</span></a></li>
+            <li class="nav-item"><a href="https://github.com/curtistoupin" class="nav-link"><span>GitHub</span></a></li>
+	          <li class="nav-item"><a href="blog.html" class="nav-link"><span>Blog</span></a></li>
+	          <li class="nav-item"><a href="#contact-me" class="nav-link"><span>Contact</span></a></li>
+		        <li class="nav-item"><p><a href="Curtis_Toupin_Resume.pdf" class="btn btn-primary py-3 px-3">Resume</a></p></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+
+    <section class="ftco-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 ftco-animate" >
+            <h2 class="mb-3" id="overview">Can betting odds predict the outcome of an election?</h2>
+            <p>With the 2024 presidential election just around the corner, I've been hearing more and more often that odds in the betting markets are better at predicting the outcome of an election that traditional polling. When people are putting their own money on the line, so the thinking goes, they are more likely to be honest about who they think <i>will</i> win the election as opposed to who they <i>want</i> to win the election.</p>
+            <p>I've always been somewhat skeptical of this claim. In and of itself, I can't imagine how bettors en masse would have insight into the nationwide state of the election other than to look at publicly available poll data. That is, if they even care about that, as I imagine many folks who vote believe their candidate is the best one for the job and think they are likely to win the election. If this is true, then the betting election odds should just be some amalgamation of the publicly avaiable polling data and the popular vote.</p>
+            <p>Naturally, I did what any sane person would do and collected information on the polling data, betting odds, and outcomes of the last 22 presidential elections, going back to the election of FDR in 1936.</p>
+            <table class="mb-5" id="election-odds-table">
+              <thead>
+                <tr>
+                  <th>Election</th>
+                  <th>Winner</th>
+                  <th colspan="2">Election Odds</th>
+                  <th>Polling</th>
+                  <th>Popular Vote</th>
+                  <th>EC Votes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1936</td>
+                  <td class="dem-vote"> Dem </td>
+                  <td class="dem-odds"> -250 </td>
+                  <td class="rep-"> +180 </td>
+                  <td class="dem-vote"> +12% </td>
+                  <td class="dem-vote"> +24.26% </td>
+                  <td class="dem-vote"> 532 </td>
+                </tr>
+                <tr>
+                  <td>1940</td>
+                  <td class="dem-vote"> Dem </td>
+                  <td class="dem-odds"> -200 </td>
+                  <td class="rep-"> +200 </td>
+                  <td class="dem-vote"> +4% </td>
+                  <td class="dem-vote"> +9.95% </td>
+                  <td class="dem-vote"> 449 </td>
+                </tr>
+                <tr>
+                  <td>1944</td>
+                  <td class="dem-vote"> Dem </td>
+                  <td class="dem-odds"> -340 </td>
+                  <td class="rep-"> +300 </td>
+                  <td class="dem-vote"> +3% </td>
+                  <td class="dem-vote"> +7.50% </td>
+                  <td class="dem-vote"> 432 </td>
+                </tr>
+                <tr>
+                  <td>1948</td>
+                  <td class="dem-vote"> Dem </td>
+                  <td class="dem-"> +1500 </td>
+                  <td class="rep-odds"> -1800 </td>
+                  <td class="rep-vote"> +5% </td>
+                  <td class="dem-vote"> +4.48% </td>
+                  <td class="dem-vote"> 303 </td>
+                </tr>
+                <tr>
+                  <td>1952</td>
+                  <td class="rep-vote"> Rep </td>
+                  <td class="tie-odds"> -120 </td>
+                  <td class="tie-odds"> -120 </td>
+                  <td class="rep-vote"> +2% </td>
+                  <td class="rep-vote"> +10.76% </td>
+                  <td class="rep-vote"> 442 </td>
+                </tr>
+                <tr>
+                  <td>1956</td>
+                  <td class="rep-vote"> Rep </td>
+                  <td class="dem-"> +500 </td>
+                  <td class="rep-odds"> -600 </td>
+                  <td class="rep-vote"> +19% </td>
+                  <td class="rep-vote"> +15.40% </td>
+                  <td class="rep-vote"> 457 </td>
+                </tr>
+                <tr>
+                  <td>1960</td>
+                  <td class="dem-vote"> Dem </td>
+                  <td class="dem-"> +110 </td>
+                  <td class="rep-odds"> -130 </td>
+                  <td class="dem-vote"> +2% </td>
+                  <td class="dem-vote"> +0.17% </td>
+                  <td class="dem-vote"> 303 </td>
+                </tr>
+                <tr>
+                  <td>1964</td>
+                  <td class="dem-vote"> Dem </td>
+                  <td class="dem-odds"> -3300 </td>
+                  <td class="rep-"> +2000 </td>
+                  <td class="dem-vote"> +28% </td>
+                  <td class="dem-vote"> +22.58% </td>
+                  <td class="dem-vote"> 486 </td>
+                </tr>
+                <tr>
+                  <td>1968</td>
+                  <td class="rep-vote"> Rep </td>
+                  <td class="dem-"> +180 </td>
+                  <td class="rep-odds"> -220 </td>
+                  <td class="rep-vote"> +1% </td>
+                  <td class="rep-vote"> +0.7% </td>
+                  <td class="rep-vote"> 301 </td>
+                </tr>
+                <tr>
+                  <td>1972</td>
+                  <td class="rep-vote"> Rep </td>
+                  <td class="dem-"> +5000 </td>
+                  <td class="rep-odds"> -10000 </td>
+                  <td class="rep-vote"> +24% </td>
+                  <td class="rep-vote"> +23.15% </td>
+                  <td class="rep-vote"> 520 </td>
+                </tr>
+                <tr>
+                  <td>1976</td>
+                  <td class="dem-vote"> Dem </td>
+                  <td class="dem-"> +100 </td>
+                  <td class="rep-odds"> -120 </td>
+                  <td class="rep-vote"> +1% </td>
+                  <td class="dem-vote"> +2.07% </td>
+                  <td class="dem-vote"> 297 </td>
+                </tr>
+                <tr>
+                  <td>1972</td>
+                  <td class="rep-vote"> Rep </td>
+                  <td class="dem-"> +160 </td>
+                  <td class="rep-odds"> -180 </td>
+                  <td class="rep-vote"> +3% </td>
+                  <td class="rep-vote"> +9.74% </td>
+                  <td class="rep-vote"> 489 </td>
+                </tr>
+                <tr>
+                  <td>1984</td>
+                  <td class="rep-vote"> Rep </td>
+                  <td class="dem-"> +400 </td>
+                  <td class="rep-odds"> -700 </td>
+                  <td class="rep-vote"> +18% </td>
+                  <td class="rep-vote"> +18.21% </td>
+                  <td class="rep-vote"> 525 </td>
+                </tr>
+                <tr>
+                  <td>1988</td>
+                  <td class="rep-vote"> Rep </td>
+                  <td class="dem-"> +400 </td>
+                  <td class="rep-odds"> -700 </td>
+                  <td class="rep-vote"> +12% </td>
+                  <td class="rep-vote"> +7.72% </td>
+                  <td class="rep-vote"> 426 </td>
+                </tr>
+                <tr>
+                  <td>1992</td>
+                  <td class="dem-vote"> Dem </td>
+                  <td class="dem-odds"> -800 </td>
+                  <td class="rep-"> +500 </td>
+                  <td class="dem-vote"> +12% </td>
+                  <td class="dem-vote"> +5.56% </td>
+                  <td class="dem-vote"> 370 </td>
+                </tr>
+                <tr>
+                  <td>1996</td>
+                  <td class="dem-vote"> Dem </td>
+                  <td class="dem-odds"> -1000 </td>
+                  <td class="rep-"> +600 </td>
+                  <td class="dem-vote"> +11% </td>
+                  <td class="dem-vote"> +8.51% </td>
+                  <td class="dem-vote"> 379 </td>
+                </tr>
+                <tr>
+                  <td>2000</td>
+                  <td class="rep-vote"> Rep </td>
+                  <td class="dem-"> +110 </td>
+                  <td class="rep-odds"> -150 </td>
+                  <td class="rep-vote"> +2% </td>
+                  <td class="dem-vote"> +0.51% </td>
+                  <td class="rep-vote"> 271 </td>
+                </tr>
+                <tr>
+                  <td>2004</td>
+                  <td class="rep-vote"> Rep </td>
+                  <td class="dem-"> +120 </td>
+                  <td class="rep-odds"> -140 </td>
+                  <td class="rep-vote"> +1% </td>
+                  <td class="rep-vote"> +2.47% </td>
+                  <td class="rep-vote"> 286 </td>
+                </tr>
+                <tr>
+                  <td>2008</td>
+                  <td class="dem-vote"> Dem </td>
+                  <td class="dem-odds"> -900 </td>
+                  <td class="rep-"> +800 </td>
+                  <td class="dem-vote"> +11% </td>
+                  <td class="dem-vote"> +7.26% </td>
+                  <td class="dem-vote"> 365 </td>
+                </tr>
+                <tr>
+                  <td>2012</td>
+                  <td class="dem-vote"> Dem </td>
+                  <td class="dem-odds"> -450 </td>
+                  <td class="rep-"> +360 </td>
+                  <td class="dem-vote"> +1% </td>
+                  <td class="dem-vote"> +3.86% </td>
+                  <td class="dem-vote"> 332 </td>
+                </tr>
+                <tr>
+                  <td>2016</td>
+                  <td class="rep-vote"> Rep </td>
+                  <td class="dem-odds"> -550 </td>
+                  <td class="rep-"> +375 </td>
+                  <td class="dem-vote"> +4% </td>
+                  <td class="dem-vote"> +2.09% </td>
+                  <td class="rep-vote"> 304 </td>
+                </tr>
+                <tr>
+                  <td>2020</td>
+                  <td class="dem-vote"> Dem </td>
+                  <td class="dem-odds"> -175 </td>
+                  <td class="rep-"> +150 </td>
+                  <td class="dem-vote"> +7% </td>
+                  <td class="dem-vote"> +4.45% </td>
+                  <td class="dem-vote"> 306 </td>
+                </tr>
+              </tbody>
+            </table>
+            <h5 id="predicting-outcomes">Predicting Outcomes</h5>
+            <p>If we sit down and tally up the results, we hit our first bump in the road. National polling only incorrectly predicted the winner of the election 3 of the last 22 elections. By contrast, the election odds incorrectly predicted the winner of the election 4 times, and failed to predict any winner at all an additional time bringing us up to 5 times the betting odds failed to predict the election outcome.</p>
+            <p>To make matters worse, it's not even like the odds sometimes predicted a winner that the polls didn't. The election odds only disagreed with the polling data twice of the last 22 elections, and in both cases, the polling data was <i>correct</i> and the betting odds were <i>wrong</i>.</p>
+            <p>Putting this together, the case is not looking great for the idea that betting odds hold any secret wisdom. As I suggested at the top of the article, it seems like the betting odds are for the most part a worse version of publicly available polling data. Actually, not just worse, but <i>strictly</i> worse.</p>
+            <p></p>
+            <h5 id="margin-of-victory">Margin of Victory</h5>
+            <p>I have seen at least one claim floating around that the polls might hold some value for predicting the <i>amount</i> by which the victor wins in the electoral college. That is, that when the spread in betting odds is larger that the difference in the number of electoral college vootes is larger. They had pointed out that there is a correlation of somewhere between -0.4 and -0.5 between the odds spread and the margin of victory.</p>
+            <img src="images/ecvodds.png" alt="The correlation between odds spread and margin of victory." class="float-right">
+            <p>As a refresher, the correlation is a measure of how much two variables change in lockstep, with values of -1 and 1 being perfect correlation and a value of 0 meaning no correlation. A correlation of -0.4 to -0.5 would definitely be of interest as that is quite a strong result. Indeed, open doing this myself I get a correlation of about -0.54, even stronger than claimed.</p>
+            <img src="images/pvvspolls.png" alt="The correlation between popular vote spread and polling spread." class="float-left">
+            <p>But this narrative begins to fall apart again when we start comparing against polling data instead. The correlation between the polling data spread and the margin if victory in both the popular vote and in the electoral college is much stronger, sitting at 0.90 and 0.83 respectively.</p>
+            <img src="images/ecvspolls.png" alt="The correlation between electoral college margin of victory and polling spread." class="float-right">
+            <p>In fact, comparing against the other variables I've collected, the betting odds have the strongest correlation with - you guessed it - the polling data! The correlation between these data is 0.74, compared to 0.64 for popular vote vs odds and the aforementioned 0.54 for the electoral college vs odds.</p>
+            <h5 id='in-summary'>In Summary</h5>
+            <p>Unfortunately, there doesn't seem to be any realistic case to be made that the involvement of real money makes betting market odds any better at predicting elections than good old-fashioned polling data. In fact, if anything, there is a case to be made that it makes the prediction worse.</p> 
+            <p>This may be especially important to keep in mind in the coming election. With prominent figures like Elon Musk using their influence to flood money into the betting markets in a partisan manner, it can give the appearance that something is there that isn't.</p>
+            <p>As tempting as it is to believe that there is some secret information that will help us predict the outcome, this is sadly not borne out by the data.</p>
+            
+          </div> <!-- .col-md-8 -->
+          <div class="col-lg-4 sidebar ftco-animate">
+            
+            <div class="sticky-container">
+            <div class="sidebar-box ftco-animate">
+              <img style="width:100%" class="mb-4" src='images/election-odds.jpg'/>
+              <div style='display:flex;justify-content:center;align-items: center;flex-direction: column;'>
+                <button class="election-index-button" onclick="scrollToSection('overview')">Overview</button>
+                <button class="election-index-button" onclick="scrollToSection('election-odds-table')">Past Election Data</button>
+                <button class="election-index-button" onclick="scrollToSection('predicting-outcomes')">Predicting Outcomes</button>
+                <button class="election-index-button" onclick="scrollToSection('margin-of-victory')">Margin of Victory</button>
+                <button class="election-index-button" onclick="scrollToSection('in-summary')">In Summary</button>
+                <script>
+                  // Function to scroll to the section with a 100px offset
+                  function scrollToSection(sectionId) {
+                      const element = document.getElementById(sectionId);
+                      const offset = 100; // The desired offset (100px below the top)
+                  
+                      // Get the element's position relative to the document
+                      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+                  
+                      // Subtract the offset from the element's position and scroll to that position
+                      const offsetPosition = elementPosition - offset;
+                  
+                      // Scroll to the calculated position
+                      window.scrollTo({
+                          top: offsetPosition,
+                          behavior: 'smooth' // Smooth scrolling
+                      });
+                  }
+                  </script>
+              </div>
+            </div>
+          </div>
+              <!--<h3 class="heading-sidebar">Recent Blog Posts</h3>-->
+              
+              <!--<div class="block-21 mb-4 d-flex">
+                <a class="blog-img mr-4" style="background-image: url(images/azure.png);"></a>
+                <div class="text">
+                  <h3 class="heading"><a href="deploy-dash-app-to-azure.html">Deploying a Python Dash App Using the Azure App Service</a></h3>
+                  <div class="meta">
+                  </div>
+                </div>
+              </div>-->
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section> <!-- .section -->
+
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About</h2>
+              <p>I am an experienced data scientist with a proven track record of success throughout multiple roles and domains. I have experience in information architecture, data engineering, data analytics, and quantitative modeling. Please feel free to reach out if you'd like to work together!</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                <li><a href="index.html#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                <li><a href="portfolio.html"><span class="icon-long-arrow-right mr-2"></span>Portfolio</a></li>
+                <li><a href="blog.html"><span class="icon-long-arrow-right mr-2"></span>Blog</a></li>
+                <li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- TODO CT Work on service
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Services</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
+              </ul>
+            </div>
+          </div>
+        -->
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2" id='contact-me'>Have a Question?</h2>
+            	<div class="block-23 mb-3">
+            		<p>Drop me a line!</p>
+	              <ul>
+	                <li><a href="mailto:mail@curtistoupin.com"><span class="icon icon-envelope"></span><span class="text">mail@curtistoupin.com</span></a></li>
+	              </ul>
+	              <!-- TODO CT ADD SOCIALS 
+	              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                	<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                	<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                	<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              	</ul>
+              	-->
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
