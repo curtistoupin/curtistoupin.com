@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Curtis Toupin - Data Science and Analytics</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #body {
+            display: flex;
+            height: 100vh;
+            margin: 0;
+        }
+        #sidebar {
+            width: 250px;
+            border-right: 1px solid #ddd;
+            overflow-y: auto;
+            background-color: #f8f9fa;
+        }
+        #main-panel {
+            flex-grow: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+    </style>
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	       <ul class="navbar-nav nav ml-auto">
+	         <li class="nav-item"><a href="index.html" class="nav-link" style="font-weight: bold"><span>Home</span></a></li>
+	       </ul>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="portfolio.html" class="nav-link"><span>Portfolio</span></a></li>
+            <li class="nav-item"><a href="https://github.com/curtistoupin" class="nav-link"><span>GitHub</span></a></li>
+	          <li class="nav-item"><a href="blog.html" class="nav-link"><span>Blog</span></a></li>
+	          <li class="nav-item"><a href="#contact-me" class="nav-link"><span>Contact</span></a></li>
+		        <li class="nav-item"><p><a href="Curtis_Toupin_Resume.pdf" class="btn btn-primary py-3 px-3">Resume</a></p></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+    <section class="ftco-section ftco-no-pb goto-here" id="about-section">
+    	<div id="body">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            #body {
+                display: flex;
+                height: 100vh;
+                margin: 0;
+            }
+            #sidebar {
+                width: 250px;
+                border-right: 1px solid #ddd;
+                overflow-y: auto;
+                background-color: #f8f9fa;
+            }
+            #main-panel {
+                flex-grow: 1;
+                padding: 20px;
+                overflow-y: auto;
+            }
+        </style>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+        <!-- Sidebar -->
+        <div id="sidebar" class="p-3">
+            <h4>Versioned Documents</h4>
+            <select id="versionSelector" class="form-select mb-3">
+                <!-- Versions will be populated dynamically -->
+            </select>
+            <div class="accordion" id="sidebarAccordion">
+                <!-- Sections will be loaded here -->
+            </div>
+            <button id="exportButton" class="btn btn-primary mt-3">Export to PDF</button>
+        </div>
+
+        <!-- Main Panel -->
+        <div id="main-panel">
+            <h2>Welcome!</h2>
+            <p>Select a version and section from the sidebar to display its content.</p>
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+        <script>
+            const dataUrl = "data.json"; // Path to your JSON file
+
+            // Function to load data
+            async function loadData() {
+                const response = await fetch(dataUrl);
+                const data = await response.json();
+
+                const versionSelector = document.getElementById('versionSelector');
+                const sidebar = document.getElementById('sidebarAccordion');
+                const mainPanel = document.getElementById('main-panel');
+
+                // Populate the version dropdown
+                data.documents.forEach(doc => {
+                    const option = document.createElement('option');
+                    option.value = doc.version;
+                    option.textContent = doc.version;
+                    versionSelector.appendChild(option);
+                });
+
+                // Autoselect the most recent version
+                const latestVersion = data.documents[data.documents.length - 1];
+                versionSelector.value = latestVersion.version;
+
+                // Load the most recent version's content
+                loadVersion(latestVersion);
+
+                // Event listener for version change
+                versionSelector.addEventListener('change', () => {
+                    const selectedVersion = versionSelector.value;
+                    const document = data.documents.find(doc => doc.version === selectedVersion);
+                    if (document) {
+                        loadVersion(document);
+                    }
+                });
+
+                // Function to load a specific version
+                function loadVersion(document) {
+                    // Clear existing content
+                    sidebar.innerHTML = '';
+                    mainPanel.innerHTML = `<h2>Welcome!</h2><p>Select a section from the sidebar to display its content.</p>`;
+
+                    // Populate the sidebar with sections and subheaders
+                    document.sections.forEach((section, index) => {
+                        const sectionId = `collapse${index}`;
+                        const headerHtml = `
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="heading${index}">
+                                    <button class="accordion-button collapsed section-link" type="button" data-bs-toggle="collapse" data-bs-target="#${sectionId}" aria-expanded="false" aria-controls="${sectionId}" data-content="${encodeURIComponent(section.content)}">
+                                        ${section.header}
+                                    </button>
+                                </h2>
+                                <div id="${sectionId}" class="accordion-collapse collapse" aria-labelledby="heading${index}" data-bs-parent="#sidebarAccordion">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            ${section.subheaders.map((subheader, subIndex) => `
+                                                <li><a href="#" class="content-link" data-content="${encodeURIComponent(subheader.content)}">${subheader.title}</a></li>
+                                            `).join('')}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        sidebar.innerHTML += headerHtml;
+                    });
+
+                    // Attach event listeners to dynamically created elements
+                    attachEventListeners();
+                }
+
+                // Function to attach event listeners to sections and subheaders
+                function attachEventListeners() {
+                    // Event listener for section headers
+                    document.querySelectorAll('.section-link').forEach(link => {
+                        link.addEventListener('click', function () {
+                            const content = decodeURIComponent(this.getAttribute('data-content'));
+                            mainPanel.innerHTML = content; // Display section content
+                        });
+                    });
+
+                    // Event listener for subheaders
+                    document.querySelectorAll('.content-link').forEach(link => {
+                        link.addEventListener('click', function (e) {
+                            e.preventDefault();
+                            const content = decodeURIComponent(this.getAttribute('data-content'));
+                            mainPanel.innerHTML = content; // Display subheader content
+                        });
+                    });
+                }
+            }
+            
+            // Helper function to clean HTML tags
+            const stripHtmlTags = (html) => html.replace(/<[^>]*>?/gm, "");
+
+            // Function to create the PDF for the selected version
+            function createPDFForVersion(document) {
+                const { jsPDF } = window.jspdf; // Get jsPDF object
+                const doc = new jsPDF({
+                    orientation: "portrait",
+                    unit: "pt",
+                    format: "letter",
+                });
+                const pageWidth = doc.internal.pageSize.width;
+                const pageHeight = doc.internal.pageSize.height;
+
+                let yPosition = 40; // Start position for content
+                const margin = 40;
+                const lineHeight = 16;
+
+                // Define reusable styles
+                const styles = {
+                    header: { fontSize: 18, fontStyle: "bold" },
+                    subheader: { fontSize: 14, fontStyle: "bold" },
+                    content: { fontSize: 12, fontStyle: "normal" },
+                };
+
+                // Helper function to draw text with custom styles
+                const drawText = (text, x, y, options = {}) => {
+                    const { fontSize, fontStyle, maxWidth } = options;
+                    if (fontSize) doc.setFontSize(fontSize);
+                    if (fontStyle) doc.setFont(undefined, fontStyle);
+                    if (maxWidth) {
+                        doc.text(text, x, y, { maxWidth });
+                    } else {
+                        doc.text(text, x, y);
+                    }
+                };
+
+                // Add version as the main header
+                drawText(`Version: ${document.version}`, margin, yPosition, styles.header);
+                yPosition += lineHeight + 10;
+
+                document.sections.forEach((section) => {
+                    // Add section header
+                    drawText(section.header, margin, yPosition, styles.subheader);
+                    yPosition += lineHeight;
+
+                    // Add section content
+                    drawText(section.content.replace(/<[^>]*>?/gm, ""), margin, yPosition, {
+                        ...styles.content,
+                        maxWidth: pageWidth - 2 * margin,
+                    });
+                    yPosition += lineHeight + 10;
+
+                    // Add subheaders
+                    section.subheaders.forEach((subheader) => {
+                        // Add subheader title
+                        drawText(`- ${subheader.title}`, margin + 10, yPosition, styles.subheader);
+                        yPosition += lineHeight;
+
+                        // Add subheader content
+                        drawText(subheader.content.replace(/<[^>]*>?/gm, ""), margin + 20, yPosition, {
+                            ...styles.content,
+                            maxWidth: pageWidth - 2 * margin - 20,
+                        });
+                        yPosition += lineHeight + 10;
+
+                        // Handle page overflow
+                        if (yPosition > pageHeight - margin) {
+                            doc.addPage();
+                            yPosition = margin;
+                        }
+                    });
+                });
+
+                // Save the PDF
+                doc.save(`${document.version}-documentation.pdf`);
+            }
+
+            // Update the export button click event to export the selected version
+            document.getElementById("exportButton").addEventListener("click", () => {
+                const versionSelector = document.getElementById("versionSelector");
+                const selectedVersion = versionSelector.value;
+
+                // Fetch the JSON data from the file
+                fetch('./data.json')
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`Failed to load JSON file: ${response.statusText}`);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        // Find the document corresponding to the selected version
+                        const selectedDocument = data.documents.find(doc => doc.version === selectedVersion);
+                        if (selectedDocument) {
+                            createPDFForVersion(selectedDocument);
+                        } else {
+                            console.error("Selected version not found in the data.");
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Error loading JSON file:", error);
+                    });
+            });
+            // Load data on page load
+            loadData();
+        </script>
+    </div>
+    </section>
+
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About</h2>
+              <p>I am an experienced data scientist with a proven track record of success throughout multiple roles and domains. I have experience in information architecture, data engineering, data analytics, and quantitative modeling. Please feel free to reach out if you'd like to work together!</p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                <li><a href="index.html#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                <li><a href="portfolio.html"><span class="icon-long-arrow-right mr-2"></span>Portfolio</a></li>
+                <li><a href="blog.html"><span class="icon-long-arrow-right mr-2"></span>Blog</a></li>
+                <li><a href="index.html"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- TODO CT Work on service
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Services</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Design</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Web Development</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Business Strategy</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Data Analysis</a></li>
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Graphic Design</a></li>
+              </ul>
+            </div>
+          </div>
+        -->
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2" id='contact-me'>Have a Question?</h2>
+            	<div class="block-23 mb-3">
+            		<p>Drop me a line!</p>
+	              <ul>
+	                <li><a href="mailto:mail@curtistoupin.com"><span class="icon icon-envelope"></span><span class="text">mail@curtistoupin.com</span></a></li>
+	              </ul>
+	              <!-- TODO CT ADD SOCIALS 
+	              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                	<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                	<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                	<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              	</ul>
+              	-->
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>

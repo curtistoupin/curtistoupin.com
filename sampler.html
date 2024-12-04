@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Sampler</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            text-align: left;
+            font-weight: bold;
+            color: #666;
+        }
+
+        input[type="number"],
+        input[type="file"],
+        button {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        input[type="number"]:focus,
+        input[type="file"]:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .success-message {
+            color: green;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Random Sampler Generator</h1>
+        <form id="sampleForm">
+            <label for="numSamples">Number of Samples:</label>
+            <input type="number" id="numSamples" name="numSamples" min="1" placeholder="Enter sample size" required>
+            
+            <label for="csvFile">Choose a CSV File to Sample:</label>
+            <input type="file" id="csvFile" name="csvFile" accept=".csv" required>
+            
+            <button type="submit">Get Sample</button>
+        </form>
+        <p class="error-message" id="errorMessage" style="display: none;"></p>
+        <p class="success-message" id="successMessage" style="display: none;"></p>
+    </div>
+
+    <script>
+        document.getElementById('sampleForm').addEventListener('submit', async function(event) {
+            event.preventDefault(); // Prevent default form submission behavior
+
+            // Hide previous messages
+            const errorMessage = document.getElementById('errorMessage');
+            const successMessage = document.getElementById('successMessage');
+            errorMessage.style.display = 'none';
+            successMessage.style.display = 'none';
+
+            const numSamples = parseInt(document.getElementById('numSamples').value, 10);
+            const fileInput = document.getElementById('csvFile');
+            const file = fileInput.files[0];
+
+            if (!file) {
+                showError("Please select a file.");
+                return;
+            }
+
+            if (!file.name.endsWith('.csv')) {
+                showError("The selected file is not a CSV file.");
+                return;
+            }
+
+            const fileName = file.name.split('.').slice(0, -1).join('.');
+            const reader = new FileReader();
+
+            reader.onload = function(event) {
+                const csvContent = event.target.result;
+                const rows = csvContent.split('\n').filter(row => row.trim() !== ''); // Split into rows
+                if (rows.length <= 1) {
+                    showError("The file has no data or is not properly formatted.");
+                    return;
+                }
+
+                const header = rows[0];
+                const dataRows = rows.slice(1);
+                if (numSamples > dataRows.length) {
+                    showError("The requested sample size exceeds the number of available rows.");
+                    return;
+                }
+
+                const sampledRows = [header, ...shuffleArray(dataRows).slice(0, numSamples)];
+
+                const sampledContent = sampledRows.join('\n');
+                const blob = new Blob([sampledContent], { type: 'text/csv' });
+                const downloadLink = document.createElement('a');
+                downloadLink.href = URL.createObjectURL(blob);
+                downloadLink.download = `${fileName}_sample_size_${numSamples}.csv`;
+                downloadLink.click();
+
+                showSuccess("Sample successful.");
+            };
+
+            reader.onerror = function() {
+                showError("Error reading the file. Please try again.");
+            };
+
+            reader.readAsText(file);
+        });
+
+        function showError(message) {
+            const errorMessage = document.getElementById('errorMessage');
+            errorMessage.textContent = message;
+            errorMessage.style.display = 'block';
+        }
+
+        function showSuccess(message) {
+            const successMessage = document.getElementById('successMessage');
+            successMessage.textContent = message;
+            successMessage.style.display = 'block';
+        }
+
+        // Helper function to shuffle array (Fisher-Yates Shuffle)
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+    </script>
+</body>
+</html>
