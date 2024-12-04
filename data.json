@@ -1,58 +1,259 @@
 {
     "documents": [
         {
-            "version": "v1.0",
+            "version": "Developer Docs",
             "sections": [
                 {
-                    "header": "Section 1v1.0",
-                    "content": "<h3>Section 1 Content</h3><p>This is the content for Section 1 in version v1.0.</p>",
+                    "header": "Overview",
+                    "content": "<h3>Overview</h3><p>This project provides a system for visualizing and analyzing metagame data in Magic: The Gathering (MtG). It includes components for data modeling, graph construction, visualization, and interactive analysis using Dash and visdcc.</p>",
                     "subheaders": [
                         {
-                            "title": "Subheader 1.1",
-                            "content": "<h3>Subheader 1.1</h3><p>This is the content for Subheader 1.1 in version v1.0.</p>"
+                            "title": "Key Features",
+                            "content": "<h3>Key Features</h3><ul><li>Graph-based representation of MtG cards and their relationships.</li><li>Interactive visualization and analysis using Dash.</li><li>Support for searching, filtering, and neighborhood exploration.</li><li>Dynamic scaling of node and edge properties based on data attributes.</li></ul>"
                         }
                     ]
                 },
                 {
-                    "header": "Section 2v1.0",
-                    "content": "<h3>Section 1 Content</h3><p>This is the content for Section 2 in version v1.0.</p>",
+                    "header": "Modules",
+                    "content": "<h3>Modules</h3><p>The system is divided into four main modules:</p>",
                     "subheaders": [
                         {
-                            "title": "Subheader 1.1",
-                            "content": "<h3>Subheader 1.1</h3><p>This is the content for Subheader 1.1 in version v1.0.</p>"
+                            "title": "graph.py",
+                            "content": "<h3>graph.py</h3><p>Defines the core data structures for cards, edges, and paths in the graph.</p><ul><li><b>Card</b>: Represents an MtG card as a node.</li><li><b>Edge</b>: Represents relationships between cards in decks.</li><li><b>Path</b>: Represents a sequence of connected edges.</li></ul>"
+                        },
+                        {
+                            "title": "metagame.py",
+                            "content": "<h3>metagame.py</h3><p>Models the metagame and formats:</p><ul><li><b>Format</b>: Represents a specific MtG format.</li><li><b>Metagame</b>: Aggregates cards and formats, preparing data for visualization.</li></ul>"
+                        },
+                        {
+                            "title": "visual_styles.py",
+                            "content": "<h3>visual_styles.py</h3><p>Provides constants and utilities for graph styling and layout:</p><ul><li>Defines default colors, sizes, and visual options.</li><li>Dynamic scaling based on node and edge data.</li></ul>"
+                        },
+                        {
+                            "title": "mavis.py",
+                            "content": "<h3>mavis.py</h3><p>Main application module that integrates all components and provides the interactive Dash app.</p><ul><li>Loads data from JSON files into the metagame model.</li><li>Implements search, filter, and visualization callbacks.</li><li>Exports graph data for external use.</li></ul>"
+                        }
+                    ]
+                },
+                {
+                    "header": "How It Works",
+                    "content": "<h3>How It Works</h3><p>This section describes the workflow of the system:</p>",
+                    "subheaders": [
+                        {
+                            "title": "Data Import",
+                            "content": "<h3>Data Import</h3><p>JSON files containing card details and edge relationships are loaded into the Metagame model.</p>"
+                        },
+                        {
+                            "title": "Graph Construction",
+                            "content": "<h3>Graph Construction</h3><p>Cards are represented as nodes, and relationships between them are represented as edges in the graph.</p>"
+                        },
+                        {
+                            "title": "Interactive Analysis",
+                            "content": "<h3>Interactive Analysis</h3><p>The Dash app provides an interface for exploring the graph through search, filtering, resizing nodes, and neighborhood visualization.</p>"
+                        },
+                        {
+                            "title": "Export",
+                            "content": "<h3>Export</h3><p>Users can export the graph data, such as nodes and edges, in CSV format for external use.</p>"
+                        }
+                    ]
+                },
+                {
+                    "header": "Use Cases",
+                    "content": "<h3>Use Cases</h3><p>This system can be used for:</p>",
+                    "subheaders": [
+                        {
+                            "title": "Game Analysis",
+                            "content": "<h3>Game Analysis</h3><p>Understand card popularity and synergies in different formats.</p>"
+                        },
+                        {
+                            "title": "Metagame Insights",
+                            "content": "<h3>Metagame Insights</h3><p>Identify key cards or archetypes in a format.</p>"
+                        },
+                        {
+                            "title": "Community Engagement",
+                            "content": "<h3>Community Engagement</h3><p>Share visualized insights with players or deckbuilders.</p>"
                         }
                     ]
                 }
             ]
         },
         {
-            "version": "v1.1",
+            "version": "Updated Developer Docs",
             "sections": [
                 {
-                    "header": "Section 1v1.1",
-                    "content": "<h3>Section 1 Content</h3><p>This is the content for Section 1 in version v1.1.</p>",
+                    "header": "Overview",
+                    "content": "<h3>Overview</h3><p>This system models and visualizes Magic: The Gathering (MtG) metagame data. It includes modules for constructing and interacting with graphs, managing metagame data, applying visual styles, and rendering an interactive web application. The system is modular, extensible, and designed to facilitate detailed analysis of card relationships.</p>",
                     "subheaders": [
                         {
-                            "title": "Subheader 1.1",
-                            "content": "<h3>Subheader 1.1</h3><p>This is the content for Subheader 1.1 in version v1.1.</p>"
-                        },
-                        {
-                            "title": "Subheader 1.2",
-                            "content": "<h3>Subheader 1.2</h3><p>This is new content for Subheader 1.2 in version v1.1.</p>"
+                            "title": "Key Features",
+                            "content": "<h3>Key Features</h3><ul><li>Graph-based modeling of cards and their relationships.</li><li>Support for multiple metagame formats.</li><li>Customizable visualization styles.</li><li>Interactive Dash-based user interface.</li></ul>"
                         }
                     ]
                 },
                 {
-                    "header": "Section 2v1.1",
-                    "content": "<h3>Section 2 Content</h3><p>This is the content for Section 2 in version v1.1.</p>",
+                    "header": "Module Descriptions",
+                    "content": "<h3>Module Descriptions</h3><p>This section provides an overview of each module and its components.</p>",
                     "subheaders": [
                         {
-                            "title": "Subheader 2.1",
-                            "content": "<h3>Subheader 2.1</h3><p>This is the content for Subheader 2.1 in version v1.1.</p>"
+                            "title": "graph.py",
+                            "content": "<h3>graph.py</h3><p>This module provides the core graph structures for the system.</p><ul><li><b>Card</b>: Represents an MtG card with attributes like name, type, count, and total appearances.</li><li><b>Edge</b>: Represents relationships between cards, such as appearing in the same deck.</li><li><b>Path</b>: Represents sequences of connected edges with no repeated nodes.</li></ul>"
+                        },
+                        {
+                            "title": "metagame.py",
+                            "content": "<h3>metagame.py</h3><p>This module manages the metagame and its formats.</p><ul><li><b>Metagame</b>: Aggregates cards and formats, and provides utilities for data retrieval.</li><li><b>Format</b>: Represents a specific metagame format, including its edges and relationships.</li></ul>"
+                        },
+                        {
+                            "title": "visual_styles.py",
+                            "content": "<h3>visual_styles.py</h3><p>This module defines visualization styles and utilities for rendering the graph.</p><ul><li><b>Constants</b>: Default colors, sizes, and options for nodes and edges.</li><li><b>Utilities</b>: Functions for scaling, coloring, and layout generation.</li></ul>"
+                        },
+                        {
+                            "title": "mavis.py",
+                            "content": "<h3>mavis.py</h3><p>The main application module that integrates all components into a Dash-based interactive interface.</p><ul><li><b>Mavis</b>: The core class responsible for managing the app and its interactions.</li></ul>"
+                        }
+                    ]
+                },
+                {
+                    "header": "Function and Class Descriptions",
+                    "content": "<h3>Function and Class Descriptions</h3><p>This section describes each class and function in detail, organized by module.</p>",
+                    "subheaders": [
+                        {
+                            "title": "graph.py Functions and Classes",
+                            "content": "<h3>graph.py</h3><ul><li><b>Card</b>: Represents an MtG card. Attributes include name, type, count, total, and ID. Includes methods for string representation and creating edges.</li><li><b>Edge</b>: Represents relationships between cards. Attributes include source, target, count, and total. Methods include <code>is_loop()</code> to check for loops and addition to form paths.</li><li><b>Path</b>: Represents sequences of connected edges. Validates paths for connectivity and uniqueness of nodes.</li></ul>"
+                        },
+                        {
+                            "title": "metagame.py Functions and Classes",
+                            "content": "<h3>metagame.py</h3><ul><li><b>Metagame</b>: Manages cards and formats. Methods include adding cards, creating formats, and exporting data for visualization.</li><li><b>Format</b>: Represents a specific format with edges. Includes methods for neighborhood exploration and format-specific edge retrieval.</li></ul>"
+                        },
+                        {
+                            "title": "visual_styles.py Functions and Utilities",
+                            "content": "<h3>visual_styles.py</h3><ul><li><b>Constants</b>: Defines default visual properties for nodes and edges.</li><li><b>get_node_and_edge_scaling_vars</b>: Computes scaling variables for numerical attributes of nodes and edges.</li><li><b>get_app_layout</b>: Generates the layout for the Dash app, including graph and control panels.</li></ul>"
+                        },
+                        {
+                            "title": "mavis.py Functions and Classes",
+                            "content": "<h3>mavis.py</h3><ul><li><b>Mavis</b>: Encapsulates the Dash application. Methods include <code>_import_from_json()</code> for loading data, callbacks for handling user interactions, and app creation.</li></ul>"
+                        }
+                    ]
+                },
+                {
+                    "header": "Interacting with the Code",
+                    "content": "<h3>Interacting with the Code</h3><p>This section describes how to interact with the system programmatically and through the user interface.</p>",
+                    "subheaders": [
+                        {
+                            "title": "Programmatic Interaction",
+                            "content": "<h3>Programmatic Interaction</h3><ul><li>Import <code>graph.py</code> to create cards and edges.</li><li>Use <code>metagame.py</code> to aggregate cards into formats and initialize the metagame.</li><li>Extend <code>visual_styles.py</code> to customize visual styles.</li><li>Run <code>mavis.py</code> to launch the Dash app.</li></ul>"
+                        },
+                        {
+                            "title": "User Interface Interaction",
+                            "content": "<h3>User Interface Interaction</h3><p>Launch the Dash app with <code>python mavis.py</code>. Use the following features:</p><ul><li>Select formats to filter data.</li><li>Search for cards by name.</li><li>Explore neighborhoods of selected cards.</li><li>Customize node sizes and colors.</li><li>Export the graph as a CSV file.</li></ul>"
+                        }
+                    ]
+                },
+                {
+                    "header": "Warnings and Considerations",
+                    "content": "<h3>Warnings and Considerations</h3><p>Important points to keep in mind when using the system:</p>",
+                    "subheaders": [
+                        {
+                            "title": "Performance",
+                            "content": "<h3>Performance</h3><p>Large datasets may cause performance issues in the Dash app. Use filtering and neighborhood features to optimize rendering.</p>"
+                        },
+                        {
+                            "title": "Data Validation",
+                            "content": "<h3>Data Validation</h3><p>Ensure JSON input files are well-formed and consistent. Missing or invalid data can lead to crashes.</p>"
+                        },
+                        {
+                            "title": "Extensibility",
+                            "content": "<h3>Extensibility</h3><p>The system is modular but interdependent. Changes to one module (e.g., <code>graph.py</code>) may require updates to other modules (e.g., <code>metagame.py</code>).</p>"
                         }
                     ]
                 }
             ]
+        },
+        {
+            "version": "User Docs",
+            "sections": [
+                {
+                    "header": "Overview",
+                    "content": "<h3>Overview</h3><p>This application allows users to explore and analyze the relationships between Magic: The Gathering (MtG) cards in various formats through an interactive graph interface. Users can search, filter, and visualize card data to gain insights into the metagame.</p>",
+                    "subheaders": [
+                        {
+                            "title": "Key Features",
+                            "content": "<h3>Key Features</h3><ul><li>Visualize cards and their relationships in an interactive graph.</li><li>Search for specific cards or filter the graph based on attributes.</li><li>Highlight neighborhoods to explore related cards.</li><li>Export graph data as a CSV for further analysis.</li></ul>"
+                        }
+                    ]
+                },
+                {
+                    "header": "Getting Started",
+                    "content": "<h3>Getting Started</h3><p>When you first open the application, you will see a graph representing cards as nodes and their relationships as edges. Use the panels on the left to customize your view and interact with the graph.</p>",
+                    "subheaders": [
+                        {
+                            "title": "Graph Area",
+                            "content": "<h3>Graph Area</h3><p>The main area displays the graph. You can:</p><ul><li>Click on nodes (cards) to select them.</li><li>Drag nodes to rearrange the layout.</li><li>Zoom in and out using your mouse or trackpad.</li></ul>"
+                        },
+                        {
+                            "title": "Sidebar Panels",
+                            "content": "<h3>Sidebar Panels</h3><p>The left side of the interface contains panels for selecting formats, applying filters, and customizing the graph's appearance.</p>"
+                        }
+                    ]
+                },
+                {
+                    "header": "Using the Interface",
+                    "content": "<h3>Using the Interface</h3><p>This section describes how to use each component of the interface:</p>",
+                    "subheaders": [
+                        {
+                            "title": "Format Selection",
+                            "content": "<h3>Format Selection</h3><p>Use the <b>Format Selection</b> dropdown to choose a specific MtG format (e.g., Standard, Modern). The graph will update to show data for the selected format.</p>"
+                        },
+                        {
+                            "title": "Search",
+                            "content": "<h3>Search</h3><p>Enter a card name in the search bar to highlight matching nodes in the graph. The graph dynamically updates to show only relevant results.</p>"
+                        },
+                        {
+                            "title": "Neighborhoods",
+                            "content": "<h3>Neighborhoods</h3><p>Use the <b>Neighborhood Type</b> dropdown to explore related cards:</p><ul><li><b>Direct Neighbors</b>: Shows cards that are directly connected.</li><li><b>2-Neighbors</b>: Shows cards within two connections.</li></ul>"
+                        },
+                        {
+                            "title": "Color and Size Options",
+                            "content": "<h3>Color and Size Options</h3><p>Customize the appearance of the graph:</p><ul><li><b>Color Nodes By</b>: Assign colors to nodes based on categorical attributes (e.g., card type).</li><li><b>Size Nodes By</b>: Adjust the size of nodes based on numerical attributes (e.g., deck count).</li></ul>"
+                        },
+                        {
+                            "title": "Export Data",
+                            "content": "<h3>Export Data</h3><p>Click the <b>Export CSV</b> button to download a CSV file containing the current graph's nodes and edges for offline analysis.</p>"
+                        }
+                    ]
+                },
+                {
+                    "header": "Tips for Exploration",
+                    "content": "<h3>Tips for Exploration</h3><p>Here are some tips to help you make the most of the application:</p>",
+                    "subheaders": [
+                        {
+                            "title": "Focus on Specific Cards",
+                            "content": "<h3>Focus on Specific Cards</h3><p>Use the search bar to quickly locate and analyze a particular card and its relationships.</p>"
+                        },
+                        {
+                            "title": "Explore Relationships",
+                            "content": "<h3>Explore Relationships</h3><p>Switch between neighborhood views to see how cards connect to others in the metagame.</p>"
+                        },
+                        {
+                            "title": "Adjust Visualization",
+                            "content": "<h3>Adjust Visualization</h3><p>Customize node sizes and colors to highlight specific trends or patterns in the graph.</p>"
+                        }
+                    ]
+                },
+                {
+                    "header": "Troubleshooting",
+                    "content": "<h3>Troubleshooting</h3><p>If you encounter issues while using the application, try the following:</p>",
+                    "subheaders": [
+                        {
+                            "title": "Graph Not Displaying",
+                            "content": "<h3>Graph Not Displaying</h3><p>Ensure that the selected format contains data and refresh the page if necessary.</p>"
+                        },
+                        {
+                            "title": "Export Issues",
+                            "content": "<h3>Export Issues</h3><p>If the CSV file does not download, check your browser's download settings or try a different browser.</p>"
+                        }
+                    ]
+                }
+            ]        
         }
     ]
 }
