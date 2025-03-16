@@ -47,10 +47,9 @@
             font-size: 40px;
             font-weight: 600;
             display: flex;
-            justify-content: center;
-            gap: 15px;
+            flex-direction: column; /* Always stack vertically */
             align-items: center;
-            flex-wrap: wrap;
+            gap: 15px;
         }
 
         .time-unit {
@@ -58,6 +57,15 @@
             font-weight: 900;
             color: #ffcc00; /* Taco Bell yellow */
             text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .time-label {
+            font-size: 36px;
+            color: white; /* White labels */
+            margin-left: 10px; /* Space between number and label */
         }
 
         .party-face {
@@ -81,51 +89,6 @@
             color: #ffcc00; /* Taco Bell yellow */
             margin-top: 20px;
         }
-
-        /* Mobile responsiveness */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 30px;
-            }
-
-            .countdown {
-                font-size: 32px;
-            }
-
-            .time-unit {
-                font-size: 48px;
-            }
-
-            .party-face {
-                font-size: 80px;
-            }
-
-            p {
-                font-size: 14px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            h1 {
-                font-size: 24px;
-            }
-
-            .countdown {
-                font-size: 28px;
-            }
-
-            .time-unit {
-                font-size: 42px;
-            }
-
-            .party-face {
-                font-size: 60px;
-            }
-
-            .message {
-                font-size: 18px;
-            }
-        }
     </style>
 </head>
 <body>
@@ -133,10 +96,18 @@
         <h1>Taco Bell Countdown</h1>
         <p>Pickup at 5pm April 1st</p>
         <div id="countdown" class="countdown">
-            <div class="time-unit" id="days">0</div> d:
-            <div class="time-unit" id="hours">0</div> h:
-            <div class="time-unit" id="minutes">0</div> m:
-            <div class="time-unit" id="seconds">0</div> s
+            <div class="time-unit">
+                <div id="days">0</div><span class="time-label">days</span>
+            </div>
+            <div class="time-unit">
+                <div id="hours">0</div><span class="time-label">hours</span>
+            </div>
+            <div class="time-unit">
+                <div id="minutes">0</div><span class="time-label">min</span>
+            </div>
+            <div class="time-unit">
+                <div id="seconds">0</div><span class="time-label">sec</span>
+            </div>
         </div>
         <p id="message" class="message"></p>
     </div>
