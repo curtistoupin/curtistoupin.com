@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taco Bell Countdown</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1d1d1d; /* Dark background for sleek contrast */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
+            text-align: center;
+        }
+
+        .container {
+            background-color: #37003c; /* Taco Bell purple */
+            border-radius: 15px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            width: 90%;
+            max-width: 600px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #ffcc00; /* Taco Bell yellow */
+            margin: 0 0 10px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 18px;
+            color: #B3B3B3;
+            margin: 10px 0 30px;
+        }
+
+        .countdown {
+            font-size: 48px;
+            font-weight: 600;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .time-unit {
+            font-size: 72px;
+            font-weight: 900;
+            color: #ffcc00; /* Taco Bell yellow */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .party-face {
+            font-size: 100px;
+            color: #ffcc00;
+            animation: bounce 0.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .message {
+            font-size: 24px;
+            font-weight: 500;
+            color: #ffcc00; /* Taco Bell yellow */
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Taco Bell Countdown</h1>
+        <p>Pickup at 5pm April 1st</p>
+        <div id="countdown" class="countdown">
+            <div class="time-unit" id="days">0</div> d:
+            <div class="time-unit" id="hours">0</div> h:
+            <div class="time-unit" id="minutes">0</div> m:
+            <div class="time-unit" id="seconds">0</div> s
+        </div>
+        <p id="message" class="message"></p>
+    </div>
+
+    <script>
+        function updateCountdown() {
+            const endTime = new Date('2025-04-01T17:00:00'); // 5pm, April 1, 2025
+            const now = new Date();
+            const timeRemaining = endTime - now;
+
+            if (timeRemaining <= 0) {
+                // Countdown has reached zero
+                document.getElementById('countdown').innerHTML = '<span class="party-face">🎉</span>';
+                document.getElementById('message').innerText = "It's time!";
+                document.querySelector('p').innerText = '';
+            } else {
+                const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+                document.getElementById('days').innerText = days;
+                document.getElementById('hours').innerText = hours;
+                document.getElementById('minutes').innerText = minutes;
+                document.getElementById('seconds').innerText = seconds;
+            }
+        }
+
+        // Initial call to display immediately and set interval to update every second
+        updateCountdown();  
+        setInterval(updateCountdown, 1000);
+    </script>
+</body>
+</html>
